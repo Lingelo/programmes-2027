@@ -5,14 +5,19 @@
   "description": "Comparateur des programmes de l'élection présidentielle 2027",
   "type": "module",
   "scripts": {
-    "dev": "npx --yes serve -l 8080 .",
+    "dev": "npm run build && npx --yes serve -l 8080 ..",
     "sync": "node scripts/sync-wikipedia.mjs",
     "refresh": "node scripts/refresh-programmes.mjs",
-    "check": "node scripts/check-data.mjs"
+    "check": "node scripts/check-data.mjs",
+    "build": "node scripts/build-site.mjs",
+    "og": "node scripts/og-images.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "latest",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "jsdom": "30.1.2"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

@@ -20,17 +20,21 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
       - name: Synchroniser candidats et photos
         run: node scripts/sync-wikipedia.mjs
       - name: Parrainages (Conseil constitutionnel)
         run: node scripts/sync-parrainages.mjs
       - name: Vérifier les données
         run: node scripts/check-data.mjs
+      - name: Régénérer les pages
+        run: node scripts/build-site.mjs
       - name: Commit
         run: |
           git config user.name "programmes-2027-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ img/
+          git add -A data/ img/ index.html 404.html candidat theme themes comparer signatures methodo sitemap.xml robots.txt manifest.webmanifest
           if git diff --cached --quiet; then
             echo "Rien de nouveau."
           else

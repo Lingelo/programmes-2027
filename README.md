@@ -14,10 +14,25 @@ Site non partisan pour comparer les programmes des candidats à l'élection pré
 
 ## Lancer en local
 
+Le site est fait de vraies pages HTML (une par candidat, thème, duel…) générées à partir
+des données, pour le référencement :
+
 ```bash
-python3 -m http.server 8080   # ou : npm run dev
-# puis http://localhost:8080
+npm install
+npm run build                 # régénère index.html, candidat/, theme/, comparer/, sitemap.xml…
+cd .. && python3 -m http.server 8080
+# puis http://localhost:8080/programmes-2027/
 ```
+
+`npm run og` régénère les images de partage (`img/og/`) et les icônes (nécessite Playwright).
+
+## Référencement (SEO)
+
+- Une page statique par contenu : 31 fiches, 10 thèmes, 66 duels (« X ou Y : comparatif des programmes 2027 »), signatures, méthodo
+- Titre, description, adresse canonique, Open Graph et Twitter propres à chaque page, image de partage par candidat
+- Données structurées schema.org : `WebSite`, `ProfilePage`/`Person`, `Event` (l'élection), `BreadcrumbList`, `FAQPage`
+- `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, liens internes (duels, pied de page)
+- Pages régénérées automatiquement à chaque modification de `main` (`verifier.yml`) et à chaque synchro
 
 ## Mise à jour automatique
 
@@ -26,7 +41,7 @@ python3 -m http.server 8080   # ou : npm run dev
 | `sync.yml` | 2 fois par jour | Lit Wikipédia et Wikidata : photos des nouveaux candidats, biographies, **parrainages** (Conseil constitutionnel, dès l'ouverture de la collecte début 2027), signale les nouveaux candidats déclarés (`data/veille.json`, affiché sur le site), redéploie |
 | Tâche programmée claude.ai | chaque lundi, 11 h 23 | Une session Claude cherche les nouvelles annonces de programme (sources 2027 uniquement) et **ouvre une Pull Request à relire** (rien n'est publié sans validation humaine) |
 | `refresh-programmes.yml` | chaque lundi (optionnel) | Même travail via l'API Anthropic, seulement si le secret `ANTHROPIC_API_KEY` est configuré ; sinon il s'arrête sans rien faire |
-| `verifier.yml` | à chaque modification et pull request | Vérifie les données (`scripts/check-data.mjs`). La publication est faite par GitHub Pages (mode « Deploy from a branch », `main`, racine) à chaque commit sur `main` |
+| `verifier.yml` | à chaque modification et pull request | Vérifie les données et **régénère les pages statiques** ; GitHub Pages (mode « Deploy from a branch », `main`, racine) publie ensuite |
 
 ### Mise en route (une seule fois)
 

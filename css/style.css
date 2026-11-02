@@ -401,3 +401,16 @@ main { display: block; max-width: 1100px; margin: 0 auto; padding: 22px 16px 120
 .avatar__silhouette { position: absolute; inset: 0; width: 100%; height: 100%; fill: rgba(255,255,255,.55); }
 .avatar__init--petit { position: absolute; bottom: 8%; left: 0; right: 0; text-align: center; font-size: .7rem !important; letter-spacing: .05em; }
 .avatar--sm .avatar__init--petit { display: none; }
+
+/* ---------- Duels ---------- */
+.duels { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 560px) { .duels { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .duels { grid-template-columns: 1fr 1fr 1fr; } }
+.duel { display: flex; align-items: center; gap: 10px; background: var(--blanc); border: var(--bord); border-radius: var(--radius-sm); box-shadow: var(--ombre-sm); padding: 8px 12px; text-decoration: none; font-weight: 500; }
+.duel b { font-family: var(--mono); font-size: .8rem; }
+.duel__avatars { display: flex; }
+.duel__avatars .avatar + .avatar { margin-left: -12px; }
+.footer-liens { columns: 2; column-gap: 18px; font-size: .85rem; padding: 0; list-style: none; margin: 10px 0 16px; }
+@media (min-width: 720px) { .footer-liens { columns: 4; } }
+.footer-liens li { break-inside: avoid; margin: 2px 0; }
+.footer h2 { font-family: var(--mono); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; margin: 18px 0 0; }

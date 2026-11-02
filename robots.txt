@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lingelo.github.io/programmes-2027/sitemap.xml

@@ -1,26 +1,58 @@
-name: Vérification des données
+name: Construction du site
 
-# Le site est publié par GitHub Pages en mode « Deploy from a branch » (main, racine) :
-# chaque commit sur main republie automatiquement le site.
-# Ce workflow vérifie la cohérence des données à chaque modification, y compris
-# sur les pull requests de la mise à jour hebdomadaire.
+# GitHub Pages publie la branche main telle quelle (mode « Deploy from a branch »).
+# Ce workflow régénère les pages statiques (une par candidat, thème, duel…) à chaque
+# modification sur main, puis les committe. Sur une pull request, il vérifie seulement
+# que les données sont valides et que le site se construit.
 
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'README.md'
   pull_request:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pages: write
+
+concurrency:
+  group: construction-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  verifier:
+  construire:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
       - name: Vérifier les données
         run: node scripts/check-data.mjs
+      - name: Générer les pages
+        run: node scripts/build-site.mjs
+      - name: Publier les pages générées
+        if: github.event_name != 'pull_request'
+        id: commit
+        run: |
+          git config user.name "programmes-2027-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A index.html 404.html candidat theme themes comparer signatures methodo sitemap.xml robots.txt manifest.webmanifest
+          if git diff --cached --quiet; then
+            echo "Pages déjà à jour."
+          else
+            git commit -m "Pages régénérées ($(date -u +%F))"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Republier sur GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true

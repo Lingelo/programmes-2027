@@ -1,6 +1,19 @@
 // Programmes 2027 — application (vanilla JS, routeur par hash, mobile first)
 
 const app = document.getElementById('app');
+// Chemin de base du site (ex. « /programmes-2027/ »), défini dans <meta name="site-base">
+const BASE = document.querySelector('meta[name="site-base"]')?.content || '/';
+const lien = (chemin = '') => BASE + chemin;
+const URLS = {
+  accueil: () => lien(''),
+  candidat: (id) => lien(`candidat/${id}/`),
+  themes: () => lien('themes/'),
+  theme: (id) => lien(`theme/${id}/`),
+  comparer: (ids = []) => lien('comparer/') + (ids.length ? `?c=${ids.join(',')}` : ''),
+  duel: (a, b) => lien(`comparer/${a}-vs-${b}/`),
+  signatures: () => lien('signatures/'),
+  methodo: () => lien('methodo/'),
+};
 const MAX_COMPARE = 4;
 
 const state = {
@@ -79,6 +92,15 @@ const parId = (id) => state.data.candidats.find((c) => c.id === id);
 const bordDe = (c) => state.data.bords.find((b) => b.id === c.bord);
 const nbProps = (c) => Object.values(c.propositions || {}).reduce((n, l) => n + l.length, 0);
 const ordreBord = (c) => state.data.bords.findIndex((b) => b.id === c.bord);
+// Candidats « principaux » : ceux qui ont au moins 3 mesures sourcées (pages duel générées pour eux)
+const estPrincipal = (c) => nbProps(c) >= 3;
+const principaux = () => candidatsTries().filter(estPrincipal);
+// Ordre canonique d'un duel : de la gauche vers la droite (puis ordre du fichier)
+function duelIds(a, b) {
+  const rang = (c) => ordreBord(c) * 1000 + state.data.candidats.indexOf(c);
+  return rang(a) <= rang(b) ? [a.id, b.id] : [b.id, a.id];
+}
+const lienDuel = (a, b) => URLS.duel(...duelIds(a, b));
 const candidatsTries = () => [...state.data.candidats].sort((a, b) => ordreBord(a) - ordreBord(b));
 
 // ---------- Photos (Wikipédia / Wikimedia Commons) ----------
@@ -124,7 +146,7 @@ function hydraterPhotos(root = document) {
 function avatar(c, taille = '') {
   const init = (c.prenom[0] + c.nom.replace(/^(Le |La |De )/i, '')[0]).toUpperCase();
   const img = c.photo
-    ? `<img src="${esc(c.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+    ? `<img src="${esc(lien(c.photo))}" alt="${esc(`${c.prenom} ${c.nom}`)}" width="${taille === 'xl' ? 128 : taille === 'sm' ? 44 : 76}" height="${taille === 'xl' ? 128 : taille === 'sm' ? 44 : 76}" loading="${taille === 'xl' ? 'eager' : 'lazy'}" decoding="async" referrerpolicy="no-referrer">`
     : `<svg class="avatar__silhouette" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="19"/><path d="M14 100c2-24 17-36 36-36s34 12 36 36z"/></svg><span class="avatar__init avatar__init--petit">${esc(init)}</span>`;
   const wiki = !c.photo && c.wiki ? ` data-wiki="${esc(c.wiki)}"` : '';
   return `<span class="avatar ${taille ? 'avatar--' + taille : ''}" style="${styleCouleur(c)}"${wiki} role="img" aria-label="Photo de ${esc(c.prenom + ' ' + c.nom)}">${img}</span>`;
@@ -148,7 +170,7 @@ function vueAccueil() {
     <section class="hero">
       <span class="pill"><span class="dot-live"></span><span>1er tour · ${esc(dateFr(d.meta.election.tour1, { day: 'numeric', month: 'long' }))}</span></span>
       <h1>Alors comme ça, vous savez <span class="surligne-rose">pour qui voter</span>&nbsp;? <span class="surligne-noir">Comparons.</span></h1>
-      <p class="chapo">Les programmes des candidats à 2027, mesure par mesure, <strong>avec les sources</strong>. Choisissez <span class="chip-inline">2 à 4 candidats</span> et mettez-les face à face.</p>
+      <p class="chapo">Les programmes des candidats à l'élection présidentielle 2027, mesure par mesure, <strong>avec les sources</strong>. Choisissez <span class="chip-inline">2 à 4 candidats</span> et mettez-les face à face.</p>
     </section>
 
     <section class="section">
@@ -192,6 +214,7 @@ function vueAccueil() {
       </div>
       <div class="grille" id="grille"></div>
     </section>
+    ${blocDuelsPopulaires()}
     ${blocRetires()}`;
 
   renderFiltres();
@@ -248,7 +271,7 @@ function carteCandidat(c) {
     <div class="cand__corps">
       ${avatar(c)}
       <div class="cand__infos">
-        <a class="cand__nom" href="#/candidat/${c.id}"><span class="cand__prenom">${esc(c.prenom)}</span>${esc(c.nom)}</a>
+        <a class="cand__nom" href="${URLS.candidat(c.id)}"><span class="cand__prenom">${esc(c.prenom)}</span>${esc(c.nom)}</a>
         <div class="meta-ligne">${pastilleParti(c)}<span class="tag">${esc(bordDe(c)?.label)}</span>${age(c.biographie?.naissance) ? `<span class="tag">${age(c.biographie.naissance)} ans</span>` : ''}</div>
       </div>
     </div>
@@ -269,10 +292,9 @@ function vueCandidat(id) {
   const on = state.compare.includes(c.id);
   const themes = d.themes.filter((t) => c.propositions?.[t.id]?.length);
   const positions = d.enjeux.filter((e) => c.positions?.[e.id]);
-  document.title = `${c.prenom} ${c.nom} — Programmes 2027`;
 
   app.innerHTML = `
-    <a class="lien-retour" href="#/">← Tous les candidats</a>
+    <a class="lien-retour" href="${URLS.accueil()}">← Tous les candidats</a>
     <article>
       <section class="carte fiche__tete" style="${styleCouleur(c)}">
         <div class="fiche__fond"></div>
@@ -290,7 +312,7 @@ function vueCandidat(id) {
           <p class="mono small">${esc(c.statut[0].toUpperCase() + c.statut.slice(1))}${c.declaration ? ` le ${esc(dateFr(c.declaration))}` : ''}${c.site ? ` · <a href="${esc(c.site)}" target="_blank" rel="noopener">site officiel ↗</a>` : ''}</p>
           <div class="actions">
             <button type="button" class="btn btn--rouge" data-compare="${c.id}" data-libelle="grand" aria-pressed="${on}">${libelleCompare(on, true)}</button>
-            <a class="btn" href="#/comparer">Voir le comparateur →</a>
+            <a class="btn" href="${URLS.comparer()}">Voir le comparateur →</a>
           </div>
         </div>
       </section>
@@ -315,7 +337,7 @@ function vueCandidat(id) {
       </section>` : ''}
 
       <section class="section">
-        <h2 class="section-titre">Le programme détaillé</h2>
+        <h2 class="section-titre">Le programme 2027 de ${esc(c.prenom)} ${esc(c.nom)}</h2>
         ${themes.length ? themes.map((t, i) => `
           <details class="theme-bloc" ${i < 2 ? 'open' : ''}>
             <summary><span>${t.emoji}</span>${esc(t.label)} <span class="compte">${c.propositions[t.id].length}</span></summary>
@@ -323,6 +345,8 @@ function vueCandidat(id) {
           </details>`).join('') : `
           <div class="alerte">Ce candidat n'a pas encore publié de programme détaillé. La fiche sera complétée automatiquement dès que des propositions seront annoncées.</div>`}
       </section>
+
+      ${blocDuels(c)}
 
       ${blocBio(c)}
 
@@ -401,7 +425,7 @@ function blocParrainagesFiche(c) {
   const p = P();
   if (!p) return '';
   if (!collecteOuverte()) {
-    return `<section class="section alerte"><b>PARRAINAGES</b> — La collecte des 500 signatures d'élus n'a pas encore commencé (ouverture ${esc(p.calendrier?.ouverture || 'début 2027')}). Le compteur s'affichera ici automatiquement. <a href="#/parrainages">En savoir plus</a></section>`;
+    return `<section class="section alerte"><b>PARRAINAGES</b> — La collecte des 500 signatures d'élus n'a pas encore commencé (ouverture ${esc(p.calendrier?.ouverture || 'début 2027')}). Le compteur s'affichera ici automatiquement. <a href="${URLS.signatures()}">En savoir plus</a></section>`;
   }
   const f = p.candidats[c.id];
   return `
@@ -417,7 +441,6 @@ function blocParrainagesFiche(c) {
 function vueParrainages() {
   const p = P();
   const d = state.data;
-  document.title = 'Parrainages — Programmes 2027';
   const regles = p?.regles || { seuil: 500, minDepartements: 30, maxParDepartement: 50 };
   const intro = `
     <section class="hero">
@@ -490,10 +513,35 @@ function ligneParrainage({ c, nom, f }) {
         <div class="ligne-cand" ${c ? `style="${styleCouleur(c)}"` : ''}>
           ${c ? avatar(c, 'sm') : '<span class="avatar avatar--sm" style="--c:#ddd"><span class="avatar__init">?</span></span>'}
           <div class="ligne-cand__corps">
-            ${c ? `<a class="ligne-cand__nom" href="#/candidat/${c.id}">${esc(c.prenom)} ${esc(c.nom)}</a> ${pastilleParti(c)}` : `<span class="ligne-cand__nom">${esc(nom)}</span>`}
+            ${c ? `<a class="ligne-cand__nom" href="${URLS.candidat(c.id)}">${esc(c.prenom)} ${esc(c.nom)}</a> ${pastilleParti(c)}` : `<span class="ligne-cand__nom">${esc(nom)}</span>`}
             ${c ? barreParrainages(c.id) : `<div class="jauge ${f.seuilAtteint ? 'jauge--ok' : ''}"><div class="jauge__barre"><span style="width:${Math.min(100, f.total / seuil() * 100)}%"></span></div><div class="jauge__texte mono"><b>${f.total}</b>/${seuil()}${f.seuilAtteint ? ' · ✓ qualifié' : ''} · ${f.departements} départements</div></div>`}
           </div>
         </div>`;
+}
+
+function blocDuels(c) {
+  if (!estPrincipal(c)) return '';
+  const autres = principaux().filter((x) => x.id !== c.id);
+  if (!autres.length) return '';
+  return `
+      <section class="section">
+        <h2 class="section-titre">Comparer ${esc(c.prenom)} ${esc(c.nom)} avec…</h2>
+        <div class="duels">${autres.map((x) => `<a class="duel" href="${lienDuel(c, x)}" style="${styleCouleur(x)}">${avatar(x, 'sm')}<span>${esc(c.nom)} <b>ou</b> ${esc(x.nom)}</span></a>`).join('')}</div>
+      </section>`;
+}
+
+function blocDuelsPopulaires() {
+  const p = principaux();
+  const paires = [];
+  // Duels gauche/droite les plus parlants : extrêmes du spectre puis voisins
+  for (let i = 0; i < p.length; i++) for (let j = p.length - 1; j > i; j--) paires.push([p[i], p[j]]);
+  const choix = paires.sort((x, y) => (nbProps(y[0]) + nbProps(y[1])) - (nbProps(x[0]) + nbProps(x[1]))).slice(0, 8);
+  if (!choix.length) return '';
+  return `
+    <section class="section">
+      <h2 class="section-titre">Les duels</h2>
+      <div class="duels">${choix.map(([a, b]) => `<a class="duel" href="${lienDuel(a, b)}"><span class="duel__avatars">${avatar(a, 'sm')}${avatar(b, 'sm')}</span><span>${esc(a.nom)} <b>ou</b> ${esc(b.nom)}</span></a>`).join('')}</div>
+    </section>`;
 }
 
 function blocRetires() {
@@ -529,12 +577,13 @@ function vueComparer(param) {
   const choisis = state.compare.map(parId).filter(Boolean);
   const themesDispo = d.themes.filter((t) => choisis.some((c) => c.propositions?.[t.id]?.length));
   if (!themesDispo.find((t) => t.id === state.themeCompare)) state.themeCompare = themesDispo[0]?.id || null;
-  document.title = 'Comparateur — Programmes 2027';
 
   app.innerHTML = `
     <section class="hero">
       <span class="pill">Le match · ${choisis.length}/${MAX_COMPARE}</span>
-      <h1>Qui propose <span class="surligne-rose">quoi</span>&nbsp;?</h1>
+      ${choisis.length === 2
+        ? `<h1>${esc(choisis[0].nom)} ou ${esc(choisis[1].nom)}&nbsp;: <span class="surligne-rose">les programmes 2027</span> face à face</h1>`
+        : '<h1>Qui propose <span class="surligne-rose">quoi</span>&nbsp;?</h1>'}
       <p class="chapo">Touchez les visages pour ajouter ou retirer des candidats (4 maximum).</p>
     </section>
 
@@ -578,7 +627,7 @@ function vueComparer(param) {
 
   app.querySelectorAll('[data-sel]').forEach((b) => b.addEventListener('click', () => {
     basculerCompare(b.dataset.sel);
-    history.replaceState(null, '', '#/comparer' + (state.compare.length ? '/' + state.compare.join(',') : ''));
+    history.replaceState(null, '', URLS.comparer(state.compare));
     vueComparer();
   }));
   app.querySelectorAll('[data-theme]').forEach((b) => b.addEventListener('click', () => {
@@ -597,14 +646,14 @@ function renderColonnes(choisis) {
   const t = state.themeCompare;
   el.innerHTML = choisis.map((c) => `
     <div class="col" style="${styleCouleur(c)}">
-      <div class="col__tete">${avatar(c, 'sm')}<a href="#/candidat/${c.id}">${esc(c.prenom)} ${esc(c.nom)}<br><small class="mono">${esc(c.partiCourt)}</small></a></div>
+      <div class="col__tete">${avatar(c, 'sm')}<a href="${URLS.candidat(c.id)}">${esc(c.prenom)} ${esc(c.nom)}<br><small class="mono">${esc(c.partiCourt)}</small></a></div>
       <div class="col__corps">${c.propositions?.[t]?.length ? c.propositions[t].map(prop).join('') : '<p class="vide">Pas de proposition publiée sur ce thème.</p>'}</div>
     </div>`).join('');
   hydraterPhotos(el);
 }
 
 async function partager() {
-  const url = location.href.split('#')[0] + '#/comparer/' + state.compare.join(',');
+  const url = new URL(URLS.comparer(state.compare), location.origin).href;
   const noms = state.compare.map(parId).map((c) => c.nom).join(' vs ');
   try {
     if (navigator.share) await navigator.share({ title: `${noms} — Programmes 2027`, url });
@@ -614,7 +663,6 @@ async function partager() {
 
 function vueThemes() {
   const d = state.data;
-  document.title = 'Thèmes — Programmes 2027';
   app.innerHTML = `
     <section class="hero">
       <span class="pill">Par thème</span>
@@ -623,7 +671,7 @@ function vueThemes() {
     <section class="section themes-grille">
       ${d.themes.map((t) => {
         const n = d.candidats.filter((c) => c.propositions?.[t.id]?.length).length;
-        return `<a class="theme-tuile" href="#/theme/${t.id}"><span class="emoji">${t.emoji}</span>${esc(t.label)}<small>${plur(n, 'candidat')}</small></a>`;
+        return `<a class="theme-tuile" href="${URLS.theme(t.id)}"><span class="emoji">${t.emoji}</span>${esc(t.label)}<small>${plur(n, 'candidat')}</small></a>`;
       }).join('')}
     </section>`;
 }
@@ -634,20 +682,19 @@ function vueTheme(id) {
   if (!t) return vue404();
   const avec = candidatsTries().filter((c) => c.propositions?.[t.id]?.length);
   const sans = candidatsTries().filter((c) => !c.propositions?.[t.id]?.length);
-  document.title = `${t.label} — Programmes 2027`;
   app.innerHTML = `
-    <a class="lien-retour" href="#/themes">← Tous les thèmes</a>
+    <a class="lien-retour" href="${URLS.themes()}">← Tous les thèmes</a>
     <section class="hero">
       <span class="pill">${t.emoji} Thème</span>
       <h1>${esc(t.label)}</h1>
-      <p class="chapo">Classés de la gauche vers la droite.</p>
+      <p class="chapo">Que proposent les candidats à la présidentielle 2027 sur ce sujet&nbsp;? Classés de la gauche vers la droite, chaque mesure avec sa source.</p>
     </section>
     <section class="section carte" style="padding:0;overflow:hidden">
       ${avec.map((c) => `
         <div class="ligne-cand">
           ${avatar(c, 'sm')}
           <div class="ligne-cand__corps">
-            <a class="ligne-cand__nom" href="#/candidat/${c.id}">${esc(c.prenom)} ${esc(c.nom)}</a> ${pastilleParti(c)}
+            <a class="ligne-cand__nom" href="${URLS.candidat(c.id)}">${esc(c.prenom)} ${esc(c.nom)}</a> ${pastilleParti(c)}
             ${c.propositions[t.id].map((p) => `<div style="margin-top:8px"><strong>${esc(p.titre)}</strong> — ${esc(p.detail)} ${p.source ? `<a class="source" href="${esc(p.source)}" target="_blank" rel="noopener">source ↗</a>` : ''}</div>`).join('')}
           </div>
         </div>`).join('') || '<p class="vide">Aucune proposition publiée pour l\'instant.</p>'}
@@ -658,7 +705,6 @@ function vueTheme(id) {
 
 function vueMethodo() {
   const d = state.data;
-  document.title = 'Méthodo — Programmes 2027';
   app.innerHTML = `
     <section class="hero"><span class="pill">Méthodo</span><h1>Comment c'est <span class="surligne-rose">fabriqué</span>.</h1></section>
     <section class="section carte prose">
@@ -681,17 +727,17 @@ function vueMethodo() {
 }
 
 function vue404() {
-  app.innerHTML = `<section class="hero"><h1>Oups, <span class="surligne-rose">page introuvable</span>.</h1><p class="chapo"><a href="#/">Retour aux candidats</a></p></section>`;
+  app.innerHTML = `<section class="hero"><h1>Oups, <span class="surligne-rose">page introuvable</span>.</h1><p class="chapo"><a href="${URLS.accueil()}">Retour aux candidats</a></p></section>`;
 }
 
 // ---------- Panier collant ----------
 function majTray() {
   const tray = document.getElementById('tray');
-  const route = location.hash.split('/')[1] || '';
+  const route = routeCourante().route;
   const choisis = state.compare.map(parId).filter(Boolean);
   if (!choisis.length || route === 'comparer') { tray.hidden = true; return; }
   tray.hidden = false;
-  tray.innerHTML = `<a class="btn btn--rouge" href="#/comparer/${choisis.map((c) => c.id).join(',')}">
+  tray.innerHTML = `<a class="btn btn--rouge" href="${URLS.comparer(choisis.map((c) => c.id))}">
     <span class="tray__avatars">${choisis.map((c) => avatar(c, 'sm')).join('')}</span>
     <span>COMPARER ! <small>${choisis.length}/${MAX_COMPARE}</small></span>
   </a>`;
@@ -699,26 +745,50 @@ function majTray() {
 }
 
 // ---------- Routeur ----------
+// Le site est fait de vraies pages (une adresse par contenu, générées à l'avance pour
+// les moteurs de recherche) ; le script les « hydrate » avec les données à jour.
+function routeCourante() {
+  const chemin = decodeURIComponent(location.pathname).slice(BASE.length - 1).replace(/^\/|\/$/g, '');
+  const [route = '', param = ''] = chemin.split('/');
+  return { route, param };
+}
+
 function router() {
-  const [, route = '', param = ''] = (location.hash || '#/').split('/');
-  document.title = 'Programmes 2027 — le comparateur';
+  const { route, param } = routeCourante();
   document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('actif',
     (a.dataset.nav === 'home' && (route === '' || route === 'candidat')) ||
     (a.dataset.nav === 'themes' && (route === 'themes' || route === 'theme')) ||
     (a.dataset.nav === 'compare' && route === 'comparer') ||
-    (a.dataset.nav === 'parrainages' && route === 'parrainages')));
+    (a.dataset.nav === 'parrainages' && route === 'signatures')));
   switch (route) {
     case '': vueAccueil(); break;
-    case 'candidat': vueCandidat(decodeURIComponent(param)); break;
-    case 'comparer': vueComparer(decodeURIComponent(param)); break;
+    case 'candidat': vueCandidat(param); break;
+    case 'comparer': {
+      const duel = param.match(/^(.+)-vs-(.+)$/);
+      vueComparer(duel ? `${duel[1]},${duel[2]}` : new URLSearchParams(location.search).get('c') || '');
+      break;
+    }
     case 'themes': vueThemes(); break;
     case 'theme': vueTheme(param); break;
     case 'methodo': vueMethodo(); break;
-    case 'parrainages': vueParrainages(); break;
+    case 'signatures': vueParrainages(); break;
     default: vue404();
   }
   majTray();
-  window.scrollTo(0, 0);
+  document.documentElement.dataset.rendu = route || 'accueil';
+}
+
+// Anciennes adresses en « #/… » : redirection vers la vraie page
+function redirigerAncienneAdresse() {
+  const h = location.hash;
+  if (!h.startsWith('#/')) return false;
+  const [, route = '', param = ''] = h.split('/');
+  const cible = {
+    '': URLS.accueil(), candidat: URLS.candidat(param), themes: URLS.themes(), theme: URLS.theme(param),
+    comparer: URLS.comparer(param ? param.split(',') : []), parrainages: URLS.signatures(), methodo: URLS.methodo(),
+  }[route];
+  if (cible) { location.replace(cible); return true; }
+  return false;
 }
 
 function enTete() {
@@ -740,13 +810,14 @@ function enTete() {
 }
 
 async function init() {
-  app.innerHTML = '<p class="chargement">Chargement des programmes…</p>';
+  if (redirigerAncienneAdresse()) return;
+  if (!app.children.length) app.innerHTML = '<p class="chargement">Chargement des programmes…</p>';
   try {
     const optionnel = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
     const [data, veille, parrainages] = await Promise.all([
-      fetch('data/candidats.json', { cache: 'no-cache' }).then((r) => r.json()),
-      optionnel('data/veille.json'),
-      optionnel('data/parrainages.json'),
+      fetch(lien('data/candidats.json'), { cache: 'no-cache' }).then((r) => r.json()),
+      optionnel(lien('data/veille.json')),
+      optionnel(lien('data/parrainages.json')),
     ]);
     state.data = data;
     state.veille = veille;
@@ -754,7 +825,6 @@ async function init() {
     state.compare = state.compare.filter(parId);
     enTete();
     router();
-    window.addEventListener('hashchange', router);
   } catch (e) {
     app.innerHTML = `<p class="chargement">Impossible de charger les données. ${esc(e.message)}</p>`;
   }
