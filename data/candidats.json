@@ -2400,9 +2400,16 @@
       "parti": "Parti socialiste",
       "retrait": null,
       "note": "retrait après la primaire de la gauche du 11 octobre 2026"
+    },
+    {
+      "nom": "Yaël Braun-Pivet",
+      "parti": "Renaissance",
+      "retrait": null,
+      "note": "a renoncé en mai 2026"
     }
   ],
   "pressentis": [
+    "Jordan Bardella",
     "Jean-Noël Barrot",
     "Aurore Bergé",
     "Thierry Breton",
