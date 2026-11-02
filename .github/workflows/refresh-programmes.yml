@@ -36,7 +36,7 @@ jobs:
       - uses: actions/setup-node@v4
         if: steps.cle.outputs.ok == 'true'
         with:
-          node-version: 20
+          node-version: 22
       - name: Installer
         if: steps.cle.outputs.ok == 'true'
         run: npm install --no-audit --no-fund

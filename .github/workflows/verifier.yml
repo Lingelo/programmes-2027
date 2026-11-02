@@ -1,0 +1,26 @@
+name: Vérification des données
+
+# Le site est publié par GitHub Pages en mode « Deploy from a branch » (main, racine) :
+# chaque commit sur main republie automatiquement le site.
+# Ce workflow vérifie la cohérence des données à chaque modification, y compris
+# sur les pull requests de la mise à jour hebdomadaire.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Vérifier les données
+        run: node scripts/check-data.mjs

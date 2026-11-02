@@ -26,12 +26,12 @@ python3 -m http.server 8080   # ou : npm run dev
 | `sync.yml` | 2 fois par jour | Lit Wikipédia et Wikidata : photos des nouveaux candidats, biographies, **parrainages** (Conseil constitutionnel, dès l'ouverture de la collecte début 2027), signale les nouveaux candidats déclarés (`data/veille.json`, affiché sur le site), redéploie |
 | Tâche programmée claude.ai | chaque lundi, 11 h 23 | Une session Claude cherche les nouvelles annonces de programme (sources 2027 uniquement) et **ouvre une Pull Request à relire** (rien n'est publié sans validation humaine) |
 | `refresh-programmes.yml` | chaque lundi (optionnel) | Même travail via l'API Anthropic, seulement si le secret `ANTHROPIC_API_KEY` est configuré ; sinon il s'arrête sans rien faire |
-| `deploy.yml` | à chaque push sur `main` | Vérifie les données (`scripts/check-data.mjs`) et publie sur GitHub Pages |
+| `verifier.yml` | à chaque modification et pull request | Vérifie les données (`scripts/check-data.mjs`). La publication est faite par GitHub Pages (mode « Deploy from a branch », `main`, racine) à chaque commit sur `main` |
 
 ### Mise en route (une seule fois)
 
 1. Fusionner sur la branche `main`.
-2. **Settings → Pages → Source : GitHub Actions**.
+2. **Settings → Pages → Source : Deploy from a branch → `main` / (root)**.
 3. (Optionnel, pour la mise à jour des programmes) **Settings → Secrets → Actions** : ajouter `ANTHROPIC_API_KEY`.
    Sans ce secret, le robot hebdomadaire s'arrête proprement.
 4. **Settings → Actions → General** : cocher « Allow GitHub Actions to create and approve pull requests ».
