@@ -375,3 +375,23 @@ main { display: block; max-width: 1100px; margin: 0 auto; padding: 22px 16px 120
 .credit { color: var(--gris); margin: 14px 0 0; }
 .liste-simple { margin: 0; padding-left: 18px; }
 .liste-simple li { margin: 4px 0; }
+
+/* ---------- Parrainages ---------- */
+.cand__parr { padding: 0 14px 12px; }
+.jauge { margin-top: 6px; }
+.jauge__barre { height: 14px; border: 2.5px solid var(--encre); border-radius: 999px; background: var(--blanc); overflow: hidden; }
+.jauge__barre span { display: block; height: 100%; background: var(--c, var(--jaune)); border-right: 2.5px solid var(--encre); }
+.jauge--ok .jauge__barre span { background: var(--vert); }
+.jauge__texte { font-size: .78rem; margin-top: 3px; }
+.spark { width: 100%; height: 80px; margin-top: 10px; }
+.spark__ligne { fill: none; stroke: var(--encre); stroke-width: 3; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.spark__seuil { stroke: var(--rouge); stroke-width: 2; stroke-dasharray: 6 5; vector-effect: non-scaling-stroke; }
+
+@media (max-width: 480px) {
+  .topbar { gap: 8px; padding: 10px 12px; }
+  .logo { width: 38px; height: 38px; font-size: .9rem; }
+  .topnav { gap: 5px; }
+  .topnav a { padding: 6px 9px; font-size: .8rem; box-shadow: 2px 2px 0 var(--encre); }
+}
+@media (max-width: 420px) { .logo { display: none; } }
+@media (max-width: 380px) { .topnav a { padding: 6px 7px; font-size: .76rem; } }

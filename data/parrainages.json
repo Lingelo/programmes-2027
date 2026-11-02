@@ -1,0 +1,15 @@
+{
+  "statut": "pas-ouverte",
+  "verifieLe": "2026-11-02",
+  "regles": {
+    "seuil": 500,
+    "minDepartements": 30,
+    "maxParDepartement": 50
+  },
+  "calendrier": {
+    "ouverture": "à la publication du décret de convocation (au plus tard début février 2027)",
+    "cloture": "2027-03-12"
+  },
+  "source": "https://www.conseil-constitutionnel.fr",
+  "candidats": {}
+}

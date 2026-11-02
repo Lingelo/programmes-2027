@@ -6,6 +6,7 @@ const MAX_COMPARE = 4;
 const state = {
   data: null,
   veille: null,
+  parrainages: null,
   filtreBord: null,
   recherche: '',
   avecProgramme: false,
@@ -250,6 +251,7 @@ function carteCandidat(c) {
       </div>
     </div>
     ${c.slogan ? `<p class="cand__slogan">« ${esc(c.slogan)} »</p>` : ''}
+    ${collecteOuverte() ? `<div class="cand__parr">${barreParrainages(c.id, true)}</div>` : ''}
     <div class="cand__pied">
       ${tagProgramme(c)}
       ${n ? `<span class="tag">${plur(n, 'mesure')}</span>` : ''}
@@ -290,6 +292,8 @@ function vueCandidat(id) {
           </div>
         </div>
       </section>
+
+      ${blocParrainagesFiche(c)}
 
       ${blocBio(c)}
 
@@ -355,6 +359,139 @@ function blocBio(c) {
         </div>` : ''}
         <p class="mono small credit">Source : <a href="${esc(b.wikipedia)}" target="_blank" rel="noopener">Wikipédia</a> (texte sous licence CC BY-SA 4.0)${b.wikidata ? ` et <a href="https://www.wikidata.org/wiki/${esc(b.wikidata)}" target="_blank" rel="noopener">Wikidata</a>` : ''}${b.majLe ? `, mis à jour le ${esc(dateFr(b.majLe))}` : ''}.</p>
       </section>`;
+}
+
+// ---------- Parrainages ----------
+const P = () => state.parrainages;
+const collecteOuverte = () => ['en-cours', 'cloture'].includes(P()?.statut);
+const seuil = () => P()?.regles?.seuil || 500;
+
+function texteParrainagesTicker() {
+  if (!collecteOuverte()) return 'Parrainages : 500 signatures d\'élus nécessaires, collecte début 2027';
+  const q = Object.values(P().candidats).filter((x) => x.seuilAtteint).length;
+  return `Parrainages : ${plur(q, 'candidat qualifié', 'candidats qualifiés')} au ${dateFr(P().dernierePublication)}`;
+}
+
+function barreParrainages(id, compact = false) {
+  const f = P()?.candidats?.[id];
+  const n = f?.total || 0;
+  const pct = Math.min(100, (n / seuil()) * 100);
+  const ok = f?.seuilAtteint;
+  return `<div class="jauge ${ok ? 'jauge--ok' : ''}" role="img" aria-label="${n} parrainages sur ${seuil()}">
+      <div class="jauge__barre"><span style="width:${pct}%"></span></div>
+      <div class="jauge__texte mono"><b>${n}</b>/${seuil()} signatures${ok ? ' · ✓ qualifié' : ''}${!compact && f ? ` · ${f.departements} départements` : ''}</div>
+    </div>`;
+}
+
+function sparkline(hist) {
+  if (!hist?.length || hist.length < 2) return '';
+  const w = 300, h = 70, max = Math.max(seuil(), hist.at(-1).cumul);
+  const x = (i) => (i / (hist.length - 1)) * w;
+  const y = (v) => h - (v / max) * h;
+  const pts = hist.map((p, i) => `${x(i).toFixed(1)},${y(p.cumul).toFixed(1)}`).join(' ');
+  return `<svg class="spark" viewBox="0 -4 ${w} ${h + 8}" preserveAspectRatio="none" role="img" aria-label="Évolution des parrainages">
+    <line x1="0" x2="${w}" y1="${y(seuil())}" y2="${y(seuil())}" class="spark__seuil"/>
+    <polyline points="${pts}" class="spark__ligne"/>
+  </svg>`;
+}
+
+function blocParrainagesFiche(c) {
+  const p = P();
+  if (!p) return '';
+  if (!collecteOuverte()) {
+    return `<section class="section alerte"><b>PARRAINAGES</b> — La collecte des 500 signatures d'élus n'a pas encore commencé (ouverture ${esc(p.calendrier?.ouverture || 'début 2027')}). Le compteur s'affichera ici automatiquement. <a href="#/parrainages">En savoir plus</a></section>`;
+  }
+  const f = p.candidats[c.id];
+  return `
+      <section class="section carte" style="${styleCouleur(c)}">
+        <h2 class="section-titre">Parrainages</h2>
+        ${barreParrainages(c.id)}
+        ${f ? `${sparkline(f.historique)}
+        <p class="small" style="margin:8px 0 0">${Object.entries(f.mandats).slice(0, 4).map(([m, n]) => `${esc(m)} : <b>${n}</b>`).join(' · ')}</p>` : '<p class="small">Aucun parrainage validé publié pour l\'instant.</p>'}
+        <p class="mono small credit">Source : Conseil constitutionnel · publication du ${esc(dateFr(p.dernierePublication))}</p>
+      </section>`;
+}
+
+function vueParrainages() {
+  const p = P();
+  const d = state.data;
+  document.title = 'Parrainages — Programmes 2027';
+  const regles = p?.regles || { seuil: 500, minDepartements: 30, maxParDepartement: 50 };
+  const intro = `
+    <section class="hero">
+      <span class="pill"><span class="dot-live"></span><span>${collecteOuverte() ? `Publication du ${esc(dateFr(p.dernierePublication, { day: 'numeric', month: 'long' }))}` : 'Collecte pas encore ouverte'}</span></span>
+      <h1>Les <span class="surligne-rose">500 signatures</span>, <span class="surligne-noir">le compteur.</span></h1>
+      <p class="chapo">Pour être candidat, il faut le parrainage d'au moins ${regles.seuil} élus. Le Conseil constitutionnel publie les signatures validées au moins deux fois par semaine : ce compteur se met à jour tout seul.</p>
+    </section>
+    <section class="section carte">
+      <h2 class="section-titre">Les règles en trois lignes</h2>
+      <div class="etapes">
+        <div class="etape"><span class="etape__num">1</span><div><strong>${regles.seuil} signatures</strong> d'élus (maires, parlementaires, conseillers départementaux et régionaux…).</div></div>
+        <div class="etape"><span class="etape__num">2</span><div>Venant d'au moins <strong>${regles.minDepartements} départements</strong> ou collectivités d'outre-mer.</div></div>
+        <div class="etape"><span class="etape__num">3</span><div>Pas plus de <strong>${regles.maxParDepartement} signatures</strong> comptées par département (un dixième).</div></div>
+      </div>
+    </section>`;
+
+  if (!collecteOuverte()) {
+    app.innerHTML = intro + `
+    <section class="section">
+      <div class="panneau">
+        <div class="panneau__titre"><span>CALENDRIER</span><span class="live">● EN ATTENTE</span></div>
+        <hr>
+        <div class="panneau__stats" style="grid-template-columns:1fr">
+          <div><span>Ouverture :</span> <b>${esc(p?.calendrier?.ouverture || 'début 2027')}</b></div>
+          <div><span>Clôture :</span> <b>${esc(dateFr(p?.calendrier?.cloture || '2027-03-12'))} au plus tard</b></div>
+          <div><span>Dernière vérification :</span> <b>${esc(dateFr(p?.verifieLe))}</b></div>
+        </div>
+      </div>
+    </section>
+    <section class="section alerte">Aucun parrainage n'est encore publié. Dès la première publication officielle, le classement de tous les candidats apparaîtra ici, ainsi qu'une jauge sur chaque fiche.</section>`;
+    return;
+  }
+
+  const lignes = Object.entries(p.candidats).map(([id, f]) => ({ c: parId(id), f }))
+    .concat(Object.entries(p.nonRattaches || {}).map(([nom, f]) => ({ c: null, nom, f })))
+    .sort((a, b) => b.f.total - a.f.total);
+  const qualifies = lignes.filter((l) => l.f.seuilAtteint).length;
+  // Les candidats suivis par le site restent toujours dans la liste principale
+  const principales = lignes.filter((l) => l.c || l.f.total >= 50);
+  const petites = lignes.filter((l) => !l.c && l.f.total < 50);
+  const sansParrain = d.candidats.filter((c) => !p.candidats[c.id]);
+
+  app.innerHTML = intro + `
+    <section class="section">
+      <div class="panneau">
+        <div class="panneau__titre"><span>LE TABLEAU DE BORD</span><span class="live">● ${p.statut === 'cloture' ? 'CLOS' : 'LIVE'}</span></div>
+        <div class="panneau__gros">${p.total.toLocaleString('fr-FR')}</div><div class="panneau__sous">parrainages validés au ${esc(dateFr(p.dernierePublication))}</div>
+        <hr>
+        <div class="panneau__stats">
+          <div><b>${qualifies}</b> <span>qualifiés</span></div>
+          <div><b>${lignes.length}</b> <span>personnes parrainées</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section carte" style="padding:0;overflow:hidden">
+      ${principales.map(ligneParrainage).join('')}
+    </section>
+    ${petites.length ? `
+    <details class="section theme-bloc">
+      <summary>Autres personnes parrainées (moins de 50 signatures) <span class="compte">${petites.length}</span></summary>
+      ${petites.map(ligneParrainage).join('')}
+    </details>` : ''}
+    ${sansParrain.length ? `<p class="small mono">Aucun parrainage publié : ${sansParrain.map((c) => esc(c.nom)).join(', ')}.</p>` : ''}
+    <p class="small mono">Source : <a href="${esc(p.source)}" target="_blank" rel="noopener">données ouvertes du Conseil constitutionnel</a> · vérifié le ${esc(dateFr(p.verifieLe))}.</p>`;
+  hydraterPhotos(app);
+}
+
+function ligneParrainage({ c, nom, f }) {
+  return `
+        <div class="ligne-cand" ${c ? `style="${styleCouleur(c)}"` : ''}>
+          ${c ? avatar(c, 'sm') : '<span class="avatar avatar--sm" style="--c:#ddd"><span class="avatar__init">?</span></span>'}
+          <div class="ligne-cand__corps">
+            ${c ? `<a class="ligne-cand__nom" href="#/candidat/${c.id}">${esc(c.prenom)} ${esc(c.nom)}</a> ${pastilleParti(c)}` : `<span class="ligne-cand__nom">${esc(nom)}</span>`}
+            ${c ? barreParrainages(c.id) : `<div class="jauge ${f.seuilAtteint ? 'jauge--ok' : ''}"><div class="jauge__barre"><span style="width:${Math.min(100, f.total / seuil() * 100)}%"></span></div><div class="jauge__texte mono"><b>${f.total}</b>/${seuil()}${f.seuilAtteint ? ' · ✓ qualifié' : ''} · ${f.departements} départements</div></div>`}
+          </div>
+        </div>`;
 }
 
 function blocRetires() {
@@ -564,7 +701,8 @@ function router() {
   document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('actif',
     (a.dataset.nav === 'home' && (route === '' || route === 'candidat')) ||
     (a.dataset.nav === 'themes' && (route === 'themes' || route === 'theme')) ||
-    (a.dataset.nav === 'compare' && route === 'comparer')));
+    (a.dataset.nav === 'compare' && route === 'comparer') ||
+    (a.dataset.nav === 'parrainages' && route === 'parrainages')));
   switch (route) {
     case '': vueAccueil(); break;
     case 'candidat': vueCandidat(decodeURIComponent(param)); break;
@@ -572,6 +710,7 @@ function router() {
     case 'themes': vueThemes(); break;
     case 'theme': vueTheme(param); break;
     case 'methodo': vueMethodo(); break;
+    case 'parrainages': vueParrainages(); break;
     default: vue404();
   }
   majTray();
@@ -588,7 +727,7 @@ function enTete() {
     `${n} candidats déclarés`,
     `1er tour le ${dateFr(d.meta.election.tour1)}`,
     `2nd tour le ${dateFr(d.meta.election.tour2)}`,
-    `500 parrainages nécessaires`,
+    texteParrainagesTicker(),
     `Mis à jour le ${dateFr(maj)}`,
   ];
   document.getElementById('ticker').textContent = (morceaux.join(' · ') + ' · ').repeat(2);
@@ -599,12 +738,15 @@ function enTete() {
 async function init() {
   app.innerHTML = '<p class="chargement">Chargement des programmes…</p>';
   try {
-    const [data, veille] = await Promise.all([
+    const optionnel = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    const [data, veille, parrainages] = await Promise.all([
       fetch('data/candidats.json', { cache: 'no-cache' }).then((r) => r.json()),
-      fetch('data/veille.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      optionnel('data/veille.json'),
+      optionnel('data/parrainages.json'),
     ]);
     state.data = data;
     state.veille = veille;
+    state.parrainages = parrainages;
     state.compare = state.compare.filter(parId);
     enTete();
     router();
