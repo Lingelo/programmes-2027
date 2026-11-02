@@ -303,12 +303,13 @@
       "declaration": "2026-06-17",
       "programme": "non publié",
       "site": null,
-      "bio": "Désignée candidate par le NPA – Révolutionnaires en juin 2026.",
+      "bio": "Conductrice de bus et syndicaliste, porte-parole du NPA – Révolutionnaires. Désignée candidate par le comité national du parti en juin 2026.",
       "phares": [],
       "positions": {},
       "propositions": {},
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://speakoutsocialists.org/?p=31844",
+        "https://www.boursedirect.fr/fr/actualites/categorie/politique/on-ne-cherche-pas-un-accord-politique-sur-les-routes-le-npa-en-quete-de-parrainages-afp-d490d0889a7a24796c56526e925208b907c2a721"
       ],
       "photoCredit": null
     },
@@ -2363,7 +2364,8 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": null
+      "photoCredit": null,
+      "photoRecherche": false
     },
     {
       "id": "mikolajczak",
@@ -2497,12 +2499,12 @@
       "declaration": "2026-03-30",
       "programme": "non publié",
       "site": null,
-      "bio": "Candidat sans étiquette, en tournée pour réunir les 500 parrainages.",
+      "bio": "Professeur de 27 ans, candidat sans parti. Il parcourt la France à vélo (12 000 km) pour réunir ses 500 parrainages.",
       "phares": [],
       "positions": {},
       "propositions": {},
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages"
       ],
       "photoCredit": null
     },

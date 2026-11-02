@@ -105,7 +105,15 @@ if (!brut) {
   process.exit(0);
 }
 
-const parrainages = brut.txt.trim().startsWith('[') || brut.txt.trim().startsWith('{') ? lireJson(brut.txt) : lireCsv(brut.txt);
+const tous = brut.txt.trim().startsWith('[') || brut.txt.trim().startsWith('{') ? lireJson(brut.txt) : lireCsv(brut.txt);
+// Garde-fou : seules les signatures publiées pour l'élection 2027 sont prises en compte
+// (la collecte s'ouvre au plus tôt fin 2026). Tout fichier d'une élection passée est ignoré.
+const DEBUT_2027 = args.depuis || '2026-12-01';
+const parrainages = tous.filter((p) => p.DatePublication && p.DatePublication >= DEBUT_2027);
+if (tous.length && !parrainages.length) {
+  console.log(`Fichier ignoré : ${tous.length} signatures, toutes antérieures au ${DEBUT_2027} (élection passée).`);
+  process.exit(0);
+}
 
 // ---------- Agrégation ----------
 const index = new Map(data.candidats.map((c) => [norm(`${c.nom} ${c.prenom}`), c.id]));

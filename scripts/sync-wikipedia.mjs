@@ -56,6 +56,35 @@ for (const c of data.candidats) {
   await pause(300);
 }
 
+// 1 bis. Candidats sans article Wikipédia : recherche d'une photo libre sur Wikimedia Commons.
+//    Critère strict : le nom du fichier doit contenir « Prénom Nom ». Mettre "photoRecherche": false
+//    sur un candidat pour l'exclure (homonymes connus).
+for (const c of data.candidats) {
+  if (c.photo && await existe(c.photo)) continue;
+  if (c.wiki || c.photoRecherche === false) continue;
+  try {
+    const nom = `${c.prenom} ${c.nom}`;
+    const q = encodeURIComponent(`intitle:"${nom}"`);
+    const r = await get(`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&gsrsearch=${q}&gsrlimit=10&prop=imageinfo&iiprop=url|mime&iiurlwidth=330&format=json`);
+    const pages = Object.values(r?.query?.pages || {}).sort((a, b) => (a.index || 0) - (b.index || 0));
+    const choix = pages.find((pg) => norm(pg.title).includes(norm(nom)) && /image\/(jpeg|png)/.test(pg.imageinfo?.[0]?.mime || ''));
+    if (!choix) continue;
+    const info = choix.imageinfo[0];
+    const img = await fetch(info.thumburl || info.url, { headers: { 'User-Agent': UA } });
+    if (!img.ok) continue;
+    const ext = info.mime === 'image/png' ? '.png' : '.jpg';
+    const fichier = `img/candidats/${c.id}${ext}`;
+    await writeFile(new URL('../' + fichier, import.meta.url), Buffer.from(await img.arrayBuffer()));
+    c.photo = fichier;
+    c.photoCredit = `https://commons.wikimedia.org/wiki/${encodeURIComponent(choix.title.replace(/ /g, '_'))}`;
+    photosChangees++;
+    console.log(`Photo Commons trouvée pour ${nom} : ${choix.title}`);
+  } catch (e) {
+    console.warn(`Commons ${c.id} : ${e.message}`);
+  }
+  await pause(500);
+}
+
 // 2. Biographies (on ne remplace que si le contenu a réellement changé)
 let biosChangees = 0;
 const sansDate = (b) => JSON.stringify({ ...b, majLe: undefined });

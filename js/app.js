@@ -123,7 +123,9 @@ function hydraterPhotos(root = document) {
 
 function avatar(c, taille = '') {
   const init = (c.prenom[0] + c.nom.replace(/^(Le |La |De )/i, '')[0]).toUpperCase();
-  const img = c.photo ? `<img src="${esc(c.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="avatar__init">${esc(init)}</span>`;
+  const img = c.photo
+    ? `<img src="${esc(c.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+    : `<svg class="avatar__silhouette" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="19"/><path d="M14 100c2-24 17-36 36-36s34 12 36 36z"/></svg><span class="avatar__init avatar__init--petit">${esc(init)}</span>`;
   const wiki = !c.photo && c.wiki ? ` data-wiki="${esc(c.wiki)}"` : '';
   return `<span class="avatar ${taille ? 'avatar--' + taille : ''}" style="${styleCouleur(c)}"${wiki} role="img" aria-label="Photo de ${esc(c.prenom + ' ' + c.nom)}">${img}</span>`;
 }
@@ -284,7 +286,7 @@ function vueCandidat(id) {
           </div>
           ${c.slogan ? `<p class="fiche__slogan">« ${esc(c.slogan)} »</p>` : ''}
           <p class="fiche__bio">${esc(c.bio)}</p>
-          ${c.photoCredit ? `<p class="mono small">Photo : <a href="${esc(c.photoCredit)}" target="_blank" rel="noopener">Wikimedia Commons ↗</a></p>` : ''}
+          ${c.photoCredit ? `<p class="mono small">Photo : <a href="${esc(c.photoCredit)}" target="_blank" rel="noopener">Wikimedia Commons ↗</a></p>` : '<p class="mono small">Pas encore de photo libre de droits : elle sera ajoutée automatiquement dès qu\'elle existera.</p>'}
           <p class="mono small">${esc(c.statut[0].toUpperCase() + c.statut.slice(1))}${c.declaration ? ` le ${esc(dateFr(c.declaration))}` : ''}${c.site ? ` · <a href="${esc(c.site)}" target="_blank" rel="noopener">site officiel ↗</a>` : ''}</p>
           <div class="actions">
             <button type="button" class="btn btn--rouge" data-compare="${c.id}" data-libelle="grand" aria-pressed="${on}">${libelleCompare(on, true)}</button>
@@ -294,8 +296,6 @@ function vueCandidat(id) {
       </section>
 
       ${blocParrainagesFiche(c)}
-
-      ${blocBio(c)}
 
       ${c.phares?.length ? `
       <section class="section carte">
@@ -324,6 +324,8 @@ function vueCandidat(id) {
           <div class="alerte">Ce candidat n'a pas encore publié de programme détaillé. La fiche sera complétée automatiquement dès que des propositions seront annoncées.</div>`}
       </section>
 
+      ${blocBio(c)}
+
       <section class="section alerte small">
         <b>SOURCES</b> — ${(c.sources || []).map((s) => `<a class="source" href="${esc(s)}" target="_blank" rel="noopener">${esc(new URL(s).hostname)}</a>`).join(' · ')}
         <br>${esc(d.meta.avertissement)}
@@ -346,7 +348,7 @@ function blocBio(c) {
   const [premier, ...suite] = b.paragraphes || [];
   return `
       <section class="section carte" style="${styleCouleur(c)}">
-        <h2 class="section-titre">Qui est-ce ?</h2>
+        <h2 class="section-titre">Qui est-ce ? · Le parcours avant 2027</h2>
         ${faits.length ? `<dl class="faits">${faits.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>` : ''}
         ${b.fonctions?.length ? `
         <h3 class="sous-titre">Parcours</h3>

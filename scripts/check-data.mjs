@@ -9,7 +9,14 @@ const themes = new Set(d.themes.map((t) => t.id));
 const enjeux = new Set(d.enjeux.map((e) => e.id));
 const ids = new Set();
 // Une source doit pointer vers une page précise (article, fiche), pas vers la page d'accueil d'un site.
-const sourceValide = (u) => { try { const x = new URL(u); return x.pathname.length > 1; } catch { return false; } };
+const sourceValide = (u) => {
+  try {
+    const x = new URL(u);
+    if (x.pathname.length <= 1) return false;                       // page d'accueil
+    if (/20(12|17|22)/.test(x.href) && !/2027/.test(x.href)) return false; // élection passée
+    return true;
+  } catch { return false; }
+};
 
 for (const c of d.candidats) {
   const qui = c.id || '(sans id)';
