@@ -1,5 +1,7 @@
 # Programmes 2027 — le comparateur
 
+**Site : https://lingelo.github.io/programmes-2027/**
+
 Site non partisan pour comparer les programmes des candidats à l'élection présidentielle 2027
 (1er tour le 18 avril, 2nd tour le 2 mai 2027).
 
@@ -22,7 +24,8 @@ python3 -m http.server 8080   # ou : npm run dev
 | Robot | Fréquence | Ce qu'il fait |
 |---|---|---|
 | `sync.yml` | 2 fois par jour | Lit Wikipédia et Wikidata : photos des nouveaux candidats, biographies, **parrainages** (Conseil constitutionnel, dès l'ouverture de la collecte début 2027), signale les nouveaux candidats déclarés (`data/veille.json`, affiché sur le site), redéploie |
-| `refresh-programmes.yml` | chaque lundi | Claude + recherche web cherche les nouvelles annonces de chaque candidat et **ouvre une Pull Request à relire** (rien n'est publié sans validation humaine) |
+| Tâche programmée claude.ai | chaque lundi, 11 h 23 | Une session Claude cherche les nouvelles annonces de programme (sources 2027 uniquement) et **ouvre une Pull Request à relire** (rien n'est publié sans validation humaine) |
+| `refresh-programmes.yml` | chaque lundi (optionnel) | Même travail via l'API Anthropic, seulement si le secret `ANTHROPIC_API_KEY` est configuré ; sinon il s'arrête sans rien faire |
 | `deploy.yml` | à chaque push sur `main` | Vérifie les données (`scripts/check-data.mjs`) et publie sur GitHub Pages |
 
 ### Mise en route (une seule fois)
