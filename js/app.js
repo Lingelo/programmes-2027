@@ -32,6 +32,18 @@ function dateFr(iso, opts = { day: 'numeric', month: 'long', year: 'numeric' }) 
   const d = new Date(iso.length === 10 ? iso + 'T12:00:00' : iso);
   return isNaN(d) ? '' : d.toLocaleDateString('fr-FR', opts);
 }
+function age(iso) {
+  if (!iso || iso.length < 10) return null;
+  const n = new Date(iso + 'T12:00:00'), a = new Date();
+  return a.getFullYear() - n.getFullYear() - (a < new Date(a.getFullYear(), n.getMonth(), n.getDate()) ? 1 : 0);
+}
+const annee = (iso) => (iso ? iso.slice(0, 4) : '');
+function periode(f) {
+  if (f.debut && !f.fin) return `${annee(f.debut)} –`; // date de fin parfois absente de Wikidata : on ne présume pas « en cours »
+  if (f.debut && f.fin) return annee(f.debut) === annee(f.fin) ? annee(f.debut) : `${annee(f.debut)} – ${annee(f.fin)}`;
+  if (f.fin) return `jusqu'en ${annee(f.fin)}`;
+  return '';
+}
 function joursAvant(iso) {
   const d = new Date(iso + 'T08:00:00+02:00');
   return Math.max(0, Math.ceil((d - Date.now()) / 86400000));
@@ -176,7 +188,8 @@ function vueAccueil() {
         </div>
       </div>
       <div class="grille" id="grille"></div>
-    </section>`;
+    </section>
+    ${blocRetires()}`;
 
   renderFiltres();
   renderGrille();
@@ -233,7 +246,7 @@ function carteCandidat(c) {
       ${avatar(c)}
       <div class="cand__infos">
         <a class="cand__nom" href="#/candidat/${c.id}"><span class="cand__prenom">${esc(c.prenom)}</span>${esc(c.nom)}</a>
-        <div class="meta-ligne">${pastilleParti(c)}<span class="tag">${esc(bordDe(c)?.label)}</span></div>
+        <div class="meta-ligne">${pastilleParti(c)}<span class="tag">${esc(bordDe(c)?.label)}</span>${age(c.biographie?.naissance) ? `<span class="tag">${age(c.biographie.naissance)} ans</span>` : ''}</div>
       </div>
     </div>
     ${c.slogan ? `<p class="cand__slogan">« ${esc(c.slogan)} »</p>` : ''}
@@ -278,6 +291,8 @@ function vueCandidat(id) {
         </div>
       </section>
 
+      ${blocBio(c)}
+
       ${c.phares?.length ? `
       <section class="section carte">
         <h2 class="section-titre">Les mesures phares</h2>
@@ -313,6 +328,47 @@ function vueCandidat(id) {
 
   app.querySelectorAll('[data-compare]').forEach((b) => b.addEventListener('click', () => basculerCompare(b.dataset.compare)));
   hydraterPhotos(app);
+}
+
+function blocBio(c) {
+  const b = c.biographie;
+  if (!b) return '';
+  const a = age(b.naissance);
+  const faits = [
+    b.naissance && ['Naissance', `${b.naissance.length === 10 ? dateFr(b.naissance) : annee(b.naissance)}${b.lieuNaissance ? ` à ${b.lieuNaissance}` : ''}${a ? ` (${a} ans)` : ''}`],
+    b.formation?.length && ['Formation', b.formation.join(' · ')],
+    b.professions?.length && ['Métiers', b.professions.join(' · ')],
+  ].filter(Boolean);
+  const [premier, ...suite] = b.paragraphes || [];
+  return `
+      <section class="section carte" style="${styleCouleur(c)}">
+        <h2 class="section-titre">Qui est-ce ?</h2>
+        ${faits.length ? `<dl class="faits">${faits.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>` : ''}
+        ${b.fonctions?.length ? `
+        <h3 class="sous-titre">Parcours</h3>
+        <ol class="parcours">${b.fonctions.map((f) => `<li><span class="parcours__date">${esc(periode(f))}</span><span>${esc(f.label[0].toUpperCase() + f.label.slice(1))}</span></li>`).join('')}</ol>` : ''}
+        ${premier ? `
+        <h3 class="sous-titre">Biographie</h3>
+        <div class="bio-texte">
+          <p>${esc(premier)}</p>
+          ${suite.length ? `<details class="suite"><summary>Lire la suite</summary>${suite.map((p) => `<p>${esc(p)}</p>`).join('')}</details>` : ''}
+        </div>` : ''}
+        <p class="mono small credit">Source : <a href="${esc(b.wikipedia)}" target="_blank" rel="noopener">Wikipédia</a> (texte sous licence CC BY-SA 4.0)${b.wikidata ? ` et <a href="https://www.wikidata.org/wiki/${esc(b.wikidata)}" target="_blank" rel="noopener">Wikidata</a>` : ''}${b.majLe ? `, mis à jour le ${esc(dateFr(b.majLe))}` : ''}.</p>
+      </section>`;
+}
+
+function blocRetires() {
+  const d = state.data;
+  if (!d.retires?.length && !d.pressentis?.length) return '';
+  return `
+    <section class="section carte carte--creme">
+      ${d.retires?.length ? `
+      <h2 class="section-titre">Ils se sont retirés</h2>
+      <ul class="liste-simple">${d.retires.map((r) => `<li><strong>${esc(r.nom)}</strong> <span class="small">(${esc(r.parti)})</span> — <span class="small">${r.retrait ? `retrait le ${esc(dateFr(r.retrait))}` : esc(r.note || '')}</span></li>`).join('')}</ul>` : ''}
+      ${d.pressentis?.length ? `
+      <h2 class="section-titre" style="margin-top:18px">Pourraient se déclarer</h2>
+      <p class="small" style="margin:0">${d.pressentis.map(esc).join(' · ')}</p>` : ''}
+    </section>`;
 }
 
 function prop(p) {

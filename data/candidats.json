@@ -202,7 +202,34 @@
         "https://www.lutte-ouvriere.org",
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Nathalie Arthaud, née le 23 février 1970 à Peyrins (Drôme), est une femme politique française, membre de l'organisation trotskiste Lutte ouvrière (LO).",
+          "Enseignante, elle est élue conseillère municipale de Vaulx-en-Velin, dans le Rhône, en 2008. Elle s'implante ensuite en Seine-Saint-Denis.",
+          "Porte-parole de LO depuis 2008, elle est trois fois candidate à l'élection présidentielle française pour ce parti : en 2012 (0,56 % des suffrages exprimés), en 2017 (0,64 %) et en 2022 (0,56 %). Elle est candidate déclarée pour l'élection présidentielle de 2027."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud",
+        "wikidata": "Q439490",
+        "naissance": "1970-02-23",
+        "lieuNaissance": "Peyrins",
+        "professions": [
+          "instituteur",
+          "enseignante"
+        ],
+        "formation": [
+          "lycée du Parc"
+        ],
+        "fonctions": [
+          {
+            "label": "conseiller municipal de Vaulx-en-Velin",
+            "debut": "2008-03-21",
+            "fin": "2014-04-04"
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "f"
+      }
     },
     {
       "id": "kazib",
@@ -226,7 +253,25 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_décembre_2021.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_décembre_2021.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Anasse Kazib, né le 2 janvier 1987 à Sarcelles, est un syndicaliste cheminot et militant trotskiste d'extrême gauche français.",
+          "Délégué syndical de SUD Rail à la gare du Bourget, il devient une figure du mouvement cheminot en 2018, année où il intègre Les Grandes Gueules de RMC. Depuis 2017, il est membre de Révolution permanente, courant du Nouveau Parti anticapitaliste qui prend son indépendance en 2021. Il tente de se présenter à l'élection présidentielle de 2022, mais échoue à recueillir les parrainages nécessaires."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Anasse_Kazib",
+        "wikidata": "Q106405647",
+        "naissance": "1986",
+        "lieuNaissance": "Sarcelles",
+        "professions": [
+          "cheminot",
+          "syndicaliste"
+        ],
+        "formation": [],
+        "fonctions": [],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "labib",
@@ -334,7 +379,60 @@
         "https://melenchon2027.fr/construction-programme/",
         "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "« Mélenchon » redirige ici. Pour les autres significations, voir Mélenchon (homonymie) et JLM.",
+          "Jean-Luc Mélenchon ([ ʒɑ̃ lyk melɑ̃ʃɔ̃]), né le 19 août 1951 à Tanger (alors zone internationale de Tanger) au Maroc, est un homme politique français. Il est le fondateur et la figure principale du parti La France insoumise (LFI), souvent considéré comme relevant de la gauche radicale et classé à gauche, voire à l'extrême gauche.",
+          "Membre de l'Organisation communiste internationaliste (OCI) de 1972 à 1976, il entre ensuite au Parti socialiste (PS) et devient successivement conseiller municipal de Massy en 1983, conseiller général de l'Essonne en 1985 et sénateur en 1986. Il est également ministre délégué à l'Enseignement professionnel de 2000 à 2002, dans le gouvernement Jospin. Il fait partie de l'aile gauche du PS jusqu'au congrès de Reims en 2008, à l'issue duquel il part fonder le Parti de gauche (PG).",
+          "Sous les couleurs du Front de gauche, coalition qui réunit notamment le PG et le Parti communiste français (PCF), il est élu député européen en 2009 et réélu en 2014. Il est le candidat de cette coalition à l'élection présidentielle de 2012, à l'issue de laquelle il arrive en quatrième position, avec 11,1 % des voix."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+        "wikidata": "Q5829",
+        "naissance": "1951-08-19",
+        "lieuNaissance": "Tanger",
+        "professions": [
+          "journaliste",
+          "correcteur",
+          "enseignant du secondaire",
+          "dessinateur de presse"
+        ],
+        "formation": [
+          "université Marie-et-Louis-Pasteur",
+          "lycée Regnault",
+          "lycée Pierre-Corneille de Rouen",
+          "lycée Rouget-de-Lisle de Lons-le-Saunier"
+        ],
+        "fonctions": [
+          {
+            "label": "député des Bouches-du-Rhône",
+            "debut": "2017-06-21",
+            "fin": "2022-06-21"
+          },
+          {
+            "label": "député européen",
+            "debut": "2009-07-14",
+            "fin": "2017-06-18"
+          },
+          {
+            "label": "ministre délégué",
+            "debut": "2000-03-27",
+            "fin": "2002-05-06"
+          },
+          {
+            "label": "sénateur de la Cinquième République",
+            "debut": "1986-09-28",
+            "fin": "2010-01-07"
+          },
+          {
+            "label": "conseiller général",
+            "debut": "1985-03-23",
+            "fin": "2004-04-02"
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "roussel",
@@ -398,7 +496,47 @@
       "sources": [
         "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Fabien Roussel, né le 16 avril 1969 à Béthune (Pas-de-Calais), est un homme politique français.",
+          "Membre du Parti communiste français (PCF), il est député de la vingtième circonscription du Nord de 2017 à 2024 et secrétaire national du PCF depuis 2018. Il est désigné candidat par son parti pour l’élection présidentielle de 2022. Il arrive en huitième position avec 2,28 % des suffrages exprimés. Élu au conseil municipal de Saint-Amand-les-Eaux, il est maire de cette commune depuis 2025. En 2026, il est à nouveau désigné par son Parti pour être candidat à l'élection présidentielle de 2027."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
+        "wikidata": "Q30388733",
+        "naissance": "1969-04-16",
+        "lieuNaissance": "Béthune",
+        "professions": [
+          "journaliste"
+        ],
+        "formation": [
+          "Centre de formation et de perfectionnement des journalistes"
+        ],
+        "fonctions": [
+          {
+            "label": "maire de Saint-Amand-les-Eaux",
+            "debut": "2025-01-30",
+            "fin": null
+          },
+          {
+            "label": "député du Nord",
+            "debut": "2017-06-21",
+            "fin": "2024-06-09"
+          },
+          {
+            "label": "conseiller municipal de Saint-Amand-les-Eaux",
+            "debut": "2014-03-24",
+            "fin": null
+          },
+          {
+            "label": "conseiller communautaire de la Porte du Hainaut",
+            "debut": "2014-03-23",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "ruffin",
@@ -455,7 +593,37 @@
       "sources": [
         "https://www.lyoncapitale.fr/?p=495954"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:François_Ruffin_(cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:François_Ruffin_(cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "François Ruffin, né le 18 octobre 1975 à Calais (Pas-de-Calais), est un journaliste, essayiste, documentariste et homme politique français.",
+          "Fondateur et rédacteur en chef du journal Fakir, il écrit aussi dans Le Monde diplomatique et pour l'association de critique des médias Acrimed. En tant que reporter, il participe pendant sept ans à l'émission Là-bas si j'y suis diffusée sur France Inter.",
+          "Également réalisateur, il tourne plusieurs films documentaires centrés sur les salariés réalisant des emplois pénibles, qu'il réalise pour certains en collaboration avec Gilles Perret. Il reçoit à ce titre le César du meilleur film documentaire en 2017 pour son premier film, Merci Patron !",
+          "C'est en étant l'une des figures de proue du mouvement Nuit debout en 2016, qu'il fait ses débuts sur la scène politique. En 2017, il fonde le parti Picardie debout ! et devient député de la Somme. Proche mais jamais membre de La France insoumise (LFI) au cours de ses premières années de mandat, il s'en écarte en 2024 à la suite de désaccords stratégiques. Il est l'un des principaux initiateurs de la coalition Nouveau Front populaire (NFP). Il appelle par la suite à une primaire de la gauche destinée à désigner un candidat commun pour l'élection présidentielle de 2027. Il se porte lui-même candidat à cette primaire."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Ruffin",
+        "wikidata": "Q3085763",
+        "naissance": "1975-10-18",
+        "lieuNaissance": "Calais",
+        "professions": [
+          "journaliste",
+          "réalisateur de cinéma"
+        ],
+        "formation": [
+          "Centre de formation des journalistes",
+          "Université de Picardie Jules-Verne",
+          "lycée La Providence d'Amiens"
+        ],
+        "fonctions": [
+          {
+            "label": "député de la Somme",
+            "debut": "2017-06-21",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "tondelier",
@@ -513,7 +681,37 @@
         "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027",
         "https://votons-2027.fr/candidats/tondelier/programme"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Marine Tondelier, née le 23 août 1986 à Bois-Bernard (Pas-de-Calais), est une femme politique française.",
+          "Après avoir grandi à Hénin-Beaumont, elle se présente trois fois contre Marine Le Pen aux élections législatives dans la onzième circonscription du Pas-de-Calais et siège depuis 2014 dans l'opposition au conseil municipal de la ville, où elle conduit une liste aux élections de 2020 face au maire sortant Steeve Briois (Rassemblement national), dont elle dénonce la gestion dans le livre Nouvelles du Front. Elle est conseillère régionale des Hauts-de-France depuis 2021.",
+          "Engagée chez Europe Écologie Les Verts (EELV), proche de Cécile Duflot, elle devient la secrétaire nationale du parti en 2022. Sur sa proposition, le mouvement est renommé « Les Écologistes » l'année suivante. Elle gagne une forte exposition médiatique lors de la campagne des élections législatives de 2024 en participant à une union de la gauche au sein du Nouveau Front populaire (NFP), qui arrive en tête du second tour.",
+          "Largement réélue à la tête du parti en 2025, elle est désignée candidate des Écologistes à une éventuelle primaire de la gauche en vue de l'élection présidentielle de 2027; après l'échec du projet de primaire acté en juillet 2026, il se peut que Marine Tondelier se présente tout de même au scrutin national."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
+        "wikidata": "Q29917987",
+        "naissance": "1986-08-23",
+        "lieuNaissance": "Bois-Bernard",
+        "professions": [],
+        "formation": [
+          "Institut d’études politiques de Lille"
+        ],
+        "fonctions": [
+          {
+            "label": "secrétaire national des Écologistes",
+            "debut": "2022-12-10",
+            "fin": null
+          },
+          {
+            "label": "conseiller régional des Hauts-de-France",
+            "debut": "2021-07-02",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "f"
+      }
     },
     {
       "id": "glucksmann",
@@ -592,7 +790,40 @@
         "https://en.wikipedia.org/wiki/2026_United_Left_primary",
         "https://www.elyseescope.com/le-radar/raphael-glucksmann-positions-programme-20261005"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Raphaël Glucksmann, né le 15 octobre 1979 à Boulogne-Billancourt (Hauts-de-Seine), est un homme politique français, anciennement réalisateur de documentaire et journaliste.",
+          "Après un passage du côté de la droite, à Alternative libérale en 2007, il s'oriente vers le centre gauche de tendance libérale et la social-démocratie europhile, puis lance en 2018 le mouvement politique Place publique, destiné à rassembler la gauche proeuropéenne.",
+          "Fils du philosophe et essayiste André Glucksmann, il est documentariste dans les années 2000 puis obtient une première expérience politique en devenant conseiller spécial de 2009 à 2012 de Mikheil Saakachvili, président de la Géorgie. Il est ensuite essayiste, chroniqueur à France Inter et directeur du Nouveau Magazine littéraire en 2018.",
+          "À la tête d'une liste réunissant Place publique, le Parti socialiste et Nouvelle Donne, il est élu député européen à partir de 2019. Siégeant au sein de la commission des affaires étrangères et de la commission du commerce international et occupant la vice-présidence de la sous-commission des droits de l'homme, il s'affiche en faveur du fédéralisme européen, s'engage contre le génocide culturel des Ouïghours, défend le Pacte vert pour l'Europe et soutient l'intégration de l'Ukraine à l'Union européenne ou encore une réforme du règlement Dublin III."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
+        "wikidata": "Q556149",
+        "naissance": "1979-10-15",
+        "lieuNaissance": "Boulogne-Billancourt",
+        "professions": [
+          "journaliste",
+          "auteur de non-fiction",
+          "documentaliste",
+          "politologue",
+          "réalisateur de documentaire"
+        ],
+        "formation": [
+          "Institut d'études politiques de Paris",
+          "lycée Lamartine",
+          "lycée Henri-IV"
+        ],
+        "fonctions": [
+          {
+            "label": "député européen",
+            "debut": "2019-07-02",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "bouamrane",
@@ -616,7 +847,43 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Karim_Bouamrane_en_2026.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Karim_Bouamrane_en_2026.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Karim Bouamrane, né le 21 février 1973 à Clichy, est un chef d'entreprise et homme politique français.",
+          "Membre du Parti communiste français de 1995 à 2014, il est conseiller municipal de Saint-Ouen-sur-Seine au cours de la même période sous les mandats de Paulette Fost puis de Jacqueline Rouillon-Dambreville. Il rejoint le Parti socialiste à partir de 2014 et mène la liste socialiste lors des élections municipales de 2014, sans succès. Il est élu maire de Saint-Ouen-sur-Seine aux élections municipales de 2020 et 2026. Il est en parallèle conseiller départemental de la Seine-Saint-Denis depuis 2021."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
+        "wikidata": "Q98251165",
+        "naissance": "1973-02-21",
+        "lieuNaissance": null,
+        "professions": [],
+        "formation": [],
+        "fonctions": [
+          {
+            "label": "conseiller départemental de la Seine-Saint-Denis",
+            "debut": "2021-07-01",
+            "fin": null
+          },
+          {
+            "label": "vice-président du conseil départemental de la Seine-Saint-Denis",
+            "debut": "2021-07-01",
+            "fin": null
+          },
+          {
+            "label": "conseiller municipal de Saint-Ouen-sur-Seine",
+            "debut": "2020-06-28",
+            "fin": null
+          },
+          {
+            "label": "maire de Saint-Ouen-sur-Seine",
+            "debut": "2020-06-28",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "batho",
@@ -640,7 +907,34 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped).png"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped).png",
+      "biographie": {
+        "paragraphes": [
+          "Delphine Batho, née le 23 mars 1973 dans le 12 arrondissement de Paris, est une femme politique française.",
+          "Militante dès le collège puis leader syndicale lycéenne membre de la FIDL et vice-présidente de SOS Racisme, elle devient ensuite cadre du Parti socialiste (PS), où elle est spécialiste de la sécurité. En 2007, elle succède à Ségolène Royal comme députée de la 2 circonscription des Deux-Sèvres.",
+          "Porte-parole de François Hollande lors de la campagne pour l'élection présidentielle de 2012, elle est tout d'abord nommée ministre déléguée à la Justice dans le premier gouvernement Ayrault, avant de devenir ministre de l'Écologie, du Développement durable et de l'Énergie en juin 2012, dans le deuxième gouvernement Ayrault. Le 2 juillet 2013, à la suite d'un désaccord sur la politique budgétaire du gouvernement, elle est relevée de ses fonctions de ministre par le président de la République sur proposition du Premier ministre.",
+          "À nouveau députée depuis 2013, elle est réélue en 2017 et devient vice-présidente du groupe Nouvelle gauche à l'Assemblée nationale, groupe qu'elle quitte en 2018, en même temps que le PS. Elle prend alors la présidence de Génération écologie. En mai 2020, elle rejoint le groupe Écologie démocratie solidarité, dont elle est vice-présidente. Celui-ci étant dissous en octobre 2020, elle rejoint les non-inscrits."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Delphine_Batho",
+        "wikidata": "Q291385",
+        "naissance": "1973-03-23",
+        "lieuNaissance": "12e arrondissement de Paris",
+        "professions": [],
+        "formation": [
+          "lycée Henri-IV",
+          "université Paris-Diderot",
+          "université Paris-Cité"
+        ],
+        "fonctions": [
+          {
+            "label": "député des Deux-Sèvres",
+            "debut": "2007-06-20",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "f"
+      }
     },
     {
       "id": "cazeneuve",
@@ -664,7 +958,54 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Bernard_Cazeneuve,_(42399145362)_(cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Bernard_Cazeneuve,_(42399145362)_(cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "Bernard Cazeneuve, né le 2 juin 1963 à Senlis (Oise), est un homme d’État français. Longtemps membre du Parti socialiste (PS), il est Premier ministre du 6 décembre 2016 au 15 mai 2017, sous la présidence de François Hollande.",
+          "Il est député de la Manche entre 1997 et 2017, maire d'Octeville de 1995 à 2000 puis de Cherbourg-Octeville de 2001 à 2012, et président de la communauté urbaine de Cherbourg de 2008 à 2012.",
+          "En 2012, il est nommé ministre délégué aux Affaires européennes dans le gouvernement Ayrault. L'année suivante, il devient ministre délégué au Budget, à la suite de la démission de Jérôme Cahuzac. Ministre de l'Intérieur dans les gouvernements Valls I et II (2014-2016), il est confronté à une vague inédite de terrorisme islamiste, avec notamment les attentats de janvier 2015 en France, dont celui contre Charlie Hebdo, et les attentats du 13 novembre 2015 en France, la pire attaque terroriste sous la V République.",
+          "À la fin de l'année 2016, Manuel Valls ayant démissionné pour se présenter à la primaire socialiste de 2017, Bernard Cazeneuve lui succède comme Premier ministre. Il gouverne en pleine campagne présidentielle et doit notamment faire face à un mouvement social en Guyane. Il démissionne après la victoire d'Emmanuel Macron, puis rejoint comme associé le cabinet d'avocat August Debouzy."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Bernard_Cazeneuve",
+        "wikidata": "Q560890",
+        "naissance": "1963-06-02",
+        "lieuNaissance": "Senlis",
+        "professions": [
+          "avocat"
+        ],
+        "formation": [
+          "Institut d'études politiques de Bordeaux"
+        ],
+        "fonctions": [
+          {
+            "label": "Premier ministre français",
+            "debut": "2016-12-06",
+            "fin": "2017-05-10"
+          },
+          {
+            "label": "ministre de l'Intérieur",
+            "debut": "2014-04-02",
+            "fin": "2016-12-06"
+          },
+          {
+            "label": "député de la Manche",
+            "debut": "1997-06-12",
+            "fin": "2017-06-20"
+          },
+          {
+            "label": "conseiller régional",
+            "debut": null,
+            "fin": null
+          },
+          {
+            "label": "conseiller général",
+            "debut": null,
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "attal",
@@ -741,7 +1082,49 @@
         "https://monvote2027.fr/candidat/attal",
         "https://www.france-vote.fr/candidats/gabriel-attal"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_in_2026.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_in_2026.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Gabriel Attal, né le 16 mars 1989 à Clamart (Hauts-de-Seine), est un homme d'État français, Premier ministre du 9 janvier au 5 septembre 2024. Redevenu député, il est depuis juillet 2024 président du groupe Ensemble pour la République à l'Assemblée nationale et est élu en décembre 2024 secrétaire général du parti Renaissance.",
+          "Militant au Parti socialiste de 2006 à 2016, il est membre du cabinet de la ministre de la Santé Marisol Touraine de 2012 à 2017, ainsi que conseiller municipal de Vanves, dans les Hauts-de-Seine, depuis 2014.",
+          "En 2016, il rejoint En marche, le parti fondé par Emmanuel Macron, puis en devient le porte-parole en 2018 et un membre du bureau exécutif en 2021. Il est élu député en 2017 dans la dixième circonscription des Hauts-de-Seine et constamment réélu depuis. À l'Assemblée, il est membre de la commission des Affaires culturelles et de l'Éducation et rapporteur du projet de loi relative à l'orientation et à la réussite des étudiants.",
+          "En 2018, à vingt-neuf ans, il est nommé secrétaire d'État auprès du ministre de l'Éducation nationale et de la Jeunesse dans le second gouvernement Philippe, devenant le plus jeune membre d'un gouvernement sous la V République, puis, en 2020, porte-parole du gouvernement Castex."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
+        "wikidata": "Q30339350",
+        "naissance": "1989-03-16",
+        "lieuNaissance": "Clamart",
+        "professions": [],
+        "formation": [
+          "Institut d'études politiques de Paris",
+          "université Paris-Panthéon-Assas",
+          "École alsacienne"
+        ],
+        "fonctions": [
+          {
+            "label": "Premier ministre français",
+            "debut": "2024-01-09",
+            "fin": "2024-09-05"
+          },
+          {
+            "label": "ministre de l'Éducation nationale",
+            "debut": "2023-07-20",
+            "fin": "2024-01-09"
+          },
+          {
+            "label": "ministre délégué chargé des Comptes publics",
+            "debut": "2022-05-20",
+            "fin": "2023-07-20"
+          },
+          {
+            "label": "député des Hauts-de-Seine",
+            "debut": "2017-06-21",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "becht",
@@ -765,7 +1148,55 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Olivier_Becht.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Olivier_Becht.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Olivier Becht, né le 28 avril 1976 à Strasbourg (Bas-Rhin), est un homme politique français.",
+          "Maire de Rixheim, président délégué de Mulhouse Alsace Agglomération et vice-président du conseil départemental du Haut-Rhin, il élu est député de la cinquième circonscription du Haut-Rhin en 2017. Il préside le groupe Agir ensemble à l'Assemblée nationale du 26 mai 2020 au 21 juin 2022",
+          "Il est nommé ministre délégué chargé du Commerce extérieur, de l’Attractivité et des Français de l’étranger dans le gouvernement Borne le 4 juillet 2022. Il n'est pas reconduit dans le gouvernement Attal et retrouve l'Assemblée nationale, où il est réélu le 7 juillet 2024."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Olivier_Becht",
+        "wikidata": "Q30348845",
+        "naissance": "1976-04-28",
+        "lieuNaissance": "Strasbourg",
+        "professions": [],
+        "formation": [
+          "Institut d'études politiques de Strasbourg",
+          "Institut d'études politiques de Paris",
+          "université Paris-Panthéon-Assas",
+          "École nationale d'administration",
+          "lycée Jeanne-d'Arc"
+        ],
+        "fonctions": [
+          {
+            "label": "ministre chargé du Commerce extérieur",
+            "debut": "2022-07-04",
+            "fin": null
+          },
+          {
+            "label": "représentant à l'Assemblée parlementaire du Conseil de l'Europe",
+            "debut": "2017-10-09",
+            "fin": null
+          },
+          {
+            "label": "député du Haut-Rhin",
+            "debut": "2017-06-21",
+            "fin": null
+          },
+          {
+            "label": "conseiller départemental du Haut-Rhin",
+            "debut": "2015-04-02",
+            "fin": "2017-09-11"
+          },
+          {
+            "label": "maire de Rixheim",
+            "debut": "2008-03-15",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "philippe",
@@ -821,7 +1252,72 @@
         "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
         "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Édouard Philippe (/e.dwaʁ fi.lip/), né le 28 novembre 1970 à Rouen (Seine-Maritime), est un homme d'État français. Il est Premier ministre du 15 mai 2017 au 3 juillet 2020.",
+          "Diplômé de Sciences Po et de l’ENA, membre du Conseil d'État, il participe en 2002 à la création de l'UMP aux côtés d’Alain Juppé, dont il est brièvement conseiller ministériel en 2007.",
+          "Il est élu conseiller général de la Seine-Maritime en 2008, maire du Havre et président de la communauté de l'agglomération havraise en 2010, puis député en 2012. Porte-parole d'Alain Juppé lors de la primaire de la droite et du centre de 2016, il soutient ensuite François Fillon, mais se met en retrait de sa campagne présidentielle lorsque celui-ci est accusé d'emplois fictifs.",
+          "En 2017, le président de la République nouvellement élu, Emmanuel Macron, le désigne pour diriger un premier gouvernement, puis un second à la suite des élections législatives. À Matignon, Édouard Philippe est notamment confronté au mouvement des Gilets jaunes, porte un projet contesté et inachevé de réforme des retraites, et gère les débuts de la pandémie de Covid-19."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/%C3%89douard_Philippe",
+        "wikidata": "Q3579995",
+        "naissance": "1970-11-28",
+        "lieuNaissance": "Rouen",
+        "professions": [
+          "avocat"
+        ],
+        "formation": [
+          "Institut d'études politiques de Paris",
+          "École nationale d'administration",
+          "école de Gaulle-Adenauer",
+          "lycée Janson-de-Sailly"
+        ],
+        "fonctions": [
+          {
+            "label": "conseiller municipal du Havre",
+            "debut": "2020-06-28",
+            "fin": null
+          },
+          {
+            "label": "ministre de l'Intérieur",
+            "debut": "2017-10-03",
+            "fin": "2017-10-16"
+          },
+          {
+            "label": "Premier ministre français",
+            "debut": "2017-05-15",
+            "fin": "2020-07-03"
+          },
+          {
+            "label": "conseiller communautaire de l'agglomération havraise",
+            "debut": "2014-03-23",
+            "fin": null
+          },
+          {
+            "label": "député de la Seine-Maritime",
+            "debut": "2012-03-23",
+            "fin": "2017-06-15"
+          },
+          {
+            "label": "maire du Havre",
+            "debut": "2010-10-24",
+            "fin": null
+          },
+          {
+            "label": "conseiller général",
+            "debut": "2008-03-17",
+            "fin": "2012-04-22"
+          },
+          {
+            "label": "conseiller régional",
+            "debut": "2004-03-29",
+            "fin": "2008-03-18"
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "retailleau",
@@ -885,7 +1381,63 @@
       "sources": [
         "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "Bruno Retailleau, né le 20 novembre 1960 à Cholet (Maine-et-Loire), est un homme politique français. Il est ministre de l'Intérieur du 21 septembre 2024 au 12 octobre 2025 dans les gouvernements Barnier, Bayrou et Lecornu I.",
+          "Élu en 1988 au conseil général de la Vendée, qu'il préside de 2010 à 2015, il est député de 1994 à 1997 puis sénateur de la Vendée de 2004 à 2024 et depuis 2025. Il préside également le conseil régional des Pays de la Loire de 2015 à 2017.",
+          "D'abord membre du Mouvement pour la France de Philippe de Villiers, qu'il quitte en 2010, il adhère à l'Union pour un mouvement populaire puis au parti Les Républicains dont il préside le groupe au Sénat de 2014 à 2024 et dont il échoue à devenir président en 2022 face à Éric Ciotti. Il est également président du club de réflexion politique Force républicaine depuis 2017.",
+          "Il devient ministre de l'Intérieur au sein du gouvernement Barnier après les élections législatives de 2024, poste auquel il est reconduit dans le gouvernement Bayrou et le premier gouvernement Lecornu avec le statut de ministre d'État. Durant son année place Beauvau, il se montre ferme sur l'immigration et vis-à-vis de l'Algérie, et se démarque par ses propos sur l'État de droit et la politique d'Emmanuel Macron dont il est pourtant l'un des principaux ministres."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+        "wikidata": "Q2926942",
+        "naissance": "1960-11-20",
+        "lieuNaissance": "Cholet",
+        "professions": [],
+        "formation": [
+          "Institut d'études politiques de Paris",
+          "Ensemble scolaire Saint-Gabriel - Saint-Michel"
+        ],
+        "fonctions": [
+          {
+            "label": "ministre de l'Intérieur",
+            "debut": "2024-09-21",
+            "fin": "2025-10-12"
+          },
+          {
+            "label": "président du conseil régional des Pays de la Loire",
+            "debut": "2015-12-18",
+            "fin": "2017-09-30"
+          },
+          {
+            "label": "président de conseil général",
+            "debut": "2010-11-30",
+            "fin": "2015-04-02"
+          },
+          {
+            "label": "sénateur de la Cinquième République",
+            "debut": "2004-09-26",
+            "fin": null
+          },
+          {
+            "label": "conseiller régional des Pays de la Loire",
+            "debut": "1998",
+            "fin": null
+          },
+          {
+            "label": "député de la Vendée",
+            "debut": "1994-11-27",
+            "fin": "1997-04-21"
+          },
+          {
+            "label": "conseiller général",
+            "debut": "1988",
+            "fin": "2015"
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "lisnard",
@@ -942,7 +1494,56 @@
       "sources": [
         "https://votons-2027.fr/candidats/lisnard/programme"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg",
+      "biographie": {
+        "paragraphes": [
+          "David Lisnard (/da.vid lis.naʁ/), né le 2 février 1969 à Limoges (Haute-Vienne), est un homme politique français.",
+          "D'abord membre de LR, il est président-fondateur du parti libéral de droite Nouvelle Énergie (NE).",
+          "Conseiller général puis départemental des Alpes-Maritimes depuis 2008, il est élu maire de Cannes en 2014, vice-président du conseil départemental chargé du tourisme la même année et président de la communauté d'agglomération Cannes Pays de Lérins en 2017. Il préside également l'Association des maires de France.",
+          "En 2026, il quitte LR, dont il était jusqu'alors vice-président, et se déclare candidat à l'élection présidentielle de l'année suivante avec le soutien de Nouvelle Énergie."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/David_Lisnard",
+        "wikidata": "Q3018298",
+        "naissance": "1969-02-02",
+        "lieuNaissance": "Limoges",
+        "professions": [
+          "chef d'entreprise"
+        ],
+        "formation": [
+          "lycée Carnot de Cannes",
+          "lycée Bristol de Cannes",
+          "Institut d'études politiques de Bordeaux"
+        ],
+        "fonctions": [
+          {
+            "label": "conseiller départemental des Alpes-Maritimes",
+            "debut": "2015-04-02",
+            "fin": null
+          },
+          {
+            "label": "maire de Cannes",
+            "debut": "2014-04-05",
+            "fin": null
+          },
+          {
+            "label": "conseiller communautaire de Cannes Pays de Lérins",
+            "debut": "2014-03-30",
+            "fin": null
+          },
+          {
+            "label": "conseiller municipal de Cannes",
+            "debut": "2014-03-30",
+            "fin": null
+          },
+          {
+            "label": "conseiller général des Alpes-Maritimes",
+            "debut": "2008-03-16",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "bertrand",
@@ -966,7 +1567,68 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "L'article doit être relu — et modifié si nécessaire — par des contributeurs indépendants pour apporter un regard critique aux contributions effectuées en violation des conditions d'utilisation de Wikipédia, tant sur la forme (notamment concernant le style encyclopédique, la proportionnalité) que sur le fond (la neutralité de point de vue, la qualité et l'indépendance des sources).",
+          "Xavier Bertrand, né le 21 mars 1965 à Châlons-sur-Marne (aujourd’hui Châlons-en-Champagne), est un homme politique français.",
+          "Entre 2005 et 2012, il est ministre de la Santé du gouvernement Villepin et ministre du Travail dans les trois gouvernements François Fillon. De 2008 à 2010, il est secrétaire général de l'UMP.",
+          "Député entre 2002 et 2016, maire de Saint-Quentin de 2010 à 2016 et président de la communauté d'agglomération du Saint-Quentinois de 2014 à 2020, il est président du conseil régional des Hauts-de-France depuis 2016. Il quitte Les Républicains en 2017, à la suite de l'élection de Laurent Wauquiez à la tête du parti.",
+          "En 2021, il revient sur sa décision de ne se porter candidat à aucun processus de désignation interne pour l'élection présidentielle de 2022 et annonce sa participation au congrès des Républicains. Après avoir repris sa carte à LR, il arrive en quatrième position du congrès avec 22,4 % des suffrages exprimés, et appelle à voter pour Valérie Pécresse au second tour."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Xavier_Bertrand",
+        "wikidata": "Q203793",
+        "naissance": "1965-03-21",
+        "lieuNaissance": "Châlons-en-Champagne",
+        "professions": [],
+        "formation": [
+          "université de Reims-Champagne-Ardenne"
+        ],
+        "fonctions": [
+          {
+            "label": "conseiller communautaire de l'Agglo du Saint-Quentinois",
+            "debut": "2017-01-16",
+            "fin": null
+          },
+          {
+            "label": "président du conseil régional des Hauts-de-France",
+            "debut": "2016-01-04",
+            "fin": null
+          },
+          {
+            "label": "conseiller régional des Hauts-de-France",
+            "debut": "2016-01-01",
+            "fin": null
+          },
+          {
+            "label": "maire de Saint-Quentin",
+            "debut": "2010-10-04",
+            "fin": "2016-01-14"
+          },
+          {
+            "label": "ministre du Travail",
+            "debut": "2007-05-18",
+            "fin": "2012-05-10"
+          },
+          {
+            "label": "ministre de la Santé",
+            "debut": "2005-06-02",
+            "fin": "2007-03-26"
+          },
+          {
+            "label": "député de l'Aisne",
+            "debut": "2002-06-19",
+            "fin": "2016-01-12"
+          },
+          {
+            "label": "conseiller municipal de Saint-Quentin",
+            "debut": null,
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "platret",
@@ -1014,7 +1676,45 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_français_(cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_français_(cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "Nicolas Dupont-Aignan, né le 7 mars 1961 à Paris est un homme politique français.",
+          "Énarque, il est successivement membre du Rassemblement pour la République (RPR), du Rassemblement pour la France (RPF) et de l'Union pour un mouvement populaire (UMP), avant de fonder en parallèle et de prendre la présidence de Debout la France (DLF) — anciennement Debout la République (DLR) —, courant politique qu’il transforme en un parti se réclamant du gaullisme et du souverainisme.",
+          "Il est maire d'Yerres de 1995 à 2017 et à nouveau depuis 2026 et député de l'Essonne de 1997 à 2024.",
+          "Candidat aux élections présidentielles de 2012 et de 2017, il recueille respectivement 1,79 et 4,70 % des suffrages exprimés. Dans l’entre-deux-tours de l'élection de 2017, il conclut une alliance de gouvernement avec Marine Le Pen, qui tombe après l'élection d'Emmanuel Macron. Tête de liste DLF, il se présente sans succès aux élections européennes de 2019. Candidat une troisième fois à l'élection présidentielle en 2022, il reçoit 2,06 % des suffrages exprimés. Il échoue ensuite à se faire réélire aux élections législatives anticipées de 2024."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan",
+        "wikidata": "Q12961",
+        "naissance": "1961-03-07",
+        "lieuNaissance": "15e arrondissement de Paris",
+        "professions": [],
+        "formation": [
+          "Institut d'études politiques de Paris",
+          "université Paris-Dauphine",
+          "École nationale d'administration",
+          "établissement La Rochefoucauld"
+        ],
+        "fonctions": [
+          {
+            "label": "conseiller municipal de Yerres",
+            "debut": "2026-03-15",
+            "fin": null
+          },
+          {
+            "label": "député de l'Essonne",
+            "debut": "1997-06-01",
+            "fin": "2024-06-09"
+          },
+          {
+            "label": "maire de Yerres",
+            "debut": "1995-06-25",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "philippot",
@@ -1050,7 +1750,51 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Florian_Philippot.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Florian_Philippot.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Florian Philippot, né le 24 octobre 1981 à Croix (Nord), est un homme politique français.",
+          "Inspecteur de l'administration, se réclamant du gaullisme et du souverainisme, il soutient Jean-Pierre Chevènement à l'élection présidentielle de 2002.",
+          "En 2011, il adhère au Front national (FN) et devient rapidement un influent conseiller de Marine Le Pen, qui le nomme directeur stratégique de sa campagne présidentielle de 2012. Devenu vice-président du FN, il s’impose comme la personnalité frontiste la plus présente dans les médias et concourt à l’exclusion du fondateur du parti, Jean-Marie Le Pen.",
+          "Après avoir été battu aux élections législatives de 2012 en Moselle et aux élections municipales de 2014 à Forbach, il est élu député européen lors des élections de 2014 dans la circonscription Est, ainsi que conseiller régional aux élections de 2015 en Alsace-Champagne-Ardenne-Lorraine (devenue ensuite région Grand Est).",
+          "Aux élections législatives de 2017, une nouvelle fois, il ne parvient pas à faire son entrée à l'Assemblée nationale, alors que l’extrême droite obtient une dizaine de députés. Dans les mois qui suivent, tandis que sa ligne « sociale-souverainiste » et son influence au sein du FN suscitent une opposition croissante en interne, il quitte la formation et fonde son propre parti politique, Les Patriotes (LP)."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Florian_Philippot",
+        "wikidata": "Q3074223",
+        "naissance": "1981-10-24",
+        "lieuNaissance": "Croix",
+        "professions": [],
+        "formation": [
+          "HEC Paris",
+          "lycée Louis-le-Grand",
+          "École nationale d'administration",
+          "université Paris-Dauphine"
+        ],
+        "fonctions": [
+          {
+            "label": "dirigeant de parti politique",
+            "debut": "2017-09-29",
+            "fin": null
+          },
+          {
+            "label": "conseiller régional du Grand Est",
+            "debut": "2016-01-01",
+            "fin": null
+          },
+          {
+            "label": "député européen",
+            "debut": "2014-07-01",
+            "fin": null
+          },
+          {
+            "label": "inspecteur de l'administration",
+            "debut": "2009",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "asselineau",
@@ -1086,7 +1830,41 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:François_ASSELINEAU.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:François_ASSELINEAU.jpg",
+      "biographie": {
+        "paragraphes": [
+          "François Asselineau ([fʁɑ̃ˈswa asəliˈno]), né le 14 septembre 1957 à Paris, est un haut fonctionnaire et homme politique français.",
+          "Énarque, il entre à l'Inspection des finances en 1985 puis mène une carrière de haut fonctionnaire qui le conduit à exercer dans différents cabinets ministériels sous les gouvernements de droite des années 1990 et, entre 2004 et 2006, le poste de délégué général à l'intelligence économique au ministère de l'Économie et des Finances. En parallèle, il est cadre du Rassemblement pour la France et l'indépendance de l'Europe (RPF) puis du Rassemblement pour l'indépendance et la souveraineté de la France (RIF) et siège au Conseil de Paris de 2001 à 2008, élu sur la liste de Jean Tiberi."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Asselineau",
+        "wikidata": "Q12972",
+        "naissance": "1957-09-14",
+        "lieuNaissance": "Paris",
+        "professions": [],
+        "formation": [
+          "HEC Paris",
+          "École nationale d'administration"
+        ],
+        "fonctions": [
+          {
+            "label": "dirigeant de parti politique",
+            "debut": "2007-03-25",
+            "fin": null
+          },
+          {
+            "label": "conseiller de Paris",
+            "debut": "2001-03-25",
+            "fin": "2008-03-24"
+          },
+          {
+            "label": "inspecteur général des finances",
+            "debut": "2001",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "le-pen",
@@ -1151,7 +1929,59 @@
         "https://monvote2027.fr/candidat/le-pen",
         "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "Marine Le Pen ([ma.ʁin lə pɛn]), née le 5 août 1968 à Neuilly-sur-Seine (Hauts-de-Seine), est une femme politique française. Elle est la figure principale du Front national (FN) renommé Rassemblement national (RN), le principal parti d'extrême droite en France, qu'elle dirige de 2011 à 2021.",
+          "En 1986, elle s'engage au sein du FN, dirigé par son père Jean-Marie Le Pen. Elle occupe plusieurs mandats locaux à partir de 1998 en Île-de-France, dans le Nord-Pas-de-Calais puis les Hauts-de-France et siège de 2004 à 2017 au Parlement européen, où elle co-préside le groupe Europe des nations et des libertés (ENL) à partir de 2015.",
+          "Elle est élue présidente du FN lors de son congrès de 2011. Elle arrive en troisième position au premier tour à l'élection présidentielle de 2012 et elle perd au second tour à l'élection présidentielle de 2017 face à Emmanuel Macron. Lors des élections législatives qui suivent, elle est élue députée dans le Pas-de-Calais."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Marine_Le_Pen",
+        "wikidata": "Q12927",
+        "naissance": "1968-08-05",
+        "lieuNaissance": "Neuilly-sur-Seine",
+        "professions": [
+          "avocate",
+          "juriste"
+        ],
+        "formation": [
+          "université Paris-Panthéon-Assas"
+        ],
+        "fonctions": [
+          {
+            "label": "conseiller départemental du Pas-de-Calais",
+            "debut": "2021-07-01",
+            "fin": "2025-04"
+          },
+          {
+            "label": "député du Pas-de-Calais",
+            "debut": "2017-06-21",
+            "fin": null
+          },
+          {
+            "label": "conseiller régional des Hauts-de-France",
+            "debut": "2016-01-01",
+            "fin": "2021-07-02"
+          },
+          {
+            "label": "dirigeant de parti politique",
+            "debut": "2011-01-16",
+            "fin": "2021-12-13"
+          },
+          {
+            "label": "député européen",
+            "debut": "2004-07-20",
+            "fin": "2017-06-18"
+          },
+          {
+            "label": "conseiller régional d'Île-de-France",
+            "debut": "2004-03-28",
+            "fin": "2010-03-21"
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "f"
+      }
     },
     {
       "id": "zemmour",
@@ -1206,7 +2036,33 @@
       "sources": [
         "https://monvote2027.fr/candidat/zemmour"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Portrait_d'Éric_Zemmour,_avril_2022.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Portrait_d'Éric_Zemmour,_avril_2022.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Éric Zemmour, né le 31 août 1958 à Montreuil (Seine), est un journaliste, écrivain, essayiste, éditorialiste, chroniqueur, polémiste et homme politique français d'extrême droite.",
+          "Diplômé de l'Institut d'études politiques de Paris, il commence une carrière dans la presse écrite en travaillant au Quotidien de Paris de 1986 à 1994. Il rejoint en 1996 le service politique du Figaro, où il reste jusqu'en 2009 et revient en 2013, tout en écrivant des chroniques au Figaro Magazine jusqu'en 2021.",
+          "Sa notoriété s'accroît grâce à la radio et la télévision : il intervient dans Ça se dispute sur I-Télé de 2003 à 2014, dans On n'est pas couché sur France 2 de 2006 à 2011, sur RTL de 2010 à 2016, Zemmour et Naulleau sur Paris Première de 2011 à 2022 et sur CNews dans Face à l'info de 2019 à 2021. En outre, ses essais rencontrent d'importants succès de librairie et suscitent des polémiques.",
+          "Fréquemment poursuivi en justice pour ses déclarations controversées, il est régulièrement condamné notamment pour des provocations au racisme, à la haine envers les musulmans, incitation à la haine, injure raciste et diffamation."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour",
+        "wikidata": "Q288477",
+        "naissance": "1958-08-31",
+        "lieuNaissance": "Montreuil",
+        "professions": [
+          "écrivain",
+          "éditorialiste",
+          "journaliste",
+          "chroniqueur de presse",
+          "polémiste"
+        ],
+        "formation": [
+          "Institut d'études politiques de Paris",
+          "lycée de l'École Yabné"
+        ],
+        "fonctions": [],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "polony",
@@ -1230,7 +2086,35 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Natacha_Polony_Cannes_2015.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Natacha_Polony_Cannes_2015.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Natacha Polony, née le 15 avril 1975 à Paris, est une journaliste, essayiste, éditorialiste, présentatrice audiovisuelle, chroniqueuse et directrice de la rédaction française.",
+          "Agrégée de lettres modernes et pendant un temps enseignante, elle fait une courte incursion en politique pour le Mouvement des citoyens de Jean-Pierre Chevènement et est candidate aux élections législatives de 2002 à Paris sous les couleurs du Pôle républicain.La même année, elle entre au magazine Marianne et se spécialise dans les questions éducatives et sociétales. En 2009, elle passe au Figaro, où elle reste pendant deux ans."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Natacha_Polony",
+        "wikidata": "Q941949",
+        "naissance": "1975-04-15",
+        "lieuNaissance": "14e arrondissement de Paris",
+        "professions": [
+          "journaliste",
+          "essayiste"
+        ],
+        "formation": [
+          "lycée Jules-Ferry de Paris",
+          "lycée Louis-le-Grand",
+          "Institut d'études politiques de Paris"
+        ],
+        "fonctions": [
+          {
+            "label": "directrice de la rédaction",
+            "debut": "2018",
+            "fin": "2024-12"
+          }
+        ],
+        "majLe": "2026-11-02",
+        "genre": "f"
+      }
     },
     {
       "id": "egger",
@@ -1264,7 +2148,28 @@
       "sources": [
         "https://solutiondemocratique.fr"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Clara_Egger.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Clara_Egger.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Clara Egger, née le 2 janvier 1988 à Tournon-sur-Rhône, est une politologue française. Elle est professeure assistante en gouvernance mondiale à l'université Érasme de Rotterdam.",
+          "Engagée en faveur du référendum d'initiative citoyenne, elle cherche à se présenter à l'élection présidentielle française de 2022 avec le collectif Espoir RIC, sans réunir les parrainages nécessaires. En 2026, elle annonce sa candidature à l'élection présidentielle française de 2027 avec le soutien du parti Solution démocratique."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Clara_Egger",
+        "wikidata": "Q108584624",
+        "naissance": "1988-01-02",
+        "lieuNaissance": null,
+        "professions": [
+          "politologue",
+          "professeur d'université"
+        ],
+        "formation": [
+          "Institut d'études politiques de Grenoble",
+          "université Grenoble-II"
+        ],
+        "fonctions": [],
+        "majLe": "2026-11-02",
+        "genre": "f"
+      }
     },
     {
       "id": "markovic",
@@ -1336,7 +2241,32 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Lalanne_2021_(cropped).jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Lalanne_2021_(cropped).jpg",
+      "biographie": {
+        "paragraphes": [
+          "Francis Lalanne, né le 8 août 1958 à Bayonne, est un auteur-compositeur-interprète français, également acteur, écrivain et poète.",
+          "Il devient célèbre en 1986 pour son titre On se retrouvera, bande originale du film de son frère René Manzor, Le Passage. Il prête en 1996 sa voix au personnage de Quasimodo dans la version française du Bossu de Notre-Dame des studios Disney.",
+          "Se démarquant des années 1980 à 2010 par un engagement humaniste, écologiste, social et antiraciste, il prend à partir de 2021 de nombreuses positions controversées. À l'occasion de la pandémie de Covid-19, il tient des propos complotistes et appelle ouvertement à la désobéissance civile et à un coup d’État, ce qui lui vaut finalement le bannissement de son compte Twitter. Lors de l'invasion de l'Ukraine par la Russie, il diffuse des informations pro-Kremlin et participe à des clips de campagne pro-russes avec des artistes du pays et opère peu à peu un virage politique vers le micro-parti d'extrême droite Spartacus.",
+          "Il relaye également des infox sur de nombreux autres sujets et rejoint, aux élections européennes de 2024, la liste « France libre » menée par l'humoriste Dieudonné, avant d'être déclaré inéligible pour 18 mois en avril 2025 pour ne pas avoir déposé ses comptes de campagne."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Francis_Lalanne",
+        "wikidata": "Q3081533",
+        "naissance": "1958-08-08",
+        "lieuNaissance": "Bayonne",
+        "professions": [
+          "acteur",
+          "chanteur",
+          "auteur-compositeur",
+          "poète",
+          "auteur-compositeur-interprète"
+        ],
+        "formation": [
+          "conservatoire à rayonnement régional de Marseille"
+        ],
+        "fonctions": [],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "durif",
@@ -1360,7 +2290,27 @@
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:Sylvain_Durif.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Sylvain_Durif.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Sylvain Durif, de son nom complet Sylvain Pierre Durif est un vidéaste web français, connu notamment sous les appellations de « Christ cosmique » et de « Grand Monarque ». Il acquiert une notoriété sur l'Internet francophone en décembre 2012, lors de la médiatisation des prédictions de fin du monde associées au village de Bugarach, dans l'Aude.",
+          "Ses déclarations mêlant croyances ésotériques et théories du complot font l'objet de reprises médiatiques et de détournements humoristiques sur les réseaux sociaux. Après une candidature infructueuse aux élections municipales de 2014, il annonce vouloir participer à l'élection présidentielle de 2017, sans figurer parmi les candidats du scrutin. En août 2026, il déclare à nouveau son intention de se présenter à l'élection présidentielle de 2027."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sylvain_Durif",
+        "wikidata": "Q111050069",
+        "naissance": "1969-08-23",
+        "lieuNaissance": "Nantua",
+        "professions": [
+          "théoricien du complot",
+          "vidéaste",
+          "musicien",
+          "auteur comique"
+        ],
+        "formation": [],
+        "fonctions": [],
+        "majLe": "2026-11-02",
+        "genre": "m"
+      }
     },
     {
       "id": "mathieu",
@@ -1410,5 +2360,60 @@
       ],
       "photoCredit": null
     }
+  ],
+  "retires": [
+    {
+      "nom": "Clémentine Autain",
+      "parti": "L'Après",
+      "retrait": "2026-07-11"
+    },
+    {
+      "nom": "Benjamin Lucas-Lundy",
+      "parti": "Génération.s",
+      "retrait": "2026-07-07"
+    },
+    {
+      "nom": "Lydie Massard",
+      "parti": "Union démocratique bretonne",
+      "retrait": "2026-09-09"
+    },
+    {
+      "nom": "Olivier Faure",
+      "parti": "Parti socialiste",
+      "retrait": null,
+      "note": "retrait après la primaire de la gauche du 11 octobre 2026"
+    },
+    {
+      "nom": "Ségolène Royal",
+      "parti": "Divers gauche",
+      "retrait": null,
+      "note": "retrait après la primaire de la gauche du 11 octobre 2026"
+    },
+    {
+      "nom": "Emmanuel Maurel",
+      "parti": "Gauche républicaine et socialiste",
+      "retrait": null,
+      "note": "retrait après la primaire de la gauche du 11 octobre 2026"
+    },
+    {
+      "nom": "Jérôme Guedj",
+      "parti": "Parti socialiste",
+      "retrait": null,
+      "note": "retrait après la primaire de la gauche du 11 octobre 2026"
+    }
+  ],
+  "pressentis": [
+    "Jean-Noël Barrot",
+    "Aurore Bergé",
+    "Thierry Breton",
+    "François Hollande",
+    "Jean Lassalle",
+    "Bruno Le Maire",
+    "Matthieu Pigasse",
+    "Teddy Riner",
+    "Sandrine Rousseau",
+    "Manuel Valls",
+    "Dominique de Villepin",
+    "Philippe de Villiers"
   ]
 }

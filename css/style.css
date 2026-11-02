@@ -358,3 +358,20 @@ main { display: block; max-width: 1100px; margin: 0 auto; padding: 22px 16px 120
 .prose h2 { margin: 22px 0 8px; font-size: 1.4rem; }
 .prose p, .prose li { max-width: 68ch; }
 .prose code { font-family: var(--mono); background: var(--creme); border: 1.5px solid var(--encre); border-radius: 6px; padding: 0 5px; font-size: .85em; }
+
+/* ---------- Biographie ---------- */
+.sous-titre { font-size: 1.1rem; margin: 20px 0 10px; }
+.faits { margin: 0; display: grid; gap: 10px; }
+.faits > div { background: var(--creme); border: 2.5px solid var(--encre); border-radius: var(--radius-sm); padding: 10px 12px; }
+.faits dt { font-family: var(--mono); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.faits dd { margin: 2px 0 0; font-weight: 500; }
+@media (min-width: 720px) { .faits { grid-template-columns: repeat(3, 1fr); } }
+.parcours { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 3px solid var(--encre); display: grid; gap: 10px; }
+.parcours li { position: relative; display: flex; flex-direction: column; }
+.parcours li::before { content: ""; position: absolute; left: -22px; top: 6px; width: 13px; height: 13px; border-radius: 50%; background: var(--c, var(--jaune)); border: 2.5px solid var(--encre); }
+.parcours__date { font-family: var(--mono); font-size: .78rem; font-weight: 700; color: var(--gris); }
+.bio-texte p { margin: 0 0 10px; }
+.suite summary { cursor: pointer; font-weight: 700; text-decoration: underline; margin-bottom: 10px; }
+.credit { color: var(--gris); margin: 14px 0 0; }
+.liste-simple { margin: 0; padding-left: 18px; }
+.liste-simple li { margin: 4px 0; }

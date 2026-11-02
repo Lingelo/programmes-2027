@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 // Synchronisation quotidienne avec Wikipédia (aucune dépendance, Node 20+).
 //  1. Télécharge la photo des candidats qui n'en ont pas encore (Wikimedia Commons) dans img/candidats/
-//  2. Lit la page « Candidatures à l'élection présidentielle française de 2027 » et repère
+//  2. Met à jour les biographies (intro Wikipédia + faits Wikidata).
+//  3. Lit la page « Candidatures à l'élection présidentielle française de 2027 » et repère
 //     les noms de candidats déclarés absents de data/candidats.json -> data/veille.json.
 // Ce script ne modifie jamais les programmes : il ne fait que signaler.
 
 import { readFile, writeFile, access } from 'node:fs/promises';
+import { construireBio } from './lib-bio.mjs';
 
 const DATA = new URL('../data/candidats.json', import.meta.url);
 const VEILLE = new URL('../data/veille.json', import.meta.url);
@@ -54,7 +56,22 @@ for (const c of data.candidats) {
   await pause(300);
 }
 
-// 2. Veille des candidatures
+// 2. Biographies (on ne remplace que si le contenu a réellement changé)
+let biosChangees = 0;
+const sansDate = (b) => JSON.stringify({ ...b, majLe: undefined });
+for (const c of data.candidats) {
+  if (!c.wiki) continue;
+  try {
+    const b = await construireBio(c.wiki);
+    if (!b || (!b.paragraphes.length && c.biographie)) continue;
+    if (!c.biographie || sansDate(b) !== sansDate(c.biographie)) { c.biographie = b; biosChangees++; }
+  } catch (e) {
+    console.warn(`Bio ${c.wiki} : ${e.message}`);
+  }
+  await pause(1000);
+}
+
+// 3. Veille des candidatures
 const connus = data.candidats.map((c) => norm(`${c.prenom} ${c.nom}`));
 const estConnu = (nom) => { const n = norm(nom); return connus.some((k) => k === n || n.includes(k) || k.includes(n)); };
 
@@ -89,8 +106,9 @@ const veille = {
 };
 
 await writeFile(VEILLE, JSON.stringify(veille, null, 2) + '\n');
-if (photosChangees) await writeFile(DATA, JSON.stringify(data, null, 2) + '\n');
+if (photosChangees || biosChangees) await writeFile(DATA, JSON.stringify(data, null, 2) + '\n');
 
 console.log(`Photos mises à jour : ${photosChangees}`);
+console.log(`Biographies mises à jour : ${biosChangees}`);
 console.log(`Page Wikipédia lue : ${sourceOk ? 'oui' : 'non'}`);
 console.log(`Nouveaux noms : ${veille.nouveaux.join(', ') || 'aucun'}`);
