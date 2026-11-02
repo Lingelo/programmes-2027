@@ -1,0 +1,61 @@
+name: Mise à jour hebdo des programmes (Claude + recherche web)
+
+on:
+  schedule:
+    - cron: "43 4 * * 1"   # chaque lundi
+  workflow_dispatch:
+    inputs:
+      candidats:
+        description: "Ids séparés par des virgules (vide = tous)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Clé API présente ?
+        id: cle
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "Secret ANTHROPIC_API_KEY absent : mise à jour IA ignorée."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.cle.outputs.ok == 'true'
+        with:
+          node-version: 20
+      - name: Installer
+        if: steps.cle.outputs.ok == 'true'
+        run: npm install --no-audit --no-fund
+      - name: Rechercher les nouvelles propositions
+        if: steps.cle.outputs.ok == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/refresh-programmes.mjs ${{ github.event.inputs.candidats }}
+      - name: Vérifier les données
+        if: steps.cle.outputs.ok == 'true'
+        run: node scripts/check-data.mjs
+      - name: Ouvrir une Pull Request à relire
+        if: steps.cle.outputs.ok == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: maj-programmes
+          delete-branch: true
+          add-paths: data/candidats.json
+          commit-message: "Mise à jour des programmes (recherche automatique)"
+          title: "📋 Mise à jour hebdo des programmes"
+          body-path: RESUME_MAJ.md
+          labels: programmes

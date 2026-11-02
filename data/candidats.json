@@ -1,0 +1,994 @@
+{
+  "meta": {
+    "election": {
+      "tour1": "2027-04-18",
+      "tour2": "2027-05-02",
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
+    },
+    "contenuMisAJour": "2026-11-02",
+    "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub."
+  },
+  "bords": [
+    { "id": "extreme-gauche", "label": "Extrême gauche", "court": "Ext. G" },
+    { "id": "gauche-radicale", "label": "Gauche radicale", "court": "G. rad." },
+    { "id": "gauche", "label": "Gauche", "court": "Gauche" },
+    { "id": "centre-gauche", "label": "Centre gauche", "court": "C. G" },
+    { "id": "centre", "label": "Centre", "court": "Centre" },
+    { "id": "centre-droit", "label": "Centre droit", "court": "C. D" },
+    { "id": "droite", "label": "Droite", "court": "Droite" },
+    { "id": "droite-souverainiste", "label": "Droite souverainiste", "court": "D. souv." },
+    { "id": "extreme-droite", "label": "Extrême droite", "court": "Ext. D" },
+    { "id": "autre", "label": "Hors clivage / divers", "court": "Divers" }
+  ],
+  "themes": [
+    { "id": "economie", "label": "Économie & fiscalité", "emoji": "💶" },
+    { "id": "travail", "label": "Travail & retraites", "emoji": "🛠️" },
+    { "id": "pouvoir-achat", "label": "Salaires & pouvoir d'achat", "emoji": "🛒" },
+    { "id": "ecologie", "label": "Écologie & énergie", "emoji": "🌱" },
+    { "id": "immigration", "label": "Immigration", "emoji": "🛂" },
+    { "id": "securite", "label": "Sécurité & justice", "emoji": "🚓" },
+    { "id": "sante", "label": "Santé & social", "emoji": "🩺" },
+    { "id": "education", "label": "Éducation & jeunesse", "emoji": "🎓" },
+    { "id": "europe", "label": "Europe & international", "emoji": "🇪🇺" },
+    { "id": "institutions", "label": "Institutions & démocratie", "emoji": "🏛️" }
+  ],
+  "enjeux": [
+    { "id": "retraite", "label": "Âge de départ à la retraite" },
+    { "id": "smic", "label": "SMIC" },
+    { "id": "fortune", "label": "Taxer les grandes fortunes" },
+    { "id": "nucleaire", "label": "Nucléaire" },
+    { "id": "immigration", "label": "Immigration" },
+    { "id": "europe", "label": "Rapport à l'UE" }
+  ],
+  "candidats": [
+    {
+      "id": "arthaud",
+      "prenom": "Nathalie",
+      "nom": "Arthaud",
+      "parti": "Lutte ouvrière",
+      "partiCourt": "LO",
+      "bord": "extreme-gauche",
+      "couleur": "#B5001B",
+      "wiki": "Nathalie_Arthaud",
+      "photo": null,
+      "slogan": "Le camp des travailleurs",
+      "statut": "déclarée",
+      "declaration": "2025-12-08",
+      "programme": "partiel",
+      "site": "https://www.lutte-ouvriere.org",
+      "bio": "Porte-parole de Lutte ouvrière, professeure d'économie-gestion. Quatrième candidature à la présidentielle après 2012, 2017 et 2022.",
+      "phares": [
+        "Hausse générale des salaires et indexation sur les prix",
+        "Interdiction des licenciements",
+        "Expropriation des grands groupes capitalistes"
+      ],
+      "positions": {
+        "retraite": "60 ans (ou moins)",
+        "smic": "Forte hausse",
+        "fortune": "Expropriation",
+        "nucleaire": "Non prioritaire",
+        "immigration": "Liberté de circulation",
+        "europe": "Anticapitaliste, internationaliste"
+      },
+      "propositions": {
+        "pouvoir-achat": [
+          { "titre": "Augmenter tous les salaires", "detail": "Hausse générale des salaires, pensions et allocations, avec indexation automatique sur l'inflation (« échelle mobile »).", "source": "https://www.lutte-ouvriere.org" }
+        ],
+        "travail": [
+          { "titre": "Interdire les licenciements", "detail": "Répartir le travail entre tous sans perte de salaire plutôt que de licencier.", "source": "https://www.lutte-ouvriere.org" }
+        ],
+        "economie": [
+          { "titre": "Contrôle ouvrier sur les entreprises", "detail": "Levée du secret des affaires et expropriation des grands groupes pour planifier l'économie.", "source": "https://www.lutte-ouvriere.org" }
+        ],
+        "sante": [
+          { "titre": "Renforcer les services publics", "detail": "Embauches massives dans les hôpitaux, l'éducation et les transports.", "source": "https://www.elyseescope.com/questions/nathalie-arthaud-lutte-ouvriere" }
+        ]
+      },
+      "sources": ["https://www.lutte-ouvriere.org", "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "kazib",
+      "prenom": "Anasse",
+      "nom": "Kazib",
+      "parti": "Révolution permanente",
+      "partiCourt": "RP",
+      "bord": "extreme-gauche",
+      "couleur": "#E4002B",
+      "wiki": "Anasse_Kazib",
+      "photo": null,
+      "slogan": "Faire entendre la voix de notre classe",
+      "statut": "déclaré",
+      "declaration": "2026-06-01",
+      "programme": "non publié",
+      "site": "https://www.revolutionpermanente.fr",
+      "bio": "Cheminot et syndicaliste, porte-parole de Révolution permanente.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "labib",
+      "prenom": "Selma",
+      "nom": "Labib",
+      "parti": "NPA – Révolutionnaires",
+      "partiCourt": "NPA-R",
+      "bord": "extreme-gauche",
+      "couleur": "#C8102E",
+      "wiki": null,
+      "photo": null,
+      "slogan": null,
+      "statut": "désignée",
+      "declaration": "2026-06-17",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Désignée candidate par le NPA – Révolutionnaires en juin 2026.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "melenchon",
+      "prenom": "Jean-Luc",
+      "nom": "Mélenchon",
+      "parti": "La France insoumise",
+      "partiCourt": "LFI",
+      "bord": "gauche-radicale",
+      "couleur": "#CC2443",
+      "wiki": "Jean-Luc_Mélenchon",
+      "photo": null,
+      "slogan": "La force de tout changer",
+      "statut": "déclaré",
+      "declaration": "2026-05-03",
+      "programme": "complet",
+      "site": "https://melenchon2027.fr",
+      "bio": "Fondateur de La France insoumise, ancien ministre et député. Quatrième candidature consécutive (2012, 2017, 2022). Programme de référence : « L'Avenir en commun », en cours d'actualisation pour 2027.",
+      "phares": [
+        "Retraite à 60 ans avec 40 annuités",
+        "VIe République via une Assemblée constituante",
+        "Planification écologique et « règle verte »"
+      ],
+      "positions": {
+        "retraite": "60 ans",
+        "smic": "1 600 à 1 700 € net",
+        "fortune": "Rétablir l'ISF",
+        "nucleaire": "Sortie",
+        "immigration": "Régularisations",
+        "europe": "Désobéir aux traités"
+      },
+      "propositions": {
+        "travail": [
+          { "titre": "Retraite à 60 ans", "detail": "Abrogation de la réforme de 2023, retour à 60 ans avec 40 annuités pour une carrière complète, pension minimale au niveau du SMIC.", "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027" }
+        ],
+        "pouvoir-achat": [
+          { "titre": "Hausse du SMIC", "detail": "SMIC à 1 600 € net dans l'Avenir en commun 2025, 1 700 € évoqués dans la campagne 2026.", "source": "https://le-francais-moyen.com/programmes/melenchon-2027/" },
+          { "titre": "Blocage des prix", "detail": "Blocage des prix des produits de première nécessité.", "source": "https://melenchon2027.fr" }
+        ],
+        "economie": [
+          { "titre": "Fiscalité plus progressive", "detail": "Rétablissement de l'ISF et impôt sur le revenu à davantage de tranches.", "source": "https://melenchon2027.fr" }
+        ],
+        "ecologie": [
+          { "titre": "Planification écologique", "detail": "« Règle verte » (ne pas prélever plus que ce que la nature peut reconstituer) et sortie du nucléaire au profit des renouvelables.", "source": "https://melenchon2027.fr" }
+        ],
+        "institutions": [
+          { "titre": "VIe République", "detail": "Convocation d'une Assemblée constituante ; nouvelle Constitution soumise à référendum. Référendum d'initiative citoyenne.", "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027" }
+        ],
+        "europe": [
+          { "titre": "Désobéissance aux traités", "detail": "Ne pas appliquer les règles européennes jugées contraires au programme (règles budgétaires, concurrence).", "source": "https://melenchon2027.fr" }
+        ]
+      },
+      "sources": ["https://melenchon2027.fr/construction-programme/", "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"]
+    },
+    {
+      "id": "roussel",
+      "prenom": "Fabien",
+      "nom": "Roussel",
+      "parti": "Parti communiste français",
+      "partiCourt": "PCF",
+      "bord": "gauche-radicale",
+      "couleur": "#DD0000",
+      "wiki": "Fabien_Roussel",
+      "photo": null,
+      "slogan": "Vivre !",
+      "statut": "désigné",
+      "declaration": "2026-09-06",
+      "programme": "partiel",
+      "site": "https://www.pcf.fr",
+      "bio": "Secrétaire national du PCF, candidat en 2022 (2,28 %). Investi par 72 % des adhérents en septembre 2026, il défend une candidature autonome.",
+      "phares": [
+        "Hausse des salaires et du SMIC",
+        "Services publics renforcés",
+        "Nucléaire et planification écologique"
+      ],
+      "positions": {
+        "retraite": "60 ans",
+        "smic": "Hausse",
+        "fortune": "Taxer davantage",
+        "nucleaire": "Pour",
+        "immigration": "—",
+        "europe": "Critique"
+      },
+      "propositions": {
+        "pouvoir-achat": [
+          { "titre": "Augmenter le SMIC et les salaires", "detail": "Hausse du salaire minimum au cœur du projet « Vivre ».", "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027" }
+        ],
+        "economie": [
+          { "titre": "Taxer les grandes fortunes", "detail": "Hausse de la taxation des plus hauts patrimoines et lutte contre l'évasion fiscale.", "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027" }
+        ],
+        "ecologie": [
+          { "titre": "Nucléaire + renouvelables", "detail": "Défense du nucléaire public dans une planification écologique.", "source": "https://www.pcf.fr" }
+        ],
+        "sante": [
+          { "titre": "Services publics", "detail": "Réinvestissement massif dans l'hôpital, l'école et les services publics de proximité.", "source": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389" }
+        ]
+      },
+      "sources": ["https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"]
+    },
+    {
+      "id": "ruffin",
+      "prenom": "François",
+      "nom": "Ruffin",
+      "parti": "Debout !",
+      "partiCourt": "Debout!",
+      "bord": "gauche-radicale",
+      "couleur": "#E85D2A",
+      "wiki": "François_Ruffin",
+      "photo": null,
+      "slogan": "Nous président !",
+      "statut": "déclaré",
+      "declaration": "2025-04-01",
+      "programme": "partiel",
+      "site": null,
+      "bio": "Député de la Somme, journaliste et réalisateur. A quitté LFI et fondé le mouvement Debout ! Se maintient en l'absence de primaire commune.",
+      "phares": [
+        "« Président au SMIC »",
+        "Fiscalité plus progressive",
+        "Revaloriser les métiers du lien"
+      ],
+      "positions": {
+        "retraite": "Abroger 2023",
+        "smic": "Hausse",
+        "fortune": "Taxer davantage",
+        "nucleaire": "—",
+        "immigration": "—",
+        "europe": "Protectionnisme"
+      },
+      "propositions": {
+        "pouvoir-achat": [
+          { "titre": "Hausse du SMIC", "detail": "Revalorisation du salaire minimum et des métiers mal payés.", "source": "https://www.elyseescope.com/questions/francois-ruffin-social" }
+        ],
+        "economie": [
+          { "titre": "Fiscalité progressive", "detail": "Faire contribuer davantage les plus aisés.", "source": "https://www.elyseescope.com/questions/francois-ruffin-justice-sociale" }
+        ],
+        "education": [
+          { "titre": "Plus de moyens pour l'école", "detail": "Augmentation des moyens alloués à l'éducation.", "source": "https://www.elyseescope.com/le-radar/francois-ruffin-education" }
+        ]
+      },
+      "sources": ["https://www.lyoncapitale.fr/?p=495954"]
+    },
+    {
+      "id": "tondelier",
+      "prenom": "Marine",
+      "nom": "Tondelier",
+      "parti": "Les Écologistes",
+      "partiCourt": "ÉCO",
+      "bord": "gauche",
+      "couleur": "#2EA44F",
+      "wiki": "Marine_Tondelier",
+      "photo": null,
+      "slogan": "Tenez bon, nous arrivons !",
+      "statut": "désignée",
+      "declaration": "2026-09-21",
+      "programme": "complet",
+      "site": "https://lesecologistes.fr",
+      "bio": "Secrétaire nationale des Écologistes, conseillère municipale d'Hénin-Beaumont. Programme : « Pour une prospérité écologique » (juillet 2026).",
+      "phares": [
+        "Taxe Zucman de 2 % au-delà de 100 M€",
+        "Neutralité carbone en 2040",
+        "Sortie progressive du nucléaire"
+      ],
+      "positions": {
+        "retraite": "Abroger 2023",
+        "smic": "Hausse",
+        "fortune": "Taxe Zucman + ISF vert",
+        "nucleaire": "Sortie progressive",
+        "immigration": "Accueil",
+        "europe": "Fédéraliste"
+      },
+      "propositions": {
+        "economie": [
+          { "titre": "Taxe Zucman", "detail": "Impôt plancher de 2 % sur les patrimoines de plus de 100 M€, plus un « ISF vert ».", "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027" }
+        ],
+        "ecologie": [
+          { "titre": "Neutralité carbone 2040", "detail": "Sortie progressive du nucléaire, montée en puissance des renouvelables et sobriété énergétique.", "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027" }
+        ],
+        "institutions": [
+          { "titre": "Proportionnelle", "detail": "Scrutin proportionnel pour les législatives.", "source": "https://lesecologistes.fr" }
+        ]
+      },
+      "sources": ["https://www.france-vote.fr/actualites/programme-marine-tondelier-2027", "https://votons-2027.fr/candidats/tondelier/programme"]
+    },
+    {
+      "id": "glucksmann",
+      "prenom": "Raphaël",
+      "nom": "Glucksmann",
+      "parti": "Place publique",
+      "partiCourt": "PP",
+      "bord": "gauche",
+      "couleur": "#F0457E",
+      "wiki": "Raphaël_Glucksmann",
+      "photo": null,
+      "slogan": "Refonder la gauche, réveiller la France",
+      "statut": "déclaré",
+      "declaration": "2026-08-23",
+      "programme": "partiel",
+      "site": "https://place-publique.eu",
+      "bio": "Eurodéputé, co-fondateur de Place publique. Vainqueur de la primaire de la gauche sociale-démocrate le 11 octobre 2026 (≈ 66 %).",
+      "phares": [
+        "SMIC à 1 600 € net",
+        "Abrogation de la réforme des retraites de 2023",
+        "Défense européenne et soutien à l'Ukraine"
+      ],
+      "positions": {
+        "retraite": "Abroger 2023",
+        "smic": "1 600 € net",
+        "fortune": "ISF climatique",
+        "nucleaire": "Maintenu (transition)",
+        "immigration": "—",
+        "europe": "Pro-européen"
+      },
+      "propositions": {
+        "pouvoir-achat": [
+          { "titre": "SMIC à 1 600 € net", "detail": "Objectif de revalorisation du salaire minimum.", "source": "https://www.wikiglucksmann.fr/programme.html" }
+        ],
+        "travail": [
+          { "titre": "Abroger la réforme de 2023", "detail": "Revenir sur le report de l'âge légal à 64 ans.", "source": "https://www.wikiglucksmann.fr/programme.html" }
+        ],
+        "economie": [
+          { "titre": "ISF climatique", "detail": "Rétablir un impôt sur la fortune à visée climatique.", "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann" }
+        ],
+        "ecologie": [
+          { "titre": "Sortir du charbon, garder le nucléaire en transition", "detail": "Sortie immédiate du charbon ; nucléaire maintenu le temps de la transition.", "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann" }
+        ],
+        "europe": [
+          { "titre": "Europe de la défense", "detail": "Renforcement de la défense européenne et soutien à l'Ukraine.", "source": "https://place-publique.eu" }
+        ],
+        "institutions": [
+          { "titre": "Initiative citoyenne", "detail": "Droit d'initiative citoyenne.", "source": "https://solutiondemocratique.fr/raphael-glucksmann-2027-programme-presidentiel/" }
+        ]
+      },
+      "sources": ["https://en.wikipedia.org/wiki/2026_United_Left_primary", "https://www.elyseescope.com/le-radar/raphael-glucksmann-positions-programme-20261005"]
+    },
+    {
+      "id": "bouamrane",
+      "prenom": "Karim",
+      "nom": "Bouamrane",
+      "parti": "Parti socialiste",
+      "partiCourt": "PS",
+      "bord": "gauche",
+      "couleur": "#FF6F91",
+      "wiki": "Karim_Bouamrane",
+      "photo": null,
+      "slogan": "La France humaine et forte",
+      "statut": "déclaré",
+      "declaration": "2026-06-09",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Maire de Saint-Ouen-sur-Seine. Candidat sans passer par la primaire socialiste.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "batho",
+      "prenom": "Delphine",
+      "nom": "Batho",
+      "parti": "Génération écologie",
+      "partiCourt": "GE",
+      "bord": "gauche",
+      "couleur": "#7BC043",
+      "wiki": "Delphine_Batho",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclarée",
+      "declaration": "2025-11-25",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Députée, présidente de Génération écologie, ancienne ministre de l'Écologie. Opposée à une primaire unitaire de la gauche.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "cazeneuve",
+      "prenom": "Bernard",
+      "nom": "Cazeneuve",
+      "parti": "La Convention",
+      "partiCourt": "LC",
+      "bord": "centre-gauche",
+      "couleur": "#C2185B",
+      "wiki": "Bernard_Cazeneuve",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2026-07-16",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Ancien Premier ministre (2016-2017). Candidat hors primaire, sur la base d'un « contrat » avec les électeurs.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "attal",
+      "prenom": "Gabriel",
+      "nom": "Attal",
+      "parti": "Renaissance",
+      "partiCourt": "RE",
+      "bord": "centre",
+      "couleur": "#F2B705",
+      "wiki": "Gabriel_Attal",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2026-05-22",
+      "programme": "partiel",
+      "site": "https://parti-renaissance.fr",
+      "bio": "Secrétaire général de Renaissance, ancien Premier ministre (2024). Candidat depuis mai 2026 ; propose une « grande primaire des démocrates ».",
+      "phares": [
+        "Brevet obligatoire pour entrer au lycée",
+        "Former 20 millions de salariés à l'IA en 5 ans",
+        "Règle d'or budgétaire dans la Constitution"
+      ],
+      "positions": {
+        "retraite": "64 ans (maintien)",
+        "smic": "Pas de coup de pouce",
+        "fortune": "Contre",
+        "nucleaire": "Pour",
+        "immigration": "Contrôle des frontières",
+        "europe": "Pro-européen"
+      },
+      "propositions": {
+        "education": [
+          { "titre": "Brevet obligatoire", "detail": "Obtention du brevet obligatoire pour accéder au lycée ; IA intégrée aux programmes dès le collège. « Pacte pour la jeunesse » présenté à Lyon le 10 octobre 2026.", "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html" }
+        ],
+        "travail": [
+          { "titre": "Maintien de la réforme de 2023", "detail": "Pas de retour sur le report de l'âge légal ; RSA conditionné à 15 heures d'activité.", "source": "https://www.france-vote.fr/candidats/gabriel-attal" },
+          { "titre": "Former à l'IA", "detail": "Former 20 millions de salariés à l'intelligence artificielle en cinq ans.", "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html" }
+        ],
+        "economie": [
+          { "titre": "Pas de nouvel impôt sur le patrimoine", "detail": "Baisse des cotisations employeurs et règle d'or budgétaire inscrite dans la Constitution.", "source": "https://www.france-vote.fr/candidats/gabriel-attal" }
+        ],
+        "pouvoir-achat": [
+          { "titre": "Salaires", "detail": "Hausse du net via la baisse des cotisations plutôt qu'un coup de pouce au SMIC.", "source": "https://www.france-vote.fr/candidats/gabriel-attal" }
+        ],
+        "immigration": [
+          { "titre": "Gestion des frontières", "detail": "Un des quatre grands chantiers annoncés (école, salaires, frontières, IA).", "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html" }
+        ]
+      },
+      "sources": ["https://monvote2027.fr/candidat/attal", "https://www.france-vote.fr/candidats/gabriel-attal"]
+    },
+    {
+      "id": "becht",
+      "prenom": "Olivier",
+      "nom": "Becht",
+      "parti": "Agir",
+      "partiCourt": "Agir",
+      "bord": "centre",
+      "couleur": "#00A3E0",
+      "wiki": "Olivier_Becht",
+      "photo": null,
+      "slogan": "Le projet France",
+      "statut": "déclaré",
+      "declaration": "2026-09-24",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Ancien ministre délégué au Commerce extérieur.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "philippe",
+      "prenom": "Édouard",
+      "nom": "Philippe",
+      "parti": "Horizons",
+      "partiCourt": "HOR",
+      "bord": "centre-droit",
+      "couleur": "#1D3E8F",
+      "wiki": "Édouard_Philippe",
+      "photo": null,
+      "slogan": "Croire en nous",
+      "statut": "déclaré",
+      "declaration": "2024-09-03",
+      "programme": "partiel",
+      "site": "https://horizonsleparti.fr",
+      "bio": "Maire du Havre, président d'Horizons, ancien Premier ministre (2017-2020). Mise sur le travail et la baisse des dépenses publiques.",
+      "phares": [
+        "Retraites : 45 annuités et une part de capitalisation",
+        "Non-remplacement d'un fonctionnaire sur trois partant à la retraite",
+        "Chômage : 12 mois d'indemnisation max. pour les moins de 50 ans"
+      ],
+      "positions": {
+        "retraite": "Allongement (45 annuités)",
+        "smic": "—",
+        "fortune": "Contre",
+        "nucleaire": "Pour",
+        "immigration": "Durcissement",
+        "europe": "Pro-européen"
+      },
+      "propositions": {
+        "travail": [
+          { "titre": "Réforme des retraites", "detail": "Allongement de la durée de cotisation (45 annuités évoquées), mesures de justice sociale et introduction d'une part de capitalisation. Gain estimé par son équipe : 30 Md€/an.", "source": "https://www.journaldunet.com/business/action-publique/1555605-edouard-philippe-devoile-son-projet-de-reforme-des-retraites-pour-la-presidentielle-2027-prevoyant-un-depart-a-65-ans-et-45-annuites/" },
+          { "titre": "Assurance chômage", "detail": "Durée maximale d'indemnisation ramenée de 18 à 12 mois pour les moins de 50 ans.", "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ" }
+        ],
+        "economie": [
+          { "titre": "Baisse de la dépense publique", "detail": "Non-remplacement d'un tiers des fonctionnaires partant à la retraite (plus de 250 000 postes sur le quinquennat) ; réduction du déficit.", "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ" }
+        ]
+      },
+      "sources": ["https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ", "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/"]
+    },
+    {
+      "id": "retailleau",
+      "prenom": "Bruno",
+      "nom": "Retailleau",
+      "parti": "Les Républicains",
+      "partiCourt": "LR",
+      "bord": "droite",
+      "couleur": "#0066CC",
+      "wiki": "Bruno_Retailleau",
+      "photo": null,
+      "slogan": "Ne plus subir",
+      "statut": "désigné",
+      "declaration": "2026-04-19",
+      "programme": "partiel",
+      "site": "https://republicains.fr",
+      "bio": "Président des Républicains, ancien ministre de l'Intérieur. Désigné par les adhérents LR en avril 2026.",
+      "phares": [
+        "Référendum sur l'immigration",
+        "État d'urgence dans les quartiers gangrénés par le narcotrafic",
+        "Supprimer 50 normes pesant sur les entreprises"
+      ],
+      "positions": {
+        "retraite": "Réforme (report)",
+        "smic": "—",
+        "fortune": "Contre",
+        "nucleaire": "Pour",
+        "immigration": "Forte baisse (référendum)",
+        "europe": "Souveraineté juridique"
+      },
+      "propositions": {
+        "immigration": [
+          { "titre": "Référendum sur l'immigration", "detail": "Soumettre une forte baisse de l'immigration à référendum.", "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492" }
+        ],
+        "securite": [
+          { "titre": "Narcotrafic", "detail": "État d'urgence dans les quartiers touchés et réforme de la justice pénale, elle aussi par référendum.", "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492" }
+        ],
+        "economie": [
+          { "titre": "Simplification", "detail": "Supprimer les normes qui pèsent le plus sur les entreprises dès le lendemain de l'élection ; supprimer le « zéro artificialisation nette » (ZAN).", "source": "https://votons-2027.fr/candidats/retailleau/programme" }
+        ],
+        "travail": [
+          { "titre": "Réforme des retraites", "detail": "Nouvelle réforme des retraites annoncée dans son entretien au Figaro.", "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492" }
+        ]
+      },
+      "sources": ["https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"]
+    },
+    {
+      "id": "lisnard",
+      "prenom": "David",
+      "nom": "Lisnard",
+      "parti": "Nouvelle Énergie",
+      "partiCourt": "NE",
+      "bord": "droite",
+      "couleur": "#2E86DE",
+      "wiki": "David_Lisnard",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2026-03-31",
+      "programme": "partiel",
+      "site": null,
+      "bio": "Maire de Cannes, président de l'Association des maires de France jusqu'en 2025. A quitté LR pour fonder Nouvelle Énergie ; souhaite toujours une primaire de la droite.",
+      "phares": [
+        "Baisse des impôts de production",
+        "Dépense publique sous 50 % du PIB en dix ans",
+        "Six EPR et prolongation du parc nucléaire"
+      ],
+      "positions": {
+        "retraite": "—",
+        "smic": "—",
+        "fortune": "Contre",
+        "nucleaire": "Pour (6 EPR + SMR)",
+        "immigration": "Baisse",
+        "europe": "Souveraineté"
+      },
+      "propositions": {
+        "economie": [
+          { "titre": "Libérer l'économie", "detail": "Baisse des impôts de production, simplification administrative, équilibre budgétaire inscrit dans la Constitution, dépense publique sous 50 % du PIB en dix ans.", "source": "https://votons-2027.fr/candidats/lisnard/programme" }
+        ],
+        "ecologie": [
+          { "titre": "Nucléaire", "detail": "Arrêt des fermetures de réacteurs, prolongation du parc jusqu'à 60 ans, six EPR et mini-réacteurs (SMR).", "source": "https://www.elyseescope.com/candidat/david-lisnard/energie-q16-" }
+        ],
+        "education": [
+          { "titre": "Enseignants +20 %", "detail": "Hausse de 20 % de la rémunération des enseignants en cinq ans, conditionnée à une réorganisation du système.", "source": "https://www.elyseescope.com/candidat/david-lisnard/education-q27-" }
+        ]
+      },
+      "sources": ["https://votons-2027.fr/candidats/lisnard/programme"]
+    },
+    {
+      "id": "bertrand",
+      "prenom": "Xavier",
+      "nom": "Bertrand",
+      "parti": "Nous France",
+      "partiCourt": "NF",
+      "bord": "droite",
+      "couleur": "#3A5FCD",
+      "wiki": "Xavier_Bertrand",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2024-02-03",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Président de la région Hauts-de-France, ancien ministre.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "platret",
+      "prenom": "Gilles",
+      "nom": "Platret",
+      "parti": "Divers droite",
+      "partiCourt": "DVD",
+      "bord": "droite",
+      "couleur": "#5B7DB1",
+      "wiki": "Gilles_Platret",
+      "photo": null,
+      "slogan": "Parlons de la France !",
+      "statut": "déclaré",
+      "declaration": "2026-10-08",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Maire de Chalon-sur-Saône.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "dupont-aignan",
+      "prenom": "Nicolas",
+      "nom": "Dupont-Aignan",
+      "parti": "Debout la France",
+      "partiCourt": "DLF",
+      "bord": "droite-souverainiste",
+      "couleur": "#0082C4",
+      "wiki": "Nicolas_Dupont-Aignan",
+      "photo": null,
+      "slogan": "Libérons la France !",
+      "statut": "déclaré",
+      "declaration": "2026-09-19",
+      "programme": "non publié",
+      "site": "https://www.debout-la-france.fr",
+      "bio": "Président de Debout la France, maire honoraire de Yerres. Candidat en 2012, 2017 et 2022.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "philippot",
+      "prenom": "Florian",
+      "nom": "Philippot",
+      "parti": "Les Patriotes",
+      "partiCourt": "LP",
+      "bord": "droite-souverainiste",
+      "couleur": "#1E3A8A",
+      "wiki": "Florian_Philippot",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2026-05-09",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Président des Patriotes. Prône la sortie de l'Union européenne (Frexit). Se retirerait au profit d'un candidat souverainiste plus rassembleur.",
+      "phares": ["Sortie de l'Union européenne (Frexit)"],
+      "positions": { "europe": "Frexit" },
+      "propositions": {
+        "europe": [
+          { "titre": "Frexit", "detail": "Sortie de l'Union européenne, position historique des Patriotes.", "source": "https://fr.wikipedia.org/wiki/Les_Patriotes" }
+        ]
+      },
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "asselineau",
+      "prenom": "François",
+      "nom": "Asselineau",
+      "parti": "Union populaire républicaine",
+      "partiCourt": "UPR",
+      "bord": "droite-souverainiste",
+      "couleur": "#009B9F",
+      "wiki": "François_Asselineau",
+      "photo": null,
+      "slogan": "La France retrouvée",
+      "statut": "déclaré",
+      "declaration": "2023-08-31",
+      "programme": "non publié",
+      "site": "https://www.upr.fr",
+      "bio": "Président de l'UPR, candidat en 2017. Défend la sortie de l'UE, de l'euro et de l'OTAN.",
+      "phares": ["Sortie de l'UE, de l'euro et de l'OTAN"],
+      "positions": { "europe": "Frexit" },
+      "propositions": {
+        "europe": [
+          { "titre": "Frexit", "detail": "Sortie de l'Union européenne par l'article 50, de l'euro et de l'OTAN — ligne constante de l'UPR.", "source": "https://www.upr.fr" }
+        ]
+      },
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "le-pen",
+      "prenom": "Marine",
+      "nom": "Le Pen",
+      "parti": "Rassemblement national",
+      "partiCourt": "RN",
+      "bord": "extreme-droite",
+      "couleur": "#0D2F6E",
+      "wiki": "Marine_Le_Pen",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclarée",
+      "declaration": "2026-07-07",
+      "programme": "partiel",
+      "site": "https://rassemblementnational.fr",
+      "bio": "Présidente du groupe RN à l'Assemblée nationale. Candidature confirmée en juillet 2026 après la décision en appel dans l'affaire des assistants parlementaires. Quatrième candidature.",
+      "phares": [
+        "Retour de la retraite à 62 ans (60 ans pour les carrières longues)",
+        "TVA sur l'énergie de 20 % à 5,5 %",
+        "Référendum sur l'immigration et « priorité nationale »"
+      ],
+      "positions": {
+        "retraite": "62 ans (60 carrières longues)",
+        "smic": "—",
+        "fortune": "Contre l'ISF",
+        "nucleaire": "Relance massive",
+        "immigration": "Forte baisse",
+        "europe": "Europe des nations"
+      },
+      "propositions": {
+        "travail": [
+          { "titre": "Retraite à 62 ans", "detail": "Retour à 62 ans, voire 60 ans pour ceux ayant commencé tôt ; confirmé au débat du Medef du 27 août 2026.", "source": "https://monvote2027.fr/candidat/le-pen" }
+        ],
+        "pouvoir-achat": [
+          { "titre": "Baisse de la TVA sur l'énergie", "detail": "De 20 % à 5,5 % sur carburants, fioul, gaz et électricité.", "source": "https://votons-2027.fr/candidats/le-pen/programme/economie" }
+        ],
+        "immigration": [
+          { "titre": "Référendum et priorité nationale", "detail": "Priorité nationale pour l'emploi, le logement et les prestations, soumise à référendum ; fin du regroupement familial et du droit du sol ; suppression de l'AME.", "source": "https://www.elyseescope.com/candidat/marine-le-pen/immigration" }
+        ],
+        "ecologie": [
+          { "titre": "Tout nucléaire", "detail": "Relance massive du nucléaire et moratoire sur l'éolien et le solaire.", "source": "https://presi2027.fr/candidat/lepen" }
+        ]
+      },
+      "sources": ["https://monvote2027.fr/candidat/le-pen", "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027"]
+    },
+    {
+      "id": "zemmour",
+      "prenom": "Éric",
+      "nom": "Zemmour",
+      "parti": "Reconquête",
+      "partiCourt": "REC",
+      "bord": "extreme-droite",
+      "couleur": "#2B2D42",
+      "wiki": "Éric_Zemmour",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2026-09-17",
+      "programme": "partiel",
+      "site": "https://www.parti-reconquete.fr",
+      "bio": "Président de Reconquête, candidat en 2022 (7,07 %). Programme 2027 en consultation (« Le Programme pour la France »).",
+      "phares": [
+        "« Remigration » et immigration négative",
+        "Fin du droit du sol",
+        "Primauté du droit français sur le droit européen"
+      ],
+      "positions": {
+        "retraite": "—",
+        "smic": "—",
+        "fortune": "Contre",
+        "nucleaire": "Pour",
+        "immigration": "Remigration",
+        "europe": "Europe des nations"
+      },
+      "propositions": {
+        "immigration": [
+          { "titre": "Remigration", "detail": "Objectif d'« immigration négative » (plus de départs que d'arrivées) ; un étranger au chômage depuis un an devrait quitter la France. Aucun texte détaillé publié à ce stade.", "source": "https://lessentieldeleco.fr/8508-zemmour-et-la-remigration-qui-est-vise/" },
+          { "titre": "Fin du droit du sol", "detail": "Suppression de l'acquisition automatique de la nationalité par la naissance en France.", "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour" }
+        ],
+        "europe": [
+          { "titre": "Europe des nations", "detail": "Rejet du fédéralisme ; primauté du droit français sur le droit européen et la CEDH.", "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour" }
+        ]
+      },
+      "sources": ["https://monvote2027.fr/candidat/zemmour"]
+    },
+    {
+      "id": "polony",
+      "prenom": "Natacha",
+      "nom": "Polony",
+      "parti": "Sans étiquette",
+      "partiCourt": "SE",
+      "bord": "autre",
+      "couleur": "#7A5C99",
+      "wiki": "Natacha_Polony",
+      "photo": null,
+      "slogan": "Nous sommes la France",
+      "statut": "déclarée",
+      "declaration": "2026-10-14",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Journaliste et essayiste, ancienne directrice de la rédaction de Marianne.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "egger",
+      "prenom": "Clara",
+      "nom": "Egger",
+      "parti": "Solution démocratique",
+      "partiCourt": "SD",
+      "bord": "autre",
+      "couleur": "#8E44AD",
+      "wiki": null,
+      "photo": null,
+      "slogan": "Pour que voter serve enfin",
+      "statut": "déclarée",
+      "declaration": "2026-04-19",
+      "programme": "partiel",
+      "site": "https://solutiondemocratique.fr",
+      "bio": "Candidate de Solution démocratique, centrée sur la démocratie directe.",
+      "phares": ["Référendum d'initiative citoyenne"],
+      "positions": {},
+      "propositions": {
+        "institutions": [
+          { "titre": "Démocratie directe", "detail": "Mettre en place l'initiative citoyenne pour que les électeurs puissent proposer et voter des lois.", "source": "https://solutiondemocratique.fr" }
+        ]
+      },
+      "sources": ["https://solutiondemocratique.fr"]
+    },
+    {
+      "id": "markovic",
+      "prenom": "Mira",
+      "nom": "Markovic",
+      "parti": "Parti animaliste",
+      "partiCourt": "PA",
+      "bord": "autre",
+      "couleur": "#16A085",
+      "wiki": null,
+      "photo": null,
+      "slogan": "Les animaux ont leur candidate",
+      "statut": "déclarée",
+      "declaration": "2026-10-02",
+      "programme": "non publié",
+      "site": "https://www.parti-animaliste.fr",
+      "bio": "Candidate du Parti animaliste.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "mikolajczak",
+      "prenom": "Antoine",
+      "nom": "Mikolajczak",
+      "parti": "Équinoxe",
+      "partiCourt": "EQX",
+      "bord": "autre",
+      "couleur": "#F39C12",
+      "wiki": null,
+      "photo": null,
+      "slogan": "Renouer avec notre avenir",
+      "statut": "désigné",
+      "declaration": "2026-06-27",
+      "programme": "partiel",
+      "site": null,
+      "bio": "Désigné par le parti Équinoxe ; programme présenté à Mulhouse.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "lalanne",
+      "prenom": "Francis",
+      "nom": "Lalanne",
+      "parti": "Divers",
+      "partiCourt": "DIV",
+      "bord": "autre",
+      "couleur": "#95A5A6",
+      "wiki": "Francis_Lalanne",
+      "photo": null,
+      "slogan": "Pour une France libre, souveraine et solaire",
+      "statut": "déclaré",
+      "declaration": "2026-06-17",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Chanteur.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "durif",
+      "prenom": "Sylvain",
+      "nom": "Durif",
+      "parti": "Sans étiquette",
+      "partiCourt": "SE",
+      "bord": "autre",
+      "couleur": "#BDC3C7",
+      "wiki": null,
+      "photo": null,
+      "slogan": "L'union du ciel et de la terre",
+      "statut": "déclaré",
+      "declaration": "2026-08-23",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Candidat sans étiquette.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "mathieu",
+      "prenom": "Benoît",
+      "nom": "Mathieu",
+      "parti": "Sans étiquette",
+      "partiCourt": "SE",
+      "bord": "autre",
+      "couleur": "#A0A0A0",
+      "wiki": null,
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2026-03-30",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Candidat sans étiquette, en tournée pour réunir les 500 parrainages.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    },
+    {
+      "id": "mlekuz",
+      "prenom": "Manolo",
+      "nom": "Mlekuz",
+      "parti": "Trajectoire",
+      "partiCourt": "TRJ",
+      "bord": "autre",
+      "couleur": "#6C7A89",
+      "wiki": null,
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": null,
+      "programme": "non publié",
+      "site": null,
+      "bio": "Candidat du mouvement Trajectoire, en recherche de parrainages.",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+    }
+  ]
+}

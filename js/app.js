@@ -1,0 +1,560 @@
+// Programmes 2027 — application (vanilla JS, routeur par hash, mobile first)
+
+const app = document.getElementById('app');
+const MAX_COMPARE = 4;
+
+const state = {
+  data: null,
+  veille: null,
+  filtreBord: null,
+  recherche: '',
+  avecProgramme: false,
+  compare: lireCompare(),
+  themeCompare: null,
+};
+
+// ---------- Utilitaires ----------
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const norm = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const plur = (n, s, p = s + 's') => `${n} ${n > 1 ? p : s}`;
+
+function couleurTexte(hex) {
+  const h = hex.replace('#', '');
+  const [r, g, b] = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16) / 255)
+    .map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
+  const L = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  return L > 0.36 ? '#121212' : '#ffffff';
+}
+const styleCouleur = (c) => `--c:${c.couleur};--ct:${couleurTexte(c.couleur)}`;
+
+function dateFr(iso, opts = { day: 'numeric', month: 'long', year: 'numeric' }) {
+  if (!iso) return '';
+  const d = new Date(iso.length === 10 ? iso + 'T12:00:00' : iso);
+  return isNaN(d) ? '' : d.toLocaleDateString('fr-FR', opts);
+}
+function joursAvant(iso) {
+  const d = new Date(iso + 'T08:00:00+02:00');
+  return Math.max(0, Math.ceil((d - Date.now()) / 86400000));
+}
+
+function lireCompare() {
+  try { return JSON.parse(localStorage.getItem('compare') || '[]').slice(0, MAX_COMPARE); } catch { return []; }
+}
+function ecrireCompare() {
+  try { localStorage.setItem('compare', JSON.stringify(state.compare)); } catch { /* navigation privée */ }
+  majTray();
+}
+function basculerCompare(id) {
+  const i = state.compare.indexOf(id);
+  if (i >= 0) state.compare.splice(i, 1);
+  else {
+    if (state.compare.length >= MAX_COMPARE) state.compare.shift();
+    state.compare.push(id);
+  }
+  ecrireCompare();
+  document.querySelectorAll(`[data-compare="${id}"]`).forEach((b) => {
+    const on = state.compare.includes(id);
+    b.setAttribute('aria-pressed', on);
+    if (b.dataset.libelle !== undefined) b.innerHTML = libelleCompare(on, b.dataset.libelle === 'grand');
+  });
+}
+const libelleCompare = (on, grand) => grand
+  ? (on ? '✓ Dans le comparateur<small>toucher pour retirer</small>' : 'COMPARER !<small>+1 candidat dans le match</small>')
+  : (on ? '✓ Ajouté' : '+ Comparer');
+
+const parId = (id) => state.data.candidats.find((c) => c.id === id);
+const bordDe = (c) => state.data.bords.find((b) => b.id === c.bord);
+const nbProps = (c) => Object.values(c.propositions || {}).reduce((n, l) => n + l.length, 0);
+const ordreBord = (c) => state.data.bords.findIndex((b) => b.id === c.bord);
+const candidatsTries = () => [...state.data.candidats].sort((a, b) => ordreBord(a) - ordreBord(b));
+
+// ---------- Photos (Wikipédia / Wikimedia Commons) ----------
+const PHOTO_TTL = 7 * 86400000;
+const enCours = new Map();
+function photoCache(wiki) {
+  try {
+    const v = JSON.parse(localStorage.getItem('photo:' + wiki) || 'null');
+    if (v && Date.now() - v.t < PHOTO_TTL) return v.u;
+  } catch { /* ignore */ }
+  return undefined;
+}
+async function photoWiki(wiki) {
+  const cache = photoCache(wiki);
+  if (cache !== undefined) return cache;
+  if (enCours.has(wiki)) return enCours.get(wiki);
+  const p = fetch(`https://fr.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
+    .then((j) => {
+      const u = j?.thumbnail?.source ? j.thumbnail.source.replace(/\/\d+px-/, '/400px-') : null;
+      // On ne met en cache que les réponses valides (pas les erreurs réseau / 429)
+      try { localStorage.setItem('photo:' + wiki, JSON.stringify({ u, t: Date.now() })); } catch { /* ignore */ }
+      return u;
+    })
+    .catch(() => null);
+  enCours.set(wiki, p);
+  return p;
+}
+function hydraterPhotos(root = document) {
+  root.querySelectorAll('.avatar[data-wiki]:not([data-ok])').forEach(async (el) => {
+    el.dataset.ok = '1';
+    const url = await photoWiki(el.dataset.wiki);
+    if (!url) return;
+    const img = new Image();
+    img.alt = '';
+    img.loading = 'lazy';
+    img.referrerPolicy = 'no-referrer';
+    img.onload = () => { el.querySelector('.avatar__init')?.remove(); el.prepend(img); };
+    img.src = url;
+  });
+}
+
+function avatar(c, taille = '') {
+  const init = (c.prenom[0] + c.nom.replace(/^(Le |La |De )/i, '')[0]).toUpperCase();
+  const img = c.photo ? `<img src="${esc(c.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="avatar__init">${esc(init)}</span>`;
+  const wiki = !c.photo && c.wiki ? ` data-wiki="${esc(c.wiki)}"` : '';
+  return `<span class="avatar ${taille ? 'avatar--' + taille : ''}" style="${styleCouleur(c)}"${wiki} role="img" aria-label="Photo de ${esc(c.prenom + ' ' + c.nom)}">${img}</span>`;
+}
+
+const tagProgramme = (c) => ({
+  complet: '<span class="tag tag--complet">Programme publié</span>',
+  partiel: '<span class="tag tag--partiel">Programme partiel</span>',
+}[c.programme] || '<span class="tag tag--non">Programme à venir</span>');
+const pastilleParti = (c) => `<span class="parti" style="${styleCouleur(c)}">${esc(c.partiCourt)}</span>`;
+
+// ---------- Vues ----------
+function vueAccueil() {
+  const d = state.data;
+  const cands = d.candidats;
+  const detailles = cands.filter((c) => nbProps(c) > 0).length;
+  const totalProps = cands.reduce((n, c) => n + nbProps(c), 0);
+  const j = joursAvant(d.meta.election.tour1);
+
+  app.innerHTML = `
+    <section class="hero">
+      <span class="pill"><span class="dot-live"></span><span>1er tour · ${esc(dateFr(d.meta.election.tour1, { day: 'numeric', month: 'long' }))}</span></span>
+      <h1>Alors comme ça, vous savez <span class="surligne-rose">pour qui voter</span>&nbsp;? <span class="surligne-noir">Comparons.</span></h1>
+      <p class="chapo">Les programmes des candidats à 2027, mesure par mesure, <strong>avec les sources</strong>. Choisissez <span class="chip-inline">2 à 4 candidats</span> et mettez-les face à face.</p>
+    </section>
+
+    <section class="section">
+      <div class="panneau" aria-label="Compteurs">
+        <div class="panneau__titre"><span>LE COMPTE À REBOURS</span><span class="live">● LIVE</span></div>
+        <div class="panneau__gros">J-${j}</div><div class="panneau__sous">avant le 1er tour · ${esc(dateFr(d.meta.election.tour1))}</div>
+        <hr>
+        <div class="panneau__stats">
+          <div><b>${cands.length}</b> <span>candidats</span></div>
+          <div><b>${detailles}</b> <span>avec propositions</span></div>
+          <div><b>${totalProps}</b> <span>mesures sourcées</span></div>
+          <div><b>${d.themes.length}</b> <span>thèmes</span></div>
+        </div>
+      </div>
+    </section>
+
+    ${blocVeille()}
+
+    <section class="section carte">
+      <h2 class="section-titre">En trois lignes</h2>
+      <div class="etapes">
+        <div class="etape"><span class="etape__num">1</span><div>Parcourez les candidats, classés de la <strong>gauche à la droite</strong>, avec la couleur de leur parti.</div></div>
+        <div class="etape"><span class="etape__num">2</span><div>Ouvrez une fiche pour lire le <strong>programme détaillé</strong>, thème par thème, chaque mesure avec sa source.</div></div>
+        <div class="etape"><span class="etape__num">3</span><div>Ajoutez-en jusqu'à 4 au comparateur et voyez <strong>qui propose quoi</strong>, côte à côte.</div></div>
+      </div>
+    </section>
+
+    <section class="section" id="candidats">
+      <h2 class="section-titre">Les candidats (${cands.length})</h2>
+      <div class="spectre" aria-hidden="true">
+        <div class="spectre__barre"></div>
+        <div class="spectre__labels"><span>Gauche</span><span>Centre</span><span>Droite</span></div>
+      </div>
+      <div class="filtres" role="group" aria-label="Filtrer par bord politique" id="filtres"></div>
+      <div class="recherche">
+        <input type="search" id="q" placeholder="Nom, parti…" aria-label="Rechercher un candidat" value="${esc(state.recherche)}">
+        <div class="toggle" role="group" aria-label="Afficher">
+          <button type="button" data-prog="0" aria-pressed="${!state.avecProgramme}">Tous</button>
+          <button type="button" data-prog="1" aria-pressed="${state.avecProgramme}">Détaillés</button>
+        </div>
+      </div>
+      <div class="grille" id="grille"></div>
+    </section>`;
+
+  renderFiltres();
+  renderGrille();
+  app.querySelector('#q').addEventListener('input', (e) => { state.recherche = e.target.value; renderGrille(); });
+  app.querySelectorAll('[data-prog]').forEach((b) => b.addEventListener('click', () => {
+    state.avecProgramme = b.dataset.prog === '1';
+    app.querySelectorAll('[data-prog]').forEach((x) => x.setAttribute('aria-pressed', x === b));
+    renderGrille();
+  }));
+}
+
+function blocVeille() {
+  const v = state.veille;
+  if (!v?.nouveaux?.length) return '';
+  return `<section class="section alerte" role="status">
+    <b>VEILLE AUTO</b> — ${plur(v.nouveaux.length, 'nouveau nom détecté', 'nouveaux noms détectés')} sur Wikipédia, en cours d'intégration :
+    ${v.nouveaux.map((n) => esc(n)).join(', ')}.</section>`;
+}
+
+function renderFiltres() {
+  const el = document.getElementById('filtres');
+  const presents = new Set(state.data.candidats.map((c) => c.bord));
+  const bords = state.data.bords.filter((b) => presents.has(b.id));
+  const couleurBord = (b) => state.data.candidats.find((c) => c.bord === b.id)?.couleur || '#ccc';
+  el.innerHTML = `<button class="filtre" type="button" data-bord="" aria-pressed="${!state.filtreBord}">Tous</button>` +
+    bords.map((b) => `<button class="filtre" type="button" data-bord="${b.id}" aria-pressed="${state.filtreBord === b.id}"><span class="pastille" style="background:${couleurBord(b)}"></span>${esc(b.label)}</button>`).join('');
+  el.querySelectorAll('[data-bord]').forEach((btn) => btn.addEventListener('click', () => {
+    state.filtreBord = btn.dataset.bord || null;
+    el.querySelectorAll('[data-bord]').forEach((x) => x.setAttribute('aria-pressed', x === btn));
+    renderGrille();
+  }));
+}
+
+function renderGrille() {
+  const q = norm(state.recherche);
+  const liste = candidatsTries().filter((c) =>
+    (!state.filtreBord || c.bord === state.filtreBord) &&
+    (!state.avecProgramme || nbProps(c) > 0) &&
+    (!q || norm(`${c.prenom} ${c.nom} ${c.parti} ${c.partiCourt}`).includes(q)));
+  const el = document.getElementById('grille');
+  el.innerHTML = liste.length ? liste.map(carteCandidat).join('') : '<p class="vide">Aucun candidat ne correspond.</p>';
+  el.querySelectorAll('[data-compare]').forEach((b) => b.addEventListener('click', (e) => {
+    basculerCompare(b.dataset.compare);
+  }));
+  hydraterPhotos(el);
+}
+
+function carteCandidat(c) {
+  const on = state.compare.includes(c.id);
+  const n = nbProps(c);
+  return `<article class="cand" style="${styleCouleur(c)}">
+    <div class="cand__bande"></div>
+    <div class="cand__corps">
+      ${avatar(c)}
+      <div class="cand__infos">
+        <a class="cand__nom" href="#/candidat/${c.id}"><span class="cand__prenom">${esc(c.prenom)}</span>${esc(c.nom)}</a>
+        <div class="meta-ligne">${pastilleParti(c)}<span class="tag">${esc(bordDe(c)?.label)}</span></div>
+      </div>
+    </div>
+    ${c.slogan ? `<p class="cand__slogan">« ${esc(c.slogan)} »</p>` : ''}
+    <div class="cand__pied">
+      ${tagProgramme(c)}
+      ${n ? `<span class="tag">${plur(n, 'mesure')}</span>` : ''}
+      <button type="button" class="cand__ajout" data-compare="${c.id}" data-libelle="" aria-pressed="${on}" aria-label="Ajouter ${esc(c.nom)} au comparateur">${libelleCompare(on, false)}</button>
+    </div>
+  </article>`;
+}
+
+function vueCandidat(id) {
+  const c = parId(id);
+  if (!c) return vue404();
+  const d = state.data;
+  const on = state.compare.includes(c.id);
+  const themes = d.themes.filter((t) => c.propositions?.[t.id]?.length);
+  const positions = d.enjeux.filter((e) => c.positions?.[e.id]);
+  document.title = `${c.prenom} ${c.nom} — Programmes 2027`;
+
+  app.innerHTML = `
+    <a class="lien-retour" href="#/">← Tous les candidats</a>
+    <article>
+      <section class="carte fiche__tete" style="${styleCouleur(c)}">
+        <div class="fiche__fond"></div>
+        <div class="fiche__id">
+          ${avatar(c, 'xl')}
+          <h1>${esc(c.prenom)} ${esc(c.nom)}</h1>
+          <div class="meta-ligne">
+            <span class="parti" style="${styleCouleur(c)}">${esc(c.parti)}</span>
+            <span class="tag">${esc(bordDe(c)?.label)}</span>
+            ${tagProgramme(c)}
+          </div>
+          ${c.slogan ? `<p class="fiche__slogan">« ${esc(c.slogan)} »</p>` : ''}
+          <p class="fiche__bio">${esc(c.bio)}</p>
+          <p class="mono small">${esc(c.statut[0].toUpperCase() + c.statut.slice(1))}${c.declaration ? ` le ${esc(dateFr(c.declaration))}` : ''}${c.site ? ` · <a href="${esc(c.site)}" target="_blank" rel="noopener">site officiel ↗</a>` : ''}</p>
+          <div class="actions">
+            <button type="button" class="btn btn--rouge" data-compare="${c.id}" data-libelle="grand" aria-pressed="${on}">${libelleCompare(on, true)}</button>
+            <a class="btn" href="#/comparer">Voir le comparateur →</a>
+          </div>
+        </div>
+      </section>
+
+      ${c.phares?.length ? `
+      <section class="section carte">
+        <h2 class="section-titre">Les mesures phares</h2>
+        <div class="etapes">${c.phares.map((p, i) => `<div class="etape"><span class="etape__num">${i + 1}</span><div><strong>${esc(p)}</strong></div></div>`).join('')}</div>
+      </section>` : ''}
+
+      ${positions.length ? `
+      <section class="section">
+        <div class="panneau">
+          <div class="panneau__titre"><span>EN UN COUP D'ŒIL</span></div>
+          <hr>
+          <div class="panneau__stats" style="grid-template-columns:1fr">
+            ${positions.map((e) => `<div><span>${esc(e.label)} :</span> <b>${esc(c.positions[e.id])}</b></div>`).join('')}
+          </div>
+        </div>
+      </section>` : ''}
+
+      <section class="section">
+        <h2 class="section-titre">Le programme détaillé</h2>
+        ${themes.length ? themes.map((t, i) => `
+          <details class="theme-bloc" ${i < 2 ? 'open' : ''}>
+            <summary><span>${t.emoji}</span>${esc(t.label)} <span class="compte">${c.propositions[t.id].length}</span></summary>
+            ${c.propositions[t.id].map(prop).join('')}
+          </details>`).join('') : `
+          <div class="alerte">Ce candidat n'a pas encore publié de programme détaillé. La fiche sera complétée automatiquement dès que des propositions seront annoncées.</div>`}
+      </section>
+
+      <section class="section alerte small">
+        <b>SOURCES</b> — ${(c.sources || []).map((s) => `<a class="source" href="${esc(s)}" target="_blank" rel="noopener">${esc(new URL(s).hostname)}</a>`).join(' · ')}
+        <br>${esc(d.meta.avertissement)}
+      </section>
+    </article>`;
+
+  app.querySelectorAll('[data-compare]').forEach((b) => b.addEventListener('click', () => basculerCompare(b.dataset.compare)));
+  hydraterPhotos(app);
+}
+
+function prop(p) {
+  let host = '';
+  try { host = p.source ? new URL(p.source).hostname.replace(/^www\./, '') : ''; } catch { /* ignore */ }
+  return `<div class="prop">
+    <h4>${esc(p.titre)}</h4>
+    <p>${esc(p.detail)}</p>
+    ${p.source ? `<a class="source" href="${esc(p.source)}" target="_blank" rel="noopener">source : ${esc(host)} ↗</a>` : ''}
+  </div>`;
+}
+
+function vueComparer(param) {
+  const d = state.data;
+  if (param) {
+    const ids = param.split(',').filter(parId).slice(0, MAX_COMPARE);
+    if (ids.length) { state.compare = ids; ecrireCompare(); }
+  }
+  const choisis = state.compare.map(parId).filter(Boolean);
+  const themesDispo = d.themes.filter((t) => choisis.some((c) => c.propositions?.[t.id]?.length));
+  if (!themesDispo.find((t) => t.id === state.themeCompare)) state.themeCompare = themesDispo[0]?.id || null;
+  document.title = 'Comparateur — Programmes 2027';
+
+  app.innerHTML = `
+    <section class="hero">
+      <span class="pill">Le match · ${choisis.length}/${MAX_COMPARE}</span>
+      <h1>Qui propose <span class="surligne-rose">quoi</span>&nbsp;?</h1>
+      <p class="chapo">Touchez les visages pour ajouter ou retirer des candidats (4 maximum).</p>
+    </section>
+
+    <section class="section">
+      <div class="selecteur" role="group" aria-label="Choisir les candidats">
+        ${candidatsTries().map((c) => `
+          <button type="button" class="sel" data-sel="${c.id}" aria-pressed="${state.compare.includes(c.id)}">
+            ${avatar(c, 'sm')}<span>${esc(c.nom)}</span>
+          </button>`).join('')}
+      </div>
+    </section>
+
+    ${choisis.length < 2 ? `
+      <section class="section carte carte--creme"><p style="margin:0"><strong>Choisissez au moins 2 candidats</strong> pour lancer le match. Astuce : ceux qui ont le badge <span class="tag tag--complet">Programme publié</span> ou <span class="tag tag--partiel">Programme partiel</span> ont le plus de contenu.</p></section>` : `
+
+    <section class="section">
+      <h2 class="section-titre">En un coup d'œil</h2>
+      <div class="matrice-wrap">
+        <table class="matrice">
+          <thead><tr><th scope="col">Enjeu</th>${choisis.map((c) => `<th scope="col"><span class="th-cand">${avatar(c, 'sm')}${esc(c.nom)}</span></th>`).join('')}</tr></thead>
+          <tbody>
+            ${d.enjeux.map((e) => `<tr><th scope="row">${esc(e.label)}</th>${choisis.map((c) => `<td>${c.positions?.[e.id] ? esc(c.positions[e.id]) : '<span class="inconnu">non précisé</span>'}</td>`).join('')}</tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-titre">Thème par thème</h2>
+      ${themesDispo.length ? `
+      <div class="onglets filtres" role="tablist">
+        ${themesDispo.map((t) => `<button type="button" role="tab" class="filtre" data-theme="${t.id}" aria-pressed="${t.id === state.themeCompare}" aria-selected="${t.id === state.themeCompare}">${t.emoji} ${esc(t.label)}</button>`).join('')}
+      </div>
+      <div class="compare-scroll"><div class="compare" id="compare-cols"></div></div>
+      <p class="mono small">← faites glisser pour voir tous les candidats →</p>` : '<div class="alerte">Aucune proposition publiée pour ces candidats pour l\'instant.</div>'}
+    </section>
+
+    <section class="section">
+      <button type="button" class="btn" id="partager">Partager ce match ↗</button>
+    </section>`}`;
+
+  app.querySelectorAll('[data-sel]').forEach((b) => b.addEventListener('click', () => {
+    basculerCompare(b.dataset.sel);
+    history.replaceState(null, '', '#/comparer' + (state.compare.length ? '/' + state.compare.join(',') : ''));
+    vueComparer();
+  }));
+  app.querySelectorAll('[data-theme]').forEach((b) => b.addEventListener('click', () => {
+    state.themeCompare = b.dataset.theme;
+    app.querySelectorAll('[data-theme]').forEach((x) => { x.setAttribute('aria-pressed', x === b); x.setAttribute('aria-selected', x === b); });
+    renderColonnes(choisis);
+  }));
+  app.querySelector('#partager')?.addEventListener('click', partager);
+  if (choisis.length >= 2 && themesDispo.length) renderColonnes(choisis);
+  hydraterPhotos(app);
+}
+
+function renderColonnes(choisis) {
+  const el = document.getElementById('compare-cols');
+  if (!el) return;
+  const t = state.themeCompare;
+  el.innerHTML = choisis.map((c) => `
+    <div class="col" style="${styleCouleur(c)}">
+      <div class="col__tete">${avatar(c, 'sm')}<a href="#/candidat/${c.id}">${esc(c.prenom)} ${esc(c.nom)}<br><small class="mono">${esc(c.partiCourt)}</small></a></div>
+      <div class="col__corps">${c.propositions?.[t]?.length ? c.propositions[t].map(prop).join('') : '<p class="vide">Pas de proposition publiée sur ce thème.</p>'}</div>
+    </div>`).join('');
+  hydraterPhotos(el);
+}
+
+async function partager() {
+  const url = location.href.split('#')[0] + '#/comparer/' + state.compare.join(',');
+  const noms = state.compare.map(parId).map((c) => c.nom).join(' vs ');
+  try {
+    if (navigator.share) await navigator.share({ title: `${noms} — Programmes 2027`, url });
+    else { await navigator.clipboard.writeText(url); alert('Lien copié !'); }
+  } catch { /* annulé */ }
+}
+
+function vueThemes() {
+  const d = state.data;
+  document.title = 'Thèmes — Programmes 2027';
+  app.innerHTML = `
+    <section class="hero">
+      <span class="pill">Par thème</span>
+      <h1>Un sujet, <span class="surligne-noir">tous les candidats.</span></h1>
+    </section>
+    <section class="section themes-grille">
+      ${d.themes.map((t) => {
+        const n = d.candidats.filter((c) => c.propositions?.[t.id]?.length).length;
+        return `<a class="theme-tuile" href="#/theme/${t.id}"><span class="emoji">${t.emoji}</span>${esc(t.label)}<small>${plur(n, 'candidat')}</small></a>`;
+      }).join('')}
+    </section>`;
+}
+
+function vueTheme(id) {
+  const d = state.data;
+  const t = d.themes.find((x) => x.id === id);
+  if (!t) return vue404();
+  const avec = candidatsTries().filter((c) => c.propositions?.[t.id]?.length);
+  const sans = candidatsTries().filter((c) => !c.propositions?.[t.id]?.length);
+  document.title = `${t.label} — Programmes 2027`;
+  app.innerHTML = `
+    <a class="lien-retour" href="#/themes">← Tous les thèmes</a>
+    <section class="hero">
+      <span class="pill">${t.emoji} Thème</span>
+      <h1>${esc(t.label)}</h1>
+      <p class="chapo">Classés de la gauche vers la droite.</p>
+    </section>
+    <section class="section carte" style="padding:0;overflow:hidden">
+      ${avec.map((c) => `
+        <div class="ligne-cand">
+          ${avatar(c, 'sm')}
+          <div class="ligne-cand__corps">
+            <a class="ligne-cand__nom" href="#/candidat/${c.id}">${esc(c.prenom)} ${esc(c.nom)}</a> ${pastilleParti(c)}
+            ${c.propositions[t.id].map((p) => `<div style="margin-top:8px"><strong>${esc(p.titre)}</strong> — ${esc(p.detail)} ${p.source ? `<a class="source" href="${esc(p.source)}" target="_blank" rel="noopener">source ↗</a>` : ''}</div>`).join('')}
+          </div>
+        </div>`).join('') || '<p class="vide">Aucune proposition publiée pour l\'instant.</p>'}
+    </section>
+    ${sans.length ? `<p class="small mono">Rien de publié sur ce thème : ${sans.map((c) => esc(c.nom)).join(', ')}.</p>` : ''}`;
+  hydraterPhotos(app);
+}
+
+function vueMethodo() {
+  const d = state.data;
+  document.title = 'Méthodo — Programmes 2027';
+  app.innerHTML = `
+    <section class="hero"><span class="pill">Méthodo</span><h1>Comment c'est <span class="surligne-rose">fabriqué</span>.</h1></section>
+    <section class="section carte prose">
+      <h2>D'où viennent les données ?</h2>
+      <p>Chaque mesure renvoie à une source : site de campagne, presse nationale ou fiches de synthèse. La liste des candidats suit la page Wikipédia <a href="https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027" target="_blank" rel="noopener">Candidatures à l'élection présidentielle française de 2027</a>. Les photos viennent de Wikimedia Commons.</p>
+      <h2>Comment ça se met à jour ?</h2>
+      <ul>
+        <li><strong>Tous les jours</strong>, un robot (GitHub Actions) vérifie la liste des candidats sur Wikipédia, signale les nouveaux noms et rafraîchit les photos.</li>
+        <li><strong>Chaque semaine</strong>, un second robot recherche les nouvelles annonces de programme et propose une mise à jour, <strong>relue par un humain</strong> avant publication.</li>
+        <li>Tout le monde peut proposer une correction : les données sont un simple fichier <code>data/candidats.json</code>.</li>
+      </ul>
+      <h2>Bords politiques</h2>
+      <p>Le classement suit l'usage courant de la presse et de Wikipédia. Il reste une simplification : un candidat peut être plus à gauche sur un sujet et plus à droite sur un autre.</p>
+      <h2>Avertissement</h2>
+      <p>${esc(d.meta.avertissement)}</p>
+      <p class="mono small">Contenu vérifié le ${esc(dateFr(d.meta.contenuMisAJour))}${state.veille?.checkedAt ? ` · liste vérifiée sur Wikipédia le ${esc(dateFr(state.veille.checkedAt))}` : ''}.</p>
+    </section>`;
+}
+
+function vue404() {
+  app.innerHTML = `<section class="hero"><h1>Oups, <span class="surligne-rose">page introuvable</span>.</h1><p class="chapo"><a href="#/">Retour aux candidats</a></p></section>`;
+}
+
+// ---------- Panier collant ----------
+function majTray() {
+  const tray = document.getElementById('tray');
+  const route = location.hash.split('/')[1] || '';
+  const choisis = state.compare.map(parId).filter(Boolean);
+  if (!choisis.length || route === 'comparer') { tray.hidden = true; return; }
+  tray.hidden = false;
+  tray.innerHTML = `<a class="btn btn--rouge" href="#/comparer/${choisis.map((c) => c.id).join(',')}">
+    <span class="tray__avatars">${choisis.map((c) => avatar(c, 'sm')).join('')}</span>
+    <span>COMPARER ! <small>${choisis.length}/${MAX_COMPARE}</small></span>
+  </a>`;
+  hydraterPhotos(tray);
+}
+
+// ---------- Routeur ----------
+function router() {
+  const [, route = '', param = ''] = (location.hash || '#/').split('/');
+  document.title = 'Programmes 2027 — le comparateur';
+  document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('actif',
+    (a.dataset.nav === 'home' && (route === '' || route === 'candidat')) ||
+    (a.dataset.nav === 'themes' && (route === 'themes' || route === 'theme')) ||
+    (a.dataset.nav === 'compare' && route === 'comparer')));
+  switch (route) {
+    case '': vueAccueil(); break;
+    case 'candidat': vueCandidat(decodeURIComponent(param)); break;
+    case 'comparer': vueComparer(decodeURIComponent(param)); break;
+    case 'themes': vueThemes(); break;
+    case 'theme': vueTheme(param); break;
+    case 'methodo': vueMethodo(); break;
+    default: vue404();
+  }
+  majTray();
+  window.scrollTo(0, 0);
+}
+
+function enTete() {
+  const d = state.data;
+  const n = d.candidats.length;
+  const j = joursAvant(d.meta.election.tour1);
+  const maj = state.veille?.checkedAt || d.meta.contenuMisAJour;
+  const morceaux = [
+    `J-${j} avant le 1er tour`,
+    `${n} candidats déclarés`,
+    `1er tour le ${dateFr(d.meta.election.tour1)}`,
+    `2nd tour le ${dateFr(d.meta.election.tour2)}`,
+    `500 parrainages nécessaires`,
+    `Mis à jour le ${dateFr(maj)}`,
+  ];
+  document.getElementById('ticker').textContent = (morceaux.join(' · ') + ' · ').repeat(2);
+  document.getElementById('countdown').innerHTML = `<span class="dot-live"></span>${n} candidats en lice<br>1<sup>er</sup> tour dans <b>${j} jours</b>`;
+  document.getElementById('footer-update').textContent = `Dernière mise à jour : ${dateFr(maj)}`;
+}
+
+async function init() {
+  app.innerHTML = '<p class="chargement">Chargement des programmes…</p>';
+  try {
+    const [data, veille] = await Promise.all([
+      fetch('data/candidats.json', { cache: 'no-cache' }).then((r) => r.json()),
+      fetch('data/veille.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    ]);
+    state.data = data;
+    state.veille = veille;
+    state.compare = state.compare.filter(parId);
+    enTete();
+    router();
+    window.addEventListener('hashchange', router);
+  } catch (e) {
+    app.innerHTML = `<p class="chargement">Impossible de charger les données. ${esc(e.message)}</p>`;
+  }
+}
+
+init();
