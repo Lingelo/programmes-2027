@@ -269,6 +269,7 @@ function vueCandidat(id) {
           </div>
           ${c.slogan ? `<p class="fiche__slogan">« ${esc(c.slogan)} »</p>` : ''}
           <p class="fiche__bio">${esc(c.bio)}</p>
+          ${c.photoCredit ? `<p class="mono small">Photo : <a href="${esc(c.photoCredit)}" target="_blank" rel="noopener">Wikimedia Commons ↗</a></p>` : ''}
           <p class="mono small">${esc(c.statut[0].toUpperCase() + c.statut.slice(1))}${c.declaration ? ` le ${esc(dateFr(c.declaration))}` : ''}${c.site ? ` · <a href="${esc(c.site)}" target="_blank" rel="noopener">site officiel ↗</a>` : ''}</p>
           <div class="actions">
             <button type="button" class="btn btn--rouge" data-compare="${c.id}" data-libelle="grand" aria-pressed="${on}">${libelleCompare(on, true)}</button>

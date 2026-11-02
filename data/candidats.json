@@ -9,36 +9,134 @@
     "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub."
   },
   "bords": [
-    { "id": "extreme-gauche", "label": "Extrême gauche", "court": "Ext. G" },
-    { "id": "gauche-radicale", "label": "Gauche radicale", "court": "G. rad." },
-    { "id": "gauche", "label": "Gauche", "court": "Gauche" },
-    { "id": "centre-gauche", "label": "Centre gauche", "court": "C. G" },
-    { "id": "centre", "label": "Centre", "court": "Centre" },
-    { "id": "centre-droit", "label": "Centre droit", "court": "C. D" },
-    { "id": "droite", "label": "Droite", "court": "Droite" },
-    { "id": "droite-souverainiste", "label": "Droite souverainiste", "court": "D. souv." },
-    { "id": "extreme-droite", "label": "Extrême droite", "court": "Ext. D" },
-    { "id": "autre", "label": "Hors clivage / divers", "court": "Divers" }
+    {
+      "id": "extreme-gauche",
+      "label": "Extrême gauche",
+      "court": "Ext. G"
+    },
+    {
+      "id": "gauche-radicale",
+      "label": "Gauche radicale",
+      "court": "G. rad."
+    },
+    {
+      "id": "gauche",
+      "label": "Gauche",
+      "court": "Gauche"
+    },
+    {
+      "id": "centre-gauche",
+      "label": "Centre gauche",
+      "court": "C. G"
+    },
+    {
+      "id": "centre",
+      "label": "Centre",
+      "court": "Centre"
+    },
+    {
+      "id": "centre-droit",
+      "label": "Centre droit",
+      "court": "C. D"
+    },
+    {
+      "id": "droite",
+      "label": "Droite",
+      "court": "Droite"
+    },
+    {
+      "id": "droite-souverainiste",
+      "label": "Droite souverainiste",
+      "court": "D. souv."
+    },
+    {
+      "id": "extreme-droite",
+      "label": "Extrême droite",
+      "court": "Ext. D"
+    },
+    {
+      "id": "autre",
+      "label": "Hors clivage / divers",
+      "court": "Divers"
+    }
   ],
   "themes": [
-    { "id": "economie", "label": "Économie & fiscalité", "emoji": "💶" },
-    { "id": "travail", "label": "Travail & retraites", "emoji": "🛠️" },
-    { "id": "pouvoir-achat", "label": "Salaires & pouvoir d'achat", "emoji": "🛒" },
-    { "id": "ecologie", "label": "Écologie & énergie", "emoji": "🌱" },
-    { "id": "immigration", "label": "Immigration", "emoji": "🛂" },
-    { "id": "securite", "label": "Sécurité & justice", "emoji": "🚓" },
-    { "id": "sante", "label": "Santé & social", "emoji": "🩺" },
-    { "id": "education", "label": "Éducation & jeunesse", "emoji": "🎓" },
-    { "id": "europe", "label": "Europe & international", "emoji": "🇪🇺" },
-    { "id": "institutions", "label": "Institutions & démocratie", "emoji": "🏛️" }
+    {
+      "id": "economie",
+      "label": "Économie & fiscalité",
+      "emoji": "💶"
+    },
+    {
+      "id": "travail",
+      "label": "Travail & retraites",
+      "emoji": "🛠️"
+    },
+    {
+      "id": "pouvoir-achat",
+      "label": "Salaires & pouvoir d'achat",
+      "emoji": "🛒"
+    },
+    {
+      "id": "ecologie",
+      "label": "Écologie & énergie",
+      "emoji": "🌱"
+    },
+    {
+      "id": "immigration",
+      "label": "Immigration",
+      "emoji": "🛂"
+    },
+    {
+      "id": "securite",
+      "label": "Sécurité & justice",
+      "emoji": "🚓"
+    },
+    {
+      "id": "sante",
+      "label": "Santé & social",
+      "emoji": "🩺"
+    },
+    {
+      "id": "education",
+      "label": "Éducation & jeunesse",
+      "emoji": "🎓"
+    },
+    {
+      "id": "europe",
+      "label": "Europe & international",
+      "emoji": "🇪🇺"
+    },
+    {
+      "id": "institutions",
+      "label": "Institutions & démocratie",
+      "emoji": "🏛️"
+    }
   ],
   "enjeux": [
-    { "id": "retraite", "label": "Âge de départ à la retraite" },
-    { "id": "smic", "label": "SMIC" },
-    { "id": "fortune", "label": "Taxer les grandes fortunes" },
-    { "id": "nucleaire", "label": "Nucléaire" },
-    { "id": "immigration", "label": "Immigration" },
-    { "id": "europe", "label": "Rapport à l'UE" }
+    {
+      "id": "retraite",
+      "label": "Âge de départ à la retraite"
+    },
+    {
+      "id": "smic",
+      "label": "SMIC"
+    },
+    {
+      "id": "fortune",
+      "label": "Taxer les grandes fortunes"
+    },
+    {
+      "id": "nucleaire",
+      "label": "Nucléaire"
+    },
+    {
+      "id": "immigration",
+      "label": "Immigration"
+    },
+    {
+      "id": "europe",
+      "label": "Rapport à l'UE"
+    }
   ],
   "candidats": [
     {
@@ -50,7 +148,7 @@
       "bord": "extreme-gauche",
       "couleur": "#B5001B",
       "wiki": "Nathalie_Arthaud",
-      "photo": null,
+      "photo": "img/candidats/arthaud.jpg",
       "slogan": "Le camp des travailleurs",
       "statut": "déclarée",
       "declaration": "2025-12-08",
@@ -72,19 +170,39 @@
       },
       "propositions": {
         "pouvoir-achat": [
-          { "titre": "Augmenter tous les salaires", "detail": "Hausse générale des salaires, pensions et allocations, avec indexation automatique sur l'inflation (« échelle mobile »).", "source": "https://www.lutte-ouvriere.org" }
+          {
+            "titre": "Augmenter tous les salaires",
+            "detail": "Hausse générale des salaires, pensions et allocations, avec indexation automatique sur l'inflation (« échelle mobile »).",
+            "source": "https://www.lutte-ouvriere.org"
+          }
         ],
         "travail": [
-          { "titre": "Interdire les licenciements", "detail": "Répartir le travail entre tous sans perte de salaire plutôt que de licencier.", "source": "https://www.lutte-ouvriere.org" }
+          {
+            "titre": "Interdire les licenciements",
+            "detail": "Répartir le travail entre tous sans perte de salaire plutôt que de licencier.",
+            "source": "https://www.lutte-ouvriere.org"
+          }
         ],
         "economie": [
-          { "titre": "Contrôle ouvrier sur les entreprises", "detail": "Levée du secret des affaires et expropriation des grands groupes pour planifier l'économie.", "source": "https://www.lutte-ouvriere.org" }
+          {
+            "titre": "Contrôle ouvrier sur les entreprises",
+            "detail": "Levée du secret des affaires et expropriation des grands groupes pour planifier l'économie.",
+            "source": "https://www.lutte-ouvriere.org"
+          }
         ],
         "sante": [
-          { "titre": "Renforcer les services publics", "detail": "Embauches massives dans les hôpitaux, l'éducation et les transports.", "source": "https://www.elyseescope.com/questions/nathalie-arthaud-lutte-ouvriere" }
+          {
+            "titre": "Renforcer les services publics",
+            "detail": "Embauches massives dans les hôpitaux, l'éducation et les transports.",
+            "source": "https://www.elyseescope.com/questions/nathalie-arthaud-lutte-ouvriere"
+          }
         ]
       },
-      "sources": ["https://www.lutte-ouvriere.org", "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://www.lutte-ouvriere.org",
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg"
     },
     {
       "id": "kazib",
@@ -95,7 +213,7 @@
       "bord": "extreme-gauche",
       "couleur": "#E4002B",
       "wiki": "Anasse_Kazib",
-      "photo": null,
+      "photo": "img/candidats/kazib.jpg",
       "slogan": "Faire entendre la voix de notre classe",
       "statut": "déclaré",
       "declaration": "2026-06-01",
@@ -105,7 +223,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_décembre_2021.jpg"
     },
     {
       "id": "labib",
@@ -126,7 +247,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": null
     },
     {
       "id": "melenchon",
@@ -137,7 +261,7 @@
       "bord": "gauche-radicale",
       "couleur": "#CC2443",
       "wiki": "Jean-Luc_Mélenchon",
-      "photo": null,
+      "photo": "img/candidats/melenchon.jpg",
       "slogan": "La force de tout changer",
       "statut": "déclaré",
       "declaration": "2026-05-03",
@@ -159,26 +283,58 @@
       },
       "propositions": {
         "travail": [
-          { "titre": "Retraite à 60 ans", "detail": "Abrogation de la réforme de 2023, retour à 60 ans avec 40 annuités pour une carrière complète, pension minimale au niveau du SMIC.", "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027" }
+          {
+            "titre": "Retraite à 60 ans",
+            "detail": "Abrogation de la réforme de 2023, retour à 60 ans avec 40 annuités pour une carrière complète, pension minimale au niveau du SMIC.",
+            "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
+          }
         ],
         "pouvoir-achat": [
-          { "titre": "Hausse du SMIC", "detail": "SMIC à 1 600 € net dans l'Avenir en commun 2025, 1 700 € évoqués dans la campagne 2026.", "source": "https://le-francais-moyen.com/programmes/melenchon-2027/" },
-          { "titre": "Blocage des prix", "detail": "Blocage des prix des produits de première nécessité.", "source": "https://melenchon2027.fr" }
+          {
+            "titre": "Hausse du SMIC",
+            "detail": "SMIC à 1 600 € net dans l'Avenir en commun 2025, 1 700 € évoqués dans la campagne 2026.",
+            "source": "https://le-francais-moyen.com/programmes/melenchon-2027/"
+          },
+          {
+            "titre": "Blocage des prix",
+            "detail": "Blocage des prix des produits de première nécessité.",
+            "source": "https://melenchon2027.fr"
+          }
         ],
         "economie": [
-          { "titre": "Fiscalité plus progressive", "detail": "Rétablissement de l'ISF et impôt sur le revenu à davantage de tranches.", "source": "https://melenchon2027.fr" }
+          {
+            "titre": "Fiscalité plus progressive",
+            "detail": "Rétablissement de l'ISF et impôt sur le revenu à davantage de tranches.",
+            "source": "https://melenchon2027.fr"
+          }
         ],
         "ecologie": [
-          { "titre": "Planification écologique", "detail": "« Règle verte » (ne pas prélever plus que ce que la nature peut reconstituer) et sortie du nucléaire au profit des renouvelables.", "source": "https://melenchon2027.fr" }
+          {
+            "titre": "Planification écologique",
+            "detail": "« Règle verte » (ne pas prélever plus que ce que la nature peut reconstituer) et sortie du nucléaire au profit des renouvelables.",
+            "source": "https://melenchon2027.fr"
+          }
         ],
         "institutions": [
-          { "titre": "VIe République", "detail": "Convocation d'une Assemblée constituante ; nouvelle Constitution soumise à référendum. Référendum d'initiative citoyenne.", "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027" }
+          {
+            "titre": "VIe République",
+            "detail": "Convocation d'une Assemblée constituante ; nouvelle Constitution soumise à référendum. Référendum d'initiative citoyenne.",
+            "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
+          }
         ],
         "europe": [
-          { "titre": "Désobéissance aux traités", "detail": "Ne pas appliquer les règles européennes jugées contraires au programme (règles budgétaires, concurrence).", "source": "https://melenchon2027.fr" }
+          {
+            "titre": "Désobéissance aux traités",
+            "detail": "Ne pas appliquer les règles européennes jugées contraires au programme (règles budgétaires, concurrence).",
+            "source": "https://melenchon2027.fr"
+          }
         ]
       },
-      "sources": ["https://melenchon2027.fr/construction-programme/", "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"]
+      "sources": [
+        "https://melenchon2027.fr/construction-programme/",
+        "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg"
     },
     {
       "id": "roussel",
@@ -189,7 +345,7 @@
       "bord": "gauche-radicale",
       "couleur": "#DD0000",
       "wiki": "Fabien_Roussel",
-      "photo": null,
+      "photo": "img/candidats/roussel.jpg",
       "slogan": "Vivre !",
       "statut": "désigné",
       "declaration": "2026-09-06",
@@ -211,19 +367,38 @@
       },
       "propositions": {
         "pouvoir-achat": [
-          { "titre": "Augmenter le SMIC et les salaires", "detail": "Hausse du salaire minimum au cœur du projet « Vivre ».", "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027" }
+          {
+            "titre": "Augmenter le SMIC et les salaires",
+            "detail": "Hausse du salaire minimum au cœur du projet « Vivre ».",
+            "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027"
+          }
         ],
         "economie": [
-          { "titre": "Taxer les grandes fortunes", "detail": "Hausse de la taxation des plus hauts patrimoines et lutte contre l'évasion fiscale.", "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027" }
+          {
+            "titre": "Taxer les grandes fortunes",
+            "detail": "Hausse de la taxation des plus hauts patrimoines et lutte contre l'évasion fiscale.",
+            "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027"
+          }
         ],
         "ecologie": [
-          { "titre": "Nucléaire + renouvelables", "detail": "Défense du nucléaire public dans une planification écologique.", "source": "https://www.pcf.fr" }
+          {
+            "titre": "Nucléaire + renouvelables",
+            "detail": "Défense du nucléaire public dans une planification écologique.",
+            "source": "https://www.pcf.fr"
+          }
         ],
         "sante": [
-          { "titre": "Services publics", "detail": "Réinvestissement massif dans l'hôpital, l'école et les services publics de proximité.", "source": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389" }
+          {
+            "titre": "Services publics",
+            "detail": "Réinvestissement massif dans l'hôpital, l'école et les services publics de proximité.",
+            "source": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"
+          }
         ]
       },
-      "sources": ["https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"]
+      "sources": [
+        "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg"
     },
     {
       "id": "ruffin",
@@ -234,7 +409,7 @@
       "bord": "gauche-radicale",
       "couleur": "#E85D2A",
       "wiki": "François_Ruffin",
-      "photo": null,
+      "photo": "img/candidats/ruffin.jpg",
       "slogan": "Nous président !",
       "statut": "déclaré",
       "declaration": "2025-04-01",
@@ -256,16 +431,31 @@
       },
       "propositions": {
         "pouvoir-achat": [
-          { "titre": "Hausse du SMIC", "detail": "Revalorisation du salaire minimum et des métiers mal payés.", "source": "https://www.elyseescope.com/questions/francois-ruffin-social" }
+          {
+            "titre": "Hausse du SMIC",
+            "detail": "Revalorisation du salaire minimum et des métiers mal payés.",
+            "source": "https://www.elyseescope.com/questions/francois-ruffin-social"
+          }
         ],
         "economie": [
-          { "titre": "Fiscalité progressive", "detail": "Faire contribuer davantage les plus aisés.", "source": "https://www.elyseescope.com/questions/francois-ruffin-justice-sociale" }
+          {
+            "titre": "Fiscalité progressive",
+            "detail": "Faire contribuer davantage les plus aisés.",
+            "source": "https://www.elyseescope.com/questions/francois-ruffin-justice-sociale"
+          }
         ],
         "education": [
-          { "titre": "Plus de moyens pour l'école", "detail": "Augmentation des moyens alloués à l'éducation.", "source": "https://www.elyseescope.com/le-radar/francois-ruffin-education" }
+          {
+            "titre": "Plus de moyens pour l'école",
+            "detail": "Augmentation des moyens alloués à l'éducation.",
+            "source": "https://www.elyseescope.com/le-radar/francois-ruffin-education"
+          }
         ]
       },
-      "sources": ["https://www.lyoncapitale.fr/?p=495954"]
+      "sources": [
+        "https://www.lyoncapitale.fr/?p=495954"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:François_Ruffin_(cropped).jpg"
     },
     {
       "id": "tondelier",
@@ -276,7 +466,7 @@
       "bord": "gauche",
       "couleur": "#2EA44F",
       "wiki": "Marine_Tondelier",
-      "photo": null,
+      "photo": "img/candidats/tondelier.jpg",
       "slogan": "Tenez bon, nous arrivons !",
       "statut": "désignée",
       "declaration": "2026-09-21",
@@ -298,16 +488,32 @@
       },
       "propositions": {
         "economie": [
-          { "titre": "Taxe Zucman", "detail": "Impôt plancher de 2 % sur les patrimoines de plus de 100 M€, plus un « ISF vert ».", "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027" }
+          {
+            "titre": "Taxe Zucman",
+            "detail": "Impôt plancher de 2 % sur les patrimoines de plus de 100 M€, plus un « ISF vert ».",
+            "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+          }
         ],
         "ecologie": [
-          { "titre": "Neutralité carbone 2040", "detail": "Sortie progressive du nucléaire, montée en puissance des renouvelables et sobriété énergétique.", "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027" }
+          {
+            "titre": "Neutralité carbone 2040",
+            "detail": "Sortie progressive du nucléaire, montée en puissance des renouvelables et sobriété énergétique.",
+            "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+          }
         ],
         "institutions": [
-          { "titre": "Proportionnelle", "detail": "Scrutin proportionnel pour les législatives.", "source": "https://lesecologistes.fr" }
+          {
+            "titre": "Proportionnelle",
+            "detail": "Scrutin proportionnel pour les législatives.",
+            "source": "https://lesecologistes.fr"
+          }
         ]
       },
-      "sources": ["https://www.france-vote.fr/actualites/programme-marine-tondelier-2027", "https://votons-2027.fr/candidats/tondelier/programme"]
+      "sources": [
+        "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027",
+        "https://votons-2027.fr/candidats/tondelier/programme"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg"
     },
     {
       "id": "glucksmann",
@@ -318,7 +524,7 @@
       "bord": "gauche",
       "couleur": "#F0457E",
       "wiki": "Raphaël_Glucksmann",
-      "photo": null,
+      "photo": "img/candidats/glucksmann.jpg",
       "slogan": "Refonder la gauche, réveiller la France",
       "statut": "déclaré",
       "declaration": "2026-08-23",
@@ -340,25 +546,53 @@
       },
       "propositions": {
         "pouvoir-achat": [
-          { "titre": "SMIC à 1 600 € net", "detail": "Objectif de revalorisation du salaire minimum.", "source": "https://www.wikiglucksmann.fr/programme.html" }
+          {
+            "titre": "SMIC à 1 600 € net",
+            "detail": "Objectif de revalorisation du salaire minimum.",
+            "source": "https://www.wikiglucksmann.fr/programme.html"
+          }
         ],
         "travail": [
-          { "titre": "Abroger la réforme de 2023", "detail": "Revenir sur le report de l'âge légal à 64 ans.", "source": "https://www.wikiglucksmann.fr/programme.html" }
+          {
+            "titre": "Abroger la réforme de 2023",
+            "detail": "Revenir sur le report de l'âge légal à 64 ans.",
+            "source": "https://www.wikiglucksmann.fr/programme.html"
+          }
         ],
         "economie": [
-          { "titre": "ISF climatique", "detail": "Rétablir un impôt sur la fortune à visée climatique.", "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann" }
+          {
+            "titre": "ISF climatique",
+            "detail": "Rétablir un impôt sur la fortune à visée climatique.",
+            "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann"
+          }
         ],
         "ecologie": [
-          { "titre": "Sortir du charbon, garder le nucléaire en transition", "detail": "Sortie immédiate du charbon ; nucléaire maintenu le temps de la transition.", "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann" }
+          {
+            "titre": "Sortir du charbon, garder le nucléaire en transition",
+            "detail": "Sortie immédiate du charbon ; nucléaire maintenu le temps de la transition.",
+            "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann"
+          }
         ],
         "europe": [
-          { "titre": "Europe de la défense", "detail": "Renforcement de la défense européenne et soutien à l'Ukraine.", "source": "https://place-publique.eu" }
+          {
+            "titre": "Europe de la défense",
+            "detail": "Renforcement de la défense européenne et soutien à l'Ukraine.",
+            "source": "https://place-publique.eu"
+          }
         ],
         "institutions": [
-          { "titre": "Initiative citoyenne", "detail": "Droit d'initiative citoyenne.", "source": "https://solutiondemocratique.fr/raphael-glucksmann-2027-programme-presidentiel/" }
+          {
+            "titre": "Initiative citoyenne",
+            "detail": "Droit d'initiative citoyenne.",
+            "source": "https://solutiondemocratique.fr/raphael-glucksmann-2027-programme-presidentiel/"
+          }
         ]
       },
-      "sources": ["https://en.wikipedia.org/wiki/2026_United_Left_primary", "https://www.elyseescope.com/le-radar/raphael-glucksmann-positions-programme-20261005"]
+      "sources": [
+        "https://en.wikipedia.org/wiki/2026_United_Left_primary",
+        "https://www.elyseescope.com/le-radar/raphael-glucksmann-positions-programme-20261005"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg"
     },
     {
       "id": "bouamrane",
@@ -369,7 +603,7 @@
       "bord": "gauche",
       "couleur": "#FF6F91",
       "wiki": "Karim_Bouamrane",
-      "photo": null,
+      "photo": "img/candidats/bouamrane.jpg",
       "slogan": "La France humaine et forte",
       "statut": "déclaré",
       "declaration": "2026-06-09",
@@ -379,7 +613,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Karim_Bouamrane_en_2026.jpg"
     },
     {
       "id": "batho",
@@ -390,7 +627,7 @@
       "bord": "gauche",
       "couleur": "#7BC043",
       "wiki": "Delphine_Batho",
-      "photo": null,
+      "photo": "img/candidats/batho.jpg",
       "slogan": null,
       "statut": "déclarée",
       "declaration": "2025-11-25",
@@ -400,7 +637,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped).png"
     },
     {
       "id": "cazeneuve",
@@ -411,7 +651,7 @@
       "bord": "centre-gauche",
       "couleur": "#C2185B",
       "wiki": "Bernard_Cazeneuve",
-      "photo": null,
+      "photo": "img/candidats/cazeneuve.jpg",
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-07-16",
@@ -421,7 +661,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Bernard_Cazeneuve,_(42399145362)_(cropped).jpg"
     },
     {
       "id": "attal",
@@ -432,7 +675,7 @@
       "bord": "centre",
       "couleur": "#F2B705",
       "wiki": "Gabriel_Attal",
-      "photo": null,
+      "photo": "img/candidats/attal.jpg",
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-05-22",
@@ -454,23 +697,51 @@
       },
       "propositions": {
         "education": [
-          { "titre": "Brevet obligatoire", "detail": "Obtention du brevet obligatoire pour accéder au lycée ; IA intégrée aux programmes dès le collège. « Pacte pour la jeunesse » présenté à Lyon le 10 octobre 2026.", "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html" }
+          {
+            "titre": "Brevet obligatoire",
+            "detail": "Obtention du brevet obligatoire pour accéder au lycée ; IA intégrée aux programmes dès le collège. « Pacte pour la jeunesse » présenté à Lyon le 10 octobre 2026.",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html"
+          }
         ],
         "travail": [
-          { "titre": "Maintien de la réforme de 2023", "detail": "Pas de retour sur le report de l'âge légal ; RSA conditionné à 15 heures d'activité.", "source": "https://www.france-vote.fr/candidats/gabriel-attal" },
-          { "titre": "Former à l'IA", "detail": "Former 20 millions de salariés à l'intelligence artificielle en cinq ans.", "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html" }
+          {
+            "titre": "Maintien de la réforme de 2023",
+            "detail": "Pas de retour sur le report de l'âge légal ; RSA conditionné à 15 heures d'activité.",
+            "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          },
+          {
+            "titre": "Former à l'IA",
+            "detail": "Former 20 millions de salariés à l'intelligence artificielle en cinq ans.",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html"
+          }
         ],
         "economie": [
-          { "titre": "Pas de nouvel impôt sur le patrimoine", "detail": "Baisse des cotisations employeurs et règle d'or budgétaire inscrite dans la Constitution.", "source": "https://www.france-vote.fr/candidats/gabriel-attal" }
+          {
+            "titre": "Pas de nouvel impôt sur le patrimoine",
+            "detail": "Baisse des cotisations employeurs et règle d'or budgétaire inscrite dans la Constitution.",
+            "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          }
         ],
         "pouvoir-achat": [
-          { "titre": "Salaires", "detail": "Hausse du net via la baisse des cotisations plutôt qu'un coup de pouce au SMIC.", "source": "https://www.france-vote.fr/candidats/gabriel-attal" }
+          {
+            "titre": "Salaires",
+            "detail": "Hausse du net via la baisse des cotisations plutôt qu'un coup de pouce au SMIC.",
+            "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          }
         ],
         "immigration": [
-          { "titre": "Gestion des frontières", "detail": "Un des quatre grands chantiers annoncés (école, salaires, frontières, IA).", "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html" }
+          {
+            "titre": "Gestion des frontières",
+            "detail": "Un des quatre grands chantiers annoncés (école, salaires, frontières, IA).",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html"
+          }
         ]
       },
-      "sources": ["https://monvote2027.fr/candidat/attal", "https://www.france-vote.fr/candidats/gabriel-attal"]
+      "sources": [
+        "https://monvote2027.fr/candidat/attal",
+        "https://www.france-vote.fr/candidats/gabriel-attal"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_in_2026.jpg"
     },
     {
       "id": "becht",
@@ -481,7 +752,7 @@
       "bord": "centre",
       "couleur": "#00A3E0",
       "wiki": "Olivier_Becht",
-      "photo": null,
+      "photo": "img/candidats/becht.jpg",
       "slogan": "Le projet France",
       "statut": "déclaré",
       "declaration": "2026-09-24",
@@ -491,7 +762,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Olivier_Becht.jpg"
     },
     {
       "id": "philippe",
@@ -502,7 +776,7 @@
       "bord": "centre-droit",
       "couleur": "#1D3E8F",
       "wiki": "Édouard_Philippe",
-      "photo": null,
+      "photo": "img/candidats/philippe.jpg",
       "slogan": "Croire en nous",
       "statut": "déclaré",
       "declaration": "2024-09-03",
@@ -524,14 +798,30 @@
       },
       "propositions": {
         "travail": [
-          { "titre": "Réforme des retraites", "detail": "Allongement de la durée de cotisation (45 annuités évoquées), mesures de justice sociale et introduction d'une part de capitalisation. Gain estimé par son équipe : 30 Md€/an.", "source": "https://www.journaldunet.com/business/action-publique/1555605-edouard-philippe-devoile-son-projet-de-reforme-des-retraites-pour-la-presidentielle-2027-prevoyant-un-depart-a-65-ans-et-45-annuites/" },
-          { "titre": "Assurance chômage", "detail": "Durée maximale d'indemnisation ramenée de 18 à 12 mois pour les moins de 50 ans.", "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ" }
+          {
+            "titre": "Réforme des retraites",
+            "detail": "Allongement de la durée de cotisation (45 annuités évoquées), mesures de justice sociale et introduction d'une part de capitalisation. Gain estimé par son équipe : 30 Md€/an.",
+            "source": "https://www.journaldunet.com/business/action-publique/1555605-edouard-philippe-devoile-son-projet-de-reforme-des-retraites-pour-la-presidentielle-2027-prevoyant-un-depart-a-65-ans-et-45-annuites/"
+          },
+          {
+            "titre": "Assurance chômage",
+            "detail": "Durée maximale d'indemnisation ramenée de 18 à 12 mois pour les moins de 50 ans.",
+            "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+          }
         ],
         "economie": [
-          { "titre": "Baisse de la dépense publique", "detail": "Non-remplacement d'un tiers des fonctionnaires partant à la retraite (plus de 250 000 postes sur le quinquennat) ; réduction du déficit.", "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ" }
+          {
+            "titre": "Baisse de la dépense publique",
+            "detail": "Non-remplacement d'un tiers des fonctionnaires partant à la retraite (plus de 250 000 postes sur le quinquennat) ; réduction du déficit.",
+            "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+          }
         ]
       },
-      "sources": ["https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ", "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/"]
+      "sources": [
+        "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
+        "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg"
     },
     {
       "id": "retailleau",
@@ -542,7 +832,7 @@
       "bord": "droite",
       "couleur": "#0066CC",
       "wiki": "Bruno_Retailleau",
-      "photo": null,
+      "photo": "img/candidats/retailleau.jpg",
       "slogan": "Ne plus subir",
       "statut": "désigné",
       "declaration": "2026-04-19",
@@ -564,19 +854,38 @@
       },
       "propositions": {
         "immigration": [
-          { "titre": "Référendum sur l'immigration", "detail": "Soumettre une forte baisse de l'immigration à référendum.", "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492" }
+          {
+            "titre": "Référendum sur l'immigration",
+            "detail": "Soumettre une forte baisse de l'immigration à référendum.",
+            "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+          }
         ],
         "securite": [
-          { "titre": "Narcotrafic", "detail": "État d'urgence dans les quartiers touchés et réforme de la justice pénale, elle aussi par référendum.", "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492" }
+          {
+            "titre": "Narcotrafic",
+            "detail": "État d'urgence dans les quartiers touchés et réforme de la justice pénale, elle aussi par référendum.",
+            "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+          }
         ],
         "economie": [
-          { "titre": "Simplification", "detail": "Supprimer les normes qui pèsent le plus sur les entreprises dès le lendemain de l'élection ; supprimer le « zéro artificialisation nette » (ZAN).", "source": "https://votons-2027.fr/candidats/retailleau/programme" }
+          {
+            "titre": "Simplification",
+            "detail": "Supprimer les normes qui pèsent le plus sur les entreprises dès le lendemain de l'élection ; supprimer le « zéro artificialisation nette » (ZAN).",
+            "source": "https://votons-2027.fr/candidats/retailleau/programme"
+          }
         ],
         "travail": [
-          { "titre": "Réforme des retraites", "detail": "Nouvelle réforme des retraites annoncée dans son entretien au Figaro.", "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492" }
+          {
+            "titre": "Réforme des retraites",
+            "detail": "Nouvelle réforme des retraites annoncée dans son entretien au Figaro.",
+            "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+          }
         ]
       },
-      "sources": ["https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"]
+      "sources": [
+        "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg"
     },
     {
       "id": "lisnard",
@@ -587,7 +896,7 @@
       "bord": "droite",
       "couleur": "#2E86DE",
       "wiki": "David_Lisnard",
-      "photo": null,
+      "photo": "img/candidats/lisnard.jpg",
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-03-31",
@@ -609,16 +918,31 @@
       },
       "propositions": {
         "economie": [
-          { "titre": "Libérer l'économie", "detail": "Baisse des impôts de production, simplification administrative, équilibre budgétaire inscrit dans la Constitution, dépense publique sous 50 % du PIB en dix ans.", "source": "https://votons-2027.fr/candidats/lisnard/programme" }
+          {
+            "titre": "Libérer l'économie",
+            "detail": "Baisse des impôts de production, simplification administrative, équilibre budgétaire inscrit dans la Constitution, dépense publique sous 50 % du PIB en dix ans.",
+            "source": "https://votons-2027.fr/candidats/lisnard/programme"
+          }
         ],
         "ecologie": [
-          { "titre": "Nucléaire", "detail": "Arrêt des fermetures de réacteurs, prolongation du parc jusqu'à 60 ans, six EPR et mini-réacteurs (SMR).", "source": "https://www.elyseescope.com/candidat/david-lisnard/energie-q16-" }
+          {
+            "titre": "Nucléaire",
+            "detail": "Arrêt des fermetures de réacteurs, prolongation du parc jusqu'à 60 ans, six EPR et mini-réacteurs (SMR).",
+            "source": "https://www.elyseescope.com/candidat/david-lisnard/energie-q16-"
+          }
         ],
         "education": [
-          { "titre": "Enseignants +20 %", "detail": "Hausse de 20 % de la rémunération des enseignants en cinq ans, conditionnée à une réorganisation du système.", "source": "https://www.elyseescope.com/candidat/david-lisnard/education-q27-" }
+          {
+            "titre": "Enseignants +20 %",
+            "detail": "Hausse de 20 % de la rémunération des enseignants en cinq ans, conditionnée à une réorganisation du système.",
+            "source": "https://www.elyseescope.com/candidat/david-lisnard/education-q27-"
+          }
         ]
       },
-      "sources": ["https://votons-2027.fr/candidats/lisnard/programme"]
+      "sources": [
+        "https://votons-2027.fr/candidats/lisnard/programme"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg"
     },
     {
       "id": "bertrand",
@@ -629,7 +953,7 @@
       "bord": "droite",
       "couleur": "#3A5FCD",
       "wiki": "Xavier_Bertrand",
-      "photo": null,
+      "photo": "img/candidats/bertrand.jpg",
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2024-02-03",
@@ -639,7 +963,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg"
     },
     {
       "id": "platret",
@@ -650,7 +977,7 @@
       "bord": "droite",
       "couleur": "#5B7DB1",
       "wiki": "Gilles_Platret",
-      "photo": null,
+      "photo": "img/candidats/platret.jpg",
       "slogan": "Parlons de la France !",
       "statut": "déclaré",
       "declaration": "2026-10-08",
@@ -660,7 +987,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:GPlatret.jpg"
     },
     {
       "id": "dupont-aignan",
@@ -671,7 +1001,7 @@
       "bord": "droite-souverainiste",
       "couleur": "#0082C4",
       "wiki": "Nicolas_Dupont-Aignan",
-      "photo": null,
+      "photo": "img/candidats/dupont-aignan.jpg",
       "slogan": "Libérons la France !",
       "statut": "déclaré",
       "declaration": "2026-09-19",
@@ -681,7 +1011,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_français_(cropped).jpg"
     },
     {
       "id": "philippot",
@@ -692,21 +1025,32 @@
       "bord": "droite-souverainiste",
       "couleur": "#1E3A8A",
       "wiki": "Florian_Philippot",
-      "photo": null,
+      "photo": "img/candidats/philippot.jpg",
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-05-09",
       "programme": "non publié",
       "site": null,
       "bio": "Président des Patriotes. Prône la sortie de l'Union européenne (Frexit). Se retirerait au profit d'un candidat souverainiste plus rassembleur.",
-      "phares": ["Sortie de l'Union européenne (Frexit)"],
-      "positions": { "europe": "Frexit" },
+      "phares": [
+        "Sortie de l'Union européenne (Frexit)"
+      ],
+      "positions": {
+        "europe": "Frexit"
+      },
       "propositions": {
         "europe": [
-          { "titre": "Frexit", "detail": "Sortie de l'Union européenne, position historique des Patriotes.", "source": "https://fr.wikipedia.org/wiki/Les_Patriotes" }
+          {
+            "titre": "Frexit",
+            "detail": "Sortie de l'Union européenne, position historique des Patriotes.",
+            "source": "https://fr.wikipedia.org/wiki/Les_Patriotes"
+          }
         ]
       },
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Florian_Philippot.jpg"
     },
     {
       "id": "asselineau",
@@ -717,21 +1061,32 @@
       "bord": "droite-souverainiste",
       "couleur": "#009B9F",
       "wiki": "François_Asselineau",
-      "photo": null,
+      "photo": "img/candidats/asselineau.jpg",
       "slogan": "La France retrouvée",
       "statut": "déclaré",
       "declaration": "2023-08-31",
       "programme": "non publié",
       "site": "https://www.upr.fr",
       "bio": "Président de l'UPR, candidat en 2017. Défend la sortie de l'UE, de l'euro et de l'OTAN.",
-      "phares": ["Sortie de l'UE, de l'euro et de l'OTAN"],
-      "positions": { "europe": "Frexit" },
+      "phares": [
+        "Sortie de l'UE, de l'euro et de l'OTAN"
+      ],
+      "positions": {
+        "europe": "Frexit"
+      },
       "propositions": {
         "europe": [
-          { "titre": "Frexit", "detail": "Sortie de l'Union européenne par l'article 50, de l'euro et de l'OTAN — ligne constante de l'UPR.", "source": "https://www.upr.fr" }
+          {
+            "titre": "Frexit",
+            "detail": "Sortie de l'Union européenne par l'article 50, de l'euro et de l'OTAN — ligne constante de l'UPR.",
+            "source": "https://www.upr.fr"
+          }
         ]
       },
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:François_ASSELINEAU.jpg"
     },
     {
       "id": "le-pen",
@@ -742,7 +1097,7 @@
       "bord": "extreme-droite",
       "couleur": "#0D2F6E",
       "wiki": "Marine_Le_Pen",
-      "photo": null,
+      "photo": "img/candidats/le-pen.jpg",
       "slogan": null,
       "statut": "déclarée",
       "declaration": "2026-07-07",
@@ -764,19 +1119,39 @@
       },
       "propositions": {
         "travail": [
-          { "titre": "Retraite à 62 ans", "detail": "Retour à 62 ans, voire 60 ans pour ceux ayant commencé tôt ; confirmé au débat du Medef du 27 août 2026.", "source": "https://monvote2027.fr/candidat/le-pen" }
+          {
+            "titre": "Retraite à 62 ans",
+            "detail": "Retour à 62 ans, voire 60 ans pour ceux ayant commencé tôt ; confirmé au débat du Medef du 27 août 2026.",
+            "source": "https://monvote2027.fr/candidat/le-pen"
+          }
         ],
         "pouvoir-achat": [
-          { "titre": "Baisse de la TVA sur l'énergie", "detail": "De 20 % à 5,5 % sur carburants, fioul, gaz et électricité.", "source": "https://votons-2027.fr/candidats/le-pen/programme/economie" }
+          {
+            "titre": "Baisse de la TVA sur l'énergie",
+            "detail": "De 20 % à 5,5 % sur carburants, fioul, gaz et électricité.",
+            "source": "https://votons-2027.fr/candidats/le-pen/programme/economie"
+          }
         ],
         "immigration": [
-          { "titre": "Référendum et priorité nationale", "detail": "Priorité nationale pour l'emploi, le logement et les prestations, soumise à référendum ; fin du regroupement familial et du droit du sol ; suppression de l'AME.", "source": "https://www.elyseescope.com/candidat/marine-le-pen/immigration" }
+          {
+            "titre": "Référendum et priorité nationale",
+            "detail": "Priorité nationale pour l'emploi, le logement et les prestations, soumise à référendum ; fin du regroupement familial et du droit du sol ; suppression de l'AME.",
+            "source": "https://www.elyseescope.com/candidat/marine-le-pen/immigration"
+          }
         ],
         "ecologie": [
-          { "titre": "Tout nucléaire", "detail": "Relance massive du nucléaire et moratoire sur l'éolien et le solaire.", "source": "https://presi2027.fr/candidat/lepen" }
+          {
+            "titre": "Tout nucléaire",
+            "detail": "Relance massive du nucléaire et moratoire sur l'éolien et le solaire.",
+            "source": "https://presi2027.fr/candidat/lepen"
+          }
         ]
       },
-      "sources": ["https://monvote2027.fr/candidat/le-pen", "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027"]
+      "sources": [
+        "https://monvote2027.fr/candidat/le-pen",
+        "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg"
     },
     {
       "id": "zemmour",
@@ -787,7 +1162,7 @@
       "bord": "extreme-droite",
       "couleur": "#2B2D42",
       "wiki": "Éric_Zemmour",
-      "photo": null,
+      "photo": "img/candidats/zemmour.jpg",
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-09-17",
@@ -809,14 +1184,29 @@
       },
       "propositions": {
         "immigration": [
-          { "titre": "Remigration", "detail": "Objectif d'« immigration négative » (plus de départs que d'arrivées) ; un étranger au chômage depuis un an devrait quitter la France. Aucun texte détaillé publié à ce stade.", "source": "https://lessentieldeleco.fr/8508-zemmour-et-la-remigration-qui-est-vise/" },
-          { "titre": "Fin du droit du sol", "detail": "Suppression de l'acquisition automatique de la nationalité par la naissance en France.", "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour" }
+          {
+            "titre": "Remigration",
+            "detail": "Objectif d'« immigration négative » (plus de départs que d'arrivées) ; un étranger au chômage depuis un an devrait quitter la France. Aucun texte détaillé publié à ce stade.",
+            "source": "https://lessentieldeleco.fr/8508-zemmour-et-la-remigration-qui-est-vise/"
+          },
+          {
+            "titre": "Fin du droit du sol",
+            "detail": "Suppression de l'acquisition automatique de la nationalité par la naissance en France.",
+            "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour"
+          }
         ],
         "europe": [
-          { "titre": "Europe des nations", "detail": "Rejet du fédéralisme ; primauté du droit français sur le droit européen et la CEDH.", "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour" }
+          {
+            "titre": "Europe des nations",
+            "detail": "Rejet du fédéralisme ; primauté du droit français sur le droit européen et la CEDH.",
+            "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour"
+          }
         ]
       },
-      "sources": ["https://monvote2027.fr/candidat/zemmour"]
+      "sources": [
+        "https://monvote2027.fr/candidat/zemmour"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Portrait_d'Éric_Zemmour,_avril_2022.jpg"
     },
     {
       "id": "polony",
@@ -827,7 +1217,7 @@
       "bord": "autre",
       "couleur": "#7A5C99",
       "wiki": "Natacha_Polony",
-      "photo": null,
+      "photo": "img/candidats/polony.jpg",
       "slogan": "Nous sommes la France",
       "statut": "déclarée",
       "declaration": "2026-10-14",
@@ -837,7 +1227,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Natacha_Polony_Cannes_2015.jpg"
     },
     {
       "id": "egger",
@@ -847,22 +1240,31 @@
       "partiCourt": "SD",
       "bord": "autre",
       "couleur": "#8E44AD",
-      "wiki": null,
-      "photo": null,
+      "wiki": "Clara_Egger",
+      "photo": "img/candidats/egger.jpg",
       "slogan": "Pour que voter serve enfin",
       "statut": "déclarée",
       "declaration": "2026-04-19",
       "programme": "partiel",
       "site": "https://solutiondemocratique.fr",
       "bio": "Candidate de Solution démocratique, centrée sur la démocratie directe.",
-      "phares": ["Référendum d'initiative citoyenne"],
+      "phares": [
+        "Référendum d'initiative citoyenne"
+      ],
       "positions": {},
       "propositions": {
         "institutions": [
-          { "titre": "Démocratie directe", "detail": "Mettre en place l'initiative citoyenne pour que les électeurs puissent proposer et voter des lois.", "source": "https://solutiondemocratique.fr" }
+          {
+            "titre": "Démocratie directe",
+            "detail": "Mettre en place l'initiative citoyenne pour que les électeurs puissent proposer et voter des lois.",
+            "source": "https://solutiondemocratique.fr"
+          }
         ]
       },
-      "sources": ["https://solutiondemocratique.fr"]
+      "sources": [
+        "https://solutiondemocratique.fr"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Clara_Egger.jpg"
     },
     {
       "id": "markovic",
@@ -883,7 +1285,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": null
     },
     {
       "id": "mikolajczak",
@@ -904,7 +1309,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": null
     },
     {
       "id": "lalanne",
@@ -915,7 +1323,7 @@
       "bord": "autre",
       "couleur": "#95A5A6",
       "wiki": "Francis_Lalanne",
-      "photo": null,
+      "photo": "img/candidats/lalanne.jpg",
       "slogan": "Pour une France libre, souveraine et solaire",
       "statut": "déclaré",
       "declaration": "2026-06-17",
@@ -925,7 +1333,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Lalanne_2021_(cropped).jpg"
     },
     {
       "id": "durif",
@@ -935,8 +1346,8 @@
       "partiCourt": "SE",
       "bord": "autre",
       "couleur": "#BDC3C7",
-      "wiki": null,
-      "photo": null,
+      "wiki": "Sylvain_Durif",
+      "photo": "img/candidats/durif.jpg",
       "slogan": "L'union du ciel et de la terre",
       "statut": "déclaré",
       "declaration": "2026-08-23",
@@ -946,7 +1357,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Sylvain_Durif.jpg"
     },
     {
       "id": "mathieu",
@@ -967,7 +1381,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": null
     },
     {
       "id": "mlekuz",
@@ -988,7 +1405,10 @@
       "phares": [],
       "positions": {},
       "propositions": {},
-      "sources": ["https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"]
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+      ],
+      "photoCredit": null
     }
   ]
 }

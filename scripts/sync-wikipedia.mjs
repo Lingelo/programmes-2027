@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // Synchronisation quotidienne avec Wikipédia (aucune dépendance, Node 20+).
-//  1. Rafraîchit la photo de chaque candidat (Wikimedia Commons, via l'API REST de fr.wikipedia).
+//  1. Télécharge la photo des candidats qui n'en ont pas encore (Wikimedia Commons) dans img/candidats/
 //  2. Lit la page « Candidatures à l'élection présidentielle française de 2027 » et repère
 //     les noms de candidats déclarés absents de data/candidats.json -> data/veille.json.
 // Ce script ne modifie jamais les programmes : il ne fait que signaler.
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, access } from 'node:fs/promises';
 
 const DATA = new URL('../data/candidats.json', import.meta.url);
 const VEILLE = new URL('../data/veille.json', import.meta.url);
@@ -27,17 +27,31 @@ async function get(url, type = 'json') {
 const data = JSON.parse(await readFile(DATA, 'utf8'));
 let photosChangees = 0;
 
-// 1. Photos
+// 1. Photos : téléchargées dans img/candidats/ (le site ne dépend pas de Wikipédia au chargement).
+//    On ne remplace jamais une photo déjà présente : pour en changer, supprimer le fichier.
+const existe = (f) => access(new URL('../' + f, import.meta.url)).then(() => true, () => false);
 for (const c of data.candidats) {
-  if (!c.wiki) continue;
+  if (!c.wiki || (c.photo && await existe(c.photo))) continue;
   try {
-    const j = await get(`https://fr.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(c.wiki)}`);
-    const u = j?.thumbnail?.source ? j.thumbnail.source.replace(/\/\d+px-/, '/400px-') : null;
-    if (u && u !== c.photo) { c.photo = u; photosChangees++; }
+    let j = null;
+    for (const host of ['fr', 'en']) {
+      j = await get(`https://${host}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(c.wiki)}`);
+      if (j?.thumbnail?.source) break;
+    }
+    const src = j?.thumbnail?.source?.split('?')[0];
+    if (!src) continue;
+    const ext = src.match(/\.(jpe?g|png|webp)$/i)?.[0].toLowerCase() || '.jpg';
+    const r = await fetch(src.replace(/\/\d+px-/, '/330px-'), { headers: { 'User-Agent': UA } });
+    if (!r.ok) continue;
+    const fichier = `img/candidats/${c.id}${ext}`;
+    await writeFile(new URL('../' + fichier, import.meta.url), Buffer.from(await r.arrayBuffer()));
+    c.photo = fichier;
+    c.photoCredit = 'https://commons.wikimedia.org/wiki/File:' + decodeURIComponent(src.split('/').at(-2));
+    photosChangees++;
   } catch (e) {
     console.warn(`Photo ${c.wiki} : ${e.message}`);
   }
-  await pause(250);
+  await pause(300);
 }
 
 // 2. Veille des candidatures
