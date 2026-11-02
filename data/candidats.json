@@ -6,7 +6,8 @@
       "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
     },
     "contenuMisAJour": "2026-11-02",
-    "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub."
+    "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub.",
+    "regle": "Seules les mesures et positions attribuées au candidat pour la campagne 2027 (sources datées de 2025-2026) figurent sur le site."
   },
   "bords": [
     {
@@ -156,51 +157,65 @@
       "site": "https://www.lutte-ouvriere.org",
       "bio": "Porte-parole de Lutte ouvrière, professeure d'économie-gestion. Quatrième candidature à la présidentielle après 2012, 2017 et 2022.",
       "phares": [
-        "Hausse générale des salaires et indexation sur les prix",
+        "SMIC à 2 000 € net",
         "Interdiction des licenciements",
-        "Expropriation des grands groupes capitalistes"
+        "Expropriation des grandes fortunes"
       ],
       "positions": {
-        "retraite": "60 ans (ou moins)",
-        "smic": "Forte hausse",
-        "fortune": "Expropriation",
-        "nucleaire": "Non prioritaire",
-        "immigration": "Liberté de circulation",
-        "europe": "Anticapitaliste, internationaliste"
+        "retraite": {
+          "valeur": "Abroger 2023, 62 ans ou moins",
+          "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
+        },
+        "smic": {
+          "valeur": "2 000 € net",
+          "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
+        },
+        "fortune": {
+          "valeur": "Expropriation",
+          "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
+        },
+        "immigration": {
+          "valeur": "Régulariser tous les sans-papiers",
+          "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
+        },
+        "europe": {
+          "valeur": "Contre « l'Europe des capitaux », sans sortie",
+          "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
+        }
       },
       "propositions": {
         "pouvoir-achat": [
           {
-            "titre": "Augmenter tous les salaires",
-            "detail": "Hausse générale des salaires, pensions et allocations, avec indexation automatique sur l'inflation (« échelle mobile »).",
-            "source": "https://www.lutte-ouvriere.org"
+            "titre": "SMIC à 2 000 € net",
+            "detail": "Hausse immédiate du SMIC à 2 000 € net (elle évoque aussi 2 200 € net « pour s'en sortir ») et augmentation des salaires, pensions et allocations.",
+            "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
           }
         ],
         "travail": [
           {
             "titre": "Interdire les licenciements",
-            "detail": "Répartir le travail entre tous sans perte de salaire plutôt que de licencier.",
-            "source": "https://www.lutte-ouvriere.org"
+            "detail": "Interdiction des licenciements ; abrogation de la réforme des retraites de 2023.",
+            "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
           }
         ],
         "economie": [
           {
-            "titre": "Contrôle ouvrier sur les entreprises",
-            "detail": "Levée du secret des affaires et expropriation des grands groupes pour planifier l'économie.",
-            "source": "https://www.lutte-ouvriere.org"
+            "titre": "Exproprier les grandes fortunes",
+            "detail": "Expropriation des grandes fortunes et taxation massive des très grands patrimoines.",
+            "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
           }
         ],
-        "sante": [
+        "immigration": [
           {
-            "titre": "Renforcer les services publics",
-            "detail": "Embauches massives dans les hôpitaux, l'éducation et les transports.",
-            "source": "https://www.elyseescope.com/questions/nathalie-arthaud-lutte-ouvriere"
+            "titre": "Liberté de circulation",
+            "detail": "Liberté de circulation et d'installation, régularisation de tous les sans-papiers.",
+            "source": "https://www.france-vote.fr/candidats/nathalie-arthaud"
           }
         ]
       },
       "sources": [
-        "https://www.lutte-ouvriere.org",
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://www.france-vote.fr/candidats/nathalie-arthaud",
+        "https://www.lespritfr.com/2026/10/06/nathalie-arthaud-portrait-bilan-2027/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg",
       "biographie": {
@@ -310,27 +325,37 @@
       "slogan": "La force de tout changer",
       "statut": "déclaré",
       "declaration": "2026-05-03",
-      "programme": "complet",
+      "programme": "partiel",
       "site": "https://melenchon2027.fr",
-      "bio": "Fondateur de La France insoumise, ancien ministre et député. Quatrième candidature consécutive (2012, 2017, 2022). Programme de référence : « L'Avenir en commun », en cours d'actualisation pour 2027.",
+      "bio": "Fondateur de La France insoumise, ancien ministre et député. Quatrième candidature consécutive (2012, 2017, 2022). Programme 2027 en cours de réécriture : nouvelle version annoncée les 6 et 7 novembre 2026.",
       "phares": [
         "Retraite à 60 ans avec 40 annuités",
         "VIe République via une Assemblée constituante",
-        "Planification écologique et « règle verte »"
+        "Sortie du nucléaire"
       ],
       "positions": {
-        "retraite": "60 ans",
-        "smic": "1 600 à 1 700 € net",
-        "fortune": "Rétablir l'ISF",
-        "nucleaire": "Sortie",
-        "immigration": "Régularisations",
-        "europe": "Désobéir aux traités"
+        "retraite": {
+          "valeur": "60 ans",
+          "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
+        },
+        "smic": {
+          "valeur": "1 600 à 1 700 € net",
+          "source": "https://le-francais-moyen.com/programmes/melenchon-2027/"
+        },
+        "nucleaire": {
+          "valeur": "Sortie",
+          "source": "https://monvote2027.fr/candidat/melenchon"
+        },
+        "europe": {
+          "valeur": "Désobéir aux traités",
+          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+        }
       },
       "propositions": {
         "travail": [
           {
             "titre": "Retraite à 60 ans",
-            "detail": "Abrogation de la réforme de 2023, retour à 60 ans avec 40 annuités pour une carrière complète, pension minimale au niveau du SMIC.",
+            "detail": "Abrogation de la réforme de 2023, retour à 60 ans avec 40 annuités, pension minimale au niveau du SMIC (L'Avenir en commun, édition 2025, base de la campagne 2027).",
             "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
           }
         ],
@@ -339,45 +364,34 @@
             "titre": "Hausse du SMIC",
             "detail": "SMIC à 1 600 € net dans l'Avenir en commun 2025, 1 700 € évoqués dans la campagne 2026.",
             "source": "https://le-francais-moyen.com/programmes/melenchon-2027/"
-          },
-          {
-            "titre": "Blocage des prix",
-            "detail": "Blocage des prix des produits de première nécessité.",
-            "source": "https://melenchon2027.fr"
-          }
-        ],
-        "economie": [
-          {
-            "titre": "Fiscalité plus progressive",
-            "detail": "Rétablissement de l'ISF et impôt sur le revenu à davantage de tranches.",
-            "source": "https://melenchon2027.fr"
           }
         ],
         "ecologie": [
           {
-            "titre": "Planification écologique",
-            "detail": "« Règle verte » (ne pas prélever plus que ce que la nature peut reconstituer) et sortie du nucléaire au profit des renouvelables.",
-            "source": "https://melenchon2027.fr"
+            "titre": "Sortie du nucléaire",
+            "detail": "« On sortira du nucléaire, il n'y a pas besoin de référendum » (entretien du 28 mai 2026).",
+            "source": "https://monvote2027.fr/candidat/melenchon"
           }
         ],
         "institutions": [
           {
             "titre": "VIe République",
-            "detail": "Convocation d'une Assemblée constituante ; nouvelle Constitution soumise à référendum. Référendum d'initiative citoyenne.",
+            "detail": "Convocation d'une Assemblée constituante ; nouvelle Constitution soumise à référendum.",
             "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
           }
         ],
         "europe": [
           {
             "titre": "Désobéissance aux traités",
-            "detail": "Ne pas appliquer les règles européennes jugées contraires au programme (règles budgétaires, concurrence).",
-            "source": "https://melenchon2027.fr"
+            "detail": "Plan A : renégocier les traités européens ; plan B : en sortir si les partenaires refusent.",
+            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
           }
         ]
       },
       "sources": [
-        "https://melenchon2027.fr/construction-programme/",
-        "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
+        "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027",
+        "https://monvote2027.fr/candidat/melenchon",
+        "https://melenchon2027.fr/construction-programme/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg",
       "biographie": {
@@ -451,49 +465,82 @@
       "site": "https://www.pcf.fr",
       "bio": "Secrétaire national du PCF, candidat en 2022 (2,28 %). Investi par 72 % des adhérents en septembre 2026, il défend une candidature autonome.",
       "phares": [
-        "Hausse des salaires et du SMIC",
-        "Services publics renforcés",
-        "Nucléaire et planification écologique"
+        "SMIC à 1 500 € net et semaine de 32 heures",
+        "Retour de la retraite à 60 ans",
+        "Priorité au nucléaire public"
       ],
       "positions": {
-        "retraite": "60 ans",
-        "smic": "Hausse",
-        "fortune": "Taxer davantage",
-        "nucleaire": "Pour",
-        "immigration": "—",
-        "europe": "Critique"
+        "retraite": {
+          "valeur": "60 ans",
+          "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+        },
+        "smic": {
+          "valeur": "1 500 € net",
+          "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+        },
+        "fortune": {
+          "valeur": "ISF triplé",
+          "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+        },
+        "nucleaire": {
+          "valeur": "Pour (public)",
+          "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+        },
+        "immigration": {
+          "valeur": "Régulariser les travailleurs",
+          "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+        },
+        "europe": {
+          "valeur": "Rupture avec les traités",
+          "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+        }
       },
       "propositions": {
         "pouvoir-achat": [
           {
-            "titre": "Augmenter le SMIC et les salaires",
-            "detail": "Hausse du salaire minimum au cœur du projet « Vivre ».",
-            "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027"
+            "titre": "SMIC à 1 500 € net",
+            "detail": "SMIC porté à 1 500 € net, avec une semaine de 32 heures.",
+            "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Retraite à 60 ans",
+            "detail": "Retour de la retraite à 60 ans.",
+            "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
           }
         ],
         "economie": [
           {
-            "titre": "Taxer les grandes fortunes",
-            "detail": "Hausse de la taxation des plus hauts patrimoines et lutte contre l'évasion fiscale.",
-            "source": "https://www.elyseescope.com/questions/roussel-pcf-candidature-programme-2027"
+            "titre": "ISF triplé",
+            "detail": "Rétablissement d'un impôt sur la fortune « triplé ».",
+            "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
           }
         ],
         "ecologie": [
           {
-            "titre": "Nucléaire + renouvelables",
-            "detail": "Défense du nucléaire public dans une planification écologique.",
-            "source": "https://www.pcf.fr"
+            "titre": "Priorité au nucléaire public",
+            "detail": "Le nucléaire public présenté comme socle d'une électricité décarbonée.",
+            "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
           }
         ],
-        "sante": [
+        "immigration": [
           {
-            "titre": "Services publics",
-            "detail": "Réinvestissement massif dans l'hôpital, l'école et les services publics de proximité.",
-            "source": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"
+            "titre": "Régulariser les travailleurs sans papiers",
+            "detail": "Régularisation des travailleurs sans papiers, défense du droit d'asile et fermeté sur le contrôle des frontières.",
+            "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Rupture avec les traités libéraux",
+            "detail": "Rupture avec les traités jugés libéraux et refus de « l'Europe du surarmement ».",
+            "source": "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027"
           }
         ]
       },
       "sources": [
+        "https://www.france-vote.fr/actualites/programme-fabien-roussel-2027",
         "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg",
@@ -556,16 +603,18 @@
       "bio": "Député de la Somme, journaliste et réalisateur. A quitté LFI et fondé le mouvement Debout ! Se maintient en l'absence de primaire commune.",
       "phares": [
         "« Président au SMIC »",
-        "Fiscalité plus progressive",
-        "Revaloriser les métiers du lien"
+        "Hausse du SMIC",
+        "Fiscalité plus progressive"
       ],
       "positions": {
-        "retraite": "Abroger 2023",
-        "smic": "Hausse",
-        "fortune": "Taxer davantage",
-        "nucleaire": "—",
-        "immigration": "—",
-        "europe": "Protectionnisme"
+        "smic": {
+          "valeur": "Hausse",
+          "source": "https://www.elyseescope.com/questions/francois-ruffin-social"
+        },
+        "fortune": {
+          "valeur": "Taxer davantage",
+          "source": "https://www.elyseescope.com/questions/francois-ruffin-justice-sociale"
+        }
       },
       "propositions": {
         "pouvoir-achat": [
@@ -647,12 +696,30 @@
         "Sortie progressive du nucléaire"
       ],
       "positions": {
-        "retraite": "Abroger 2023",
-        "smic": "Hausse",
-        "fortune": "Taxe Zucman + ISF vert",
-        "nucleaire": "Sortie progressive",
-        "immigration": "Accueil",
-        "europe": "Fédéraliste"
+        "retraite": {
+          "valeur": "62 ans, objectif 60",
+          "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+        },
+        "smic": {
+          "valeur": "Forte hausse",
+          "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+        },
+        "fortune": {
+          "valeur": "Taxe Zucman + ISF vert",
+          "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+        },
+        "nucleaire": {
+          "valeur": "Sortie progressive",
+          "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+        },
+        "immigration": {
+          "valeur": "Contre le durcissement",
+          "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+        },
+        "europe": {
+          "valeur": "Europe fédérale",
+          "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+        }
       },
       "propositions": {
         "economie": [
@@ -671,9 +738,23 @@
         ],
         "institutions": [
           {
-            "titre": "Proportionnelle",
-            "detail": "Scrutin proportionnel pour les législatives.",
-            "source": "https://lesecologistes.fr"
+            "titre": "Proportionnelle intégrale",
+            "detail": "Scrutin proportionnel intégral pour les législatives.",
+            "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Retraites : 62 ans, objectif 60",
+            "detail": "Abrogation de la réforme de 2023, retour à 62 ans avec pour objectif ultime 60 ans.",
+            "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Contre le durcissement",
+            "detail": "Opposition au durcissement des règles migratoires, refus des quotas et du recul du droit du sol.",
+            "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
           }
         ]
       },
@@ -735,12 +816,30 @@
         "Défense européenne et soutien à l'Ukraine"
       ],
       "positions": {
-        "retraite": "Abroger 2023",
-        "smic": "1 600 € net",
-        "fortune": "ISF climatique",
-        "nucleaire": "Maintenu (transition)",
-        "immigration": "—",
-        "europe": "Pro-européen"
+        "retraite": {
+          "valeur": "Abroger 2023",
+          "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
+        },
+        "smic": {
+          "valeur": "1 600 € net",
+          "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
+        },
+        "fortune": {
+          "valeur": "Taxer les très grands patrimoines",
+          "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
+        },
+        "nucleaire": {
+          "valeur": "Mix nucléaire + renouvelables",
+          "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
+        },
+        "immigration": {
+          "valeur": "Contre des quotas contraignants",
+          "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
+        },
+        "europe": {
+          "valeur": "Saut fédéral",
+          "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
+        }
       },
       "propositions": {
         "pouvoir-achat": [
@@ -773,9 +872,9 @@
         ],
         "europe": [
           {
-            "titre": "Europe de la défense",
-            "detail": "Renforcement de la défense européenne et soutien à l'Ukraine.",
-            "source": "https://place-publique.eu"
+            "titre": "Défense européenne et Ukraine",
+            "detail": "Soutien maximal à l'Ukraine, saisie des avoirs russes gelés, fonds européen de défense ; « saut fédéral » européen (budget commun, fin du droit de veto).",
+            "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
           }
         ],
         "institutions": [
@@ -783,6 +882,13 @@
             "titre": "Initiative citoyenne",
             "detail": "Droit d'initiative citoyenne.",
             "source": "https://solutiondemocratique.fr/raphael-glucksmann-2027-programme-presidentiel/"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Pas de quotas contraignants",
+            "detail": "Opposé à de fortes réductions de l'immigration légale par quotas ; l'installation en France « n'est pas un droit universel ».",
+            "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
           }
         ]
       },
@@ -1029,12 +1135,30 @@
         "Règle d'or budgétaire dans la Constitution"
       ],
       "positions": {
-        "retraite": "64 ans (maintien)",
-        "smic": "Pas de coup de pouce",
-        "fortune": "Contre",
-        "nucleaire": "Pour",
-        "immigration": "Contrôle des frontières",
-        "europe": "Pro-européen"
+        "retraite": {
+          "valeur": "Maintien de la réforme 2023",
+          "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+        },
+        "smic": {
+          "valeur": "Pas de hausse",
+          "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+        },
+        "fortune": {
+          "valeur": "Pas de nouvel impôt",
+          "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+        },
+        "nucleaire": {
+          "valeur": "Nouveaux réacteurs",
+          "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+        },
+        "immigration": {
+          "valeur": "Quotas annuels",
+          "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+        },
+        "europe": {
+          "valeur": "Approfondir l'intégration",
+          "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+        }
       },
       "propositions": {
         "education": [
@@ -1072,9 +1196,16 @@
         ],
         "immigration": [
           {
-            "titre": "Gestion des frontières",
-            "detail": "Un des quatre grands chantiers annoncés (école, salaires, frontières, IA).",
-            "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html"
+            "titre": "Quotas votés au Parlement",
+            "detail": "Quotas d'immigration votés chaque année au Parlement, par secteur ; gestion des frontières parmi ses quatre grands chantiers.",
+            "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Nouveaux réacteurs",
+            "detail": "Soutien à la construction d'une nouvelle génération de réacteurs nucléaires.",
+            "source": "https://www.france-vote.fr/candidats/gabriel-attal"
           }
         ]
       },
@@ -1220,12 +1351,14 @@
         "Chômage : 12 mois d'indemnisation max. pour les moins de 50 ans"
       ],
       "positions": {
-        "retraite": "Allongement (45 annuités)",
-        "smic": "—",
-        "fortune": "Contre",
-        "nucleaire": "Pour",
-        "immigration": "Durcissement",
-        "europe": "Pro-européen"
+        "retraite": {
+          "valeur": "Allongement (45 annuités)",
+          "source": "https://www.journaldunet.com/business/action-publique/1555605-edouard-philippe-devoile-son-projet-de-reforme-des-retraites-pour-la-presidentielle-2027-prevoyant-un-depart-a-65-ans-et-45-annuites/"
+        },
+        "europe": {
+          "valeur": "Coopération, pas de fédéralisme",
+          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+        }
       },
       "propositions": {
         "travail": [
@@ -1245,6 +1378,13 @@
             "titre": "Baisse de la dépense publique",
             "detail": "Non-remplacement d'un tiers des fonctionnaires partant à la retraite (plus de 250 000 postes sur le quinquennat) ; réduction du déficit.",
             "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "L'UE, cadre indispensable",
+            "detail": "L'Union européenne vue comme un « cadre de coopération indispensable », sans aller vers le fédéralisme.",
+            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
           }
         ]
       },
@@ -1341,12 +1481,14 @@
         "Supprimer 50 normes pesant sur les entreprises"
       ],
       "positions": {
-        "retraite": "Réforme (report)",
-        "smic": "—",
-        "fortune": "Contre",
-        "nucleaire": "Pour",
-        "immigration": "Forte baisse (référendum)",
-        "europe": "Souveraineté juridique"
+        "retraite": {
+          "valeur": "Nouvelle réforme",
+          "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+        },
+        "immigration": {
+          "valeur": "Forte baisse (référendum)",
+          "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+        }
       },
       "propositions": {
         "immigration": [
@@ -1461,12 +1603,10 @@
         "Six EPR et prolongation du parc nucléaire"
       ],
       "positions": {
-        "retraite": "—",
-        "smic": "—",
-        "fortune": "Contre",
-        "nucleaire": "Pour (6 EPR + SMR)",
-        "immigration": "Baisse",
-        "europe": "Souveraineté"
+        "nucleaire": {
+          "valeur": "Pour (6 EPR + SMR)",
+          "source": "https://www.elyseescope.com/candidat/david-lisnard/energie-q16-"
+        }
       },
       "propositions": {
         "economie": [
@@ -1667,12 +1807,27 @@
       "slogan": "Libérons la France !",
       "statut": "déclaré",
       "declaration": "2026-09-19",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": "https://www.debout-la-france.fr",
       "bio": "Président de Debout la France, maire honoraire de Yerres. Candidat en 2012, 2017 et 2022.",
-      "phares": [],
-      "positions": {},
-      "propositions": {},
+      "phares": [
+        "Se « dégager » de l'Union européenne"
+      ],
+      "positions": {
+        "europe": {
+          "valeur": "Sortie, Europe « gaullienne »",
+          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+        }
+      },
+      "propositions": {
+        "europe": [
+          {
+            "titre": "Se dégager de l'UE",
+            "detail": "Se « dégager le plus vite possible » de l'Union européenne pour « reconstruire une Europe légère, gaullienne ».",
+            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+          }
+        ]
+      },
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
@@ -1729,21 +1884,24 @@
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-05-09",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": null,
       "bio": "Président des Patriotes. Prône la sortie de l'Union européenne (Frexit). Se retirerait au profit d'un candidat souverainiste plus rassembleur.",
       "phares": [
         "Sortie de l'Union européenne (Frexit)"
       ],
       "positions": {
-        "europe": "Frexit"
+        "europe": {
+          "valeur": "Frexit (référendum)",
+          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+        }
       },
       "propositions": {
         "europe": [
           {
             "titre": "Frexit",
-            "detail": "Sortie de l'Union européenne, position historique des Patriotes.",
-            "source": "https://fr.wikipedia.org/wiki/Les_Patriotes"
+            "detail": "Sortie de l'Union européenne (Frexit) par référendum.",
+            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
           }
         ]
       },
@@ -1809,21 +1967,24 @@
       "slogan": "La France retrouvée",
       "statut": "déclaré",
       "declaration": "2023-08-31",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": "https://www.upr.fr",
       "bio": "Président de l'UPR, candidat en 2017. Défend la sortie de l'UE, de l'euro et de l'OTAN.",
       "phares": [
         "Sortie de l'UE, de l'euro et de l'OTAN"
       ],
       "positions": {
-        "europe": "Frexit"
+        "europe": {
+          "valeur": "Frexit + sortie euro/OTAN",
+          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+        }
       },
       "propositions": {
         "europe": [
           {
             "titre": "Frexit",
-            "detail": "Sortie de l'Union européenne par l'article 50, de l'euro et de l'OTAN — ligne constante de l'UPR.",
-            "source": "https://www.upr.fr"
+            "detail": "Sortie de l'Union européenne, de l'euro et de l'OTAN.",
+            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
           }
         ]
       },
@@ -1888,12 +2049,22 @@
         "Référendum sur l'immigration et « priorité nationale »"
       ],
       "positions": {
-        "retraite": "62 ans (60 carrières longues)",
-        "smic": "—",
-        "fortune": "Contre l'ISF",
-        "nucleaire": "Relance massive",
-        "immigration": "Forte baisse",
-        "europe": "Europe des nations"
+        "retraite": {
+          "valeur": "62 ans (60 carrières longues)",
+          "source": "https://monvote2027.fr/candidat/le-pen"
+        },
+        "nucleaire": {
+          "valeur": "Relance, moratoire éolien/solaire",
+          "source": "https://presi2027.fr/candidat/lepen"
+        },
+        "immigration": {
+          "valeur": "Forte baisse, référendum",
+          "source": "https://www.elyseescope.com/candidat/marine-le-pen/immigration"
+        },
+        "europe": {
+          "valeur": "Alliance des nations",
+          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+        }
       },
       "propositions": {
         "travail": [
@@ -1922,6 +2093,13 @@
             "titre": "Tout nucléaire",
             "detail": "Relance massive du nucléaire et moratoire sur l'éolien et le solaire.",
             "source": "https://presi2027.fr/candidat/lepen"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Alliance européenne des nations",
+            "detail": "Abandon du Frexit, mais primauté du droit national sur le droit européen dans une « alliance européenne des nations ».",
+            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
           }
         ]
       },
@@ -2005,12 +2183,14 @@
         "Primauté du droit français sur le droit européen"
       ],
       "positions": {
-        "retraite": "—",
-        "smic": "—",
-        "fortune": "Contre",
-        "nucleaire": "Pour",
-        "immigration": "Remigration",
-        "europe": "Europe des nations"
+        "immigration": {
+          "valeur": "Remigration",
+          "source": "https://lessentieldeleco.fr/8508-zemmour-et-la-remigration-qui-est-vise/"
+        },
+        "europe": {
+          "valeur": "Europe des nations",
+          "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour"
+        }
       },
       "propositions": {
         "immigration": [
@@ -2129,22 +2309,12 @@
       "slogan": "Pour que voter serve enfin",
       "statut": "déclarée",
       "declaration": "2026-04-19",
-      "programme": "partiel",
+      "programme": "non publié",
       "site": "https://solutiondemocratique.fr",
       "bio": "Candidate de Solution démocratique, centrée sur la démocratie directe.",
-      "phares": [
-        "Référendum d'initiative citoyenne"
-      ],
+      "phares": [],
       "positions": {},
-      "propositions": {
-        "institutions": [
-          {
-            "titre": "Démocratie directe",
-            "detail": "Mettre en place l'initiative citoyenne pour que les électeurs puissent proposer et voter des lois.",
-            "source": "https://solutiondemocratique.fr"
-          }
-        ]
-      },
+      "propositions": {},
       "sources": [
         "https://solutiondemocratique.fr"
       ],

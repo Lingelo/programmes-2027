@@ -25,7 +25,7 @@ const Reponse = z.object({
   statut: z.string(),
   programme: z.enum(['complet', 'partiel', 'non publié']),
   phares: z.array(z.string().max(140)).max(5),
-  positions: z.record(z.enum(enjeuIds), z.string().max(60)),
+  positions: z.record(z.enum(enjeuIds), z.object({ valeur: z.string().max(60), source: z.string().url() })),
   propositions: z.record(z.enum(themeIds), z.array(Proposition).max(8)),
   sources: z.array(z.string().url()).max(10),
 });
@@ -38,11 +38,13 @@ const aujourdhui = new Date().toISOString().slice(0, 10);
 const SYSTEM = `Tu tiens à jour un comparateur non partisan des programmes de l'élection présidentielle française de 2027.
 Règles :
 - Neutralité absolue : décris les mesures avec les mots du candidat, sans jugement ni adjectif évaluatif.
-- N'ajoute une mesure que si tu as trouvé une source en ligne qui l'attribue explicitement au candidat pour 2027 ; mets l'URL exacte de cette source.
+- UNIQUEMENT la campagne présidentielle 2027 : n'ajoute une mesure ou une position que si une source datée de 2025 ou 2026 l'attribue explicitement au candidat pour 2027. Une proposition de 2017, 2022 ou d'une autre élection n'est PAS acceptable, même si le candidat la défend probablement encore.
+- Mets l'URL exacte de la page (article, fiche), jamais la page d'accueil d'un site.
+- Si aucune source 2027 n'existe pour un enjeu, n'inclus pas cet enjeu dans « positions ».
 - Préfère, dans l'ordre : site officiel de campagne, presse nationale (Le Monde, Le Figaro, Libération, franceinfo, AFP, Les Échos...), puis les autres sites.
 - Conserve les mesures existantes sauf si une source plus récente les contredit ou si le candidat les a abandonnées.
 - Si le candidat s'est retiré, mets statut à « retiré » et explique-le dans « changements ».
-- Thèmes autorisés : ${themeIds.join(', ')}. Enjeux autorisés pour « positions » (réponse très courte, 1 à 5 mots) : ${enjeuIds.join(', ')}.
+- Thèmes autorisés : ${themeIds.join(', ')}. Enjeux autorisés pour « positions » : ${enjeuIds.join(', ')} ; chaque position est un objet { valeur (1 à 5 mots), source (URL) }.
 - Réponds en français.`;
 
 function consigne(c) {

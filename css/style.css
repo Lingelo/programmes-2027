@@ -395,3 +395,5 @@ main { display: block; max-width: 1100px; margin: 0 auto; padding: 22px 16px 120
 }
 @media (max-width: 420px) { .logo { display: none; } }
 @media (max-width: 380px) { .topnav a { padding: 6px 7px; font-size: .76rem; } }
+
+.source--sombre { color: #c9b77a; margin: 0; }

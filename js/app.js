@@ -309,7 +309,7 @@ function vueCandidat(id) {
           <div class="panneau__titre"><span>EN UN COUP D'ŒIL</span></div>
           <hr>
           <div class="panneau__stats" style="grid-template-columns:1fr">
-            ${positions.map((e) => `<div><span>${esc(e.label)} :</span> <b>${esc(c.positions[e.id])}</b></div>`).join('')}
+            ${positions.map((e) => `<div><span>${esc(e.label)} :</span> <b>${esc(c.positions[e.id].valeur)}</b> <a class="source source--sombre" href="${esc(c.positions[e.id].source)}" target="_blank" rel="noopener">source ↗</a></div>`).join('')}
           </div>
         </div>
       </section>` : ''}
@@ -554,7 +554,7 @@ function vueComparer(param) {
         <table class="matrice">
           <thead><tr><th scope="col">Enjeu</th>${choisis.map((c) => `<th scope="col"><span class="th-cand">${avatar(c, 'sm')}${esc(c.nom)}</span></th>`).join('')}</tr></thead>
           <tbody>
-            ${d.enjeux.map((e) => `<tr><th scope="row">${esc(e.label)}</th>${choisis.map((c) => `<td>${c.positions?.[e.id] ? esc(c.positions[e.id]) : '<span class="inconnu">non précisé</span>'}</td>`).join('')}</tr>`).join('')}
+            ${d.enjeux.map((e) => `<tr><th scope="row">${esc(e.label)}</th>${choisis.map((c) => `<td>${c.positions?.[e.id] ? `${esc(c.positions[e.id].valeur)} <a class="source" href="${esc(c.positions[e.id].source)}" target="_blank" rel="noopener" aria-label="source">↗</a>` : '<span class="inconnu">non précisé</span>'}</td>`).join('')}</tr>`).join('')}
           </tbody>
         </table>
       </div>
@@ -672,6 +672,8 @@ function vueMethodo() {
       <p>Le classement suit l'usage courant de la presse et de Wikipédia. Il reste une simplification : un candidat peut être plus à gauche sur un sujet et plus à droite sur un autre.</p>
       <h2>Avertissement</h2>
       <p>${esc(d.meta.avertissement)}</p>
+      <h2>Uniquement la campagne 2027</h2>
+      <p>${esc(d.meta.regle || '')} Une position que le candidat défendait en 2017 ou en 2022 n'est reprise que si une source de la campagne 2027 la confirme. « Non précisé » signifie qu'aucune source 2027 n'a encore été trouvée, pas que le candidat n'a pas d'avis.</p>
       <p class="mono small">Contenu vérifié le ${esc(dateFr(d.meta.contenuMisAJour))}${state.veille?.checkedAt ? ` · liste vérifiée sur Wikipédia le ${esc(dateFr(state.veille.checkedAt))}` : ''}.</p>
     </section>`;
 }
