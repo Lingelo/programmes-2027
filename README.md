@@ -27,6 +27,14 @@ cd .. && python3 -m http.server 8080
 
 `npm run og` régénère les images de partage (`img/og/`) et les icônes (nécessite Playwright).
 
+## Outils pour Claude Code
+
+- `CLAUDE.md` : règles du projet (sources 2027, neutralité, circuit PR, pièges connus).
+- Skills `.claude/skills/` : `ajouter-candidat`, `maj-programme`, `verifier-rendu`.
+- Sous-agent `.claude/agents/verificateur-sources` : relit les sources d'un lot de modifications (lecture seule).
+- Hooks `.claude/settings.json` : `check-data` après chaque modification de `data/*.json` et avant tout `git commit` (bloquant).
+- `scripts/verifier-rendu.mjs` : contrôle de rendu dans un vrai navigateur, aussi lancé par le robot GitHub sur chaque PR.
+
 ## Référencement (SEO)
 
 - Une page statique par contenu : 31 fiches, 10 thèmes, 66 duels (« X ou Y : comparatif des programmes 2027 »), signatures, méthodo

@@ -436,8 +436,10 @@ function proximite(a, b) {
 
 function svgBoussole(focus = null, etiquettes = false) {
   const W = 300, H = 336, M = 26, HAUT = 30, L = W - 2 * M;
-  const x = (v) => M + ((v + 100) / 200) * L;
-  const y = (v) => HAUT + ((100 - v) / 200) * L;
+  // Marge intérieure : un point à −100 ou +100 reste entièrement dans le cadre, loin des légendes
+  const P = 13;
+  const x = (v) => M + P + ((v + 100) / 200) * (L - 2 * P);
+  const y = (v) => HAUT + P + ((100 - v) / 200) * (L - 2 * P);
   const pts = candidatsTries().filter((c) => fvDe(c)?.boussole?.eco != null);
   if (focus && !pts.some((c) => c.id === focus.id)) focus = null;
   const estFocus = (c) => focus && c.id === focus.id;

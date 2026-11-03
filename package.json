@@ -10,7 +10,10 @@
     "refresh": "node scripts/refresh-programmes.mjs",
     "check": "node scripts/check-data.mjs",
     "build": "node scripts/build-site.mjs",
-    "og": "node scripts/og-images.mjs"
+    "og": "node scripts/og-images.mjs",
+    "verifier": "node scripts/check-data.mjs",
+    "rendu": "node scripts/verifier-rendu.mjs",
+    "rendu:rapide": "node scripts/verifier-rendu.mjs --rapide"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "latest",
