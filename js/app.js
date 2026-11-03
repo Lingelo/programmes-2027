@@ -439,31 +439,56 @@ function svgBoussole(focus = null, etiquettes = false) {
   const x = (v) => M + ((v + 100) / 200) * L;
   const y = (v) => HAUT + ((100 - v) / 200) * L;
   const pts = candidatsTries().filter((c) => fvDe(c)?.boussole?.eco != null);
-  // Étiquettes sans chevauchement : le candidat mis en avant d'abord, puis les autres s'il reste de la place
-  const places = [];
-  const libre = (bx, by, w) => places.every((p) => Math.abs(p.y - by) > 12 || bx + w < p.x || bx > p.x + p.w);
-  const etiquette = (c, f) => {
-    const b = fvDe(c).boussole, w = c.nom.length * (f ? 7.6 : 6.2) + 4;
-    const droite = x(b.eco) < W - M - w - 14;
-    const ecart = f ? 15 : 10;
-    const bx = droite ? x(b.eco) + ecart : x(b.eco) - ecart - w, by = y(b.soc);
-    if (!f && !libre(bx, by, w)) return '';
-    places.push({ x: bx, y: by, w });
-    return `<text x="${droite ? bx : bx + w}" y="${by + 4}" text-anchor="${droite ? 'start' : 'end'}" class="bp__nom">${esc(c.nom)}</text>`;
-  };
   if (focus && !pts.some((c) => c.id === focus.id)) focus = null;
-  const ordreEtiquettes = focus ? [focus, ...pts.filter((c) => c.id !== focus.id)] : pts;
-  const textes = new Map();
-  for (const c of ordreEtiquettes) if (fvDe(c) && (etiquettes || (focus && c.id === focus.id))) textes.set(c.id, etiquette(c, focus && c.id === focus.id));
+  const estFocus = (c) => focus && c.id === focus.id;
+  const rayon = (c) => (estFocus(c) ? 10 : 6);
+
+  // Placement des noms sans chevauchement : 8 positions candidates autour de chaque point ;
+  // un nom n'est retenu que s'il ne touche aucun point, aucun autre nom, et reste dans le cadre.
+  // (Largeur estimée d'après la police ; marge de sécurité incluse.)
+  const obstacles = pts.map((c) => { const b = fvDe(c).boussole, r = rayon(c) + 2.5; return { l: x(b.eco) - r, r: x(b.eco) + r, t: y(b.soc) - r, b: y(b.soc) + r }; });
+  const places = [];
+  const touche = (a, b) => a.l < b.r && b.l < a.r && a.t < b.b && b.t < a.b;
+  const dansCadre = (z) => z.l >= M + 2 && z.r <= W - M - 2 && z.t >= HAUT + 2 && z.b <= HAUT + L - 2;
+  function placer(c) {
+    const f = estFocus(c), b = fvDe(c).boussole, px = x(b.eco), py = y(b.soc);
+    const larg = c.nom.length * (f ? 8.2 : 6.6) + 4, haut = f ? 14 : 12;
+    // Anneaux de positions : au contact du point, puis plus loin (avec trait de rappel) pour le candidat mis en avant
+    const anneaux = f ? [0, 16, 32, 52, 76] : [0];
+    const essais = [];
+    for (const d of anneaux) {
+      const e = rayon(c) + 4 + d;
+      essais.push(
+        [px + e, py - haut / 2], [px - e - larg, py - haut / 2],
+        [px + e - 2, py - e - haut], [px + e - 2, py + e],
+        [px - e - larg + 2, py - e - haut], [px - e - larg + 2, py + e],
+        [px - larg / 2, py - e - haut - 2], [px - larg / 2, py + e + 2],
+      );
+    }
+    // Noms secondaires : uniquement juste à droite ou à gauche du point (jamais en diagonale, pour éviter toute ambiguïté)
+    const zones = (f ? essais : essais.slice(0, 2)).map(([l, t]) => ({ l, t, r: l + larg, b: t + haut }));
+    const libres = zones.filter((z) => dansCadre(z) && !places.some((p) => touche(z, p)) && !obstacles.some((o) => touche(z, o)));
+    let z = libres[0];
+    if (!z && f) z = zones.filter(dansCadre).sort((a, b2) => obstacles.filter((o) => touche(a, o)).length - obstacles.filter((o) => touche(b2, o)).length)[0];
+    if (!z) return '';
+    places.push(z);
+    // Trait de rappel si le nom est éloigné de son point
+    const cx = Math.max(z.l, Math.min(px, z.r)), cy = Math.max(z.t, Math.min(py, z.b));
+    const loin = Math.hypot(cx - px, cy - py) > rayon(c) + 8;
+    const trait = loin ? `<line x1="${px}" y1="${py}" x2="${cx}" y2="${cy}" class="bp__trait"/>` : '';
+    return `${trait}<text x="${z.l + 2}" y="${z.b - (f ? 3 : 2.5)}" class="bp__nom${f ? ' bp__nom--focus' : ''}">${esc(c.nom)}</text>`;
+  }
+  const aEtiqueter = focus ? [focus, ...(etiquettes ? pts.filter((c) => !estFocus(c)) : [])] : (etiquettes ? pts : []);
+  const textes = aEtiqueter.map(placer).join('');
+
   const point = (c) => {
-    const b = fvDe(c).boussole, f = focus && c.id === focus.id;
+    const b = fvDe(c).boussole, f = estFocus(c);
     return `<a href="${URLS.candidat(c.id)}" class="bp${f ? ' bp--focus' : ''}"><title>${esc(c.prenom)} ${esc(c.nom)} : économie ${b.eco}, société ${b.soc}</title>
       <circle cx="${x(b.eco)}" cy="${y(b.soc)}" r="13" class="bp__cible"/>
-      <circle cx="${x(b.eco)}" cy="${y(b.soc)}" r="${f ? 10 : 6}" fill="${c.couleur}" class="bp__point"/>
-      ${textes.get(c.id) || ''}</a>`;
+      <circle cx="${x(b.eco)}" cy="${y(b.soc)}" r="${rayon(c)}" fill="${c.couleur}" class="bp__point"/></a>`;
   };
-  // Le candidat mis en avant est dessiné en dernier (au-dessus des autres)
-  const ordre = focus ? [...pts.filter((c) => c.id !== focus.id), ...pts.filter((c) => c.id === focus.id)] : pts;
+  // Le candidat mis en avant est dessiné en dernier (au-dessus des autres points), les noms tout en haut
+  const ordre = focus ? [...pts.filter((c) => !estFocus(c)), focus] : pts;
   const bas = HAUT + L;
   return `<svg class="boussole" viewBox="0 0 ${W} ${H}" role="img" aria-label="Boussole politique : économie de gauche (interventionniste) à droite (libérale), société de bas (progressiste) en haut (conservatrice)">
     <rect x="${M}" y="${HAUT}" width="${L}" height="${L}" class="boussole__fond"/>
@@ -474,6 +499,7 @@ function svgBoussole(focus = null, etiquettes = false) {
     <text x="${W - M}" y="${bas + 18}" text-anchor="end" class="boussole__lib">libérale →</text>
     <text x="${W / 2}" y="${bas + 36}" text-anchor="middle" class="boussole__lib">↓ Société progressiste</text>
     ${ordre.map(point).join('')}
+    <g class="bp__noms" aria-hidden="true">${textes}</g>
   </svg>`;
 }
 
