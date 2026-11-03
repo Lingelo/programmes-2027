@@ -298,7 +298,7 @@
       "bord": "extreme-gauche",
       "couleur": "#C8102E",
       "wiki": null,
-      "photo": "img/candidats/labib.png",
+      "photo": null,
       "slogan": null,
       "statut": "désignée",
       "declaration": "2026-06-17",
@@ -312,7 +312,10 @@
         "https://speakoutsocialists.org/?p=31844",
         "https://www.boursedirect.fr/fr/actualites/categorie/politique/on-ne-cherche-pas-un-accord-politique-sur-les-routes-le-npa-en-quete-de-parrainages-afp-d490d0889a7a24796c56526e925208b907c2a721"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File%3APresidentielles-2027-Selma-LABIB.png"
+      "photoCredit": null,
+      "photoExclus": [
+        "File:Presidentielles-2027-Selma-LABIB.png"
+      ]
     },
     {
       "id": "melenchon",

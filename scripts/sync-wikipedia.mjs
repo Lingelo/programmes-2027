@@ -65,9 +65,18 @@ for (const c of data.candidats) {
   try {
     const nom = `${c.prenom} ${c.nom}`;
     const q = encodeURIComponent(`intitle:"${nom}"`);
-    const r = await get(`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&gsrsearch=${q}&gsrlimit=10&prop=imageinfo&iiprop=url|mime&iiurlwidth=330&format=json`);
+    const r = await get(`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&gsrsearch=${q}&gsrlimit=10&prop=imageinfo&iiprop=url|mime|size&iiurlwidth=330&format=json`);
     const pages = Object.values(r?.query?.pages || {}).sort((a, b) => (a.index || 0) - (b.index || 0));
-    const choix = pages.find((pg) => norm(pg.title).includes(norm(nom)) && /image\/(jpeg|png)/.test(pg.imageinfo?.[0]?.mime || ''));
+    const exclus = (c.photoExclus || []).map(norm);
+    // Une photo de portrait : nom exact dans le titre, JPEG/PNG, format portrait ou carré
+    // (écarte bannières et visuels de campagne au format paysage), fichier non exclu.
+    const choix = pages.find((pg) => {
+      const ii = pg.imageinfo?.[0] || {};
+      return norm(pg.title).includes(norm(nom))
+        && /image\/(jpeg|png)/.test(ii.mime || '')
+        && ii.width && ii.height / ii.width >= 0.8
+        && !exclus.includes(norm(pg.title));
+    });
     if (!choix) continue;
     const info = choix.imageinfo[0];
     const img = await fetch(info.thumburl || info.url, { headers: { 'User-Agent': UA } });
@@ -111,17 +120,30 @@ try {
   // Section(s) dont le titre parle de candidats déclarés / désignés
   const sections = html.split(/<h[23][^>]*>/i).slice(1);
   const cibles = sections.filter((s) => /candidat(e|ure)?s?\s+(d[ée]clar|d[ée]sign|officiel)/i.test(s.slice(0, 300).replace(/<[^>]+>/g, '')));
-  const noms = new Set();
+  const noms = new Map(); // texte du lien -> titre de l'article
   for (const sec of cibles) {
     for (const ligne of sec.split(/<tr[\s>]/i).slice(1)) {
-      // Premier lien interne de la ligne dont le texte ressemble à « Prénom Nom »
-      const liens = [...ligne.matchAll(/<a[^>]+rel="mw:WikiLink"[^>]*>([^<]{3,60})<\/a>/g)].map((m) => m[1].trim());
-      const personne = liens.find((t) => /^\p{Lu}[\p{L}'-]+(\s+(de |du |le |la )?\p{Lu}[\p{L}'-]+){1,3}$/u.test(t));
-      if (personne) noms.add(personne);
+      // Liens internes de la ligne dont le texte ressemble à « Prénom Nom »
+      const liens = [...ligne.matchAll(/<a([^>]+rel="mw:WikiLink"[^>]*)>([^<]{3,60})<\/a>/g)].map((m) => ({
+        texte: m[2].trim(),
+        titre: decodeURIComponent((m[1].match(/href="\.\/([^"#?]+)/) || [])[1] || ''),
+      }));
+      const personne = liens.find((l) => l.titre && /^\p{Lu}[\p{L}'-]+(\s+(de |du |le |la )?\p{Lu}[\p{L}'-]+){1,3}$/u.test(l.texte));
+      if (personne) noms.set(personne.texte, personne.titre);
     }
   }
   sourceOk = noms.size > 0;
-  nouveaux = [...noms].filter((n) => !estConnu(n)).sort();
+  // Garde-fou : un nom n'est signalé que si Wikidata confirme qu'il s'agit d'une personne (Q5),
+  // pour écarter les lieux ou organisations présents dans le tableau (ex. « Grand Chalon »).
+  for (const [texte, titre] of noms) {
+    if (estConnu(texte)) continue;
+    const j = await get(`https://www.wikidata.org/w/api.php?action=wbgetentities&sites=frwiki&titles=${encodeURIComponent(titre)}&props=claims&format=json`).catch(() => null);
+    const ent = Object.values(j?.entities || {})[0];
+    const humain = (ent?.claims?.P31 || []).some((cl) => cl.mainsnak?.datavalue?.value?.id === 'Q5');
+    if (humain) nouveaux.push(texte);
+    await pause(300);
+  }
+  nouveaux.sort();
 } catch (e) {
   console.warn(`Veille : ${e.message}`);
 }
