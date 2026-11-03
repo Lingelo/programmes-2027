@@ -235,8 +235,8 @@ function blocVeille() {
   const v = state.veille;
   if (!v?.nouveaux?.length) return '';
   return `<section class="section alerte" role="status">
-    <b>VEILLE AUTO</b> — ${plur(v.nouveaux.length, 'nouveau nom détecté', 'nouveaux noms détectés')} sur Wikipédia, en cours d'intégration :
-    ${v.nouveaux.map((n) => esc(n)).join(', ')}.</section>`;
+    <b>VEILLE AUTO</b> — ${plur(v.nouveaux.length, 'nouvelle candidature détectée', 'nouvelles candidatures détectées')}, en cours de vérification :
+    ${(v.details || v.nouveaux.map((nom) => ({ nom, sources: ['Wikipédia'] }))).map((d) => `${esc(d.nom)} <span class="small">(${esc(d.sources.join(', '))})</span>`).join(', ')}.</section>`;
 }
 
 function renderFiltres() {

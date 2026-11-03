@@ -38,7 +38,7 @@ cd .. && python3 -m http.server 8080
 
 | Robot | Fréquence | Ce qu'il fait |
 |---|---|---|
-| `sync.yml` | 2 fois par jour | Lit Wikipédia et Wikidata : photos des nouveaux candidats, biographies, **parrainages** (Conseil constitutionnel, dès l'ouverture de la collecte début 2027), **liste officielle des candidats** (décision du Conseil constitutionnel, recherchée automatiquement de février à mai 2027), signale les nouveaux candidats déclarés (`data/veille.json`, affiché sur le site), redéploie |
+| `sync.yml` | 2 fois par jour | Lit Wikipédia et Wikidata : photos des nouveaux candidats, biographies, **parrainages** (Conseil constitutionnel, dès l'ouverture de la collecte début 2027), **liste officielle des candidats** (décision du Conseil constitutionnel, recherchée automatiquement de février à mai 2027), signale les nouveaux candidats déclarés repérés sur **Wikipédia et France-Vote** (`data/veille.json`, affiché sur le site), redéploie |
 | Tâche programmée claude.ai | chaque lundi, 11 h 23 | Une session Claude cherche les nouvelles annonces de programme (sources 2027 uniquement) et **ouvre une Pull Request à relire** (rien n'est publié sans validation humaine) |
 | `refresh-programmes.yml` | chaque lundi (optionnel) | Même travail via l'API Anthropic, seulement si le secret `ANTHROPIC_API_KEY` est configuré ; sinon il s'arrête sans rien faire |
 | `verifier.yml` | à chaque modification et pull request | Vérifie les données et **régénère les pages statiques** ; GitHub Pages (mode « Deploy from a branch », `main`, racine) publie ensuite |

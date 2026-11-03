@@ -2,12 +2,14 @@
 // Synchronisation quotidienne avec Wikipédia (aucune dépendance, Node 20+).
 //  1. Télécharge la photo des candidats qui n'en ont pas encore (Wikimedia Commons) dans img/candidats/
 //  2. Met à jour les biographies (intro Wikipédia + faits Wikidata).
-//  3. Lit la page « Candidatures à l'élection présidentielle française de 2027 » et repère
-//     les noms de candidats déclarés absents de data/candidats.json -> data/veille.json.
+//  3. Veille : lit la page Wikipédia « Candidatures à l'élection présidentielle française de 2027 »
+//     et la liste de France-Vote, et repère les candidats déclarés absents de data/candidats.json
+//     -> data/veille.json (affiché sur le site).
 // Ce script ne modifie jamais les programmes : il ne fait que signaler.
 
 import { readFile, writeFile, access } from 'node:fs/promises';
 import { construireBio } from './lib-bio.mjs';
+import { lireFranceVote, URL_FRANCE_VOTE } from './veille-francevote.mjs';
 
 const DATA = new URL('../data/candidats.json', import.meta.url);
 const VEILLE = new URL('../data/veille.json', import.meta.url);
@@ -115,6 +117,7 @@ const estConnu = (nom) => { const n = norm(nom); return connus.some((k) => k ===
 
 let nouveaux = [];
 let sourceOk = false;
+// 3 a. Wikipédia
 try {
   const html = await get(`https://fr.wikipedia.org/api/rest_v1/page/html/${encodeURIComponent(PAGE)}`, 'text');
   // Section(s) dont le titre parle de candidats déclarés / désignés
@@ -149,11 +152,45 @@ try {
 }
 
 const ancienne = JSON.parse(await readFile(VEILLE, 'utf8').catch(() => '{}'));
+const anciensDetails = ancienne.details || (ancienne.nouveaux || []).map((nom) => ({ nom, sources: ['Wikipédia'] }));
+const reprendre = (source) => anciensDetails.filter((d) => d.sources.includes(source)).map((d) => d.nom);
+
+// 3 b. France-Vote
+let nouveauxFV = [];
+let fvOk = false;
+try {
+  const r = await fetch(URL_FRANCE_VOTE, { headers: { 'User-Agent': UA } });
+  if (r.ok) {
+    const declares = lireFranceVote(await r.text());
+    fvOk = declares.length >= 10; // garde-fou : page vide ou structure changée
+    if (fvOk) nouveauxFV = declares.filter((d) => !estConnu(d.nom)).map((d) => d.nom);
+    else console.warn(`France-Vote : seulement ${declares.length} candidats lus, structure de la page peut-être modifiée.`);
+  } else console.warn(`France-Vote : HTTP ${r.status}`);
+} catch (e) {
+  console.warn(`France-Vote : ${e.message}`);
+}
+
+// Fusion des deux sources (si une source est indisponible, on garde ses derniers résultats)
+const parNom = new Map();
+const noter = (nom, source) => {
+  const cle = norm(nom);
+  const d = parNom.get(cle) || { nom, sources: [] };
+  if (!d.sources.includes(source)) d.sources.push(source);
+  parNom.set(cle, d);
+};
+for (const n of sourceOk ? nouveaux : reprendre('Wikipédia')) noter(n, 'Wikipédia');
+for (const n of fvOk ? nouveauxFV : reprendre('France-Vote')) noter(n, 'France-Vote');
+const details = [...parNom.values()].filter((d) => !estConnu(d.nom)).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
+
 const veille = {
   checkedAt: new Date().toISOString().slice(0, 10),
-  source: `https://fr.wikipedia.org/wiki/${PAGE}`,
-  sourceOk,
-  nouveaux: sourceOk ? nouveaux : (ancienne.nouveaux || []),
+  sources: {
+    wikipedia: { url: `https://fr.wikipedia.org/wiki/${PAGE}`, ok: sourceOk },
+    francevote: { url: URL_FRANCE_VOTE, ok: fvOk },
+  },
+  sourceOk: sourceOk || fvOk,
+  nouveaux: details.map((d) => d.nom),
+  details,
 };
 
 await writeFile(VEILLE, JSON.stringify(veille, null, 2) + '\n');
@@ -161,5 +198,5 @@ if (photosChangees || biosChangees) await writeFile(DATA, JSON.stringify(data, n
 
 console.log(`Photos mises à jour : ${photosChangees}`);
 console.log(`Biographies mises à jour : ${biosChangees}`);
-console.log(`Page Wikipédia lue : ${sourceOk ? 'oui' : 'non'}`);
+console.log(`Page Wikipédia lue : ${sourceOk ? 'oui' : 'non'} · France-Vote lu : ${fvOk ? 'oui' : 'non'}`);
 console.log(`Nouveaux noms : ${veille.nouveaux.join(', ') || 'aucun'}`);
