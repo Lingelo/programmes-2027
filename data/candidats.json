@@ -688,7 +688,7 @@
       "bord": "gauche-radicale",
       "couleur": "#E8A317",
       "wiki": "Juan_Branco",
-      "photo": null,
+      "photo": "img/candidats/branco.jpg",
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2025-12-19",
@@ -780,7 +780,35 @@
       "sources": [
         "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle",
         "https://www.france-vote.fr/candidats/juan-branco"
-      ]
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:2019_-_Centre_Stage_-_Day_2_VJR21625_(49024215596).jpg",
+      "biographie": {
+        "paragraphes": [
+          "Juan Branco, né le 26 août 1989 à Estepona en Andalousie, est un avocat, essayiste, militant politique d'extrême gauche et réalisateur espagnol naturalisé français.",
+          "Étudiant, il s'oppose à la loi Hadopi et s'engage en politique, d'abord auprès de Dominique de Villepin puis au sein du parti politique Les Verts.",
+          "Docteur en droit en 2014, il est le conseiller juridique, en France, de WikiLeaks et de Julian Assange. Il devient avocat en prêtant serment en avril 2017. Il défend Jean-Luc Mélenchon dans l'« affaire OAS », puis se présente aux élections législatives en Seine-Saint-Denis avec le soutien de La France insoumise.",
+          "Il participe au mouvement des Gilets jaunes et défend des figures du mouvement, dont Maxime Nicolle. En 2019, il publie Crépuscule, un pamphlet critiquant l'accession au pouvoir d'Emmanuel Macron.",
+          "En octobre 2024, Juan Branco est suspendu neuf mois par le conseil de discipline du barreau de Paris pour avoir violé le secret de l'instruction d'une enquête pour viols et agressions sexuelles dont il fait l'objet; cette décision est confirmée en appel en octobre 2025."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Juan_Branco",
+        "wikidata": "Q21890311",
+        "genre": "m",
+        "naissance": "1989-08-26",
+        "lieuNaissance": "Estepona",
+        "professions": [
+          "avocat",
+          "essayiste",
+          "juriste"
+        ],
+        "formation": [
+          "École normale supérieure",
+          "Institut d'études politiques de Paris",
+          "université Paris-I-Panthéon-Sorbonne",
+          "université Paris-Sorbonne"
+        ],
+        "fonctions": [],
+        "majLe": "2026-11-03"
+      }
     },
     {
       "id": "tondelier",
