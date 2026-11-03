@@ -26,6 +26,8 @@ jobs:
         run: node scripts/sync-wikipedia.mjs
       - name: Parrainages (Conseil constitutionnel)
         run: node scripts/sync-parrainages.mjs
+      - name: Liste officielle des candidats (Conseil constitutionnel)
+        run: node scripts/sync-liste-officielle.mjs
       - name: Vérifier les données
         run: node scripts/check-data.mjs
       - name: Régénérer les pages

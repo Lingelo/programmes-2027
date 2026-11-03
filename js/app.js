@@ -20,6 +20,7 @@ const state = {
   data: null,
   veille: null,
   parrainages: null,
+  listeOfficielle: null,
   filtreBord: null,
   recherche: '',
   avecProgramme: false,
@@ -187,6 +188,8 @@ function vueAccueil() {
       </div>
     </section>
 
+    ${blocListeOfficielle()}
+
     ${blocVeille()}
 
     <section class="section carte">
@@ -251,7 +254,7 @@ function renderFiltres() {
 
 function renderGrille() {
   const q = norm(state.recherche);
-  const liste = candidatsTries().filter((c) =>
+  const liste = candidatsTries().sort((a, b) => (LO() ? (officiel(a) ? 0 : 1) - (officiel(b) ? 0 : 1) : 0)).filter((c) =>
     (!state.filtreBord || c.bord === state.filtreBord) &&
     (!state.avecProgramme || nbProps(c) > 0) &&
     (!q || norm(`${c.prenom} ${c.nom} ${c.parti} ${c.partiCourt}`).includes(q)));
@@ -278,6 +281,7 @@ function carteCandidat(c) {
     ${c.slogan ? `<p class="cand__slogan">« ${esc(c.slogan)} »</p>` : ''}
     ${collecteOuverte() ? `<div class="cand__parr">${barreParrainages(c.id, true)}</div>` : ''}
     <div class="cand__pied">
+      ${tagOfficiel(c)}
       ${tagProgramme(c)}
       ${n ? `<span class="tag">${plur(n, 'mesure')}</span>` : ''}
       <button type="button" class="cand__ajout" data-compare="${c.id}" data-libelle="" aria-pressed="${on}" aria-label="Ajouter ${esc(c.nom)} au comparateur">${libelleCompare(on, false)}</button>
@@ -304,6 +308,7 @@ function vueCandidat(id) {
           <div class="meta-ligne">
             <span class="parti" style="${styleCouleur(c)}">${esc(c.parti)}</span>
             <span class="tag">${esc(bordDe(c)?.label)}</span>
+            ${tagOfficiel(c)}
             ${tagProgramme(c)}
           </div>
           ${c.slogan ? `<p class="fiche__slogan">« ${esc(c.slogan)} »</p>` : ''}
@@ -385,6 +390,30 @@ function blocBio(c) {
         </div>` : ''}
         <p class="mono small credit">Source : <a href="${esc(b.wikipedia)}" target="_blank" rel="noopener">Wikipédia</a> (texte sous licence CC BY-SA 4.0)${b.wikidata ? ` et <a href="https://www.wikidata.org/wiki/${esc(b.wikidata)}" target="_blank" rel="noopener">Wikidata</a>` : ''}${b.majLe ? `, mis à jour le ${esc(dateFr(b.majLe))}` : ''}.</p>
       </section>`;
+}
+
+// ---------- Liste officielle (Conseil constitutionnel, mars 2027) ----------
+const LO = () => state.listeOfficielle;
+// « LE PEN » -> « Le Pen », « DUPONT-AIGNAN » -> « Dupont-Aignan »
+const casseNom = (s) => String(s).toLocaleLowerCase('fr').replace(/(^|[\s'’-])(\p{L})/gu, (m, sep, l) => sep + l.toLocaleUpperCase('fr'));
+const officiel = (c) => LO()?.candidats.find((x) => x.id === c.id) || null;
+const tagOfficiel = (c) => !LO() ? '' : officiel(c)
+  ? `<span class="tag tag--complet">✓ Candidat${c.prenom && /e$/.test(c.statut) ? 'e' : ''} officiel${/e$/.test(c.statut) ? 'le' : ''} · n° ${officiel(c).ordre}</span>`
+  : '<span class="tag tag--non">Non retenu</span>';
+
+function blocListeOfficielle() {
+  const l = LO();
+  if (!l) return '';
+  return `
+    <section class="section carte" style="border-color:var(--encre)">
+      <h2 class="section-titre">✓ La liste officielle des candidats</h2>
+      <p style="margin:0 0 12px">Arrêtée par le Conseil constitutionnel${l.date ? ` le ${esc(dateFr(l.date))}` : ''} : <strong>${plur(l.candidats.length, 'candidat')}</strong>, dans l'ordre du tirage au sort (ordre des panneaux et des bulletins).</p>
+      <ol class="liste-officielle">${l.candidats.map((x) => {
+        const c = x.id ? parId(x.id) : null;
+        return `<li>${c ? `<a href="${URLS.candidat(c.id)}" style="${styleCouleur(c)}">${avatar(c, 'sm')}<span><b>${x.ordre}.</b> ${esc(c.prenom)} ${esc(c.nom)}</span></a>` : `<span class="lo-sans"><b>${x.ordre}.</b> ${esc(x.prenom)} ${esc(casseNom(x.nom))}</span>`}</li>`;
+      }).join('')}</ol>
+      <p class="mono small credit">Source : <a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.decision || 'décision du Conseil constitutionnel')}</a></p>
+    </section>`;
 }
 
 // ---------- Parrainages ----------
@@ -470,6 +499,7 @@ function vueParrainages() {
         </div>
       </div>
     </section>
+    <section class="section alerte">La <strong>liste officielle des candidats</strong> sera arrêtée par le Conseil constitutionnel à l'issue de la collecte (mars 2027). Elle s'affichera automatiquement sur ce site.</section>
     <section class="section alerte">Aucun parrainage n'est encore publié. Dès la première publication officielle, le classement de tous les candidats apparaîtra ici, ainsi qu'une jauge sur chaque fiche.</section>`;
     return;
   }
@@ -801,7 +831,7 @@ function enTete() {
     `${n} candidats déclarés`,
     `1er tour le ${dateFr(d.meta.election.tour1)}`,
     `2nd tour le ${dateFr(d.meta.election.tour2)}`,
-    texteParrainagesTicker(),
+    LO() ? `Liste officielle : ${LO().candidats.length} candidats` : texteParrainagesTicker(),
     `Mis à jour le ${dateFr(maj)}`,
   ];
   document.getElementById('ticker').textContent = (morceaux.join(' · ') + ' · ').repeat(2);
@@ -814,11 +844,13 @@ async function init() {
   if (!app.children.length) app.innerHTML = '<p class="chargement">Chargement des programmes…</p>';
   try {
     const optionnel = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    const [data, veille, parrainages] = await Promise.all([
+    const [data, veille, parrainages, listeOfficielle] = await Promise.all([
       fetch(lien('data/candidats.json'), { cache: 'no-cache' }).then((r) => r.json()),
       optionnel(lien('data/veille.json')),
       optionnel(lien('data/parrainages.json')),
+      optionnel(lien('data/liste-officielle.json')),
     ]);
+    state.listeOfficielle = listeOfficielle?.statut === 'publiee' ? listeOfficielle : null;
     state.data = data;
     state.veille = veille;
     state.parrainages = parrainages;
