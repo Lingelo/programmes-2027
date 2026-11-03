@@ -497,8 +497,8 @@ function svgBoussole(focus = null, etiquettes = false) {
     <line x1="${W / 2}" x2="${W / 2}" y1="${HAUT}" y2="${bas}" class="boussole__axe"/>
     <line y1="${HAUT + L / 2}" y2="${HAUT + L / 2}" x1="${M}" x2="${W - M}" class="boussole__axe"/>
     <text x="${W / 2}" y="${HAUT - 10}" text-anchor="middle" class="boussole__lib">↑ Société conservatrice</text>
-    <text x="${M}" y="${bas + 18}" class="boussole__lib">← Économie interventionniste</text>
-    <text x="${W - M}" y="${bas + 18}" text-anchor="end" class="boussole__lib">libérale →</text>
+    <text x="${M}" y="${bas + 18}" class="boussole__lib">← Interventionniste</text>
+    <text x="${W - M}" y="${bas + 18}" text-anchor="end" class="boussole__lib">Libérale →</text>
     <text x="${W / 2}" y="${bas + 36}" text-anchor="middle" class="boussole__lib">↓ Société progressiste</text>
     ${ordre.map(point).join('')}
     <g class="bp__noms" aria-hidden="true">${textes}</g>

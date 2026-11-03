@@ -71,6 +71,8 @@ for (const w of largeurs) {
     erreursJs = [];
     await page.goto(ORIGINE + u, { waitUntil: 'networkidle' });
     await page.waitForFunction(() => document.documentElement.dataset.rendu, null, { timeout: 5000 }).catch(() => erreursJs.push('rendu jamais terminé'));
+    // Mesurer avec les vraies polices (sinon une police de repli plus étroite masque des chevauchements)
+    await page.evaluate(() => document.fonts.ready);
     const trouves = await page.evaluate(() => {
       const out = [];
       const inter = (a, b, marge = 0.5) => a.left < b.right - marge && b.left < a.right - marge && a.top < b.bottom - marge && b.top < a.bottom - marge;
