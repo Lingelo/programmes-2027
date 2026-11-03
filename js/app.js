@@ -23,6 +23,7 @@ const state = {
   parrainages: null,
   listeOfficielle: null,
   fv: null,
+  complements: null,
   filtreBord: null,
   recherche: '',
   avecProgramme: false,
@@ -400,9 +401,27 @@ function blocBio(c) {
 
 // ---------- Positions sur 40 propositions (données ouvertes France-Vote, CC BY 4.0) ----------
 const FV = () => state.fv;
-const fvDe = (c) => FV()?.candidats?.[c.id] || null;
+// Enjeux du tableau « en un coup d'œil » -> proposition équivalente parmi les 40
+const ENJEU_VERS_PROP = { retraite: 'soc1', smic: 'soc2', fortune: 'eco1', nucleaire: 'env1', immigration: 'imm1', europe: 'eur1' };
+function celluleEnjeu(c, e) {
+  const p = c.positions?.[e.id];
+  if (p) return `${esc(p.valeur)} <a class="source" href="${esc(p.source)}" target="_blank" rel="noopener" aria-label="source">↗</a>`;
+  const f = fvDe(c), pid = ENJEU_VERS_PROP[e.id], v = f?.positions?.[pid];
+  const prop = FV()?.propositions.find((x) => x.id === pid);
+  if (typeof v !== 'number' || !prop) return '<span class="inconnu">non précisé</span>';
+  const src = f.sources?.[pid];
+  return `${chip(v)}<br><span class="small" title="${esc(prop.texte)}">${esc(prop.court)}</span> <span class="mono small">(${f.origine === 'francevote' ? 'France-Vote' : 'relevé'}${src ? `, <a class="source" href="${esc(src.url)}" target="_blank" rel="noopener">source</a>` : ''})</span>`;
+}
+const MIN_COMMUNES = 10; // propositions évaluées en commun pour afficher une proximité
+function fvDe(c) {
+  const f = FV()?.candidats?.[c.id];
+  if (f) return { ...f, origine: 'francevote' };
+  const comp = state.complements?.candidats?.[c.id];
+  if (comp && Object.keys(comp.positions || {}).length) return { positions: comp.positions, sources: comp.sources || {}, boussole: null, famille: null, origine: 'site' };
+  return null;
+}
 const NIVEAUX = { '-2': 'Opposition nette', '-1': 'Plutôt opposé', 0: 'Nuancé', 1: 'Plutôt favorable', 2: 'Soutien net' };
-const chip = (v) => (typeof v === 'number' ? `<span class="niveau niveau--${v < 0 ? 'm' + -v : v}">${NIVEAUX[v]}</span>` : '<span class="inconnu">—</span>');
+const chip = (v) => (typeof v === 'number' ? `<span class="niveau niveau--${v < 0 ? 'm' + -v : v}">${NIVEAUX[v]}</span>` : '<span class="niveau niveau--ne">Non évalué</span>');
 const sens = (v, neg, pos, centre) => (v == null ? '—' : v <= -15 ? neg : v >= 15 ? pos : centre);
 const lireBoussole = (b) => `Économie <b>${sens(b.eco, 'interventionniste', 'libérale', 'au centre')}</b> (${b.eco > 0 ? '+' : ''}${b.eco}) · société <b>${sens(b.soc, 'progressiste', 'conservatrice', 'modérée')}</b> (${b.soc > 0 ? '+' : ''}${b.soc})`;
 
@@ -411,7 +430,7 @@ function proximite(a, b) {
   const pa = fvDe(a)?.positions, pb = fvDe(b)?.positions;
   if (!pa || !pb) return null;
   const ids = Object.keys(pa).filter((k) => typeof pa[k] === 'number' && typeof pb[k] === 'number');
-  if (!ids.length) return null;
+  if (ids.length < MIN_COMMUNES) return null;
   return Math.round(100 - (ids.reduce((s, k) => s + Math.abs(pa[k] - pb[k]), 0) / ids.length) * 25);
 }
 
@@ -432,6 +451,7 @@ function svgBoussole(focus = null, etiquettes = false) {
     places.push({ x: bx, y: by, w });
     return `<text x="${droite ? bx : bx + w}" y="${by + 4}" text-anchor="${droite ? 'start' : 'end'}" class="bp__nom">${esc(c.nom)}</text>`;
   };
+  if (focus && !pts.some((c) => c.id === focus.id)) focus = null;
   const ordreEtiquettes = focus ? [focus, ...pts.filter((c) => c.id !== focus.id)] : pts;
   const textes = new Map();
   for (const c of ordreEtiquettes) if (fvDe(c) && (etiquettes || (focus && c.id === focus.id))) textes.set(c.id, etiquette(c, focus && c.id === focus.id));
@@ -457,7 +477,7 @@ function svgBoussole(focus = null, etiquettes = false) {
   </svg>`;
 }
 
-const creditFV = () => FV() ? `<p class="mono small credit">Positions : <a href="${esc(FV().page)}" target="_blank" rel="noopener">France-Vote</a>, lecture éditoriale indicative, licence ${esc(FV().licence)} — données du ${esc(dateFr(FV().recupereLe))}. Boussole et proximités calculées par Programmes 2027 à partir de ces données.</p>` : '';
+const creditFV = (avecSite = false) => FV() ? `<p class="mono small credit">Positions : <a href="${esc(FV().page)}" target="_blank" rel="noopener">France-Vote</a>, lecture éditoriale indicative, licence ${esc(FV().licence)} — données du ${esc(dateFr(FV().recupereLe))}. Boussole et proximités calculées par Programmes 2027 à partir de ces données.${avecSite ? ' Pour les candidats que France-Vote n\'évalue pas, positions relevées par Programmes 2027, uniquement quand une prise de position sourcée existe.' : ''}</p>` : '';
 
 function lignePosition(p, f) {
   const v = f.positions[p.id], src = f.sources?.[p.id];
@@ -471,7 +491,18 @@ function lignePosition(p, f) {
 function blocPositionsFiche(c) {
   if (!FV()) return '';
   const f = fvDe(c);
-  if (!f) return `<section class="section alerte"><b>40 PROPOSITIONS</b> — France-Vote n'a pas encore évalué les positions ${esc(de(`${c.prenom} ${c.nom}`))} sur ses 40 propositions. Elles apparaîtront ici automatiquement.</section>`;
+  const nbProp = FV().propositions.length;
+  if (!f) return `<section class="section alerte"><b>${nbProp} PROPOSITIONS</b> — Aucune prise de position ${esc(de(`${c.prenom} ${c.nom}`))} n'a encore été relevée sur les ${nbProp} propositions du comparateur (retraites, SMIC, immigration, nucléaire, Europe…). Elles apparaîtront ici dès qu'une position sourcée sera publiée.</section>`;
+  if (f.origine === 'site' || !f.boussole) {
+    const connues = FV().propositions.filter((p) => typeof f.positions[p.id] === 'number');
+    return `
+      <section class="section carte" style="${styleCouleur(c)}">
+        <h2 class="section-titre">Ses positions sur ${nbProp} propositions</h2>
+        <p style="margin:0 0 12px"><strong>${connues.length} position${connues.length > 1 ? 's' : ''} connue${connues.length > 1 ? 's' : ''} sur ${nbProp}.</strong> Les autres propositions ne sont pas encore évaluées, faute de prise de position publique. Pas assez de positions pour placer ${esc(c.prenom)} ${esc(c.nom)} sur la boussole ou calculer ses candidats les plus proches.</p>
+        <div class="theme-bloc">${connues.map((p) => lignePosition(p, f)).join('')}</div>
+        ${creditFV(true)}
+      </section>`;
+  }
   const autres = candidatsTries().filter((x) => x.id !== c.id && fvDe(x)).map((x) => ({ x, p: proximite(c, x) })).filter((o) => o.p != null).sort((a, b) => b.p - a.p);
   const lienAvec = (x) => (estPrincipal(c) && estPrincipal(x) ? lienDuel(c, x) : URLS.comparer([c.id, x.id]));
   const ligneProche = ({ x, p }) => `<a class="proche" href="${lienAvec(x)}" style="${styleCouleur(x)}">${avatar(x, 'sm')}<span>${esc(x.prenom)} ${esc(x.nom)}</span><b>${p} %</b></a>`;
@@ -502,25 +533,28 @@ function blocPositionsFiche(c) {
 function blocPositionsComparees(choisis) {
   if (!FV()) return '';
   const avec = choisis.filter(fvDe);
-  if (!avec.length) return '';
-  const proxi = choisis.length === 2 && avec.length === 2 ? proximite(choisis[0], choisis[1]) : null;
+  const nb = FV().propositions.length;
+  if (!avec.length) return `<section class="section alerte"><b>${nb} PROPOSITIONS</b> — Aucun des candidats choisis n'a encore de position relevée sur les ${nb} propositions.</section>`;
+  const proxi = choisis.length === 2 ? proximite(choisis[0], choisis[1]) : null;
+  const partiels = choisis.filter((c) => fvDe(c)?.origine === 'site' || !fvDe(c));
   return `
     <section class="section">
-      <h2 class="section-titre">Les ${FV().propositions.length} propositions face à face${proxi != null ? ` · proximité ${proxi} %` : ''}</h2>
+      <h2 class="section-titre">Les ${nb} propositions face à face${proxi != null ? ` · proximité ${proxi} %` : ''}</h2>
+      ${partiels.length ? `<p class="small" style="margin:0 0 10px">Peu ou pas de positions connues pour ${partiels.map((c) => esc(c.nom)).join(', ')} : les cases « non évalué » ne sont pas comptées${choisis.length === 2 ? ', et la proximité n\'est affichée qu\'à partir de ' + MIN_COMMUNES + ' propositions évaluées en commun' : ''}.</p>` : ''}
       <div class="matrice-wrap">
         <table class="matrice matrice--pos">
           <thead><tr><th scope="col">Proposition</th>${choisis.map((c) => `<th scope="col"><span class="th-cand">${avatar(c, 'sm')}${esc(c.nom)}</span></th>`).join('')}</tr></thead>
           <tbody>${Object.entries(FV().themes).map(([tid, tlib]) => `
             <tr class="ligne-theme"><th scope="rowgroup" colspan="${choisis.length + 1}">${esc(tlib)}</th></tr>
             ${FV().propositions.filter((p) => p.theme === tid).map((p) => `<tr><th scope="row" title="${esc(p.texte)}">${esc(p.court)}</th>${choisis.map((c) => {
-              const f = fvDe(c); if (!f) return '<td><span class="inconnu">non évalué</span></td>';
+              const f = fvDe(c); if (!f) return `<td>${chip(undefined)}</td>`;
               const src = f.sources?.[p.id];
               return `<td>${chip(f.positions[p.id])}${src ? ` <a class="source" href="${esc(src.url)}" target="_blank" rel="noopener" aria-label="source">↗</a>` : ''}</td>`;
             }).join('')}</tr>`).join('')}`).join('')}
           </tbody>
         </table>
       </div>
-      ${creditFV()}
+      ${creditFV(partiels.length > 0)}
     </section>`;
 }
 
@@ -767,7 +801,7 @@ function vueComparer(param) {
         <table class="matrice">
           <thead><tr><th scope="col">Enjeu</th>${choisis.map((c) => `<th scope="col"><span class="th-cand">${avatar(c, 'sm')}${esc(c.nom)}</span></th>`).join('')}</tr></thead>
           <tbody>
-            ${d.enjeux.map((e) => `<tr><th scope="row">${esc(e.label)}</th>${choisis.map((c) => `<td>${c.positions?.[e.id] ? `${esc(c.positions[e.id].valeur)} <a class="source" href="${esc(c.positions[e.id].source)}" target="_blank" rel="noopener" aria-label="source">↗</a>` : '<span class="inconnu">non précisé</span>'}</td>`).join('')}</tr>`).join('')}
+            ${d.enjeux.map((e) => `<tr><th scope="row">${esc(e.label)}</th>${choisis.map((c) => `<td>${celluleEnjeu(c, e)}</td>`).join('')}</tr>`).join('')}
           </tbody>
         </table>
       </div>
@@ -1033,14 +1067,16 @@ async function init() {
   if (!app.children.length) app.innerHTML = '<p class="chargement">Chargement des programmes…</p>';
   try {
     const optionnel = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    const [data, veille, parrainages, listeOfficielle, fv] = await Promise.all([
+    const [data, veille, parrainages, listeOfficielle, fv, complements] = await Promise.all([
       fetch(lien('data/candidats.json'), { cache: 'no-cache' }).then((r) => r.json()),
       optionnel(lien('data/veille.json')),
       optionnel(lien('data/parrainages.json')),
       optionnel(lien('data/liste-officielle.json')),
       optionnel(lien('data/francevote.json')),
+      optionnel(lien('data/positions-complementaires.json')),
     ]);
     state.fv = fv;
+    state.complements = complements;
     state.listeOfficielle = listeOfficielle?.statut === 'publiee' ? listeOfficielle : null;
     state.data = data;
     state.veille = veille;
@@ -1049,6 +1085,7 @@ async function init() {
     enTete();
     router();
   } catch (e) {
+    console.error(e);
     app.innerHTML = `<p class="chargement">Impossible de charger les données. ${esc(e.message)}</p>`;
   }
 }
