@@ -22,6 +22,7 @@ const state = {
   veille: null,
   parrainages: null,
   listeOfficielle: null,
+  fv: null,
   filtreBord: null,
   recherche: '',
   avecProgramme: false,
@@ -92,6 +93,8 @@ const libelleCompare = (on, grand) => grand
 
 const parId = (id) => state.data.candidats.find((c) => c.id === id);
 const bordDe = (c) => state.data.bords.find((b) => b.id === c.bord);
+// Élision : « d'Édouard Philippe », « de Marine Le Pen »
+const de = (n) => (/^[aeiouyàâäéèêëîïôöùûü]/i.test(n) ? `d'${n}` : `de ${n}`);
 const nbProps = (c) => Object.values(c.propositions || {}).reduce((n, l) => n + l.length, 0);
 const ordreBord = (c) => state.data.bords.findIndex((b) => b.id === c.bord);
 // Candidats « principaux » : ceux qui ont au moins 3 mesures sourcées (pages duel générées pour eux)
@@ -343,7 +346,7 @@ function vueCandidat(id) {
       </section>` : ''}
 
       <section class="section">
-        <h2 class="section-titre">Le programme 2027 de ${esc(c.prenom)} ${esc(c.nom)}</h2>
+        <h2 class="section-titre">Le programme 2027 ${esc(de(`${c.prenom} ${c.nom}`))}</h2>
         ${themes.length ? themes.map((t, i) => `
           <details class="theme-bloc" ${i < 2 ? 'open' : ''}>
             <summary><span>${t.emoji}</span>${esc(t.label)} <span class="compte">${c.propositions[t.id].length}</span></summary>
@@ -351,6 +354,8 @@ function vueCandidat(id) {
           </details>`).join('') : `
           <div class="alerte">Ce candidat n'a pas encore publié de programme détaillé. La fiche sera complétée automatiquement dès que des propositions seront annoncées.</div>`}
       </section>
+
+      ${blocPositionsFiche(c)}
 
       ${blocDuels(c)}
 
@@ -391,6 +396,132 @@ function blocBio(c) {
         </div>` : ''}
         <p class="mono small credit">Source : <a href="${esc(b.wikipedia)}" target="_blank" rel="noopener">Wikipédia</a> (texte sous licence CC BY-SA 4.0)${b.wikidata ? ` et <a href="https://www.wikidata.org/wiki/${esc(b.wikidata)}" target="_blank" rel="noopener">Wikidata</a>` : ''}${b.majLe ? `, mis à jour le ${esc(dateFr(b.majLe))}` : ''}.</p>
       </section>`;
+}
+
+// ---------- Positions sur 40 propositions (données ouvertes France-Vote, CC BY 4.0) ----------
+const FV = () => state.fv;
+const fvDe = (c) => FV()?.candidats?.[c.id] || null;
+const NIVEAUX = { '-2': 'Opposition nette', '-1': 'Plutôt opposé', 0: 'Nuancé', 1: 'Plutôt favorable', 2: 'Soutien net' };
+const chip = (v) => (typeof v === 'number' ? `<span class="niveau niveau--${v < 0 ? 'm' + -v : v}">${NIVEAUX[v]}</span>` : '<span class="inconnu">—</span>');
+const sens = (v, neg, pos, centre) => (v == null ? '—' : v <= -15 ? neg : v >= 15 ? pos : centre);
+const lireBoussole = (b) => `Économie <b>${sens(b.eco, 'interventionniste', 'libérale', 'au centre')}</b> (${b.eco > 0 ? '+' : ''}${b.eco}) · société <b>${sens(b.soc, 'progressiste', 'conservatrice', 'modérée')}</b> (${b.soc > 0 ? '+' : ''}${b.soc})`;
+
+// Proximité : 100 % = mêmes positions sur toutes les propositions évaluées par les deux
+function proximite(a, b) {
+  const pa = fvDe(a)?.positions, pb = fvDe(b)?.positions;
+  if (!pa || !pb) return null;
+  const ids = Object.keys(pa).filter((k) => typeof pa[k] === 'number' && typeof pb[k] === 'number');
+  if (!ids.length) return null;
+  return Math.round(100 - (ids.reduce((s, k) => s + Math.abs(pa[k] - pb[k]), 0) / ids.length) * 25);
+}
+
+function svgBoussole(focus = null, etiquettes = false) {
+  const W = 300, H = 336, M = 26, HAUT = 30, L = W - 2 * M;
+  const x = (v) => M + ((v + 100) / 200) * L;
+  const y = (v) => HAUT + ((100 - v) / 200) * L;
+  const pts = candidatsTries().filter((c) => fvDe(c)?.boussole?.eco != null);
+  // Étiquettes sans chevauchement : le candidat mis en avant d'abord, puis les autres s'il reste de la place
+  const places = [];
+  const libre = (bx, by, w) => places.every((p) => Math.abs(p.y - by) > 12 || bx + w < p.x || bx > p.x + p.w);
+  const etiquette = (c, f) => {
+    const b = fvDe(c).boussole, w = c.nom.length * (f ? 7.6 : 6.2) + 4;
+    const droite = x(b.eco) < W - M - w - 14;
+    const ecart = f ? 15 : 10;
+    const bx = droite ? x(b.eco) + ecart : x(b.eco) - ecart - w, by = y(b.soc);
+    if (!f && !libre(bx, by, w)) return '';
+    places.push({ x: bx, y: by, w });
+    return `<text x="${droite ? bx : bx + w}" y="${by + 4}" text-anchor="${droite ? 'start' : 'end'}" class="bp__nom">${esc(c.nom)}</text>`;
+  };
+  const ordreEtiquettes = focus ? [focus, ...pts.filter((c) => c.id !== focus.id)] : pts;
+  const textes = new Map();
+  for (const c of ordreEtiquettes) if (fvDe(c) && (etiquettes || (focus && c.id === focus.id))) textes.set(c.id, etiquette(c, focus && c.id === focus.id));
+  const point = (c) => {
+    const b = fvDe(c).boussole, f = focus && c.id === focus.id;
+    return `<a href="${URLS.candidat(c.id)}" class="bp${f ? ' bp--focus' : ''}"><title>${esc(c.prenom)} ${esc(c.nom)} : économie ${b.eco}, société ${b.soc}</title>
+      <circle cx="${x(b.eco)}" cy="${y(b.soc)}" r="13" class="bp__cible"/>
+      <circle cx="${x(b.eco)}" cy="${y(b.soc)}" r="${f ? 10 : 6}" fill="${c.couleur}" class="bp__point"/>
+      ${textes.get(c.id) || ''}</a>`;
+  };
+  // Le candidat mis en avant est dessiné en dernier (au-dessus des autres)
+  const ordre = focus ? [...pts.filter((c) => c.id !== focus.id), ...pts.filter((c) => c.id === focus.id)] : pts;
+  const bas = HAUT + L;
+  return `<svg class="boussole" viewBox="0 0 ${W} ${H}" role="img" aria-label="Boussole politique : économie de gauche (interventionniste) à droite (libérale), société de bas (progressiste) en haut (conservatrice)">
+    <rect x="${M}" y="${HAUT}" width="${L}" height="${L}" class="boussole__fond"/>
+    <line x1="${W / 2}" x2="${W / 2}" y1="${HAUT}" y2="${bas}" class="boussole__axe"/>
+    <line y1="${HAUT + L / 2}" y2="${HAUT + L / 2}" x1="${M}" x2="${W - M}" class="boussole__axe"/>
+    <text x="${W / 2}" y="${HAUT - 10}" text-anchor="middle" class="boussole__lib">↑ Société conservatrice</text>
+    <text x="${M}" y="${bas + 18}" class="boussole__lib">← Économie interventionniste</text>
+    <text x="${W - M}" y="${bas + 18}" text-anchor="end" class="boussole__lib">libérale →</text>
+    <text x="${W / 2}" y="${bas + 36}" text-anchor="middle" class="boussole__lib">↓ Société progressiste</text>
+    ${ordre.map(point).join('')}
+  </svg>`;
+}
+
+const creditFV = () => FV() ? `<p class="mono small credit">Positions : <a href="${esc(FV().page)}" target="_blank" rel="noopener">France-Vote</a>, lecture éditoriale indicative, licence ${esc(FV().licence)} — données du ${esc(dateFr(FV().recupereLe))}. Boussole et proximités calculées par Programmes 2027 à partir de ces données.</p>` : '';
+
+function lignePosition(p, f) {
+  const v = f.positions[p.id], src = f.sources?.[p.id];
+  return `<div class="pos">
+    <div class="pos__texte"><strong>${esc(p.court)}</strong><span>${esc(p.texte)}</span>
+      ${src ? `<a class="source" href="${esc(src.url)}" target="_blank" rel="noopener">source : ${esc(src.editeur || new URL(src.url).hostname)}${src.date ? `, ${esc(dateFr(src.date))}` : ''} ↗</a>` : '<span class="pos__indicatif">lecture indicative, sans source publiée</span>'}</div>
+    ${chip(v)}
+  </div>`;
+}
+
+function blocPositionsFiche(c) {
+  if (!FV()) return '';
+  const f = fvDe(c);
+  if (!f) return `<section class="section alerte"><b>40 PROPOSITIONS</b> — France-Vote n'a pas encore évalué les positions ${esc(de(`${c.prenom} ${c.nom}`))} sur ses 40 propositions. Elles apparaîtront ici automatiquement.</section>`;
+  const autres = candidatsTries().filter((x) => x.id !== c.id && fvDe(x)).map((x) => ({ x, p: proximite(c, x) })).filter((o) => o.p != null).sort((a, b) => b.p - a.p);
+  const lienAvec = (x) => (estPrincipal(c) && estPrincipal(x) ? lienDuel(c, x) : URLS.comparer([c.id, x.id]));
+  const ligneProche = ({ x, p }) => `<a class="proche" href="${lienAvec(x)}" style="${styleCouleur(x)}">${avatar(x, 'sm')}<span>${esc(x.prenom)} ${esc(x.nom)}</span><b>${p} %</b></a>`;
+  const themes = Object.entries(FV().themes);
+  return `
+      <section class="section carte" style="${styleCouleur(c)}">
+        <h2 class="section-titre">Sa boussole politique</h2>
+        <div class="boussole-bloc">
+          ${svgBoussole(c)}
+          <div>
+            <p style="margin:0 0 12px">${lireBoussole(f.boussole)}</p>
+            ${f.famille ? `<p class="small" style="margin:0 0 12px">Famille politique (France-Vote) : <b>${esc(f.famille)}</b></p>` : ''}
+            <h3 class="sous-titre" style="margin-top:0">Les plus proches</h3>
+            <div class="proches">${autres.slice(0, 4).map(ligneProche).join('')}</div>
+            <h3 class="sous-titre">Les plus éloignés</h3>
+            <div class="proches">${autres.slice(-3).reverse().map(ligneProche).join('')}</div>
+          </div>
+        </div>
+        <h3 class="sous-titre">Ses positions sur ${FV().propositions.length} propositions</h3>
+        ${themes.map(([tid, tlib], i) => {
+          const ps = FV().propositions.filter((p) => p.theme === tid);
+          return `<details class="theme-bloc" ${i === 0 ? 'open' : ''}><summary>${esc(tlib)} <span class="compte">${ps.length}</span></summary>${ps.map((p) => lignePosition(p, f)).join('')}</details>`;
+        }).join('')}
+        ${creditFV()}
+      </section>`;
+}
+
+function blocPositionsComparees(choisis) {
+  if (!FV()) return '';
+  const avec = choisis.filter(fvDe);
+  if (!avec.length) return '';
+  const proxi = choisis.length === 2 && avec.length === 2 ? proximite(choisis[0], choisis[1]) : null;
+  return `
+    <section class="section">
+      <h2 class="section-titre">Les ${FV().propositions.length} propositions face à face${proxi != null ? ` · proximité ${proxi} %` : ''}</h2>
+      <div class="matrice-wrap">
+        <table class="matrice matrice--pos">
+          <thead><tr><th scope="col">Proposition</th>${choisis.map((c) => `<th scope="col"><span class="th-cand">${avatar(c, 'sm')}${esc(c.nom)}</span></th>`).join('')}</tr></thead>
+          <tbody>${Object.entries(FV().themes).map(([tid, tlib]) => `
+            <tr class="ligne-theme"><th scope="rowgroup" colspan="${choisis.length + 1}">${esc(tlib)}</th></tr>
+            ${FV().propositions.filter((p) => p.theme === tid).map((p) => `<tr><th scope="row" title="${esc(p.texte)}">${esc(p.court)}</th>${choisis.map((c) => {
+              const f = fvDe(c); if (!f) return '<td><span class="inconnu">non évalué</span></td>';
+              const src = f.sources?.[p.id];
+              return `<td>${chip(f.positions[p.id])}${src ? ` <a class="source" href="${esc(src.url)}" target="_blank" rel="noopener" aria-label="source">↗</a>` : ''}</td>`;
+            }).join('')}</tr>`).join('')}`).join('')}
+          </tbody>
+        </table>
+      </div>
+      ${creditFV()}
+    </section>`;
 }
 
 // ---------- Liste officielle (Conseil constitutionnel, mars 2027) ----------
@@ -652,6 +783,8 @@ function vueComparer(param) {
       <p class="mono small">← faites glisser pour voir tous les candidats →</p>` : '<div class="alerte">Aucune proposition publiée pour ces candidats pour l\'instant.</div>'}
     </section>
 
+    ${blocPositionsComparees(choisis)}
+
     <section class="section">
       <button type="button" class="btn" id="partager">Partager ce match ↗</button>
     </section>`}`;
@@ -747,17 +880,25 @@ function vueCandidatures() {
 
     ${blocListeOfficielle()}
 
+    ${FV() ? `<section class="section carte">
+      <h2 class="section-titre">La boussole des candidats</h2>
+      <div class="boussole-bloc boussole-bloc--large">${svgBoussole(null, true)}
+        <p class="small" style="margin:0">Chaque point est un candidat, calculé à partir de ses positions sur ${FV().propositions.length} propositions : à gauche une économie plus interventionniste, à droite plus libérale ; en haut des positions de société plus conservatrices, en bas plus progressistes. Touchez un point pour ouvrir la fiche. Les coordonnées figurent dans le tableau ci-dessous.</p></div>
+      ${creditFV()}
+    </section>` : ''}
+
     <section class="section">
       <h2 class="section-titre">Toutes les candidatures déclarées</h2>
       <div class="matrice-wrap">
         <table class="matrice candidatures">
-          <thead><tr><th scope="col">Candidat</th><th scope="col">Parti</th><th scope="col">Bord</th><th scope="col">Annonce</th><th scope="col">Programme</th></tr></thead>
+          <thead><tr><th scope="col">Candidat</th><th scope="col">Parti</th><th scope="col">Bord</th><th scope="col">Annonce</th><th scope="col">Programme</th>${FV() ? '<th scope="col">Boussole (éco · société)</th>' : ''}</tr></thead>
           <tbody>${parDate.map((c) => `<tr style="${styleCouleur(c)}">
             <th scope="row"><a class="th-cand" href="${URLS.candidat(c.id)}">${avatar(c, 'sm')}<span>${esc(c.prenom)} ${esc(c.nom)}</span></a></th>
             <td>${pastilleParti(c)}<br><span class="small">${esc(c.parti)}</span></td>
             <td>${esc(bordDe(c)?.label)}</td>
             <td>${c.declaration ? esc(dateFr(c.declaration)) : '<span class="inconnu">—</span>'}<br><span class="small">${esc(c.statut)}</span></td>
             <td>${tagProgramme(c)}${tagOfficiel(c) ? '<br>' + tagOfficiel(c) : ''}</td>
+            ${FV() ? `<td class="mono">${fvDe(c)?.boussole ? `${fvDe(c).boussole.eco} · ${fvDe(c).boussole.soc}` : '<span class="inconnu">—</span>'}</td>` : ''}
           </tr>`).join('')}</tbody>
         </table>
       </div>
@@ -795,6 +936,8 @@ function vueMethodo() {
       <p>Le classement suit l'usage courant de la presse et de Wikipédia. Il reste une simplification : un candidat peut être plus à gauche sur un sujet et plus à droite sur un autre.</p>
       <h2>Avertissement</h2>
       <p>${esc(d.meta.avertissement)}</p>
+      <h2>Les 40 propositions et la boussole</h2>
+      <p>Les positions de chaque candidat sur 40 propositions (de « opposition nette » à « soutien net ») viennent des <a href="https://www.france-vote.fr/donnees" target="_blank" rel="noopener">données ouvertes de France-Vote</a>, publiées sous licence CC BY 4.0. Il s'agit d'une lecture éditoriale et indicative : une position sans source publiée est signalée comme telle. La boussole (économie et société, de −100 à +100) et les pourcentages de proximité sont calculés par ce site à partir de ces données, avec la méthode de France-Vote pour la boussole. Les données sont mises à jour automatiquement.</p>
       <h2>Uniquement la campagne 2027</h2>
       <p>${esc(d.meta.regle || '')} Une position que le candidat défendait en 2017 ou en 2022 n'est reprise que si une source de la campagne 2027 la confirme. « Non précisé » signifie qu'aucune source 2027 n'a encore été trouvée, pas que le candidat n'a pas d'avis.</p>
       <p class="mono small">Contenu vérifié le ${esc(dateFr(d.meta.contenuMisAJour))}${state.veille?.checkedAt ? ` · liste vérifiée sur Wikipédia le ${esc(dateFr(state.veille.checkedAt))}` : ''}.</p>
@@ -890,12 +1033,14 @@ async function init() {
   if (!app.children.length) app.innerHTML = '<p class="chargement">Chargement des programmes…</p>';
   try {
     const optionnel = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    const [data, veille, parrainages, listeOfficielle] = await Promise.all([
+    const [data, veille, parrainages, listeOfficielle, fv] = await Promise.all([
       fetch(lien('data/candidats.json'), { cache: 'no-cache' }).then((r) => r.json()),
       optionnel(lien('data/veille.json')),
       optionnel(lien('data/parrainages.json')),
       optionnel(lien('data/liste-officielle.json')),
+      optionnel(lien('data/francevote.json')),
     ]);
+    state.fv = fv;
     state.listeOfficielle = listeOfficielle?.statut === 'publiee' ? listeOfficielle : null;
     state.data = data;
     state.veille = veille;

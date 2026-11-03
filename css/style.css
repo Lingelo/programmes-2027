@@ -426,3 +426,33 @@ main { display: block; max-width: 1100px; margin: 0 auto; padding: 22px 16px 120
 .candidatures td, .candidatures th { min-width: 0; }
 .candidatures tbody th { max-width: none; text-transform: none; font-family: var(--sans); font-size: .92rem; letter-spacing: 0; }
 .candidatures .th-cand { text-decoration: none; white-space: normal; }
+
+/* ---------- Positions (40 propositions) et boussole ---------- */
+.niveau { display: inline-block; white-space: nowrap; font-family: var(--mono); font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; border: 2px solid var(--encre); border-radius: 8px; padding: 2px 7px; }
+.niveau--2 { background: #20C997; }
+.niveau--1 { background: #BDEFD9; }
+.niveau--0 { background: #ECE7D8; color: #3d3d3d; }
+.niveau--m1 { background: #FFD1E3; }
+.niveau--m2 { background: #FF7EB6; }
+.pos { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; padding: 12px 14px; border-bottom: 1.5px solid #eee3bd; }
+.pos:last-child { border-bottom: 0; }
+.pos__texte { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.pos__texte span { font-size: .92rem; }
+.pos__indicatif { font-family: var(--mono); font-size: .72rem; color: var(--gris); }
+.boussole-bloc { display: grid; gap: 18px; }
+@media (min-width: 720px) { .boussole-bloc { grid-template-columns: 300px 1fr; align-items: start; } .boussole-bloc--large { grid-template-columns: minmax(300px, 460px) 1fr; } }
+.boussole { width: 100%; max-width: 460px; height: auto; display: block; }
+.boussole__fond { fill: var(--creme); stroke: var(--encre); stroke-width: 3; rx: 14; }
+.boussole__axe { stroke: var(--encre); stroke-width: 1.5; stroke-dasharray: 5 5; opacity: .5; }
+.boussole__lib { font-family: var(--mono); font-size: 10px; font-weight: 700; fill: var(--encre); }
+.bp__cible { fill: transparent; }
+.bp__point { stroke: #fff; stroke-width: 2; }
+.bp--focus .bp__point { stroke: var(--encre); stroke-width: 3; }
+.bp:hover .bp__point, .bp:focus .bp__point { stroke: var(--encre); stroke-width: 3; }
+.bp__nom { font-family: var(--sans); font-size: 10.5px; font-weight: 700; fill: var(--encre); paint-order: stroke; stroke: var(--creme); stroke-width: 3px; }
+.bp--focus .bp__nom { font-size: 13px; }
+.proches { display: grid; gap: 8px; }
+.proche { display: flex; align-items: center; gap: 10px; text-decoration: none; background: var(--blanc); border: 2.5px solid var(--encre); border-radius: var(--radius-sm); padding: 6px 10px; }
+.proche b { margin-left: auto; font-family: var(--mono); }
+.matrice--pos tbody th { text-transform: none; font-family: var(--sans); font-size: .85rem; letter-spacing: 0; font-weight: 700; }
+.matrice--pos .ligne-theme th { background: var(--encre); color: var(--jaune); font-family: var(--mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; position: static; }

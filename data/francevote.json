@@ -1,0 +1,3196 @@
+{
+ "source": "France-Vote",
+ "licence": "CC BY 4.0",
+ "page": "https://www.france-vote.fr/donnees",
+ "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
+ "recupereLe": "2026-11-03",
+ "echelle": {
+  "0": "Position nuancée, non tranchée ou absente",
+  "1": "Plutôt favorable",
+  "2": "Soutien net",
+  "-2": "Opposition nette",
+  "-1": "Plutôt opposé"
+ },
+ "themes": {
+  "economie": "Économie & fiscalité",
+  "social": "Travail, retraites & social",
+  "immigration": "Immigration",
+  "securite": "Sécurité & justice",
+  "ecologie": "Écologie & énergie",
+  "europe": "Europe",
+  "international": "International & défense",
+  "institutions": "Institutions & démocratie",
+  "sante": "Santé",
+  "education": "Éducation"
+ },
+ "propositions": [
+  {
+   "id": "eco1",
+   "theme": "economie",
+   "texte": "Il faut rétablir un impôt sur la fortune ou taxer massivement les très grands patrimoines.",
+   "court": "Impôt sur la fortune",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "eco2",
+   "theme": "economie",
+   "texte": "Il faut poursuivre la baisse des impôts de production et des charges qui pèsent sur les entreprises.",
+   "court": "Baisse des charges",
+   "axes": {
+    "eco": 1
+   }
+  },
+  {
+   "id": "eco3",
+   "theme": "economie",
+   "texte": "La réduction du déficit et de la dette publics doit primer sur les nouvelles dépenses.",
+   "court": "Priorité au désendettement",
+   "axes": {
+    "eco": 1
+   }
+  },
+  {
+   "id": "eco4",
+   "theme": "economie",
+   "texte": "Il faut protéger l'industrie française par des droits de douane et une préférence nationale dans la commande publique.",
+   "court": "Protectionnisme industriel",
+   "axes": null
+  },
+  {
+   "id": "soc1",
+   "theme": "social",
+   "texte": "Il faut abroger la réforme des retraites de 2023 et revenir à un départ à 62 ans ou moins.",
+   "court": "Abrogation de la réforme des retraites",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "soc2",
+   "theme": "social",
+   "texte": "L'État doit augmenter fortement le SMIC et imposer des hausses de salaires.",
+   "court": "Hausse du SMIC",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "soc3",
+   "theme": "social",
+   "texte": "Le versement du RSA et des minima sociaux doit être conditionné à une activité ou à une formation.",
+   "court": "RSA sous condition d'activité",
+   "axes": {
+    "eco": 1
+   }
+  },
+  {
+   "id": "soc4",
+   "theme": "social",
+   "texte": "Il faut réduire le temps de travail (semaine de 32 heures ou de quatre jours).",
+   "court": "Réduction du temps de travail",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "imm1",
+   "theme": "immigration",
+   "texte": "Il faut réduire fortement l'immigration légale, en fixant des quotas annuels contraignants.",
+   "court": "Quotas migratoires",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "imm2",
+   "theme": "immigration",
+   "texte": "Il faut restreindre le droit du sol pour l'acquisition de la nationalité française.",
+   "court": "Restriction du droit du sol",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "imm3",
+   "theme": "immigration",
+   "texte": "Il faut régulariser les travailleurs sans papiers employés dans les métiers en tension.",
+   "court": "Régularisation par le travail",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "imm4",
+   "theme": "immigration",
+   "texte": "Les prestations sociales non contributives doivent être réservées aux Français (priorité nationale).",
+   "court": "Priorité nationale",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "sec1",
+   "theme": "securite",
+   "texte": "Il faut instaurer des peines planchers automatiques pour les récidivistes.",
+   "court": "Peines planchers",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "sec2",
+   "theme": "securite",
+   "texte": "Il faut légaliser ou dépénaliser la consommation de cannabis.",
+   "court": "Légalisation du cannabis",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "sec3",
+   "theme": "securite",
+   "texte": "Il faut renforcer le contrôle des forces de l'ordre par une autorité réellement indépendante.",
+   "court": "Contrôle indépendant de la police",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "sec4",
+   "theme": "securite",
+   "texte": "L'excuse de minorité doit être supprimée pour les mineurs délinquants récidivistes.",
+   "court": "Fin de l'excuse de minorité",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "env1",
+   "theme": "ecologie",
+   "texte": "La France doit construire une nouvelle génération de réacteurs nucléaires.",
+   "court": "Relance du nucléaire",
+   "axes": null
+  },
+  {
+   "id": "env2",
+   "theme": "ecologie",
+   "texte": "Il faut accélérer massivement le déploiement de l'éolien et du solaire.",
+   "court": "Accélération des renouvelables",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "env3",
+   "theme": "ecologie",
+   "texte": "Les objectifs climatiques doivent primer, même s'ils imposent des contraintes fortes aux entreprises et aux ménages.",
+   "court": "Contraintes climatiques",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "env4",
+   "theme": "ecologie",
+   "texte": "Il faut réduire drastiquement l'usage des pesticides de synthèse, quitte à contraindre le modèle agricole.",
+   "court": "Sortie des pesticides",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "eur1",
+   "theme": "europe",
+   "texte": "La France doit approfondir l'intégration européenne : budget commun, décisions à la majorité, défense intégrée.",
+   "court": "Plus d'intégration européenne",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "eur2",
+   "theme": "europe",
+   "texte": "La France doit pouvoir déroger au droit européen lorsqu'il contredit ses intérêts nationaux.",
+   "court": "Primauté du droit national",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "eur3",
+   "theme": "europe",
+   "texte": "La France doit sortir de l'Union européenne ou de la zone euro.",
+   "court": "Sortie de l'UE ou de l'euro",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "eur4",
+   "theme": "europe",
+   "texte": "Il faut rejeter les accords de libre-échange du type UE-Mercosur.",
+   "court": "Rejet du Mercosur",
+   "axes": null
+  },
+  {
+   "id": "int1",
+   "theme": "international",
+   "texte": "La France doit continuer à soutenir militairement l'Ukraine face à la Russie.",
+   "court": "Soutien militaire à l'Ukraine",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "int2",
+   "theme": "international",
+   "texte": "La France doit quitter le commandement intégré de l'OTAN.",
+   "court": "Sortie du commandement de l'OTAN",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "int3",
+   "theme": "international",
+   "texte": "Il faut augmenter fortement le budget de la défense, quitte à réduire d'autres dépenses.",
+   "court": "Hausse du budget de la défense",
+   "axes": null
+  },
+  {
+   "id": "int4",
+   "theme": "international",
+   "texte": "L'aide au développement doit être conditionnée à la coopération migratoire des pays d'origine.",
+   "court": "Aide conditionnée aux retours",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "ins1",
+   "theme": "institutions",
+   "texte": "Il faut instaurer un référendum d'initiative citoyenne (RIC) sur tous les sujets.",
+   "court": "Référendum d'initiative citoyenne",
+   "axes": null
+  },
+  {
+   "id": "ins2",
+   "theme": "institutions",
+   "texte": "Les députés doivent être élus à la proportionnelle intégrale.",
+   "court": "Proportionnelle intégrale",
+   "axes": null
+  },
+  {
+   "id": "ins3",
+   "theme": "institutions",
+   "texte": "Il faut changer de République et réduire fortement les pouvoirs du président (VIᵉ République).",
+   "court": "VIᵉ République",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "ins4",
+   "theme": "institutions",
+   "texte": "Il faut recourir au référendum pour trancher les grandes questions migratoires et de société.",
+   "court": "Référendum sur l'immigration",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "san1",
+   "theme": "sante",
+   "texte": "Il faut augmenter fortement le budget de l'hôpital public et le nombre de soignants.",
+   "court": "Budget de l'hôpital public",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "san2",
+   "theme": "sante",
+   "texte": "Il faut réguler la liberté d'installation des médecins pour combler les déserts médicaux.",
+   "court": "Régulation de l'installation",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "san3",
+   "theme": "sante",
+   "texte": "Il faut légaliser une aide active à mourir strictement encadrée.",
+   "court": "Aide active à mourir",
+   "axes": {
+    "soc": -1
+   }
+  },
+  {
+   "id": "san4",
+   "theme": "sante",
+   "texte": "La Sécurité sociale doit rembourser 100 % des soins, en remplaçant les complémentaires santé.",
+   "court": "100 % Sécurité sociale",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "edu1",
+   "theme": "education",
+   "texte": "Il faut généraliser l'uniforme ou une tenue unique à l'école.",
+   "court": "Uniforme à l'école",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "edu2",
+   "theme": "education",
+   "texte": "Il faut mettre fin au collège unique et permettre une orientation professionnelle plus précoce.",
+   "court": "Fin du collège unique",
+   "axes": {
+    "soc": 1
+   }
+  },
+  {
+   "id": "edu3",
+   "theme": "education",
+   "texte": "Il faut réduire le financement public des établissements privés sous contrat.",
+   "court": "Moins de financement du privé",
+   "axes": {
+    "eco": -1
+   }
+  },
+  {
+   "id": "edu4",
+   "theme": "education",
+   "texte": "Il faut renforcer l'autonomie des établissements et laisser les chefs d'établissement recruter leurs enseignants.",
+   "court": "Autonomie des établissements",
+   "axes": {
+    "eco": 1
+   }
+  }
+ ],
+ "candidats": {
+  "arthaud": {
+   "slug": "nathalie-arthaud",
+   "url": "https://www.france-vote.fr/candidats/nathalie-arthaud",
+   "famille": "Extrême gauche",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": -2,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -2,
+    "soc4": 2,
+    "san1": 2,
+    "san2": 1,
+    "san3": 2,
+    "san4": 2,
+    "edu1": -2,
+    "edu2": -2,
+    "edu3": 2,
+    "edu4": -2,
+    "imm1": -2,
+    "imm2": -2,
+    "imm3": 2,
+    "imm4": -2,
+    "sec1": -2,
+    "sec2": 1,
+    "sec3": 2,
+    "sec4": -2,
+    "ins1": 0,
+    "ins2": 1,
+    "ins3": 0,
+    "ins4": -1,
+    "env1": 0,
+    "env2": 0,
+    "env3": 0,
+    "env4": 0,
+    "eur1": -1,
+    "eur2": 0,
+    "eur3": -1,
+    "eur4": 0,
+    "int1": -1,
+    "int2": 1,
+    "int3": -2,
+    "int4": -2
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure_caravane_2026-01_-_couleur.pdf",
+     "titre": "Nathalie Arthaud – Présidentielle 2027 (supplément à Lutte ouvrière nº 3021)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-06-26"
+    },
+    "eco3": {
+     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure_caravane_2026-01_-_couleur.pdf",
+     "titre": "Nathalie Arthaud – Présidentielle 2027 (supplément à Lutte ouvrière nº 3021)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-06-26"
+    },
+    "eco4": {
+     "url": "https://www.lutte-ouvriere.org/portail/brochures/fete-lutte-ouvriere-2026-discours-nathalie-arthaud-dimanche-194655.html",
+     "titre": "Fête de Lutte ouvrière 2026 : discours de Nathalie Arthaud (dimanche)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-05-24"
+    },
+    "soc1": null,
+    "soc2": {
+     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure_caravane_2026-01_-_couleur.pdf",
+     "titre": "Nathalie Arthaud – Présidentielle 2027 (supplément à Lutte ouvrière nº 3021)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-06-26"
+    },
+    "soc3": null,
+    "soc4": {
+     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure_caravane_2026-01_-_couleur.pdf",
+     "titre": "Nathalie Arthaud – Présidentielle 2027 (supplément à Lutte ouvrière nº 3021)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-06-26"
+    },
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -96,
+    "soc": -50
+   }
+  },
+  "kazib": {
+   "slug": "anasse-kazib",
+   "url": "https://www.france-vote.fr/candidats/anasse-kazib",
+   "famille": "Extrême gauche",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": -2,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -2,
+    "soc4": 2,
+    "san1": 2,
+    "san2": 1,
+    "san3": 1,
+    "san4": 2,
+    "edu1": -2,
+    "edu2": -2,
+    "edu3": 2,
+    "edu4": -2,
+    "imm1": -2,
+    "imm2": -2,
+    "imm3": 2,
+    "imm4": -2,
+    "sec1": -2,
+    "sec2": 1,
+    "sec3": 2,
+    "sec4": -2,
+    "ins1": 0,
+    "ins2": 1,
+    "ins3": 1,
+    "ins4": -1,
+    "env1": -1,
+    "env2": 1,
+    "env3": 0,
+    "env4": 1,
+    "eur1": -1,
+    "eur2": 0,
+    "eur3": -1,
+    "eur4": 1,
+    "int1": -1,
+    "int2": 1,
+    "int3": -2,
+    "int4": -2
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": null,
+    "eco3": null,
+    "eco4": {
+     "url": "https://www.revolutionpermanente.fr/Contre-l-accord-UE-Mercosur-le-protectionnisme-est-une-impasse",
+     "titre": "Contre l'accord UE-Mercosur, le protectionnisme est une impasse",
+     "editeur": "Révolution Permanente",
+     "date": "2025-12-16"
+    },
+    "soc1": null,
+    "soc2": null,
+    "soc3": null,
+    "soc4": {
+     "url": "https://www.revolutionpermanente.fr/28h-expropriation-des-secteurs-strategiques-RP-presente-les-premieres-mesures-de-sa-candidature",
+     "titre": "28h, expropriation des secteurs stratégiques... : RP présente les premières mesures de sa candidature",
+     "editeur": "Révolution Permanente",
+     "date": "2026-09-16"
+    },
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -96,
+    "soc": -55
+   }
+  },
+  "melenchon": {
+   "slug": "jean-luc-melenchon",
+   "url": "https://www.france-vote.fr/candidats/jean-luc-melenchon",
+   "famille": "Gauche de rupture",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": 1,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -2,
+    "soc4": 2,
+    "san1": 2,
+    "san2": 2,
+    "san3": 2,
+    "san4": 2,
+    "edu1": -2,
+    "edu2": -2,
+    "edu3": 2,
+    "edu4": -2,
+    "imm1": -2,
+    "imm2": -2,
+    "imm3": 2,
+    "imm4": -2,
+    "sec1": -2,
+    "sec2": 2,
+    "sec3": 2,
+    "sec4": -2,
+    "ins1": 2,
+    "ins2": 2,
+    "ins3": 2,
+    "ins4": 0,
+    "env1": -2,
+    "env2": 2,
+    "env3": 2,
+    "env4": 2,
+    "eur1": -2,
+    "eur2": 2,
+    "eur3": -1,
+    "eur4": 2,
+    "int1": -1,
+    "int2": 2,
+    "int3": -1,
+    "int4": -2
+   },
+   "sources": {
+    "eco1": {
+     "url": "https://web.archive.org/web/20260829203005/https://melenchon2027.fr/programme2025/livre/chapitre6/s5/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 6 : Partage des richesses, « Faire la révolution fiscale » (archive Wayback du 29/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "eco2": {
+     "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+     "titre": "Comment nous allons remettre de l’ordre dans les comptes publics",
+     "editeur": "Mélenchon 2027 (La France insoumise)",
+     "date": "2026-10-14"
+    },
+    "eco3": {
+     "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+     "titre": "Comment nous allons remettre de l’ordre dans les comptes publics",
+     "editeur": "Mélenchon 2027 (La France insoumise)",
+     "date": "2026-10-14"
+    },
+    "eco4": {
+     "url": "https://web.archive.org/web/20260517180814/https://melenchon2027.fr/programme2025/livre/chapitre16/s5/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 16 : Une diplomatie altermondialiste pour la paix, « Refuser le libre-échange, instaurer un protectionnisme écologique et la coopération économique » (archive Wayback du 17/05/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "soc1": {
+     "url": "https://web.archive.org/web/20260907170933/https://melenchon2027.fr/programme2025/livre/chapitre8/s8/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Garantir une retraite digne » (archive Wayback du 07/09/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "soc2": {
+     "url": "https://web.archive.org/web/20260829202700/https://melenchon2027.fr/programme2025/livre/chapitre8/s4/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Augmenter les salaires et réduire les inégalités salariales dans l’entreprise » (archive Wayback du 29/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "soc3": {
+     "url": "https://web.archive.org/web/20260829202700/https://melenchon2027.fr/programme2025/livre/chapitre8/s5/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Rétablir une assurance-chômage protectrice » (archive Wayback du 29/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "soc4": {
+     "url": "https://web.archive.org/web/20260829202700/https://melenchon2027.fr/programme2025/livre/chapitre8/s2/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Réduire le temps de travail et faire naître une société du temps choisi » (archive Wayback du 29/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "imm1": {
+     "url": "https://web.archive.org/web/20260821172156/https://melenchon2027.fr/programme2025/livre/chapitre16/s7/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 16 : Une diplomatie altermondialiste pour la paix, « Pour une politique migratoire humaniste et réaliste » (archive Wayback du 21/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "imm2": {
+     "url": "https://www.bfmtv.com/politique/la-france-insoumise/il-faut-faciliter-l-acces-a-la-nationalite-francaise-melenchon-veut-inscrire-le-droit-du-sol-dans-la-constitution_AN-202502120629.html",
+     "titre": "« Il faut faciliter l’accès à la nationalité française » : Mélenchon veut inscrire le droit du sol dans la Constitution",
+     "editeur": "BFMTV",
+     "date": "2025-02-12"
+    },
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": {
+     "url": "https://lafranceinsoumise.fr/niche-parlementaire-2022-de-la-france-insoumise/ppl-legaliser-cannabis/",
+     "titre": "Proposition de loi relative à la légalisation de la production, de la vente et de la consommation du cannabis sous le contrôle de l’État",
+     "editeur": "La France insoumise (groupe parlementaire, niche 2022)",
+     "date": "2022-01-03"
+    },
+    "sec3": null,
+    "sec4": null,
+    "env1": {
+     "url": "https://web.archive.org/web/20260821172237/https://melenchon2027.fr/programme2025/livre/chapitre13/s3/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 13 : Les grands chantiers de la bifurcation écologique, « Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique » (archive Wayback du 21/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": {
+     "url": "https://web.archive.org/web/20260826110548/https://melenchon2027.fr/programme2025/livre/chapitre17/s1/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 17 : Europe, « Utiliser tous les leviers d’action face aux institutions européennes » (archive Wayback du 26/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "eur2": null,
+    "eur3": null,
+    "eur4": {
+     "url": "https://web.archive.org/web/20260826110548/https://melenchon2027.fr/programme2025/livre/chapitre17/s1/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 17 : Europe, « Utiliser tous les leviers d’action face aux institutions européennes » (archive Wayback du 26/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "int1": {
+     "url": "https://www.france24.com/fr/europe/20220301-jean-luc-m%C3%A9lenchon-regrette-la-fourniture-d-armes-%C3%A0-l-ukraine-par-l-ue",
+     "titre": "Jean-Luc Mélenchon regrette la fourniture d’armes à l’Ukraine par l’UE",
+     "editeur": "France 24",
+     "date": "2022-03-01"
+    },
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": {
+     "url": "https://web.archive.org/web/20260830154224/https://melenchon2027.fr/programme2025/livre/chapitre4/s1/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 4 : Étendre le domaine de la liberté, « Une nouvelle étape des libertés et de l’émancipation individuelle » (archive Wayback du 30/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "san4": {
+     "url": "https://web.archive.org/web/20260506110604/https://melenchon2027.fr/programme2025/livre/chapitre15/s2/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 15 : Une approche de santé globale, « Faire passer la santé d’abord et reconstruire les établissements de santé publics, notamment les hôpitaux » (archive Wayback du 06/05/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
+    "edu1": {
+     "url": "https://melenchon.fr/2023/08/29/abaya-la-prise-de-tete-de-trop/",
+     "titre": "Abaya ! La prise de tête de trop",
+     "editeur": "Jean-Luc Mélenchon, le blog",
+     "date": "2023-08-29"
+    },
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -100,
+    "soc": -59
+   }
+  },
+  "ruffin": {
+   "slug": "francois-ruffin",
+   "url": "https://www.france-vote.fr/candidats/francois-ruffin",
+   "famille": "Gauche de rupture",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": 2,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -2,
+    "soc4": 1,
+    "san1": 2,
+    "san2": 2,
+    "san3": 2,
+    "san4": 2,
+    "edu1": -1,
+    "edu2": -1,
+    "edu3": 1,
+    "edu4": -2,
+    "imm1": 0,
+    "imm2": -2,
+    "imm3": 1,
+    "imm4": -2,
+    "sec1": -1,
+    "sec2": 0,
+    "sec3": 2,
+    "sec4": -1,
+    "ins1": 2,
+    "ins2": 2,
+    "ins3": 2,
+    "ins4": 0,
+    "env1": -1,
+    "env2": 1,
+    "env3": 1,
+    "env4": 1,
+    "eur1": -1,
+    "eur2": 2,
+    "eur3": -1,
+    "eur4": 2,
+    "int1": 0,
+    "int2": 1,
+    "int3": 0,
+    "int4": -1
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": null,
+    "eco3": null,
+    "eco4": null,
+    "soc1": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2257",
+     "titre": "Analyse du scrutin public n° 2257 sur la proposition de résolution visant à abroger la loi du 14 avril 2023 dite réforme des retraites",
+     "editeur": "Assemblée nationale",
+     "date": "2025-06-05"
+    },
+    "soc2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/43",
+     "titre": "Scrutin public nº 43 sur l’amendement nº 844 de Mme Guetté après l’article 4 du projet de loi portant mesures d’urgence pour la protection du pouvoir d’achat (première lecture)",
+     "editeur": "Assemblée nationale",
+     "date": "2022-07-20"
+    },
+    "soc3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2965",
+     "titre": "Scrutin public nº 2965 sur l’ensemble du projet de loi pour le plein emploi (texte de la commission mixte paritaire)",
+     "editeur": "Assemblée nationale",
+     "date": "2023-11-14"
+    },
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
+     "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
+     "editeur": "Assemblée nationale",
+     "date": "2025-05-27"
+    },
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -92,
+    "soc": -36
+   }
+  },
+  "roussel": {
+   "slug": "fabien-roussel",
+   "url": "https://www.france-vote.fr/candidats/fabien-roussel",
+   "famille": "Gauche de rupture",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": 1,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -1,
+    "soc4": 2,
+    "san1": 2,
+    "san2": 2,
+    "san3": 2,
+    "san4": 2,
+    "edu1": -1,
+    "edu2": -1,
+    "edu3": 2,
+    "edu4": -2,
+    "imm1": -1,
+    "imm2": -2,
+    "imm3": 2,
+    "imm4": -2,
+    "sec1": -1,
+    "sec2": 1,
+    "sec3": 1,
+    "sec4": -1,
+    "ins1": 1,
+    "ins2": 2,
+    "ins3": 2,
+    "ins4": 0,
+    "env1": 2,
+    "env2": 0,
+    "env3": 0,
+    "env4": 1,
+    "eur1": -1,
+    "eur2": 2,
+    "eur3": -1,
+    "eur4": 2,
+    "int1": -1,
+    "int2": 2,
+    "int3": -1,
+    "int4": -1
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://www.pcf.fr/introduction_de_fabien_roussel_securite_sociale",
+     "titre": "80 ans de la sécurité sociale - Introduction de Fabien Roussel",
+     "editeur": "Parti communiste français",
+     "date": "2025-10-02"
+    },
+    "eco3": null,
+    "eco4": {
+     "url": "https://www.pcf.fr/journee_industrie_fr",
+     "titre": "Une nouvelle industrialisation pour la France - discours de Fabien Roussel",
+     "editeur": "PCF",
+     "date": "2025-05-21"
+    },
+    "soc1": null,
+    "soc2": {
+     "url": "https://www.franceinfo.fr/politique/parti-communiste-francais/video-il-faut-un-travail-pour-tous-et-un-smic-a-1800euros-reclame-fabien-roussel-secretaire-national-du-pcf_4767839.html",
+     "titre": "VIDEO. « Il faut un travail pour tous et un Smic à 1 800 euros », réclame Fabien Roussel, secrétaire national du PCF",
+     "editeur": "franceinfo",
+     "date": "2021-09-11"
+    },
+    "soc3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2717",
+     "titre": "Scrutin public nº 2717 sur l’ensemble du projet de loi pour le plein emploi (première lecture)",
+     "editeur": "Assemblée nationale",
+     "date": "2023-10-10"
+    },
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": {
+     "url": "https://www.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/fabien-roussel-je-veux-creer-un-service-public-du-grand-age",
+     "titre": "Fabien Roussel : « Je veux créer un service public du grand âge »",
+     "editeur": "Le Quotidien du Médecin",
+     "date": "2022-04-08"
+    },
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -96,
+    "soc": -32
+   }
+  },
+  "branco": {
+   "slug": "juan-branco",
+   "url": "https://www.france-vote.fr/candidats/juan-branco",
+   "famille": "Gauche de rupture",
+   "positions": {
+    "eco1": 2,
+    "eco2": 0,
+    "eco3": -1,
+    "eco4": 2,
+    "soc1": 0,
+    "soc2": 0,
+    "soc3": -2,
+    "soc4": 0,
+    "san1": 2,
+    "san2": 1,
+    "san3": 1,
+    "san4": 2,
+    "edu1": -1,
+    "edu2": -1,
+    "edu3": 2,
+    "edu4": -2,
+    "imm1": -1,
+    "imm2": -2,
+    "imm3": 1,
+    "imm4": -2,
+    "sec1": -2,
+    "sec2": 1,
+    "sec3": 2,
+    "sec4": -2,
+    "ins1": 2,
+    "ins2": 2,
+    "ins3": 2,
+    "ins4": 1,
+    "env1": 1,
+    "env2": 0,
+    "env3": 0,
+    "env4": 0,
+    "eur1": -2,
+    "eur2": 2,
+    "eur3": 1,
+    "eur4": 2,
+    "int1": -2,
+    "int2": 2,
+    "int3": -1,
+    "int4": -1
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": null,
+    "eco3": null,
+    "eco4": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
+    "soc1": null,
+    "soc2": null,
+    "soc3": null,
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -58,
+    "soc": -20
+   }
+  },
+  "tondelier": {
+   "slug": "marine-tondelier",
+   "url": "https://www.france-vote.fr/candidats/marine-tondelier",
+   "famille": "Écologistes",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": 0,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -2,
+    "soc4": 1,
+    "san1": 2,
+    "san2": 2,
+    "san3": 2,
+    "san4": 2,
+    "edu1": -2,
+    "edu2": -2,
+    "edu3": 2,
+    "edu4": -2,
+    "imm1": -2,
+    "imm2": -2,
+    "imm3": 2,
+    "imm4": -2,
+    "sec1": -2,
+    "sec2": 2,
+    "sec3": 2,
+    "sec4": -2,
+    "ins1": 1,
+    "ins2": 2,
+    "ins3": 2,
+    "ins4": -2,
+    "env1": -2,
+    "env2": 2,
+    "env3": 2,
+    "env4": 2,
+    "eur1": 2,
+    "eur2": -2,
+    "eur3": -2,
+    "eur4": 2,
+    "int1": 2,
+    "int2": -1,
+    "int3": 0,
+    "int4": -2
+   },
+   "sources": {
+    "eco1": {
+     "url": "https://www.lopinion.fr/economie/smic-a-2-000-euros-taxe-zucman-retraite-a-60-ans-tout-savoir-du-programme-economique-des-ecologistes",
+     "titre": "Smic à 2 000 euros, taxe Zucman, retraite à 62 ans… Tout savoir du programme économique des Écologistes",
+     "editeur": "L’Opinion",
+     "date": "2026-07-13"
+    },
+    "eco2": null,
+    "eco3": null,
+    "eco4": null,
+    "soc1": {
+     "url": "https://www.lopinion.fr/economie/smic-a-2-000-euros-taxe-zucman-retraite-a-60-ans-tout-savoir-du-programme-economique-des-ecologistes",
+     "titre": "Smic à 2 000 euros, taxe Zucman, retraite à 62 ans… Tout savoir du programme économique des Écologistes",
+     "editeur": "L’Opinion",
+     "date": "2026-07-13"
+    },
+    "soc2": {
+     "url": "https://www.lopinion.fr/economie/smic-a-2-000-euros-taxe-zucman-retraite-a-60-ans-tout-savoir-du-programme-economique-des-ecologistes",
+     "titre": "Smic à 2 000 euros, taxe Zucman, retraite à 62 ans… Tout savoir du programme économique des Écologistes",
+     "editeur": "L’Opinion",
+     "date": "2026-07-13"
+    },
+    "soc3": null,
+    "soc4": {
+     "url": "https://www.lopinion.fr/economie/smic-a-2-000-euros-taxe-zucman-retraite-a-60-ans-tout-savoir-du-programme-economique-des-ecologistes",
+     "titre": "Smic à 2 000 euros, taxe Zucman, retraite à 62 ans… Tout savoir du programme économique des Écologistes",
+     "editeur": "L’Opinion",
+     "date": "2026-07-13"
+    },
+    "imm1": {
+     "url": "https://www.lefigaro.fr/politique/il-convoque-les-sujets-de-l-extreme-droite-marine-tondelier-en-colere-contre-francois-ruffin-qui-s-est-dit-hostile-a-l-immigration-de-travail-20260501",
+     "titre": "« Il convoque les sujets de l’extrême droite » : Marine Tondelier « en colère » contre François Ruffin qui s’est dit « hostile à l’immigration de travail »",
+     "editeur": "Le Figaro (avec AFP)",
+     "date": "2026-05-01"
+    },
+    "imm2": {
+     "url": "https://lesecologistes.fr/posts/6jPNyo0iRMNEWIQSkhzxja/loi-immigration-les-digues-republicaines-ont-cede",
+     "titre": "Loi immigration : les digues républicaines ont cédé",
+     "editeur": "Les Écologistes (communiqué, site officiel du parti)",
+     "date": "2023-12-22"
+    },
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/budget-de-la-secu-les-senateurs-ecologistes-veulent-creer-une-taxe-sur-le-cannabis",
+     "titre": "Budget de la Sécu : les sénateurs écologistes veulent créer une taxe sur le cannabis",
+     "editeur": "Public Sénat",
+     "date": "2025-11-18"
+    },
+    "sec3": null,
+    "sec4": null,
+    "env1": {
+     "url": "https://lesecologistes.fr/pages/358vv7W974UgosGhCBbIPT/notre-projet",
+     "titre": "Notre projet — texte d’orientation du Mouvement",
+     "editeur": "Les Écologistes (site officiel du parti)",
+     "date": "2025-04-19"
+    },
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": {
+     "url": "https://lesecologistes.fr/pages/358vv7W974UgosGhCBbIPT/notre-projet",
+     "titre": "Notre projet — texte d’orientation du Mouvement",
+     "editeur": "Les Écologistes (site officiel du parti)",
+     "date": "2025-04-19"
+    },
+    "eur2": null,
+    "eur3": null,
+    "eur4": {
+     "url": "https://lesecologistes.fr/posts/ysSrenJRQEqSoqx9CFVuT/traite-ue-mercosur-une-opposition-francaise-arrachee-par-la-mobilisation-un-accord-toujours-aussi-inacceptable",
+     "titre": "Traité UE-Mercosur : une opposition française arrachée par la mobilisation, un accord toujours aussi inacceptable",
+     "editeur": "Les Écologistes (communiqué, site officiel du parti)",
+     "date": "2026-01-09"
+    },
+    "int1": {
+     "url": "https://www.franceinfo.fr/politique/guerre-en-ukraine-on-ne-peut-pas-faire-confiance-a-poutine-estime-marine-tondelier_7125150.html",
+     "titre": "Guerre en Ukraine : « On ne peut pas faire confiance à Poutine », estime Marine Tondelier",
+     "editeur": "franceinfo (France Télévisions)",
+     "date": "2025-03-12"
+    },
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -96,
+    "soc": -98
+   }
+  },
+  "batho": {
+   "slug": "delphine-batho",
+   "url": "https://www.france-vote.fr/candidats/delphine-batho",
+   "famille": "Écologistes",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": 0,
+    "soc1": 2,
+    "soc2": 1,
+    "soc3": -2,
+    "soc4": 1,
+    "san1": 2,
+    "san2": 2,
+    "san3": 2,
+    "san4": 1,
+    "edu1": -1,
+    "edu2": -1,
+    "edu3": 1,
+    "edu4": -1,
+    "imm1": -1,
+    "imm2": -2,
+    "imm3": 1,
+    "imm4": -2,
+    "sec1": -1,
+    "sec2": 1,
+    "sec3": 2,
+    "sec4": -2,
+    "ins1": 1,
+    "ins2": 2,
+    "ins3": 2,
+    "ins4": -1,
+    "env1": -2,
+    "env2": 1,
+    "env3": 2,
+    "env4": 2,
+    "eur1": 0,
+    "eur2": 0,
+    "eur3": -2,
+    "eur4": 2,
+    "int1": 1,
+    "int2": 0,
+    "int3": 0,
+    "int4": -1
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": null,
+    "eco3": null,
+    "eco4": null,
+    "soc1": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2257",
+     "titre": "Analyse du scrutin public n° 2257 sur la proposition de résolution visant à abroger la loi du 14 avril 2023 dite réforme des retraites",
+     "editeur": "Assemblée nationale",
+     "date": "2025-06-05"
+    },
+    "soc2": null,
+    "soc3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2965",
+     "titre": "Scrutin public nº 2965 sur l’ensemble du projet de loi pour le plein emploi (texte de la commission mixte paritaire)",
+     "editeur": "Assemblée nationale",
+     "date": "2023-11-14"
+    },
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
+     "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
+     "editeur": "Assemblée nationale",
+     "date": "2025-05-27"
+    },
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -79,
+    "soc": -64
+   }
+  },
+  "glucksmann": {
+   "slug": "raphael-glucksmann",
+   "url": "https://www.france-vote.fr/candidats/raphael-glucksmann",
+   "famille": "Gauche social-démocrate",
+   "positions": {
+    "eco1": 2,
+    "eco2": -1,
+    "eco3": -1,
+    "eco4": 0,
+    "soc1": 1,
+    "soc2": 1,
+    "soc3": -2,
+    "soc4": 0,
+    "san1": 2,
+    "san2": 1,
+    "san3": 2,
+    "san4": 1,
+    "edu1": -1,
+    "edu2": -1,
+    "edu3": 0,
+    "edu4": -1,
+    "imm1": -1,
+    "imm2": -2,
+    "imm3": 1,
+    "imm4": -2,
+    "sec1": -1,
+    "sec2": 1,
+    "sec3": 1,
+    "sec4": -1,
+    "ins1": -1,
+    "ins2": 1,
+    "ins3": 0,
+    "ins4": -1,
+    "env1": 1,
+    "env2": 1,
+    "env3": 1,
+    "env4": 1,
+    "eur1": 2,
+    "eur2": -2,
+    "eur3": -2,
+    "eur4": 2,
+    "int1": 2,
+    "int2": -2,
+    "int3": 2,
+    "int4": -1
+   },
+   "sources": {
+    "eco1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/europeennes-2024-raphael-glucksmann-prone-dans-son-programme-une-revolution-ecologique",
+     "titre": "Européennes 2024 : Raphaël Glucksmann prône dans son programme une « révolution écologique »",
+     "editeur": "Public Sénat",
+     "date": "2024-05-15"
+    },
+    "eco2": null,
+    "eco3": null,
+    "eco4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/europeennes-2024-raphael-glucksmann-prone-dans-son-programme-une-revolution-ecologique",
+     "titre": "Européennes 2024 : Raphaël Glucksmann prône dans son programme une « révolution écologique »",
+     "editeur": "Public Sénat",
+     "date": "2024-05-15"
+    },
+    "soc1": {
+     "url": "https://www.brut.media/fr/articles/la-suspension-de-la-reforme-des-retraites-devient-possible-dit-glucksmann-apres-avoir-rencontre-sebastien-lecornu",
+     "titre": "La suspension de la réforme des retraites « devient possible », dit Glucksmann après avoir rencontré Sébastien Lecornu",
+     "editeur": "Brut",
+     "date": "2025-11-17"
+    },
+    "soc2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+     "titre": "Présidentielle : « Pas candidat » pour le moment, Raphaël Glucksmann « trace » son chemin et défend sa « vision pour le pays »",
+     "editeur": "Public Sénat",
+     "date": "2025-06-23"
+    },
+    "soc3": null,
+    "soc4": null,
+    "imm1": {
+     "url": "https://www.lefigaro.fr/elections/europeennes/raphael-glucksmann-veut-developper-des-voies-d-immigration-legales-en-europe-20240329",
+     "titre": "Raphaël Glucksmann veut développer des « voies d’immigration légales » en Europe",
+     "editeur": "Le Figaro (avec AFP)",
+     "date": "2024-03-29"
+    },
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": {
+     "url": "https://www.publicsenat.fr/actualites/non-classe/cannabis-70-personnalites-appellent-a-legaliser-au-nom-du-pragmatisme-142235",
+     "titre": "Cannabis : 70 personnalités appellent à légaliser au nom du « pragmatisme »",
+     "editeur": "Public Sénat (avec AFP)",
+     "date": "2019-06-19"
+    },
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/europeennes-2024-raphael-glucksmann-prone-dans-son-programme-une-revolution-ecologique",
+     "titre": "Européennes 2024 : Raphaël Glucksmann prône dans son programme une « révolution écologique »",
+     "editeur": "Public Sénat",
+     "date": "2024-05-15"
+    },
+    "eur2": null,
+    "eur3": null,
+    "eur4": {
+     "url": "https://www.liberation.fr/idees-et-debats/tribunes/union-europeenne-laccord-mercosur-doit-tomber-20241122_E5K32QJ5O5CXFBL7SMRL2PZ6GM/",
+     "titre": "Union européenne : l’accord Mercosur doit tomber",
+     "editeur": "Libération (tribune)",
+     "date": "2024-11-22"
+    },
+    "int1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/europeennes-2024-raphael-glucksmann-prone-dans-son-programme-une-revolution-ecologique",
+     "titre": "Européennes 2024 : Raphaël Glucksmann prône dans son programme une « révolution écologique »",
+     "editeur": "Public Sénat",
+     "date": "2024-05-15"
+    },
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -54,
+    "soc": -66
+   }
+  },
+  "cazeneuve": {
+   "slug": "bernard-cazeneuve",
+   "url": "https://www.france-vote.fr/candidats/bernard-cazeneuve",
+   "famille": "Gauche social-démocrate",
+   "positions": {
+    "eco1": 1,
+    "eco2": -1,
+    "eco3": 1,
+    "eco4": 0,
+    "soc1": 1,
+    "soc2": 1,
+    "soc3": 0,
+    "soc4": -1,
+    "san1": 1,
+    "san2": 1,
+    "san3": 1,
+    "san4": 0,
+    "edu1": 0,
+    "edu2": 0,
+    "edu3": 0,
+    "edu4": 0,
+    "imm1": 0,
+    "imm2": -2,
+    "imm3": 1,
+    "imm4": -2,
+    "sec1": -1,
+    "sec2": -1,
+    "sec3": -1,
+    "sec4": -1,
+    "ins1": -2,
+    "ins2": -1,
+    "ins3": -2,
+    "ins4": -2,
+    "env1": 2,
+    "env2": 0,
+    "env3": 0,
+    "env4": 0,
+    "eur1": 1,
+    "eur2": -1,
+    "eur3": -2,
+    "eur4": 1,
+    "int1": 2,
+    "int2": -2,
+    "int3": 1,
+    "int4": 0
+   },
+   "sources": {
+    "eco1": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
+    "eco2": null,
+    "eco3": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
+    "eco4": null,
+    "soc1": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
+    "soc2": null,
+    "soc3": null,
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
+    "int3": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -17,
+    "soc": -32
+   }
+  },
+  "bouamrane": {
+   "slug": "karim-bouamrane",
+   "url": "https://www.france-vote.fr/candidats/karim-bouamrane",
+   "famille": "Gauche social-démocrate",
+   "positions": {
+    "eco1": 2,
+    "eco2": 0,
+    "eco3": 0,
+    "eco4": 0,
+    "soc1": 1,
+    "soc2": 1,
+    "soc3": 0,
+    "soc4": 0,
+    "san1": 2,
+    "san2": 0,
+    "san3": 0,
+    "san4": 0,
+    "edu1": 0,
+    "edu2": 0,
+    "edu3": 0,
+    "edu4": 0,
+    "imm1": -1,
+    "imm2": -2,
+    "imm3": 0,
+    "imm4": -2,
+    "sec1": 0,
+    "sec2": 0,
+    "sec3": 0,
+    "sec4": 0,
+    "ins1": 0,
+    "ins2": 0,
+    "ins3": 0,
+    "ins4": 0,
+    "env1": 0,
+    "env2": 0,
+    "env3": 0,
+    "env4": 0,
+    "eur1": 1,
+    "eur2": 0,
+    "eur3": -2,
+    "eur4": 0,
+    "int1": 1,
+    "int2": -2,
+    "int3": 0,
+    "int4": 0
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": null,
+    "eco3": null,
+    "eco4": null,
+    "soc1": null,
+    "soc2": null,
+    "soc3": null,
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": {
+     "url": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
+     "titre": "Karim Bouamrane",
+     "editeur": "Wikipédia",
+     "date": "2026"
+    },
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -25,
+    "soc": -25
+   }
+  },
+  "labib": {
+   "slug": "selma-labib",
+   "url": "https://www.france-vote.fr/candidats/selma-labib",
+   "famille": "Extrême gauche",
+   "positions": {
+    "eco1": 2,
+    "eco2": -2,
+    "eco3": -2,
+    "eco4": 0,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -2,
+    "soc4": 2,
+    "san1": 2,
+    "san2": 2,
+    "san3": 1,
+    "san4": 2,
+    "edu1": -2,
+    "edu2": -2,
+    "edu3": 2,
+    "edu4": -2,
+    "imm1": -2,
+    "imm2": -2,
+    "imm3": 2,
+    "imm4": -2,
+    "sec1": -2,
+    "sec2": 2,
+    "sec3": 2,
+    "sec4": -2,
+    "ins1": 1,
+    "ins2": 2,
+    "ins3": 2,
+    "ins4": 0,
+    "env1": -2,
+    "env2": 2,
+    "env3": 2,
+    "env4": 2,
+    "eur1": 0,
+    "eur2": 0,
+    "eur3": 0,
+    "eur4": 2,
+    "int1": 0,
+    "int2": 2,
+    "int3": -2,
+    "int4": -2
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+     "titre": "Intervention de Selma Labib à la fête de l’Humanité 2026",
+     "editeur": "NPA-Révolutionnaires",
+     "date": "2026-09-15"
+    },
+    "eco3": null,
+    "eco4": null,
+    "soc1": null,
+    "soc2": {
+     "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+     "titre": "Intervention de Selma Labib à la fête de l’Humanité 2026",
+     "editeur": "NPA-Révolutionnaires",
+     "date": "2026-09-15"
+    },
+    "soc3": null,
+    "soc4": {
+     "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+     "titre": "Intervention de Selma Labib à la fête de l’Humanité 2026",
+     "editeur": "NPA-Révolutionnaires",
+     "date": "2026-09-15"
+    },
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -100,
+    "soc": -66
+   }
+  },
+  "attal": {
+   "slug": "gabriel-attal",
+   "url": "https://www.france-vote.fr/candidats/gabriel-attal",
+   "famille": "Bloc central",
+   "positions": {
+    "eco1": -2,
+    "eco2": 2,
+    "eco3": 2,
+    "eco4": -1,
+    "soc1": -2,
+    "soc2": -2,
+    "soc3": 2,
+    "soc4": -2,
+    "san1": 0,
+    "san2": -1,
+    "san3": 2,
+    "san4": -1,
+    "edu1": 2,
+    "edu2": 1,
+    "edu3": -1,
+    "edu4": 2,
+    "imm1": 1,
+    "imm2": 0,
+    "imm3": 1,
+    "imm4": -1,
+    "sec1": 0,
+    "sec2": 1,
+    "sec3": -2,
+    "sec4": 2,
+    "ins1": 0,
+    "ins2": 0,
+    "ins3": -1,
+    "ins4": 1,
+    "env1": 2,
+    "env2": 1,
+    "env3": 0,
+    "env4": -1,
+    "eur1": 2,
+    "eur2": -2,
+    "eur3": -2,
+    "eur4": 1,
+    "int1": 2,
+    "int2": -2,
+    "int3": 2,
+    "int4": 1
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/199",
+     "titre": "Scrutin public nº 199 sur l’amendement de suppression nº 249 de Mme Bonnet et les amendements identiques suivants à l’article 6 du projet de loi de financement de la sécurité sociale pour 2025 (première lecture)",
+     "editeur": "Assemblée nationale",
+     "date": "2024-10-30"
+    },
+    "eco3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/reduction-de-nombre-de-fonctionnaires-le-virage-a-180-degres-de-gabriel-attal",
+     "titre": "Réduction de nombre de fonctionnaires : le virage à 180 degrés de Gabriel Attal",
+     "editeur": "Public Sénat",
+     "date": "2026-07-03"
+    },
+    "eco4": {
+     "url": "https://www.europe1.fr/politique/le-projet-dune-generation-gabriel-attal-appelle-a-creer-les-etats-unis-deurope-1085021",
+     "titre": "«Le projet d'une génération» : Gabriel Attal appelle à créer les «États-Unis d'Europe»",
+     "editeur": "Europe 1",
+     "date": "2026-09-17"
+    },
+    "soc1": null,
+    "soc2": null,
+    "soc3": {
+     "url": "https://lcp.fr/actualites/desmicardiser-debureaucratiser-deverrouiller-les-principales-annonces-de-gabriel-attal-a",
+     "titre": "« Désmicardiser », « débureaucratiser », « déverrouiller »... Les principales annonces de Gabriel Attal à l’Assemblée nationale",
+     "editeur": "LCP",
+     "date": "2024-01-30"
+    },
+    "soc4": {
+     "url": "https://www.cnews.fr/france/2026-04-30/quotas-dimmigration-13e-mois-pour-tous-nouveau-code-du-travail-cooperation-avec",
+     "titre": "Quotas d’immigration, 13e mois pour tous, nouveau code du travail, coopération avec l’Algérie… Gabriel Attal dévoile ses mesures pour 2027",
+     "editeur": "CNews",
+     "date": "2026-04-30"
+    },
+    "imm1": {
+     "url": "https://www.europe1.fr/societe/aujourdhui-on-ne-choisit-pas-notre-immigration-estime-gabriel-attal-928691",
+     "titre": "« Aujourd’hui, on ne choisit pas notre immigration », estime Gabriel Attal",
+     "editeur": "Europe 1",
+     "date": "2026-04-27"
+    },
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/805",
+     "titre": "Analyse du scrutin public n° 805 sur l’ensemble de la proposition de loi visant à restaurer l’autorité de la justice à l’égard des mineurs délinquants et de leurs parents",
+     "editeur": "Assemblée nationale",
+     "date": "2025-02-13"
+    },
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
+     "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
+     "editeur": "Assemblée nationale",
+     "date": "2025-05-27"
+    },
+    "san4": null,
+    "edu1": {
+     "url": "https://lcp.fr/actualites/desmicardiser-debureaucratiser-deverrouiller-les-principales-annonces-de-gabriel-attal-a",
+     "titre": "« Désmicardiser », « débureaucratiser », « déverrouiller »... Les principales annonces de Gabriel Attal à l’Assemblée nationale",
+     "editeur": "LCP",
+     "date": "2024-01-30"
+    },
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": 79,
+    "soc": -9
+   }
+  },
+  "philippe": {
+   "slug": "edouard-philippe",
+   "url": "https://www.france-vote.fr/candidats/edouard-philippe",
+   "famille": "Bloc central",
+   "positions": {
+    "eco1": -2,
+    "eco2": 2,
+    "eco3": 2,
+    "eco4": -1,
+    "soc1": -2,
+    "soc2": -2,
+    "soc3": 2,
+    "soc4": -2,
+    "san1": -1,
+    "san2": -1,
+    "san3": 0,
+    "san4": -2,
+    "edu1": 1,
+    "edu2": 1,
+    "edu3": -1,
+    "edu4": 2,
+    "imm1": 1,
+    "imm2": 1,
+    "imm3": 0,
+    "imm4": -1,
+    "sec1": 0,
+    "sec2": 0,
+    "sec3": -1,
+    "sec4": 1,
+    "ins1": -1,
+    "ins2": -1,
+    "ins3": -2,
+    "ins4": 0,
+    "env1": 2,
+    "env2": 1,
+    "env3": 0,
+    "env4": -1,
+    "eur1": 2,
+    "eur2": -1,
+    "eur3": -2,
+    "eur4": 0,
+    "int1": 2,
+    "int2": -2,
+    "int3": 2,
+    "int4": 1
+   },
+   "sources": {
+    "eco1": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+     "titre": "Pour une France plus prospère",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-07-21"
+    },
+    "eco2": {
+     "url": "https://www.publicsenat.fr/actualites/economie/entreprises-un-deal-a-250-milliards-deuros-sur-un-quinquennat-que-represente-la-proposition-dedouard-philippe",
+     "titre": "Entreprises : Un « deal » à 250 milliards d’euros sur un quinquennat, que représente la proposition d’Édouard Philippe ?",
+     "editeur": "Public Sénat",
+     "date": "2025-11-06"
+    },
+    "eco3": {
+     "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+     "titre": "Présidentielle 2027: ce qu'il faut retenir du débat entre les candidats devant le Medef",
+     "editeur": "LCP",
+     "date": "2026-08-27"
+    },
+    "eco4": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+     "titre": "Pour une France plus prospère",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-07-21"
+    },
+    "soc1": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+     "titre": "Pour une France plus prospère",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-07-21"
+    },
+    "soc2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/smic-revalorisation-legale-au-1er-janvier-mais-pas-de-coup-de-pouce-135932",
+     "titre": "Smic: « Revalorisation légale » au 1er janvier mais « pas de coup de pouce »",
+     "editeur": "Public Sénat",
+     "date": "2018-11-28"
+    },
+    "soc3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/philippe-defend-sa-proposition-controversee-de-contreparties-aux-aides-sociales",
+     "titre": "Philippe défend sa proposition controversée de contreparties aux aides sociales",
+     "editeur": "Public Sénat",
+     "date": "2019-02-19"
+    },
+    "soc4": {
+     "url": "https://www.edouardphilippe.fr/actualites/trois-principales-annonces-dedouard-philippe-a-lheure-de-verite",
+     "titre": "Trois principales annonces d'Édouard Philippe à l’Heure de vérité",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-10-08"
+    },
+    "imm1": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
+     "titre": "Pour une France plus sûre",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-07-21"
+    },
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
+     "titre": "Pour une France plus sûre",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-07-21"
+    },
+    "env1": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante",
+     "titre": "Pour une France plus conquérante",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-07-21"
+    },
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
+     "titre": "Pour une France plus attentive à ses enfants",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026"
+    },
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": 88,
+    "soc": -2
+   }
+  },
+  "bertrand": {
+   "slug": "xavier-bertrand",
+   "url": "https://www.france-vote.fr/candidats/xavier-bertrand",
+   "famille": "Droite",
+   "positions": {
+    "eco1": -2,
+    "eco2": 2,
+    "eco3": 2,
+    "eco4": 1,
+    "soc1": -2,
+    "soc2": -1,
+    "soc3": 2,
+    "soc4": -2,
+    "san1": 1,
+    "san2": 1,
+    "san3": 0,
+    "san4": -2,
+    "edu1": 1,
+    "edu2": 1,
+    "edu3": -1,
+    "edu4": 1,
+    "imm1": 2,
+    "imm2": 1,
+    "imm3": -2,
+    "imm4": 0,
+    "sec1": 2,
+    "sec2": -2,
+    "sec3": -1,
+    "sec4": 2,
+    "ins1": 0,
+    "ins2": -1,
+    "ins3": -1,
+    "ins4": 2,
+    "env1": 2,
+    "env2": -1,
+    "env3": -1,
+    "env4": -1,
+    "eur1": 0,
+    "eur2": 1,
+    "eur3": -2,
+    "eur4": 2,
+    "int1": 2,
+    "int2": -1,
+    "int3": 1,
+    "int4": 2
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://www.franceinfo.fr/politique/xavier-bertrand/impots-retraites-nucleaire-international-ce-qu-il-faut-retenir-de-l-interview-de-xavier-bertrand-sur-franceinfo_4794399.html",
+     "titre": "Impôts, retraites, nucléaire, international... Ce qu'il faut retenir de l'interview de Xavier Bertrand sur franceinfo",
+     "editeur": "franceinfo",
+     "date": "2021-10-04"
+    },
+    "eco3": null,
+    "eco4": {
+     "url": "https://www.nousfrance.fr/2022/10/xavier-bertrand-au-mondial-de-lautomobile/",
+     "titre": "Xavier Bertrand au Mondial de l’Automobile",
+     "editeur": "Nous France",
+     "date": "2022-10-21"
+    },
+    "soc1": null,
+    "soc2": {
+     "url": "https://www.franceinfo.fr/politique/xavier-bertrand/impots-retraites-nucleaire-international-ce-qu-il-faut-retenir-de-l-interview-de-xavier-bertrand-sur-franceinfo_4794399.html",
+     "titre": "Impôts, retraites, nucléaire, international... Ce qu’il faut retenir de l’interview de Xavier Bertrand sur franceinfo",
+     "editeur": "franceinfo",
+     "date": "2021-10-04"
+    },
+    "soc3": null,
+    "soc4": {
+     "url": "https://www.europe1.fr/politique/presidentielle-2022-xavier-bertrand-plaide-pour-une-societe-du-travail-4069450",
+     "titre": "Présidentielle 2022 : Xavier Bertrand plaide pour \"une société du travail\"",
+     "editeur": "Europe 1",
+     "date": "2021-10-02"
+    },
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": 63,
+    "soc": 41
+   }
+  },
+  "lisnard": {
+   "slug": "david-lisnard",
+   "url": "https://www.france-vote.fr/candidats/david-lisnard",
+   "famille": "Droite",
+   "positions": {
+    "eco1": -2,
+    "eco2": 2,
+    "eco3": 2,
+    "eco4": -1,
+    "soc1": -2,
+    "soc2": -2,
+    "soc3": 2,
+    "soc4": -2,
+    "san1": -1,
+    "san2": -1,
+    "san3": 0,
+    "san4": -2,
+    "edu1": 1,
+    "edu2": 2,
+    "edu3": -2,
+    "edu4": 2,
+    "imm1": 2,
+    "imm2": 1,
+    "imm3": -1,
+    "imm4": 0,
+    "sec1": 2,
+    "sec2": -2,
+    "sec3": -1,
+    "sec4": 2,
+    "ins1": 0,
+    "ins2": -1,
+    "ins3": -1,
+    "ins4": 2,
+    "env1": 2,
+    "env2": -1,
+    "env3": -1,
+    "env4": -1,
+    "eur1": -1,
+    "eur2": 2,
+    "eur3": -2,
+    "eur4": 1,
+    "int1": 1,
+    "int2": 0,
+    "int3": 1,
+    "int4": 1
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://www.unenouvelleenergie.fr/questions/que-ferait-david-lisnard-des-200-milliards-d-economies/",
+     "titre": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
+    "eco3": {
+     "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-a-la-dette-publique/",
+     "titre": "Que propose David Lisnard face à la dette publique ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
+    "eco4": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-la-liberte-economique/",
+     "titre": "Quel candidat à la présidentielle 2027 défend la liberté économique ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
+    "soc1": null,
+    "soc2": {
+     "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
+     "titre": "Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
+    "soc3": null,
+    "soc4": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-assouplir-les-35-heures/",
+     "titre": "Quel candidat à la présidentielle 2027 veut assouplir les 35 heures ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": {
+     "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-supprimer-la-securite-sociale/",
+     "titre": "David Lisnard veut-il supprimer la Sécurité sociale ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
+    "edu1": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-donner-leur-autonomie-aux-etablissements-scolaires/",
+     "titre": "Quel candidat à la présidentielle 2027 veut donner leur autonomie aux établissements scolaires ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": 92,
+    "soc": 48
+   }
+  },
+  "retailleau": {
+   "slug": "bruno-retailleau",
+   "url": "https://www.france-vote.fr/candidats/bruno-retailleau",
+   "famille": "Droite",
+   "positions": {
+    "eco1": -2,
+    "eco2": 2,
+    "eco3": 2,
+    "eco4": 1,
+    "soc1": -2,
+    "soc2": -2,
+    "soc3": 2,
+    "soc4": -2,
+    "san1": -1,
+    "san2": -2,
+    "san3": -2,
+    "san4": -2,
+    "edu1": 2,
+    "edu2": 2,
+    "edu3": -2,
+    "edu4": 2,
+    "imm1": 2,
+    "imm2": 2,
+    "imm3": -2,
+    "imm4": 1,
+    "sec1": 2,
+    "sec2": -2,
+    "sec3": -2,
+    "sec4": 2,
+    "ins1": -2,
+    "ins2": -2,
+    "ins3": -2,
+    "ins4": 2,
+    "env1": 2,
+    "env2": -2,
+    "env3": -1,
+    "env4": -2,
+    "eur1": -1,
+    "eur2": 2,
+    "eur3": -2,
+    "eur4": 2,
+    "int1": 1,
+    "int2": -1,
+    "int3": 2,
+    "int4": 2
+   },
+   "sources": {
+    "eco1": {
+     "url": "https://www.publicsenat.fr/actualites/economie/50-nuances-de-taxe-zucman-quelles-autres-options-sont-sur-la-table-pour-taxer-les-ultra-riches",
+     "titre": "50 nuances de taxe Zucman : quelles autres options sont sur la table pour taxer les ultra-riches ?",
+     "editeur": "Public Sénat",
+     "date": "2025-09-24"
+    },
+    "eco2": {
+     "url": "https://republicains.fr/actualites/2026/09/16/produire-en-france-la-meilleure-des-solutions-ecologiques/",
+     "titre": "Produire en France, la meilleure des solutions écologiques",
+     "editeur": "Les Républicains",
+     "date": "2026-09-16"
+    },
+    "eco3": {
+     "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+     "titre": "Présidentielle 2027 : Bruno Retailleau s’engage sur un plan d’économies de près de 200 milliards d’euros, s’il est élu",
+     "editeur": "Public Sénat",
+     "date": "2026-10-12"
+    },
+    "eco4": {
+     "url": "https://republicains.fr/actualites/2026/07/07/sur-lia-nous-avons-une-fenetre-de-tir-de-deux-ans/",
+     "titre": "Sur l’IA, nous avons une fenêtre de tir de deux ans",
+     "editeur": "Les Républicains",
+     "date": "2026-07-07"
+    },
+    "soc1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/reforme-des-retraites-a-matignon-retailleau-defend-la-ligne-des-senateurs",
+     "titre": "Réforme des retraites : à Matignon, Retailleau défend la ligne des sénateurs républicains",
+     "editeur": "Public Sénat",
+     "date": "2022-12-14"
+    },
+    "soc2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/pecresse-lr-en-faveur-d-une-augmentation-du-smic-net-de-20-87354",
+     "titre": "Pécresse (LR) en faveur d’une augmentation du Smic net de 20%",
+     "editeur": "Public Sénat",
+     "date": "2018-06-21"
+    },
+    "soc3": {
+     "url": "https://www.senat.fr/scrutin-public/2023/scr2023-29.html",
+     "titre": "Scrutin nº 29 sur l’ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi pour le plein emploi",
+     "editeur": "Sénat",
+     "date": "2023-11-09"
+    },
+    "soc4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+     "titre": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d’activité et plafonner les aides sociales pour relancer l’emploi",
+     "editeur": "Public Sénat",
+     "date": "2026-01-07"
+    },
+    "imm1": {
+     "url": "https://www.senat.fr/seances/s202311/s20231106/s20231106_mono.html",
+     "titre": "Compte rendu intégral de la séance du 6 novembre 2023 (projet de loi immigration)",
+     "editeur": "Sénat",
+     "date": "2023-11-06"
+    },
+    "imm2": {
+     "url": "https://www.senat.fr/leg/exposes-des-motifs/ppl22-677-expose.html",
+     "titre": "Exposé des motifs de la proposition de loi n° 677 rectifié pour reprendre le contrôle de la politique d’immigration, d’intégration et d’asile",
+     "editeur": "Sénat",
+     "date": "2023-06-01"
+    },
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": {
+     "url": "https://www.ouest-france.fr/societe/drogue/legalisation-du-cannabis-proposee-par-deux-deputes-bruno-retailleau-se-dit-totalement-contre-3f784e08-edc2-11ef-ab5f-86b228b95af6",
+     "titre": "Légalisation du cannabis proposée par deux députés : Bruno Retailleau se dit « totalement contre »",
+     "editeur": "Ouest-France",
+     "date": "2025-02-18"
+    },
+    "sec3": null,
+    "sec4": null,
+    "env1": {
+     "url": "https://republicains.fr/nos-propositions/",
+     "titre": "Nos propositions — Une électricité décarbonée bon marché pour tous les Français",
+     "editeur": "Les Républicains (site officiel du parti)",
+     "date": "2026"
+    },
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/referendum-sur-limmigration-primaute-du-droit-national-le-projet-de-bruno-retailleau-est-il-faisable",
+     "titre": "Référendum sur l’immigration, primauté du droit national : le projet de Bruno Retailleau est-il faisable ?",
+     "editeur": "Public Sénat",
+     "date": "2026-02-13"
+    },
+    "eur2": null,
+    "eur3": null,
+    "eur4": {
+     "url": "https://www.leparisien.fr/politique/mercosur-retailleau-menace-macron-dune-censure-du-gouvernement-lecornu-sil-vote-laccord-commercial-07-01-2026-JPSGF6AVLFFKTAE2FPTD64APKU.php",
+     "titre": "Mercosur : Retailleau menace Macron d’une censure du gouvernement Lecornu s’il vote l’accord commercial",
+     "editeur": "Le Parisien",
+     "date": "2026-01-07"
+    },
+    "int1": {
+     "url": "https://www.publicsenat.fr/actualites/international/direct-guerre-en-ukraine-suivez-le-debat-et-le-vote-au-senat-sur-laccord-de-securite",
+     "titre": "Le Sénat approuve massivement l’accord de sécurité entre la France et l’Ukraine",
+     "editeur": "Public Sénat",
+     "date": "2024-03-13"
+    },
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": {
+     "url": "https://www.publicsenat.fr/actualites/parlementaire/le-senat-supprime-laide-a-mourir-cle-de-voute-de-la-proposition-de-loi-sur-la-fin-de-vie",
+     "titre": "Le Sénat supprime l’aide à mourir, clé de voûte de la proposition de loi sur la fin de vie",
+     "editeur": "Public Sénat",
+     "date": "2026-05-12"
+    },
+    "san4": null,
+    "edu1": {
+     "url": "https://www.senat.fr/leg/ppl22-202.html",
+     "titre": "Proposition de loi visant à rendre obligatoire le port d’une tenue d’établissement scolaire (nº 202, 2022-2023)",
+     "editeur": "Sénat",
+     "date": "2022-12-13"
+    },
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": 96,
+    "soc": 70
+   }
+  },
+  "dupont-aignan": {
+   "slug": "nicolas-dupont-aignan",
+   "url": "https://www.france-vote.fr/candidats/nicolas-dupont-aignan",
+   "famille": "Souverainistes",
+   "positions": {
+    "eco1": -1,
+    "eco2": 1,
+    "eco3": 0,
+    "eco4": 2,
+    "soc1": 2,
+    "soc2": 1,
+    "soc3": 2,
+    "soc4": -1,
+    "san1": 2,
+    "san2": 1,
+    "san3": -2,
+    "san4": 1,
+    "edu1": 2,
+    "edu2": 1,
+    "edu3": -1,
+    "edu4": -1,
+    "imm1": 2,
+    "imm2": 2,
+    "imm3": -2,
+    "imm4": 2,
+    "sec1": 2,
+    "sec2": -2,
+    "sec3": -1,
+    "sec4": 2,
+    "ins1": 2,
+    "ins2": 0,
+    "ins3": -1,
+    "ins4": 2,
+    "env1": 2,
+    "env2": -2,
+    "env3": -2,
+    "env4": -1,
+    "eur1": -2,
+    "eur2": 2,
+    "eur3": 2,
+    "eur4": 2,
+    "int1": -1,
+    "int2": 2,
+    "int3": 1,
+    "int4": 2
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": null,
+    "eco3": null,
+    "eco4": null,
+    "soc1": null,
+    "soc2": null,
+    "soc3": null,
+    "soc4": null,
+    "imm1": null,
+    "imm2": {
+     "url": "https://www.debout-la-france.fr/projet/immigration/",
+     "titre": "Notre projet — Immigration",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026"
+    },
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": {
+     "url": "https://www.debout-la-france.fr/projet/affaires-europeennes/",
+     "titre": "Notre projet — Affaires européennes",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026"
+    },
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": {
+     "url": "https://www.debout-la-france.fr/projet/defense/",
+     "titre": "Notre projet — Défense nationale",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026"
+    },
+    "int2": {
+     "url": "https://www.debout-la-france.fr/projet/defense/",
+     "titre": "Notre projet — Défense nationale",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026"
+    },
+    "int3": null,
+    "int4": null,
+    "ins1": {
+     "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+     "titre": "Notre projet — Refonder et moraliser notre démocratie",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026"
+    },
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -8,
+    "soc": 89
+   }
+  },
+  "asselineau": {
+   "slug": "francois-asselineau",
+   "url": "https://www.france-vote.fr/candidats/francois-asselineau",
+   "famille": "Souverainistes",
+   "positions": {
+    "eco1": 1,
+    "eco2": 1,
+    "eco3": -1,
+    "eco4": 2,
+    "soc1": 1,
+    "soc2": 2,
+    "soc3": 0,
+    "soc4": 0,
+    "san1": 2,
+    "san2": 0,
+    "san3": 0,
+    "san4": 1,
+    "edu1": 0,
+    "edu2": 0,
+    "edu3": 0,
+    "edu4": 0,
+    "imm1": 1,
+    "imm2": 2,
+    "imm3": -2,
+    "imm4": -1,
+    "sec1": 1,
+    "sec2": -1,
+    "sec3": 0,
+    "sec4": 1,
+    "ins1": 2,
+    "ins2": 0,
+    "ins3": -1,
+    "ins4": 2,
+    "env1": 1,
+    "env2": -1,
+    "env3": -1,
+    "env4": 0,
+    "eur1": -2,
+    "eur2": 2,
+    "eur3": 2,
+    "eur4": 2,
+    "int1": -2,
+    "int2": 2,
+    "int3": 0,
+    "int4": 0
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": null,
+    "eco3": null,
+    "eco4": null,
+    "soc1": null,
+    "soc2": null,
+    "soc3": null,
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": {
+     "url": "https://upr.fr/le-frexit/",
+     "titre": "Le Frexit — Notre programme",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2026"
+    },
+    "eur4": null,
+    "int1": null,
+    "int2": {
+     "url": "https://upr.fr/le-frexit/",
+     "titre": "Le Frexit — Notre programme",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2026"
+    },
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -29,
+    "soc": 50
+   }
+  },
+  "philippot": {
+   "slug": "florian-philippot",
+   "url": "https://www.france-vote.fr/candidats/florian-philippot",
+   "famille": "Souverainistes",
+   "positions": {
+    "eco1": 2,
+    "eco2": 0,
+    "eco3": 1,
+    "eco4": 2,
+    "soc1": 2,
+    "soc2": 2,
+    "soc3": -1,
+    "soc4": 0,
+    "san1": 2,
+    "san2": 1,
+    "san3": -1,
+    "san4": 1,
+    "edu1": 2,
+    "edu2": 1,
+    "edu3": 0,
+    "edu4": -1,
+    "imm1": 2,
+    "imm2": 2,
+    "imm3": -2,
+    "imm4": 2,
+    "sec1": 2,
+    "sec2": -2,
+    "sec3": 0,
+    "sec4": 1,
+    "ins1": 2,
+    "ins2": 2,
+    "ins3": 0,
+    "ins4": 2,
+    "env1": 2,
+    "env2": -2,
+    "env3": -2,
+    "env4": -1,
+    "eur1": -2,
+    "eur2": 2,
+    "eur3": 2,
+    "eur4": 2,
+    "int1": -2,
+    "int2": 2,
+    "int3": -1,
+    "int4": 1
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
+    "eco3": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
+    "eco4": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote + le Frexit en 10 questions – Édition 2026-2027",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
+    "soc1": null,
+    "soc2": null,
+    "soc3": null,
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": null,
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": -46,
+    "soc": 80
+   }
+  },
+  "le-pen": {
+   "slug": "marine-le-pen",
+   "url": "https://www.france-vote.fr/candidats/marine-le-pen",
+   "famille": "Droite nationale",
+   "positions": {
+    "eco1": 0,
+    "eco2": 2,
+    "eco3": 1,
+    "eco4": 2,
+    "soc1": 2,
+    "soc2": -1,
+    "soc3": -1,
+    "soc4": -1,
+    "san1": 2,
+    "san2": 0,
+    "san3": -2,
+    "san4": 0,
+    "edu1": 2,
+    "edu2": 2,
+    "edu3": -1,
+    "edu4": -1,
+    "imm1": 2,
+    "imm2": 2,
+    "imm3": -2,
+    "imm4": 2,
+    "sec1": 2,
+    "sec2": -2,
+    "sec3": -2,
+    "sec4": 2,
+    "ins1": 1,
+    "ins2": 2,
+    "ins3": -1,
+    "ins4": 2,
+    "env1": 2,
+    "env2": -2,
+    "env3": -2,
+    "env4": -2,
+    "eur1": -2,
+    "eur2": 2,
+    "eur3": -1,
+    "eur4": 2,
+    "int1": 0,
+    "int2": 1,
+    "int3": 1,
+    "int4": 2
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3154",
+     "titre": "Scrutin public nº 3154 sur l’amendement de suppression nº 237 de M. Castellani et les amendements identiques suivants à l’article 11 (examen prioritaire) du projet de loi de finances pour 2026 (première lecture)",
+     "editeur": "Assemblée nationale",
+     "date": "2025-10-27"
+    },
+    "eco3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+     "titre": "140 milliards d’euros d’économies d’ici 2032 : « l’effort radical » proposé par Marine Le Pen pour « redresser » les finances publiques",
+     "editeur": "Public Sénat",
+     "date": "2026-10-06"
+    },
+    "eco4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-entend-pratiquer-un-protectionnisme-de-microchirurgie-58755",
+     "titre": "Marine Le Pen entend pratiquer un « protectionnisme de microchirurgie »",
+     "editeur": "Public Sénat",
+     "date": "2017-04-13"
+    },
+    "soc1": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2257",
+     "titre": "Analyse du scrutin public n° 2257 sur la proposition de résolution visant à abroger la loi du 14 avril 2023 dite réforme des retraites",
+     "editeur": "Assemblée nationale",
+     "date": "2025-06-05"
+    },
+    "soc2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/43",
+     "titre": "Scrutin public nº 43 sur l’amendement nº 844 de Mme Guetté après l’article 4 du projet de loi portant mesures d’urgence pour la protection du pouvoir d’achat (première lecture)",
+     "editeur": "Assemblée nationale",
+     "date": "2022-07-20"
+    },
+    "soc3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2717",
+     "titre": "Scrutin public nº 2717 sur l’ensemble du projet de loi pour le plein emploi (première lecture)",
+     "editeur": "Assemblée nationale",
+     "date": "2023-10-10"
+    },
+    "soc4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/35-heures-retraite-a-60-ans-menard-compare-le-pen-a-un-leader-de-la-cgt-76707",
+     "titre": "35 heures, retraite à 60 ans: Ménard compare Le Pen à « un leader de la CGT »",
+     "editeur": "Public Sénat",
+     "date": "2017-08-24"
+    },
+    "imm1": {
+     "url": "https://rassemblementnational.fr/22-mesures",
+     "titre": "22 mesures pour 2022",
+     "editeur": "Rassemblement national",
+     "date": "2026-07-21"
+    },
+    "imm2": {
+     "url": "https://rassemblementnational.fr/22-mesures",
+     "titre": "22 mesures pour 2022",
+     "editeur": "Rassemblement national",
+     "date": "2026-07-21"
+    },
+    "imm3": null,
+    "imm4": {
+     "url": "https://rassemblementnational.fr/22-mesures",
+     "titre": "22 mesures pour 2022",
+     "editeur": "Rassemblement national",
+     "date": "2026-07-21"
+    },
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": {
+     "url": "https://rassemblementnational.fr/22-mesures",
+     "titre": "22 mesures pour 2022",
+     "editeur": "Rassemblement national",
+     "date": "2026-07-21"
+    },
+    "env2": {
+     "url": "https://rassemblementnational.fr/22-mesures",
+     "titre": "22 mesures pour 2022",
+     "editeur": "Rassemblement national",
+     "date": "2026-07-21"
+    },
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": {
+     "url": "https://www.publicsenat.fr/actualites/non-classe/sur-l-europe-marine-le-pen-a-t-elle-vraiment-change-202482",
+     "titre": "Sur l’Europe, Marine Le Pen a-t-elle vraiment changé ?",
+     "editeur": "Public Sénat",
+     "date": "2022-04-14"
+    },
+    "eur3": {
+     "url": "https://www.publicsenat.fr/actualites/non-classe/sur-l-europe-marine-le-pen-a-t-elle-vraiment-change-202482",
+     "titre": "Sur l’Europe, Marine Le Pen a-t-elle vraiment changé ?",
+     "editeur": "Public Sénat",
+     "date": "2022-04-14"
+    },
+    "eur4": null,
+    "int1": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3461",
+     "titre": "Analyse du scrutin public n° 3461 sur la déclaration du Gouvernement relative au débat sur l’accord de sécurité franco-ukrainien et la situation en Ukraine",
+     "editeur": "Assemblée nationale",
+     "date": "2024-03-12"
+    },
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
+     "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
+     "editeur": "Assemblée nationale",
+     "date": "2025-05-27"
+    },
+    "san4": {
+     "url": "https://rassemblementnational.fr/discours/sante-protegeons-les-francais-discours-de-marine-le-pen",
+     "titre": "« Santé : protégeons les Français ! » : discours de Marine Le Pen",
+     "editeur": "Rassemblement national",
+     "date": "2016-12-09"
+    },
+    "edu1": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/830",
+     "titre": "Scrutin public nº 830 sur l’amendement de suppression nº 1 de M. Echaniz et les amendements identiques suivants à l’article unique de la proposition de loi visant à instituer dans les écoles et collèges publics le port d’une tenue uniforme aux couleurs de l’établissement scolaire (première lecture)",
+     "editeur": "Assemblée nationale",
+     "date": "2023-01-12"
+    },
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": 0,
+    "soc": 84
+   }
+  },
+  "zemmour": {
+   "slug": "eric-zemmour",
+   "url": "https://www.france-vote.fr/candidats/eric-zemmour",
+   "famille": "Droite nationale",
+   "positions": {
+    "eco1": -2,
+    "eco2": 2,
+    "eco3": 1,
+    "eco4": 2,
+    "soc1": -2,
+    "soc2": -1,
+    "soc3": 2,
+    "soc4": -2,
+    "san1": 2,
+    "san2": -1,
+    "san3": -2,
+    "san4": -2,
+    "edu1": 2,
+    "edu2": 2,
+    "edu3": -2,
+    "edu4": 1,
+    "imm1": 2,
+    "imm2": 2,
+    "imm3": -2,
+    "imm4": 2,
+    "sec1": 2,
+    "sec2": -2,
+    "sec3": -2,
+    "sec4": 2,
+    "ins1": 1,
+    "ins2": 2,
+    "ins3": -2,
+    "ins4": 2,
+    "env1": 2,
+    "env2": -2,
+    "env3": -2,
+    "env4": -2,
+    "eur1": -2,
+    "eur2": 2,
+    "eur3": -1,
+    "eur4": 2,
+    "int1": -1,
+    "int2": 2,
+    "int3": 2,
+    "int4": 2
+   },
+   "sources": {
+    "eco1": null,
+    "eco2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+     "titre": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration »",
+     "editeur": "Public Sénat",
+     "date": "2022-03-23"
+    },
+    "eco3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+     "titre": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration »",
+     "editeur": "Public Sénat",
+     "date": "2022-03-23"
+    },
+    "eco4": null,
+    "soc1": null,
+    "soc2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+     "titre": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration »",
+     "editeur": "Public Sénat",
+     "date": "2022-03-23"
+    },
+    "soc3": null,
+    "soc4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+     "titre": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration »",
+     "editeur": "Public Sénat",
+     "date": "2022-03-23"
+    },
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": null,
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": null,
+    "san2": null,
+    "san3": null,
+    "san4": null,
+    "edu1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-eric-zemmour-egratigne-les-journalistes-et-promet-une-revolution",
+     "titre": "Présidentielle : Éric Zemmour égratigne les journalistes et promet « une révolution copernicienne » de l’école",
+     "editeur": "Public Sénat",
+     "date": "2022-01-10"
+    },
+    "edu2": null,
+    "edu3": null,
+    "edu4": null
+   },
+   "boussole": {
+    "eco": 67,
+    "soc": 91
+   }
+  }
+ },
+ "nonRattaches": [
+  "Clémentine Autain",
+  "Olivier Faure",
+  "Jérôme Guedj",
+  "Ségolène Royal",
+  "Philippe Brun",
+  "François Hollande",
+  "Emmanuel Maurel",
+  "Bruno Le Maire",
+  "Dominique de Villepin",
+  "Jean Lassalle"
+ ]
+}

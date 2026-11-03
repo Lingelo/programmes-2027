@@ -26,6 +26,8 @@ jobs:
         run: node scripts/sync-wikipedia.mjs
       - name: Parrainages (Conseil constitutionnel)
         run: node scripts/sync-parrainages.mjs
+      - name: Positions sur 40 propositions (données ouvertes France-Vote)
+        run: node scripts/sync-francevote.mjs
       - name: Liste officielle des candidats (Conseil constitutionnel)
         run: node scripts/sync-liste-officielle.mjs
       - name: Vérifier les données
