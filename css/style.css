@@ -450,9 +450,12 @@ main { display: block; max-width: 1100px; margin: 0 auto; padding: 22px 16px 120
 .bp--focus .bp__point { stroke: var(--encre); stroke-width: 3; }
 .bp:hover .bp__point, .bp:focus .bp__point { stroke: var(--encre); stroke-width: 3; }
 .bp__nom { font-family: var(--sans); font-size: 10.5px; font-weight: 700; fill: var(--encre); paint-order: stroke; stroke: var(--creme); stroke-width: 3px; }
-.bp--focus .bp__nom { font-size: 13px; }
+.bp__nom--focus { font-size: 13px; }
+.bp__noms { pointer-events: none; }
 .proches { display: grid; gap: 8px; }
 .proche { display: flex; align-items: center; gap: 10px; text-decoration: none; background: var(--blanc); border: 2.5px solid var(--encre); border-radius: var(--radius-sm); padding: 6px 10px; }
 .proche b { margin-left: auto; font-family: var(--mono); }
 .matrice--pos tbody th { text-transform: none; font-family: var(--sans); font-size: .85rem; letter-spacing: 0; font-weight: 700; }
 .matrice--pos .ligne-theme th { background: var(--encre); color: var(--jaune); font-family: var(--mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; position: static; }
+.niveau--ne { background: transparent; border-style: dashed; color: var(--gris); }
+.bp__trait { stroke: var(--encre); stroke-width: 1.5; }

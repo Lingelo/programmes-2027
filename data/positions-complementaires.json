@@ -1,0 +1,26 @@
+{
+  "auteur": "Programmes 2027",
+  "note": "Positions relevées par Programmes 2027, sur les mêmes 40 propositions que France-Vote, pour les candidats que France-Vote n'évalue pas encore. Seules les prises de position publiques et sourcées pour 2027 sont notées ; les autres propositions restent « non évaluées ».",
+  "majLe": "2026-11-03",
+  "candidats": {
+    "platret": {
+      "positions": { "soc4": -2 },
+      "sources": {
+        "soc4": { "url": "https://www.lyoncapitale.fr/politique/gilles-platret-nouveau-candidat-a-lelection-presidentielle-de-2027", "titre": "Gilles Platret, nouveau candidat à l'élection présidentielle de 2027 (« l'abrogation des 35 heures »)", "editeur": "Lyon Capitale", "date": "2026-10-09" }
+      }
+    },
+    "polony": {
+      "positions": { "eco4": 2, "eco2": 1 },
+      "sources": {
+        "eco4": { "url": "https://repere2027.fr/programmes/natacha-polony/", "titre": "« Orienter la commande publique vers la production française puis européenne » ; suppression des aides non conditionnées à une production en France (déclaration de candidature du 14 octobre 2026)", "editeur": "Repère 2027", "date": "2026-10-14" },
+        "eco2": { "url": "https://repere2027.fr/programmes/natacha-polony/", "titre": "Baisse des cotisations salariales et patronales (entretien au Parisien du 28 août 2026)", "editeur": "Repère 2027", "date": "2026-08-28" }
+      }
+    },
+    "egger": {
+      "positions": { "ins1": 2 },
+      "sources": {
+        "ins1": { "url": "https://solutiondemocratique.fr/presidentielle-2027-clara-egger-candidate-de-solution-democratique-a-gradignan-le-24-octobre/", "titre": "Clara Egger présente les mécanismes du référendum d'initiative citoyenne (RIC), inspirés du système suisse", "editeur": "Solution démocratique", "date": "2026-10-20" }
+      }
+    }
+  }
+}

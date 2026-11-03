@@ -38,5 +38,21 @@ for (const c of d.candidats) {
   }
 }
 
+// Positions complémentaires (40 propositions) : candidats et propositions existants, sources précises
+try {
+  const comp = JSON.parse(await readFile(new URL('../data/positions-complementaires.json', import.meta.url), 'utf8'));
+  const fv = JSON.parse(await readFile(new URL('../data/francevote.json', import.meta.url), 'utf8').catch(() => 'null'));
+  const propsFV = new Set((fv?.propositions || []).map((p) => p.id));
+  for (const [id, c] of Object.entries(comp.candidats || {})) {
+    if (!ids.has(id)) erreurs.push(`positions complémentaires : candidat inconnu « ${id} »`);
+    if (fv?.candidats?.[id]) erreurs.push(`positions complémentaires : « ${id} » est déjà évalué par France-Vote`);
+    for (const [k, v] of Object.entries(c.positions || {})) {
+      if (propsFV.size && !propsFV.has(k)) erreurs.push(`positions complémentaires ${id} : proposition inconnue « ${k} »`);
+      if (![-2, -1, 0, 1, 2].includes(v)) erreurs.push(`positions complémentaires ${id}/${k} : valeur ${v} hors échelle`);
+      if (!sourceValide(c.sources?.[k]?.url)) erreurs.push(`positions complémentaires ${id}/${k} : source manquante ou trop vague`);
+    }
+  }
+} catch (e) { if (e.code !== 'ENOENT') erreurs.push(`positions complémentaires illisibles : ${e.message}`); }
+
 if (erreurs.length) { console.error(erreurs.join('\n')); process.exit(1); }
 console.log(`OK — ${d.candidats.length} candidats, ${d.candidats.reduce((n, c) => n + Object.values(c.propositions || {}).flat().length, 0)} propositions.`);
