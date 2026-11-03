@@ -6,7 +6,7 @@
       "tour2": "2027-05-02",
       "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
     },
-    "contenuMisAJour": "2026-11-02",
+    "contenuMisAJour": "2026-11-03",
     "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub.",
     "regle": "Seules les mesures et positions attribuées au candidat pour la campagne 2027 (sources datées de 2025-2026) figurent sur le site."
   },
@@ -678,6 +678,109 @@
         ],
         "majLe": "2026-11-03"
       }
+    },
+    {
+      "id": "branco",
+      "prenom": "Juan",
+      "nom": "Branco",
+      "parti": "Les Ruches (mouvement citoyen)",
+      "partiCourt": "Ruches",
+      "bord": "gauche-radicale",
+      "couleur": "#E8A317",
+      "wiki": "Juan_Branco",
+      "photo": null,
+      "slogan": null,
+      "statut": "déclaré",
+      "declaration": "2025-12-19",
+      "programme": "partiel",
+      "site": "https://ruches.org/",
+      "bio": "Avocat et essayiste. Candidat déclaré depuis le 19 décembre 2025, soutenu par le mouvement citoyen Les Ruches, organisé en groupes locaux sans structure partisane.",
+      "phares": [
+        "Référendum d'initiative citoyenne en toutes matières",
+        "Se préparer à la sortie de l'Union européenne",
+        "Rétablissement de l'ISF"
+      ],
+      "positions": {
+        "retraite": {
+          "valeur": "Indexée sur l'espérance de vie",
+          "source": "https://www.france-vote.fr/candidats/juan-branco"
+        },
+        "smic": {
+          "valeur": "SMIC départementalisé",
+          "source": "https://www.france-vote.fr/candidats/juan-branco"
+        },
+        "fortune": {
+          "valeur": "Rétablir l'ISF",
+          "source": "https://www.france-vote.fr/candidats/juan-branco"
+        },
+        "nucleaire": {
+          "valeur": "Pour (souveraineté)",
+          "source": "https://www.france-vote.fr/candidats/juan-branco"
+        },
+        "immigration": {
+          "valeur": "Contre restreindre le droit du sol",
+          "source": "https://www.france-vote.fr/candidats/juan-branco"
+        },
+        "europe": {
+          "valeur": "Préparer la sortie de l'UE",
+          "source": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle"
+        }
+      },
+      "propositions": {
+        "institutions": [
+          {
+            "titre": "Référendum d'initiative citoyenne",
+            "detail": "Référendum d'initiative citoyenne en toutes matières et mandats révocatoires, « comme en Suisse ».",
+            "source": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Préparer la sortie de l'UE",
+            "detail": "« Il faut se préparer à la sortie de l'Union européenne » ; renégociation des traités pour reprendre la main sur la monnaie, le budget et les frontières.",
+            "source": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Rétablir l'ISF",
+            "detail": "Rétablissement de l'impôt sur la fortune.",
+            "source": "https://www.france-vote.fr/candidats/juan-branco"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Souveraineté énergétique",
+            "detail": "Souveraineté énergétique appuyée sur le nucléaire.",
+            "source": "https://www.france-vote.fr/candidats/juan-branco"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Droit du sol",
+            "detail": "Opposition aux restrictions du droit du sol et aux quotas annuels contraignants d'immigration légale.",
+            "source": "https://www.france-vote.fr/candidats/juan-branco"
+          }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "SMIC départementalisé",
+            "detail": "Un SMIC fixé par département.",
+            "source": "https://www.france-vote.fr/candidats/juan-branco"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Retraites",
+            "detail": "Barème de retraite indexé sur l'espérance de vie, par catégorie.",
+            "source": "https://www.france-vote.fr/candidats/juan-branco"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle",
+        "https://www.france-vote.fr/candidats/juan-branco"
+      ]
     },
     {
       "id": "tondelier",
@@ -2047,7 +2150,7 @@
       "declaration": "2026-07-07",
       "programme": "partiel",
       "site": "https://rassemblementnational.fr",
-      "bio": "Présidente du groupe RN à l'Assemblée nationale. Candidature confirmée en juillet 2026 après la décision en appel dans l'affaire des assistants parlementaires. Quatrième candidature.",
+      "bio": "Présidente du groupe RN à l'Assemblée nationale. Candidature confirmée en juillet 2026, après sa condamnation en appel (7 juillet 2026) à une peine d'inéligibilité sans exécution provisoire. Son pourvoi est pendant devant la Cour de cassation, qui doit se prononcer avant le premier tour (au plus tard début avril 2027) ; les questions prioritaires de constitutionnalité sont examinées le 16 décembre 2026. Quatrième candidature.",
       "phares": [
         "Retour de la retraite à 62 ans (60 ans pour les carrières longues)",
         "TVA sur l'énergie de 20 % à 5,5 %",
@@ -2110,7 +2213,8 @@
       },
       "sources": [
         "https://monvote2027.fr/candidat/le-pen",
-        "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027"
+        "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027",
+        "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-malgre-son-pourvoi-en-cassation-est-elle-toujours-ineligible-comme-laffirment-plusieurs-juristes"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg",
       "biographie": {
