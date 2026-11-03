@@ -100,6 +100,29 @@ for (const c of data.candidats) {
 }
 
 ajouter({
+  chemin: 'candidats/',
+  titre: `Candidats présidentielle 2027 : la liste complète des ${data.candidats.length} candidatures`,
+  description: `Qui est candidat à la présidentielle 2027 ? Les ${data.candidats.length} candidatures déclarées (date d'annonce, parti, bord politique), les retraits, les candidatures possibles et les conditions pour être candidat.`,
+  priorite: '0.9', frequence: 'daily',
+  jsonld: [
+    {
+      '@type': 'ItemList', name: 'Candidatures à l\'élection présidentielle 2027', numberOfItems: data.candidats.length,
+      itemListElement: [...data.candidats].sort((a, b) => (b.declaration || '0').localeCompare(a.declaration || '0'))
+        .map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: nomComplet(c), url: absolu(`candidat/${c.id}/`) })),
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        ['Combien de candidats à la présidentielle 2027 ?', `${data.candidats.length} candidatures sont déclarées à ce jour. La liste officielle sera arrêtée par le Conseil constitutionnel en mars 2027, après la collecte des parrainages.`],
+        ['Quelles sont les conditions pour être candidat à la présidentielle ?', 'Être de nationalité française, avoir au moins 18 ans, ne pas être privé de ses droits civiques ni inéligible, réunir 500 parrainages d\'élus d\'au moins 30 départements, déposer une déclaration de situation patrimoniale et respecter les règles de financement de campagne.'],
+        ['Quand a lieu l\'élection présidentielle 2027 ?', `Le premier tour a lieu le ${data.meta.election.tour1.split('-').reverse().join('/')} et le second tour le ${data.meta.election.tour2.split('-').reverse().join('/')}.`],
+      ].map(([q, r]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: r } })),
+    },
+    fil({ name: 'Candidatures', chemin: 'candidats/' }),
+  ],
+});
+
+ajouter({
   chemin: 'themes/',
   titre: 'Les programmes 2027 thème par thème | Programmes 2027',
   description: 'Retraites, salaires, impôts, écologie, immigration, sécurité, santé, éducation, Europe, institutions : ce que proposent tous les candidats à la présidentielle 2027, thème par thème.',
@@ -195,7 +218,7 @@ function head(p) {
   ].join('\n');
 }
 
-const footerLiens = `    <h2>Les candidats</h2>
+const footerLiens = `    <h2>Les candidats · <a href="${BASE}candidats/">liste complète des candidatures</a></h2>
     <ul class="footer-liens">${tries.map((c) => `<li><a href="${BASE}candidat/${c.id}/">${esc(nomComplet(c))}</a></li>`).join('')}</ul>
     <h2>Les thèmes</h2>
     <ul class="footer-liens">${data.themes.map((t) => `<li><a href="${BASE}theme/${t.id}/">${esc(t.label)}</a></li>`).join('')}</ul>`;
@@ -235,7 +258,7 @@ async function rendre(p) {
 
 // ---------- Écriture ----------
 // Nettoyage des anciennes pages générées (candidats ou duels disparus)
-for (const dossier of ['candidat', 'theme', 'comparer']) await rm(fichier(dossier), { recursive: true, force: true });
+for (const dossier of ['candidat', 'candidats', 'theme', 'comparer']) await rm(fichier(dossier), { recursive: true, force: true });
 
 for (const p of pages) {
   const html = await rendre(p);

@@ -13,6 +13,7 @@ const URLS = {
   duel: (a, b) => lien(`comparer/${a}-vs-${b}/`),
   signatures: () => lien('signatures/'),
   methodo: () => lien('methodo/'),
+  candidats: () => lien('candidats/'),
 };
 const MAX_COMPARE = 4;
 
@@ -202,7 +203,7 @@ function vueAccueil() {
     </section>
 
     <section class="section" id="candidats">
-      <h2 class="section-titre">Les candidats (${cands.length})</h2>
+      <h2 class="section-titre">Les candidats (${cands.length}) · <a href="${URLS.candidats()}">la liste complète des candidatures →</a></h2>
       <div class="spectre" aria-hidden="true">
         <div class="spectre__barre"></div>
         <div class="spectre__labels"><span>Gauche</span><span>Centre</span><span>Droite</span></div>
@@ -733,6 +734,50 @@ function vueTheme(id) {
   hydraterPhotos(app);
 }
 
+function vueCandidatures() {
+  const d = state.data;
+  const parDate = [...d.candidats].sort((a, b) => (b.declaration || '0').localeCompare(a.declaration || '0'));
+  const lo = LO();
+  app.innerHTML = `
+    <section class="hero">
+      <span class="pill"><span class="dot-live"></span><span>Mis à jour le ${esc(dateFr(state.veille?.checkedAt || d.meta.contenuMisAJour))}</span></span>
+      <h1>Candidats à la présidentielle 2027&nbsp;: <span class="surligne-rose">la liste complète</span></h1>
+      <p class="chapo"><strong>${plur(d.candidats.length, 'candidature déclarée', 'candidatures déclarées')}</strong> pour l'élection des ${esc(dateFr(d.meta.election.tour1, { day: 'numeric', month: 'long' }))} et ${esc(dateFr(d.meta.election.tour2))}, de la plus récente à la plus ancienne. ${lo ? `La liste officielle arrêtée par le Conseil constitutionnel compte ${plur(lo.candidats.length, 'candidat')}.` : 'La liste officielle sera arrêtée par le Conseil constitutionnel en mars 2027, après la collecte des 500 parrainages.'}</p>
+    </section>
+
+    ${blocListeOfficielle()}
+
+    <section class="section">
+      <h2 class="section-titre">Toutes les candidatures déclarées</h2>
+      <div class="matrice-wrap">
+        <table class="matrice candidatures">
+          <thead><tr><th scope="col">Candidat</th><th scope="col">Parti</th><th scope="col">Bord</th><th scope="col">Annonce</th><th scope="col">Programme</th></tr></thead>
+          <tbody>${parDate.map((c) => `<tr style="${styleCouleur(c)}">
+            <th scope="row"><a class="th-cand" href="${URLS.candidat(c.id)}">${avatar(c, 'sm')}<span>${esc(c.prenom)} ${esc(c.nom)}</span></a></th>
+            <td>${pastilleParti(c)}<br><span class="small">${esc(c.parti)}</span></td>
+            <td>${esc(bordDe(c)?.label)}</td>
+            <td>${c.declaration ? esc(dateFr(c.declaration)) : '<span class="inconnu">—</span>'}<br><span class="small">${esc(c.statut)}</span></td>
+            <td>${tagProgramme(c)}${tagOfficiel(c) ? '<br>' + tagOfficiel(c) : ''}</td>
+          </tr>`).join('')}</tbody>
+        </table>
+      </div>
+    </section>
+
+    ${blocRetires()}
+
+    <section class="section carte">
+      <h2 class="section-titre">Comment devient-on candidat&nbsp;?</h2>
+      <div class="etapes">
+        <div class="etape"><span class="etape__num">1</span><div>Être de <strong>nationalité française</strong>, avoir <strong>au moins 18 ans</strong> et ne pas être privé de ses droits civiques ni frappé d'inéligibilité.</div></div>
+        <div class="etape"><span class="etape__num">2</span><div>Réunir <strong>500 parrainages</strong> d'élus d'au moins 30 départements, pas plus de 50 par département. <a href="${URLS.signatures()}">Voir le compteur →</a></div></div>
+        <div class="etape"><span class="etape__num">3</span><div>Déposer une <strong>déclaration de situation patrimoniale</strong> et respecter les règles de financement de campagne (mandataire, plafond de dépenses).</div></div>
+        <div class="etape"><span class="etape__num">4</span><div>Le <strong>Conseil constitutionnel</strong> vérifie les dossiers et arrête la liste officielle, dans l'ordre d'un tirage au sort.</div></div>
+      </div>
+      <p class="mono small credit">Sources : <a href="https://www.conseil-constitutionnel.fr" target="_blank" rel="noopener">Conseil constitutionnel</a> · <a href="https://www.vie-publique.fr" target="_blank" rel="noopener">vie-publique.fr</a></p>
+    </section>`;
+  hydraterPhotos(app);
+}
+
 function vueMethodo() {
   const d = state.data;
   app.innerHTML = `
@@ -786,7 +831,7 @@ function routeCourante() {
 function router() {
   const { route, param } = routeCourante();
   document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('actif',
-    (a.dataset.nav === 'home' && (route === '' || route === 'candidat')) ||
+    (a.dataset.nav === 'home' && (route === '' || route === 'candidat' || route === 'candidats')) ||
     (a.dataset.nav === 'themes' && (route === 'themes' || route === 'theme')) ||
     (a.dataset.nav === 'compare' && route === 'comparer') ||
     (a.dataset.nav === 'parrainages' && route === 'signatures')));
@@ -801,6 +846,7 @@ function router() {
     case 'themes': vueThemes(); break;
     case 'theme': vueTheme(param); break;
     case 'methodo': vueMethodo(); break;
+    case 'candidats': vueCandidatures(); break;
     case 'signatures': vueParrainages(); break;
     default: vue404();
   }

@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "programmes-2027-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A index.html 404.html candidat theme themes comparer signatures methodo sitemap.xml robots.txt manifest.webmanifest
+          git add -A index.html 404.html candidat candidats theme themes comparer signatures methodo sitemap.xml robots.txt manifest.webmanifest
           if git diff --cached --quiet; then
             echo "Pages déjà à jour."
           else
