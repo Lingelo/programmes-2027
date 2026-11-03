@@ -2,8 +2,9 @@ name: Construction du site
 
 # GitHub Pages publie la branche main telle quelle (mode « Deploy from a branch »).
 # Ce workflow régénère les pages statiques (une par candidat, thème, duel…) à chaque
-# modification sur main, puis les committe. Sur une pull request, il vérifie seulement
-# que les données sont valides et que le site se construit.
+# modification sur main, puis les committe. Sur une pull request, il vérifie que les données
+# sont valides, que le site se construit et que le rendu est correct (scripts/verifier-rendu.mjs) ;
+# un problème de rendu bloque aussi la publication sur main.
 
 on:
   push:
@@ -35,6 +36,12 @@ jobs:
         run: node scripts/check-data.mjs
       - name: Générer les pages
         run: node scripts/build-site.mjs
+      - name: Installer le navigateur de contrôle (Playwright)
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.63.0
+          npx playwright install --with-deps chromium
+      - name: Contrôler le rendu (chevauchements, débordements, erreurs JavaScript)
+        run: node scripts/verifier-rendu.mjs
       - name: Publier les pages générées
         if: github.event_name != 'pull_request'
         id: commit

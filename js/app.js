@@ -436,8 +436,10 @@ function proximite(a, b) {
 
 function svgBoussole(focus = null, etiquettes = false) {
   const W = 300, H = 336, M = 26, HAUT = 30, L = W - 2 * M;
-  const x = (v) => M + ((v + 100) / 200) * L;
-  const y = (v) => HAUT + ((100 - v) / 200) * L;
+  // Marge intérieure : un point à −100 ou +100 reste entièrement dans le cadre, loin des légendes
+  const P = 13;
+  const x = (v) => M + P + ((v + 100) / 200) * (L - 2 * P);
+  const y = (v) => HAUT + P + ((100 - v) / 200) * (L - 2 * P);
   const pts = candidatsTries().filter((c) => fvDe(c)?.boussole?.eco != null);
   if (focus && !pts.some((c) => c.id === focus.id)) focus = null;
   const estFocus = (c) => focus && c.id === focus.id;
@@ -495,8 +497,8 @@ function svgBoussole(focus = null, etiquettes = false) {
     <line x1="${W / 2}" x2="${W / 2}" y1="${HAUT}" y2="${bas}" class="boussole__axe"/>
     <line y1="${HAUT + L / 2}" y2="${HAUT + L / 2}" x1="${M}" x2="${W - M}" class="boussole__axe"/>
     <text x="${W / 2}" y="${HAUT - 10}" text-anchor="middle" class="boussole__lib">↑ Société conservatrice</text>
-    <text x="${M}" y="${bas + 18}" class="boussole__lib">← Économie interventionniste</text>
-    <text x="${W - M}" y="${bas + 18}" text-anchor="end" class="boussole__lib">libérale →</text>
+    <text x="${M}" y="${bas + 18}" class="boussole__lib">← Interventionniste</text>
+    <text x="${W - M}" y="${bas + 18}" text-anchor="end" class="boussole__lib">Libérale →</text>
     <text x="${W / 2}" y="${bas + 36}" text-anchor="middle" class="boussole__lib">↓ Société progressiste</text>
     ${ordre.map(point).join('')}
     <g class="bp__noms" aria-hidden="true">${textes}</g>
