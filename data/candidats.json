@@ -227,6 +227,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud",
         "wikidata": "Q439490",
+        "genre": "f",
         "naissance": "1970-02-23",
         "lieuNaissance": "Peyrins",
         "professions": [
@@ -243,8 +244,7 @@
             "fin": "2014-04-04"
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "f"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -277,6 +277,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Anasse_Kazib",
         "wikidata": "Q106405647",
+        "genre": "m",
         "naissance": "1986",
         "lieuNaissance": "Sarcelles",
         "professions": [
@@ -285,8 +286,7 @@
         ],
         "formation": [],
         "fonctions": [],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -298,7 +298,7 @@
       "bord": "extreme-gauche",
       "couleur": "#C8102E",
       "wiki": null,
-      "photo": null,
+      "photo": "img/candidats/labib.png",
       "slogan": null,
       "statut": "désignée",
       "declaration": "2026-06-17",
@@ -312,7 +312,7 @@
         "https://speakoutsocialists.org/?p=31844",
         "https://www.boursedirect.fr/fr/actualites/categorie/politique/on-ne-cherche-pas-un-accord-politique-sur-les-routes-le-npa-en-quete-de-parrainages-afp-d490d0889a7a24796c56526e925208b907c2a721"
       ],
-      "photoCredit": null
+      "photoCredit": "https://commons.wikimedia.org/wiki/File%3APresidentielles-2027-Selma-LABIB.png"
     },
     {
       "id": "melenchon",
@@ -405,6 +405,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
         "wikidata": "Q5829",
+        "genre": "m",
         "naissance": "1951-08-19",
         "lieuNaissance": "Tanger",
         "professions": [
@@ -446,8 +447,7 @@
             "fin": "2004-04-02"
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -553,6 +553,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
         "wikidata": "Q30388733",
+        "genre": "m",
         "naissance": "1969-04-16",
         "lieuNaissance": "Béthune",
         "professions": [
@@ -583,8 +584,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -654,6 +654,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Ruffin",
         "wikidata": "Q3085763",
+        "genre": "m",
         "naissance": "1975-10-18",
         "lieuNaissance": "Calais",
         "professions": [
@@ -672,8 +673,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -774,6 +774,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
         "wikidata": "Q29917987",
+        "genre": "f",
         "naissance": "1986-08-23",
         "lieuNaissance": "Bois-Bernard",
         "professions": [],
@@ -792,8 +793,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "f"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -908,6 +908,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
         "wikidata": "Q556149",
+        "genre": "m",
         "naissance": "1979-10-15",
         "lieuNaissance": "Boulogne-Billancourt",
         "professions": [
@@ -929,8 +930,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -963,6 +963,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
         "wikidata": "Q98251165",
+        "genre": "m",
         "naissance": "1973-02-21",
         "lieuNaissance": null,
         "professions": [],
@@ -989,8 +990,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1025,6 +1025,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Delphine_Batho",
         "wikidata": "Q291385",
+        "genre": "f",
         "naissance": "1973-03-23",
         "lieuNaissance": "12e arrondissement de Paris",
         "professions": [],
@@ -1040,8 +1041,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "f"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1076,6 +1076,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Bernard_Cazeneuve",
         "wikidata": "Q560890",
+        "genre": "m",
         "naissance": "1963-06-02",
         "lieuNaissance": "Senlis",
         "professions": [
@@ -1111,8 +1112,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1225,6 +1225,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
         "wikidata": "Q30339350",
+        "genre": "m",
         "naissance": "1989-03-16",
         "lieuNaissance": "Clamart",
         "professions": [],
@@ -1255,8 +1256,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1290,6 +1290,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Olivier_Becht",
         "wikidata": "Q30348845",
+        "genre": "m",
         "naissance": "1976-04-28",
         "lieuNaissance": "Strasbourg",
         "professions": [],
@@ -1327,8 +1328,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1404,6 +1404,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/%C3%89douard_Philippe",
         "wikidata": "Q3579995",
+        "genre": "m",
         "naissance": "1970-11-28",
         "lieuNaissance": "Rouen",
         "professions": [
@@ -1457,8 +1458,7 @@
             "fin": "2008-03-18"
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1535,6 +1535,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
         "wikidata": "Q2926942",
+        "genre": "m",
         "naissance": "1960-11-20",
         "lieuNaissance": "Cholet",
         "professions": [],
@@ -1579,8 +1580,7 @@
             "fin": "2015"
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1646,6 +1646,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/David_Lisnard",
         "wikidata": "Q3018298",
+        "genre": "m",
         "naissance": "1969-02-02",
         "lieuNaissance": "Limoges",
         "professions": [
@@ -1683,8 +1684,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1720,6 +1720,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Xavier_Bertrand",
         "wikidata": "Q203793",
+        "genre": "m",
         "naissance": "1965-03-21",
         "lieuNaissance": "Châlons-en-Champagne",
         "professions": [],
@@ -1768,8 +1769,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1843,6 +1843,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan",
         "wikidata": "Q12961",
+        "genre": "m",
         "naissance": "1961-03-07",
         "lieuNaissance": "15e arrondissement de Paris",
         "professions": [],
@@ -1869,8 +1870,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -1921,6 +1921,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Florian_Philippot",
         "wikidata": "Q3074223",
+        "genre": "m",
         "naissance": "1981-10-24",
         "lieuNaissance": "Croix",
         "professions": [],
@@ -1952,8 +1953,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -2001,6 +2001,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Asselineau",
         "wikidata": "Q12972",
+        "genre": "m",
         "naissance": "1957-09-14",
         "lieuNaissance": "Paris",
         "professions": [],
@@ -2025,8 +2026,7 @@
             "fin": null
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -2118,6 +2118,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Marine_Le_Pen",
         "wikidata": "Q12927",
+        "genre": "f",
         "naissance": "1968-08-05",
         "lieuNaissance": "Neuilly-sur-Seine",
         "professions": [
@@ -2159,8 +2160,7 @@
             "fin": "2010-03-21"
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "f"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -2228,6 +2228,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour",
         "wikidata": "Q288477",
+        "genre": "m",
         "naissance": "1958-08-31",
         "lieuNaissance": "Montreuil",
         "professions": [
@@ -2242,8 +2243,7 @@
           "lycée de l'École Yabné"
         ],
         "fonctions": [],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -2276,6 +2276,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Natacha_Polony",
         "wikidata": "Q941949",
+        "genre": "f",
         "naissance": "1975-04-15",
         "lieuNaissance": "14e arrondissement de Paris",
         "professions": [
@@ -2294,8 +2295,7 @@
             "fin": "2024-12"
           }
         ],
-        "majLe": "2026-11-02",
-        "genre": "f"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -2328,6 +2328,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Clara_Egger",
         "wikidata": "Q108584624",
+        "genre": "f",
         "naissance": "1988-01-02",
         "lieuNaissance": null,
         "professions": [
@@ -2339,8 +2340,7 @@
           "université Grenoble-II"
         ],
         "fonctions": [],
-        "majLe": "2026-11-02",
-        "genre": "f"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -2424,6 +2424,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Francis_Lalanne",
         "wikidata": "Q3081533",
+        "genre": "m",
         "naissance": "1958-08-08",
         "lieuNaissance": "Bayonne",
         "professions": [
@@ -2437,8 +2438,7 @@
           "conservatoire à rayonnement régional de Marseille"
         ],
         "fonctions": [],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
@@ -2471,6 +2471,7 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Sylvain_Durif",
         "wikidata": "Q111050069",
+        "genre": "m",
         "naissance": "1969-08-23",
         "lieuNaissance": "Nantua",
         "professions": [
@@ -2481,8 +2482,7 @@
         ],
         "formation": [],
         "fonctions": [],
-        "majLe": "2026-11-02",
-        "genre": "m"
+        "majLe": "2026-11-03"
       }
     },
     {
