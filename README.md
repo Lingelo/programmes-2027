@@ -7,6 +7,7 @@ Site non partisan pour comparer les programmes des candidats à l'élection pré
 
 - **Mobile first**, thème jaune / noir inspiré de taxe-au-giga.fr
 - Fiches candidats : photo, **biographie** (naissance, formation, métiers, parcours, intro Wikipédia), parti et couleur, bord politique, slogan, mesures phares, **programme détaillé par thème** avec la source de chaque mesure
+- **Boussole politique et positions sur 40 propositions** (données ouvertes [France-Vote](https://www.france-vote.fr/donnees), CC BY 4.0), candidats les plus proches et les plus éloignés
 - **Comparateur** jusqu'à 4 candidats : tableau « en un coup d'œil » + colonnes thème par thème (lien partageable)
 - **Compteur des parrainages** (500 signatures) : jauge par candidat, nombre de départements, courbe d'évolution, classement — d'après les données ouvertes du Conseil constitutionnel
 - Vue **par thème** : tous les candidats sur un même sujet, de la gauche à la droite

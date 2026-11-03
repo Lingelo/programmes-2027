@@ -18,6 +18,7 @@ const existe = (p) => access(fichier(p)).then(() => true, () => false);
 
 const data = JSON.parse(await lire('data/candidats.json'));
 const parrainages = JSON.parse(await lire('data/parrainages.json').catch(() => 'null'));
+const francevote = JSON.parse(await lire('data/francevote.json').catch(() => 'null'));
 const SITE = (data.meta.site || 'https://lingelo.github.io/programmes-2027/').replace(/\/?$/, '/');
 const BASE = new URL(SITE).pathname;
 const absolu = (chemin = '') => SITE + chemin.replace(/^\//, '');
@@ -34,6 +35,8 @@ const ordre = (c) => data.bords.findIndex((b) => b.id === c.bord) * 1000 + data.
 const tries = [...data.candidats].sort((a, b) => ordre(a) - ordre(b));
 const principaux = tries.filter((c) => nbProps(c) >= 3);
 const nomComplet = (c) => `${c.prenom} ${c.nom}`;
+// Élision : « d'Édouard Philippe », « de Marine Le Pen »
+const de = (n) => (/^[aeiouyàâäéèêëîïôöùûü]/i.test(n) ? `d'${n}` : `de ${n}`);
 
 // ---------- Description des pages ----------
 const SITE_NOM = 'Programmes 2027';
@@ -74,7 +77,7 @@ for (const c of data.candidats) {
     chemin: `candidat/${c.id}/`,
     titre: `${nomComplet(c)} : programme présidentielle 2027 (${c.partiCourt})`,
     description: couper(n
-      ? `Programme 2027 de ${nomComplet(c)} (${c.parti}) : ${phares || 'les mesures'}. ${n} mesures sourcées, comparaison avec les autres candidats, parcours et parrainages.`
+      ? `Programme 2027 ${de(nomComplet(c))} (${c.parti}) : ${phares || 'les mesures'}. ${n} mesures sourcées${francevote?.candidats?.[c.id] ? ', boussole politique, positions sur 40 propositions' : ''}, comparaison, parcours.`
       : `${nomComplet(c)}, candidat${c.statut.endsWith('e') ? 'e' : ''} ${c.parti} à la présidentielle 2027${c.slogan ? ` (« ${c.slogan} »)` : ''} : programme, parcours, parrainages.`, 158),
     image: (await existe(`img/og/${c.id}.png`)) ? `img/og/${c.id}.png` : null,
     type: 'profile',
