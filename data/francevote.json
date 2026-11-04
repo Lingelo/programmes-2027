@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-03",
+ "recupereLe": "2026-11-04",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -770,7 +770,12 @@
      "date": "2023-08-29"
     },
     "edu2": null,
-    "edu3": null,
+    "edu3": {
+     "url": "https://web.archive.org/web/20260504205622/https://melenchon2027.fr/programme2025/livre/chapitre5/s3/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 5 : Élever le niveau d’instruction, « Reconstruire une école globale pour l’égalité et l’émancipation » (archive Wayback du 04/05/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
     "edu4": null
    },
    "boussole": {
@@ -1498,7 +1503,12 @@
     "san4": null,
     "edu1": null,
     "edu2": null,
-    "edu3": null,
+    "edu3": {
+     "url": "https://lcp.fr/actualites/presidentielle-raphael-glucksmann-devoile-les-premieres-lignes-de-son-possible-programme",
+     "titre": "Présidentielle: Raphaël Glucksmann dévoile les premières lignes de son possible programme",
+     "editeur": "LCP",
+     "date": "2026-05-26"
+    },
     "edu4": null
    },
    "boussole": {
@@ -1626,7 +1636,12 @@
     "san4": null,
     "edu1": null,
     "edu2": null,
-    "edu3": null,
+    "edu3": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
     "edu4": null
    },
    "boussole": {
@@ -1970,7 +1985,12 @@
      "date": "2024-01-30"
     },
     "edu2": null,
-    "edu3": null,
+    "edu3": {
+     "url": "https://www.senat.fr/compte-rendu-commissions/20231009/cult.html",
+     "titre": "Audition de M. Gabriel Attal, ministre de l’éducation nationale et de la jeunesse (commission de la culture, de l’éducation et de la communication)",
+     "editeur": "Sénat",
+     "date": "2023-10-11"
+    },
     "edu4": null
    },
    "boussole": {
@@ -2364,7 +2384,12 @@
      "date": "2026-10-16"
     },
     "edu2": null,
-    "edu3": null,
+    "edu3": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-le-cheque-education/",
+     "titre": "Quel candidat à la présidentielle 2027 propose le chèque éducation ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
     "edu4": null
    },
    "boussole": {
