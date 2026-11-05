@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-04",
+ "recupereLe": "2026-11-05",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -776,7 +776,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2025"
     },
-    "edu4": null
+    "edu4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
+     "titre": "Présidentielle 2027 : que proposent les candidats pour l’école ?",
+     "editeur": "Public Sénat",
+     "date": "2026-08-31"
+    }
    },
    "boussole": {
     "eco": -100,
@@ -2144,7 +2149,12 @@
     },
     "edu2": null,
     "edu3": null,
-    "edu4": null
+    "edu4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
+     "titre": "Présidentielle 2027 : que proposent les candidats pour l’école ?",
+     "editeur": "Public Sénat",
+     "date": "2026-08-31"
+    }
    },
    "boussole": {
     "eco": 88,
@@ -2390,7 +2400,12 @@
      "editeur": "Nouvelle Énergie",
      "date": "2026-10-16"
     },
-    "edu4": null
+    "edu4": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-donner-leur-autonomie-aux-etablissements-scolaires/",
+     "titre": "Quel candidat à la présidentielle 2027 veut donner leur autonomie aux établissements scolaires ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    }
    },
    "boussole": {
     "eco": 92,
@@ -2568,7 +2583,12 @@
     },
     "edu2": null,
     "edu3": null,
-    "edu4": null
+    "edu4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux",
+     "titre": "Présidentielle 2027 : Bruno Retailleau veut « refonder l’école » autour de quatre axes principaux",
+     "editeur": "Public Sénat",
+     "date": "2026-08-31"
+    }
    },
    "boussole": {
     "eco": 96,
@@ -2897,7 +2917,12 @@
     "edu1": null,
     "edu2": null,
     "edu3": null,
-    "edu4": null
+    "edu4": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    }
    },
    "boussole": {
     "eco": -46,
@@ -3080,7 +3105,12 @@
     },
     "edu2": null,
     "edu3": null,
-    "edu4": null
+    "edu4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-duel-macron-le-pen-quelles-sont-les-propositions-des-candidats-en",
+     "titre": "Duel Macron-Le Pen : quelles sont les propositions des candidats en matière d’éducation ?",
+     "editeur": "Public Sénat",
+     "date": "2022-04-12"
+    }
    },
    "boussole": {
     "eco": 0,
