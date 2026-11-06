@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-05",
+ "recupereLe": "2026-11-06",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -456,7 +456,12 @@
     },
     "imm1": null,
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure_caravane_2026-01_-_couleur.pdf",
+     "titre": "Nathalie Arthaud – Présidentielle 2027 (supplément à Lutte ouvrière nº 3021)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-06-26"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -559,7 +564,12 @@
     },
     "imm1": null,
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://anasse2027.fr/programme",
+     "titre": "Programme — Anasse Kazib 2027",
+     "editeur": "Anasse Kazib 2027 (site officiel de campagne)",
+     "date": "2026"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -702,7 +712,12 @@
      "editeur": "BFMTV",
      "date": "2025-02-12"
     },
-    "imm3": null,
+    "imm3": {
+     "url": "https://web.archive.org/web/20260821172156/https://melenchon2027.fr/programme2025/livre/chapitre16/s7/",
+     "titre": "L’Avenir en commun (édition 2025) — Chapitre 16 : Une diplomatie altermondialiste pour la paix, « Pour une politique migratoire humaniste et réaliste » (archive Wayback du 21/08/2026)",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2025"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": {
@@ -978,7 +993,12 @@
     "soc4": null,
     "imm1": null,
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/immigration-fabien-roussel-propose-la-regularisation-de-tous-les-travailleurs-sans",
+     "titre": "Immigration : Fabien Roussel propose la régularisation de tous les travailleurs sans papiers",
+     "editeur": "Public Sénat",
+     "date": "2022-02-02"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -1081,7 +1101,12 @@
     "soc4": null,
     "imm1": null,
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -1209,7 +1234,12 @@
      "editeur": "Les Écologistes (communiqué, site officiel du parti)",
      "date": "2023-12-22"
     },
-    "imm3": null,
+    "imm3": {
+     "url": "https://www.france24.com/fr/info-en-continu/20260417-pr%C3%A9sidentielle-tondelier-propose-un-socle-programmatique-aux-autres-partis-de-gauche",
+     "titre": "Présidentielle: Tondelier propose un \"socle\" programmatique aux autres partis de gauche",
+     "editeur": "France 24 (AFP)",
+     "date": "2026-04-17"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": {
@@ -1401,7 +1431,7 @@
     "edu4": -1,
     "imm1": -1,
     "imm2": -2,
-    "imm3": 1,
+    "imm3": 2,
     "imm4": -2,
     "sec1": -1,
     "sec2": 1,
@@ -1460,7 +1490,12 @@
      "date": "2024-03-29"
     },
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+     "titre": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu’il faut retenir du dernier débat de la primaire socialiste",
+     "editeur": "LCP",
+     "date": "2026-10-05"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": {
@@ -1518,7 +1553,7 @@
    },
    "boussole": {
     "eco": -54,
-    "soc": -66
+    "soc": -68
    }
   },
   "cazeneuve": {
@@ -1824,7 +1859,12 @@
     },
     "imm1": null,
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://npa-revolutionnaires.org/wp-content/uploads/2024/05/240428_4p_europeennes_frontieres.pdf",
+     "titre": "Élections européennes 9 juin 2024 — Selma Labib : « Sans patrie ni frontières, une seule classe ouvrière » (tract de la liste)",
+     "editeur": "NPA-Révolutionnaires",
+     "date": "2024"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -1947,7 +1987,12 @@
      "date": "2026-04-27"
     },
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://www.cnews.fr/france/2023-02-01/immigration-quels-sont-les-metiers-en-tension-qui-pourront-valoir-un-titre-de",
+     "titre": "Immigration : quels sont les «métiers en tension» qui pourront valoir un titre de séjour ?",
+     "editeur": "CNews",
+     "date": "2023-02-01"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -2026,7 +2071,7 @@
     "edu4": 2,
     "imm1": 1,
     "imm2": 1,
-    "imm3": 0,
+    "imm3": 1,
     "imm4": -1,
     "sec1": 0,
     "sec2": 0,
@@ -2105,7 +2150,12 @@
      "date": "2026-07-21"
     },
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://www.lemonde.fr/politique/article/2023/12/10/projet-de-loi-immigration-edouard-philippe-se-dit-favorable-a-des-quotas-de-regularisation_6205015_823448.html",
+     "titre": "Projet de loi « immigration » : Edouard Philippe se dit favorable à des « quotas » de régularisation",
+     "editeur": "Le Monde (avec AFP)",
+     "date": "2023-12-10"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -2158,7 +2208,7 @@
    },
    "boussole": {
     "eco": 88,
-    "soc": -2
+    "soc": -5
    }
   },
   "bertrand": {
@@ -2297,7 +2347,7 @@
     "edu4": 2,
     "imm1": 2,
     "imm2": 1,
-    "imm3": -1,
+    "imm3": -2,
     "imm4": 0,
     "sec1": 2,
     "sec2": -2,
@@ -2356,7 +2406,12 @@
     },
     "imm1": null,
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+     "titre": "L’ambition française de David Lisnard",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
@@ -2409,7 +2464,7 @@
    },
    "boussole": {
     "eco": 92,
-    "soc": 48
+    "soc": 50
    }
   },
   "retailleau": {
@@ -3031,7 +3086,12 @@
      "editeur": "Rassemblement national",
      "date": "2026-07-21"
     },
-    "imm3": null,
+    "imm3": {
+     "url": "https://www.franceinfo.fr/societe/immigration/video-projet-de-loi-immigration-creer-un-titre-de-sejour-metiers-en-tension-revient-a-creer-un-appel-d-air-selon-marine-le-pen_5634023.html",
+     "titre": "VIDEO. Projet de loi immigration : créer un titre de séjour \"métiers en tension\" revient à créer \"un appel d'air\", selon Marine Le Pen",
+     "editeur": "franceinfo",
+     "date": "2023-02-01"
+    },
     "imm4": {
      "url": "https://rassemblementnational.fr/22-mesures",
      "titre": "22 mesures pour 2022",
@@ -3194,7 +3254,12 @@
     },
     "imm1": null,
     "imm2": null,
-    "imm3": null,
+    "imm3": {
+     "url": "https://assets.ericzemmour.fr/ressources/hebdo/Hebdo%20n%C2%B036.pdf",
+     "titre": "L’hebdo nº 36 — édito du président : « L’arnaque des « métiers en tension » »",
+     "editeur": "Reconquête (site officiel d’Éric Zemmour)",
+     "date": "2023"
+    },
     "imm4": null,
     "sec1": null,
     "sec2": null,
