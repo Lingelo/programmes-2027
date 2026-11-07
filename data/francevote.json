@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-06",
+ "recupereLe": "2026-11-07",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -719,7 +719,12 @@
      "date": "2025"
     },
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://melenchon.fr/2024/11/16/est-ce-que-ca-va-mieux-en-lexpliquant/",
+     "titre": "Est-ce que ça va mieux en l’expliquant ?",
+     "editeur": "L’ère du peuple (blog de Jean-Luc Mélenchon)",
+     "date": "2024-11-16"
+    },
     "sec2": {
      "url": "https://lafranceinsoumise.fr/niche-parlementaire-2022-de-la-france-insoumise/ppl-legaliser-cannabis/",
      "titre": "Proposition de loi relative à la légalisation de la production, de la vente et de la consommation du cannabis sous le contrôle de l’État",
@@ -2073,7 +2078,7 @@
     "imm2": 1,
     "imm3": 1,
     "imm4": -1,
-    "sec1": 0,
+    "sec1": 1,
     "sec2": 0,
     "sec3": -1,
     "sec4": 1,
@@ -2157,7 +2162,12 @@
      "date": "2023-12-10"
     },
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
+     "titre": "Pour une France plus sûre",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-07-21"
+    },
     "sec2": null,
     "sec3": null,
     "sec4": {
@@ -2208,7 +2218,7 @@
    },
    "boussole": {
     "eco": 88,
-    "soc": -5
+    "soc": -2
    }
   },
   "bertrand": {
@@ -2290,7 +2300,12 @@
     "imm2": null,
     "imm3": null,
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://www.europe1.fr/politique/peine-automatique-pour-les-agresseurs-de-policiers-critique-bertrand-persiste-et-signe-4039922",
+     "titre": "« Peine automatique » pour les agresseurs de policiers : critiqué, Bertrand persiste et signe",
+     "editeur": "Europe 1",
+     "date": "2021-04-20"
+    },
     "sec2": null,
     "sec3": null,
     "sec4": null,
@@ -2576,7 +2591,12 @@
     },
     "imm3": null,
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://republicains.fr/actualites/2026/05/31/ma-candidature-ira-jusquau-bout/",
+     "titre": "« Ma candidature ira jusqu’au bout »",
+     "editeur": "Les Républicains (entretien au JDD)",
+     "date": "2026-05-31"
+    },
     "sec2": {
      "url": "https://www.ouest-france.fr/societe/drogue/legalisation-du-cannabis-proposee-par-deux-deputes-bruno-retailleau-se-dit-totalement-contre-3f784e08-edc2-11ef-ab5f-86b228b95af6",
      "titre": "Légalisation du cannabis proposée par deux députés : Bruno Retailleau se dit « totalement contre »",
@@ -2714,7 +2734,12 @@
     },
     "imm3": null,
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://www.debout-la-france.fr/wp-content/uploads/2026/06/Justice-2026_06-10_Livret.pdf",
+     "titre": "Justice : rendre la justice au nom du peuple français ! (livret)",
+     "editeur": "Debout la France",
+     "date": "2026-06-10"
+    },
     "sec2": null,
     "sec3": null,
     "sec4": null,
@@ -2793,7 +2818,7 @@
     "imm2": 2,
     "imm3": -2,
     "imm4": -1,
-    "sec1": 1,
+    "sec1": 2,
     "sec2": -1,
     "sec3": 0,
     "sec4": 1,
@@ -2827,7 +2852,12 @@
     "imm2": null,
     "imm3": null,
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2022"
+    },
     "sec2": null,
     "sec3": null,
     "sec4": null,
@@ -2868,7 +2898,7 @@
    },
    "boussole": {
     "eco": -29,
-    "soc": 50
+    "soc": 52
    }
   },
   "philippot": {
@@ -2945,7 +2975,12 @@
     "imm2": null,
     "imm3": null,
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
     "sec2": null,
     "sec3": null,
     "sec4": null,
@@ -3098,7 +3133,12 @@
      "editeur": "Rassemblement national",
      "date": "2026-07-21"
     },
-    "sec1": null,
+    "sec1": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0262_proposition-loi.pdf",
+     "titre": "Proposition de loi tendant à l’instauration de peines planchers pour certains crimes et délits (nº 262)",
+     "editeur": "Assemblée nationale",
+     "date": "2024-09-17"
+    },
     "sec2": null,
     "sec3": null,
     "sec4": null,
@@ -3261,7 +3301,12 @@
      "date": "2023"
     },
     "imm4": null,
-    "sec1": null,
+    "sec1": {
+     "url": "https://www.europe1.fr/politique/en-direct-immigration-pouvoir-dachat-narcotrafic-ce-quil-faut-retenir-de-linterview-deric-zemmour-dans-la-france-en-face-936419",
+     "titre": "Immigration, pouvoir d’achat, narcotrafic… Ce qu’il faut retenir de l’interview d’Éric Zemmour dans La France en face",
+     "editeur": "Europe 1",
+     "date": "2026-05-19"
+    },
     "sec2": null,
     "sec3": null,
     "sec4": null,
