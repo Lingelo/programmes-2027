@@ -469,7 +469,9 @@ function svgBoussole(focus = null, etiquettes = false) {
     }
     // Noms secondaires : uniquement juste à droite ou à gauche du point (jamais en diagonale, pour éviter toute ambiguïté)
     const zones = (f ? essais : essais.slice(0, 2)).map(([l, t]) => ({ l, t, r: l + larg, b: t + haut }));
-    const libres = zones.filter((z) => dansCadre(z) && !places.some((p) => touche(z, p)) && !obstacles.some((o) => touche(z, o)));
+    // Entre deux noms, marge supplémentaire : la largeur réelle du texte dépasse parfois l'estimation
+    const eloigne = (p) => ({ l: p.l - 4, r: p.r + 4, t: p.t - 1, b: p.b + 1 });
+    const libres = zones.filter((z) => dansCadre(z) && !places.some((p) => touche(z, eloigne(p))) && !obstacles.some((o) => touche(z, o)));
     let z = libres[0];
     if (!z && f) z = zones.filter(dansCadre).sort((a, b2) => obstacles.filter((o) => touche(a, o)).length - obstacles.filter((o) => touche(b2, o)).length)[0];
     if (!z) return '';

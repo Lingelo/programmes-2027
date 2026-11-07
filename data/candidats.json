@@ -6,7 +6,7 @@
       "tour2": "2027-05-02",
       "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
     },
-    "contenuMisAJour": "2026-11-03",
+    "contenuMisAJour": "2026-11-07",
     "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub.",
     "regle": "Seules les mesures et positions attribuées au candidat pour la campagne 2027 (sources datées de 2025-2026) figurent sur le site."
   },
@@ -330,73 +330,371 @@
       "slogan": "La force de tout changer",
       "statut": "déclaré",
       "declaration": "2026-05-03",
-      "programme": "partiel",
+      "programme": "complet",
       "site": "https://melenchon2027.fr",
       "bio": "Fondateur de La France insoumise, ancien ministre et député. Quatrième candidature consécutive (2012, 2017, 2022). Programme 2027 en cours de réécriture : nouvelle version annoncée les 6 et 7 novembre 2026.",
       "phares": [
-        "Retraite à 60 ans avec 40 annuités",
-        "VIe République via une Assemblée constituante",
-        "Sortie du nucléaire"
+        "Retraite à 62 ans puis 60 ans avec 40 annuités",
+        "SMIC à 1 700 € net",
+        "Règle verte dans la Constitution et VIe République"
       ],
       "positions": {
         "retraite": {
-          "valeur": "60 ans",
-          "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
+          "valeur": "62 ans puis 60 ans",
+          "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
         },
         "smic": {
-          "valeur": "1 600 à 1 700 € net",
-          "source": "https://le-francais-moyen.com/programmes/melenchon-2027/"
+          "valeur": "1 700 € net",
+          "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+        },
+        "fortune": {
+          "valeur": "ISF climatique + impôt plancher",
+          "source": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2"
         },
         "nucleaire": {
           "valeur": "Sortie",
-          "source": "https://monvote2027.fr/candidat/melenchon"
+          "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+        },
+        "immigration": {
+          "valeur": "Régularisations",
+          "source": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3"
         },
         "europe": {
-          "valeur": "Désobéir aux traités",
-          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+          "valeur": "Réécrire les traités",
+          "source": "https://fr.news.yahoo.com/programme-2027-jean-luc-m%C3%A9lenchon-110620899.html"
         }
       },
       "propositions": {
+        "economie": [
+          {
+            "titre": "ISF à volet climatique",
+            "detail": "Rétablir l'impôt sur la fortune, avec un volet climatique visant les gros pollueurs.",
+            "source": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2"
+          },
+          {
+            "titre": "Impôt plancher de 2 % sur les centimillionnaires",
+            "detail": "Impôt minimal de 2 % sur les patrimoines des centimillionnaires.",
+            "source": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2"
+          },
+          {
+            "titre": "Impôt sur le revenu à 14 tranches",
+            "detail": "Impôt sur le revenu à 14 tranches et suppression de la « flat tax » ; transformation des réductions d'impôt en crédits d'impôt.",
+            "source": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2"
+          },
+          {
+            "titre": "Héritage maximal de 12 millions d'euros",
+            "detail": "Plafonnement de l'héritage à 12 millions d'euros.",
+            "source": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2"
+          },
+          {
+            "titre": "Écart de salaire de 1 à 20",
+            "detail": "Écart maximal de rémunération de 1 à 20 dans l'entreprise.",
+            "source": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2"
+          },
+          {
+            "titre": "Impôt sur les sociétés progressif",
+            "detail": "Impôt sur les sociétés progressif et exit tax renforcée.",
+            "source": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2"
+          },
+          {
+            "titre": "Dette détenue par la BCE",
+            "detail": "Geler la dette détenue par la Banque centrale européenne et modifier le traité (TFUE) pour que la BCE puisse acheter directement de la dette publique.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          }
+        ],
         "travail": [
           {
-            "titre": "Retraite à 60 ans",
-            "detail": "Abrogation de la réforme de 2023, retour à 60 ans avec 40 annuités, pension minimale au niveau du SMIC (L'Avenir en commun, édition 2025, base de la campagne 2027).",
-            "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
+            "titre": "Retraite à 62 ans puis 60 ans",
+            "detail": "Abrogation du départ à 64 ans, retour à 62 ans puis à 60 ans à taux plein après 40 annuités ; pension minimale au niveau du SMIC revalorisé.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
+          },
+          {
+            "titre": "Retour aux 35 heures",
+            "detail": "Rétablir les 35 heures, heures supplémentaires majorées de 25 % puis 50 %, 32 heures dans les métiers pénibles et de nuit.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
+          },
+          {
+            "titre": "Garantie d'emploi",
+            "detail": "Garantie d'emploi rémunérée au SMIC.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
+          },
+          {
+            "titre": "Limiter les contrats précaires",
+            "detail": "Plafond de contrats précaires de 10 % dans les PME et de 5 % dans les grandes entreprises.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
+          },
+          {
+            "titre": "Assurance chômage",
+            "detail": "Indemnisation dès le premier jour, calculée sur les derniers salaires.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
           }
         ],
         "pouvoir-achat": [
           {
-            "titre": "Hausse du SMIC",
-            "detail": "SMIC à 1 600 € net dans l'Avenir en commun 2025, 1 700 € évoqués dans la campagne 2026.",
-            "source": "https://le-francais-moyen.com/programmes/melenchon-2027/"
+            "titre": "SMIC à 1 700 € net",
+            "detail": "Hausse immédiate du SMIC à 1 700 € net ; APL augmentées de 10 %.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Garantie d'autonomie",
+            "detail": "Garantie d'autonomie au niveau du seuil de pauvreté (1 337 €).",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Blocage des prix alimentaires",
+            "detail": "Encadrement des prix de l'alimentation et lutte contre la « réduflation » ; gratuité des premières quantités d'énergie et d'eau.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
+          },
+          {
+            "titre": "Gel des loyers",
+            "detail": "Gel des loyers jusqu'à la généralisation de l'encadrement ; garantie universelle des loyers.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3"
+          },
+          {
+            "titre": "Logement public",
+            "detail": "200 000 logements publics par an et 30 000 logements pour les jeunes pendant 5 ans ; réquisition des logements vides.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3"
+          },
+          {
+            "titre": "Pas d'expulsion sans relogement",
+            "detail": "Interdire les expulsions sans relogement public et abroger la loi Kasbarian.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3"
           }
         ],
         "ecologie": [
           {
+            "titre": "Règle verte dans la Constitution",
+            "detail": "Inscrire la « règle verte » dans la Constitution, ainsi qu'une « règle bleue » pour l'eau.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme"
+          },
+          {
+            "titre": "Climat : −65 % d'émissions en 2033",
+            "detail": "Réduction de 65 % des émissions de gaz à effet de serre d'ici 2033 et 100 % d'énergies renouvelables en 2060 au plus tard.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
             "titre": "Sortie du nucléaire",
-            "detail": "« On sortira du nucléaire, il n'y a pas besoin de référendum » (entretien du 28 mai 2026).",
-            "source": "https://monvote2027.fr/candidat/melenchon"
+            "detail": "Sortie du nucléaire, avec passage aux énergies renouvelables.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Rénovation des logements",
+            "detail": "Isoler 700 000 logements par an ; interdiction effective de la location des passoires thermiques ; sortie du chauffage au fioul et au gaz.",
+            "source": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3"
+          },
+          {
+            "titre": "Transports",
+            "detail": "Renationaliser la SNCF, limiter les SUV, supprimer les vols intérieurs quand le train fait le trajet en moins de 4 heures ; interdiction des vols de nuit entre 23 h et 6 h.",
+            "source": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3"
+          },
+          {
+            "titre": "Agriculture",
+            "detail": "Prix planchers pour les agriculteurs, réforme agraire, encadrement des prix alimentaires par des coefficients multiplicateurs.",
+            "source": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3"
+          },
+          {
+            "titre": "Conscription citoyenne écologique",
+            "detail": "Conscription citoyenne écologique rémunérée au SMIC.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Régularisations",
+            "detail": "Régulariser les travailleurs sans papiers, les étudiants et les parents d'enfants scolarisés.",
+            "source": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3"
+          },
+          {
+            "titre": "Fermeture des CRA",
+            "detail": "Fermer les centres de rétention administrative.",
+            "source": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3"
+          },
+          {
+            "titre": "Carte de séjour de 10 ans",
+            "detail": "Faciliter les visas ; carte de 10 ans comme titre de séjour de référence.",
+            "source": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3"
+          },
+          {
+            "titre": "Droit d'asile",
+            "detail": "Garantir le droit d'asile et l'indépendance de l'Ofpra ; refuser le pacte européen sur la migration et l'asile ; créer un statut de « détresse environnementale ».",
+            "source": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3"
+          },
+          {
+            "titre": "Abrogation des lois récentes",
+            "detail": "Abroger les lois immigration récentes et la circulaire Retailleau ; garantir l'aide médicale d'État.",
+            "source": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3"
+          },
+          {
+            "titre": "Droit du sol intégral",
+            "detail": "Droit du sol intégral, accès facilité à la nationalité, droit de vote des étrangers aux élections locales.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Refus d'obtempérer",
+            "detail": "Abroger la loi Cazeneuve sur le refus d'obtempérer.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2"
+          },
+          {
+            "titre": "Remplacer l'IGPN",
+            "detail": "Supprimer l'IGPN, remplacée par une autorité rattachée au Défenseur des droits.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2"
+          },
+          {
+            "titre": "Armes et techniques policières",
+            "detail": "Interdire tasers, grenades et LBD, la nasse et les techniques d'immobilisation mortelles ; port du RIO obligatoire ; interdire la reconnaissance faciale.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2"
+          },
+          {
+            "titre": "Police de proximité",
+            "detail": "Formation des policiers sur deux ans ; dissolution des BAC et BRAV-M ; rétablir la police de proximité.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2"
+          },
+          {
+            "titre": "Délinquance financière",
+            "detail": "Doubler les effectifs contre la délinquance financière et supprimer le « verrou de Bercy ».",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2"
+          },
+          {
+            "titre": "Prisons",
+            "detail": "Régulation carcérale contraignante.",
+            "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Pôle public du médicament",
+            "detail": "Créer un pôle public du médicament ; pas de brevets sur les outils de santé d'urgence.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4"
+          },
+          {
+            "titre": "Fin de la T2A",
+            "detail": "Remplacer l'ONDAM par un ONBAM et sortir de la tarification à l'activité.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4"
+          },
+          {
+            "titre": "Soins à moins de 30 minutes",
+            "detail": "Accès aux soins à moins de 30 minutes, avec réouverture d'urgences et de maternités.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4"
+          },
+          {
+            "titre": "Sécurité sociale à 100 %",
+            "detail": "Remboursement à 100 % par la Sécurité sociale.",
+            "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
+          },
+          {
+            "titre": "Santé environnementale",
+            "detail": "Zéro exposition aux perturbateurs endocriniens ; plafonds de sel, sucre et gras ; interdire la publicité alimentaire visant les enfants.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4"
+          },
+          {
+            "titre": "Psychothérapie des moins de 26 ans",
+            "detail": "Remboursement de la psychothérapie pour les moins de 26 ans ; statut de famille monoparentale.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          }
+        ],
+        "education": [
+          {
+            "titre": "Gratuité réelle de l'école",
+            "detail": "Gratuité de la cantine, des transports et des fournitures scolaires.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
+          },
+          {
+            "titre": "Moins de 19 élèves par classe",
+            "detail": "Classes de moins de 19 élèves ; scolarité obligatoire jusqu'à 18 ans.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
+          },
+          {
+            "titre": "Abrogation du « choc des savoirs »",
+            "detail": "Abroger le « choc des savoirs » et le « pacte enseignant » ; rattraper le point d'indice gelé depuis 2010.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
+          },
+          {
+            "titre": "Fin de Parcoursup",
+            "detail": "Démanteler Parcoursup.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
+          },
+          {
+            "titre": "Enseignement privé",
+            "detail": "Supprimer les privilèges de l'enseignement privé (loi Carle).",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
+          },
+          {
+            "titre": "Éradiquer l'illettrisme",
+            "detail": "Éradiquer l'illettrisme d'ici 2032.",
+            "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Réécrire les traités européens",
+            "detail": "Réécrire les traités, supprimer les plafonds de dette et de déficit, référendum sur toute modification des traités, BCE sous contrôle démocratique.",
+            "source": "https://fr.news.yahoo.com/programme-2027-jean-luc-m%C3%A9lenchon-110620899.html"
+          },
+          {
+            "titre": "Désobéir aux règles bloquantes",
+            "detail": "Moratoire sur la libre circulation des marchandises et des capitaux, les règles de concurrence et les accords de libre-échange ; désobéir aux règles bloquantes.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "OTAN",
+            "detail": "Sortir immédiatement du commandement intégré de l'OTAN, puis de l'organisation par étapes ; refus de l'objectif de 5 % du PIB pour la défense.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Ukraine et Palestine",
+            "detail": "Cessez-le-feu en Ukraine avec retrait russe ; souveraineté de la Palestine.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Intelligence artificielle",
+            "detail": "Interdire les IA de compagnie émotionnelle ; autorité nationale validant les IA à haut risque.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
           }
         ],
         "institutions": [
           {
             "titre": "VIe République",
-            "detail": "Convocation d'une Assemblée constituante ; nouvelle Constitution soumise à référendum.",
-            "source": "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027"
-          }
-        ],
-        "europe": [
+            "detail": "Convocation d'une Assemblée constituante.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme"
+          },
           {
-            "titre": "Désobéissance aux traités",
-            "detail": "Plan A : renégocier les traités européens ; plan B : en sortir si les partenaires refusent.",
-            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+            "titre": "Proportionnelle et fin du 49.3",
+            "detail": "Scrutin proportionnel, suppression du 49.3, débat des pétitions à 500 000 signatures.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Vote à 16 ans",
+            "detail": "Droit de vote à 16 ans, reconnaissance du vote blanc et vote obligatoire.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme"
+          },
+          {
+            "titre": "Nouvelle-Calédonie",
+            "detail": "Indépendance de la Kanaky au 1er janvier 2028 par référendum.",
+            "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Lutte contre le racisme",
+            "detail": "Plan d'un milliard d'euros contre le racisme ; testing, CV anonyme, récépissé de contrôle d'identité.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme"
           }
         ]
       },
       "sources": [
-        "https://www.france-vote.fr/actualites/programme-melenchon-lfi-2027",
-        "https://monvote2027.fr/candidat/melenchon",
-        "https://melenchon2027.fr/construction-programme/"
+        "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+        "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+        "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+        "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+        "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+        "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4",
+        "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+        "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+        "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+        "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+        "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
+        "https://fr.news.yahoo.com/programme-2027-jean-luc-m%C3%A9lenchon-110620899.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg",
       "biographie": {
@@ -837,8 +1135,8 @@
           "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
         },
         "smic": {
-          "valeur": "Forte hausse",
-          "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+          "valeur": "2 000 € brut",
+          "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
         },
         "fortune": {
           "valeur": "Taxe Zucman + ISF vert",
@@ -870,6 +1168,11 @@
             "titre": "Neutralité carbone 2040",
             "detail": "Sortie progressive du nucléaire, montée en puissance des renouvelables et sobriété énergétique.",
             "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
+          },
+          {
+            "titre": "Pacte agricole",
+            "detail": "Sortie progressive des produits phytosanitaires et des engrais azotés à l'horizon 2050 ; fonds de transition agricole ; régies publiques de l'eau généralisées.",
+            "source": "https://www.terre-net.fr/politique/article/899196/tondelier-devoile-ses-mesures-pour-la-sante-environnementale"
           }
         ],
         "institutions": [
@@ -892,11 +1195,27 @@
             "detail": "Opposition au durcissement des règles migratoires, refus des quotas et du recul du droit du sol.",
             "source": "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027"
           }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "SMIC à 2 000 € brut",
+            "detail": "« SMIC à 2 000 euros brut ».",
+            "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Santé environnementale",
+            "detail": "Approche « One Health » ; interdiction des perturbateurs endocriniens, des substances CMR et des PFAS dans les produits du quotidien ; pas d'aliments ultratransformés dans les cantines ; pas de publicité télévisée pour les produits trop sucrés ou salés avant 21 h.",
+            "source": "https://www.terre-net.fr/politique/article/899196/tondelier-devoile-ses-mesures-pour-la-sante-environnementale"
+          }
         ]
       },
       "sources": [
         "https://www.france-vote.fr/actualites/programme-marine-tondelier-2027",
-        "https://votons-2027.fr/candidats/tondelier/programme"
+        "https://votons-2027.fr/candidats/tondelier/programme",
+        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats",
+        "https://www.terre-net.fr/politique/article/899196/tondelier-devoile-ses-mesures-pour-la-sante-environnementale"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg",
       "biographie": {
@@ -983,6 +1302,11 @@
             "titre": "SMIC à 1 600 € net",
             "detail": "Objectif de revalorisation du salaire minimum.",
             "source": "https://www.wikiglucksmann.fr/programme.html"
+          },
+          {
+            "titre": "Baisse de la CSG sur les salaires",
+            "detail": "Baisser la CSG sur les salaires, financée par une taxation des grandes fortunes et des « méga-héritiers ».",
+            "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
           }
         ],
         "travail": [
@@ -1030,7 +1354,8 @@
       },
       "sources": [
         "https://en.wikipedia.org/wiki/2026_United_Left_primary",
-        "https://www.elyseescope.com/le-radar/raphael-glucksmann-positions-programme-20261005"
+        "https://www.elyseescope.com/le-radar/raphael-glucksmann-positions-programme-20261005",
+        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
       "biographie": {
@@ -1302,6 +1627,16 @@
             "titre": "Brevet obligatoire",
             "detail": "Obtention du brevet obligatoire pour accéder au lycée ; IA intégrée aux programmes dès le collège. « Pacte pour la jeunesse » présenté à Lyon le 10 octobre 2026.",
             "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html"
+          },
+          {
+            "titre": "Enseignants",
+            "detail": "200 à 500 € net de plus par mois pour les enseignants.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Redoublement et groupes de niveau",
+            "detail": "Rétablir le redoublement, groupes de niveau, certificat d'études en fin de CM2, méthode de Singapour en mathématiques, tuteur numérique pour chaque élève.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "travail": [
@@ -1314,6 +1649,21 @@
             "titre": "Former à l'IA",
             "detail": "Former 20 millions de salariés à l'intelligence artificielle en cinq ans.",
             "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html"
+          },
+          {
+            "titre": "Assurance chômage",
+            "detail": "Réforme de l'assurance chômage pour 5 milliards d'euros d'économies.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Part de capitalisation",
+            "detail": "Introduire une part de capitalisation dans les retraites.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "« Constitution du travail »",
+            "detail": "Remplacer le Code du travail par une « Constitution du travail ».",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "economie": [
@@ -1321,6 +1671,21 @@
             "titre": "Pas de nouvel impôt sur le patrimoine",
             "detail": "Baisse des cotisations employeurs et règle d'or budgétaire inscrite dans la Constitution.",
             "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          },
+          {
+            "titre": "Pas de hausse d'impôt pendant 5 ans",
+            "detail": "Aucune hausse d'impôt pendant 5 ans ; loi de programmation économique, fiscale et énergétique sur 10 ans.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Déficit sous 3 % avant 2032",
+            "detail": "Déficit sous 3 % avant 2032 et équilibre de la Sécurité sociale ; 100 000 postes de moins dans l'État et les collectivités.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "200 Md€ pour l'IA",
+            "detail": "200 milliards d'euros pour l'intelligence artificielle.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "pouvoir-achat": [
@@ -1328,6 +1693,16 @@
             "titre": "Salaires",
             "detail": "Hausse du net via la baisse des cotisations plutôt qu'un coup de pouce au SMIC.",
             "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          },
+          {
+            "titre": "13e mois pour les classes moyennes",
+            "detail": "« Droit au brut » : un 13e mois pour les classes moyennes.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Prix de l'électricité et de l'eau",
+            "detail": "Stabilité du prix de l'électricité sur 5 ans ; bouclier sur le prix de l'eau.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "immigration": [
@@ -1335,6 +1710,11 @@
             "titre": "Quotas votés au Parlement",
             "detail": "Quotas d'immigration votés chaque année au Parlement, par secteur ; gestion des frontières parmi ses quatre grands chantiers.",
             "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          },
+          {
+            "titre": "Immigration à points",
+            "detail": "Système à points, quotas revus tous les 2 ans, regroupement familial durci.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "ecologie": [
@@ -1342,12 +1722,56 @@
             "titre": "Nouveaux réacteurs",
             "detail": "Soutien à la construction d'une nouvelle génération de réacteurs nucléaires.",
             "source": "https://www.france-vote.fr/candidats/gabriel-attal"
+          },
+          {
+            "titre": "Ministère de l'Eau",
+            "detail": "Créer un ministère de l'Eau ; multiplier par 5 la géothermie d'ici 2035.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Prix planchers agricoles",
+            "detail": "Prix planchers indexés sur les coûts de production.",
+            "source": "https://attalpresident.fr/programme"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Comparution immédiate des mineurs",
+            "detail": "Comparution immédiate pour les mineurs ; perpétuité réelle pour les prédateurs sexuels en série.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Justice",
+            "detail": "3 000 magistrats et greffiers ; parquet national contre la pédocriminalité ; imprescriptibilité des crimes sexuels sur mineurs.",
+            "source": "https://attalpresident.fr/programme"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Assistant médical IA",
+            "detail": "Un assistant médical d'intelligence artificielle pour chaque Français ; droit à la climatisation.",
+            "source": "https://attalpresident.fr/programme"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Dôme de fer européen",
+            "detail": "Dôme de fer européen et préférence européenne dans les achats de défense ; refus du Mercosur.",
+            "source": "https://attalpresident.fr/programme"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Un jour de référendum par an",
+            "detail": "Une journée de référendum chaque année ; supprimer un échelon de collectivité ; faire du maire l'élu le plus puissant.",
+            "source": "https://attalpresident.fr/programme"
           }
         ]
       },
       "sources": [
         "https://monvote2027.fr/candidat/attal",
-        "https://www.france-vote.fr/candidats/gabriel-attal"
+        "https://www.france-vote.fr/candidats/gabriel-attal",
+        "https://attalpresident.fr/programme"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_in_2026.jpg",
       "biographie": {
@@ -1482,41 +1906,216 @@
       "site": "https://horizonsleparti.fr",
       "bio": "Maire du Havre, président d'Horizons, ancien Premier ministre (2017-2020). Mise sur le travail et la baisse des dépenses publiques.",
       "phares": [
-        "Retraites : 45 annuités et une part de capitalisation",
-        "Non-remplacement d'un fonctionnaire sur trois partant à la retraite",
-        "Chômage : 12 mois d'indemnisation max. pour les moins de 50 ans"
+        "Retraite à 65 ans et 45 annuités",
+        "Diviser par deux l'immigration",
+        "+20 % de rémunération pour les enseignants"
       ],
       "positions": {
         "retraite": {
-          "valeur": "Allongement (45 annuités)",
-          "source": "https://www.journaldunet.com/business/action-publique/1555605-edouard-philippe-devoile-son-projet-de-reforme-des-retraites-pour-la-presidentielle-2027-prevoyant-un-depart-a-65-ans-et-45-annuites/"
+          "valeur": "65 ans, 45 annuités",
+          "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
         },
         "europe": {
           "valeur": "Coopération, pas de fédéralisme",
           "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+        },
+        "nucleaire": {
+          "valeur": "8 EPR supplémentaires",
+          "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+        },
+        "immigration": {
+          "valeur": "Diviser par deux",
+          "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
         }
       },
       "propositions": {
+        "economie": [
+          {
+            "titre": "Baisse des impôts de production",
+            "detail": "« 50 Md€ de baisses d'impôts de production contre 50 Md€ d'aides publiques improductives en moins ».",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Règle d'or par référendum",
+            "detail": "Inscrire dans la Constitution une règle d'or de maîtrise des déficits via un référendum ; ramener le déficit de plus de 5 % à 2 % du PIB à la fin du quinquennat.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Baisse de la dépense publique",
+            "detail": "Supprimer un tiers des fonctionnaires partant à la retraite, soit plus de 250 000 postes sur le quinquennat ; fusionner et supprimer des dizaines d'opérateurs et d'agences.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Ni nouvelle norme ni nouvel impôt",
+            "detail": "« Pas de nouvelle norme et de nouvel impôt sur le quinquennat » ; supprimer le code français de la commande publique ; maintien du pacte Dutreil.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Livret capital France",
+            "detail": "Créer un « livret capital France » pour mobiliser l'épargne au service des champions technologiques.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+          }
+        ],
         "travail": [
           {
-            "titre": "Réforme des retraites",
-            "detail": "Allongement de la durée de cotisation (45 annuités évoquées), mesures de justice sociale et introduction d'une part de capitalisation. Gain estimé par son équipe : 30 Md€/an.",
-            "source": "https://www.journaldunet.com/business/action-publique/1555605-edouard-philippe-devoile-son-projet-de-reforme-des-retraites-pour-la-presidentielle-2027-prevoyant-un-depart-a-65-ans-et-45-annuites/"
+            "titre": "Retraites : 65 ans et 45 annuités",
+            "detail": "Porter progressivement l'âge de départ à 65 ans et la durée de cotisation à 45 ans en moins de dix ans ; départs anticipés (55 ans en situation de handicap, 60 ans en incapacité permanente, 62 ans en invalidité).",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Capitalisation collective",
+            "detail": "Généraliser à tous les salariés la retraite par capitalisation collective, avec un premier versement de l'État de 500 € dès le premier emploi.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Sortir des 35 heures",
+            "detail": "Permettre aux entreprises de fixer librement le temps de travail ; zéro cotisation patronale au-delà de la 37e heure.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
           },
           {
             "titre": "Assurance chômage",
-            "detail": "Durée maximale d'indemnisation ramenée de 18 à 12 mois pour les moins de 50 ans.",
-            "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+            "detail": "Réduire à 12 mois maximum la durée d'indemnisation pour les moins de 50 ans, contre 18 mois aujourd'hui.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Arrêts maladie",
+            "detail": "3 jours de carence pour tous, dans le privé comme dans le public ; période incompressible de 3 à 6 mois entre un arrêt maladie et une rupture conventionnelle.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
           }
         ],
-        "economie": [
+        "pouvoir-achat": [
           {
-            "titre": "Baisse de la dépense publique",
-            "detail": "Non-remplacement d'un tiers des fonctionnaires partant à la retraite (plus de 250 000 postes sur le quinquennat) ; réduction du déficit.",
-            "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+            "titre": "Heures supplémentaires exonérées",
+            "detail": "Exonérer les heures supplémentaires de cotisations sociales et d'impôt sur le revenu : « environ 1 000 € de plus par an au SMIC pour deux heures de plus par semaine ».",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          },
+          {
+            "titre": "Allocation familiale dès le 1er enfant",
+            "detail": "Allocation familiale unique dès le premier enfant, à hauteur de 350 € ; suppression de l'impôt sur le revenu pendant les trois premières années de l'enfant pour les classes moyennes.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "8 EPR supplémentaires",
+            "detail": "Lancement de 8 EPR supplémentaires en plus des 6 déjà prévus.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+          },
+          {
+            "titre": "Prix du carbone aux frontières",
+            "detail": "Instaurer un prix du carbone aux frontières européennes ; investir dans la capture de carbone.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+          },
+          {
+            "titre": "Adaptation au réchauffement",
+            "detail": "Fonds unique d'adaptation (Fonds Barnier et Fonds vert) doté de 2 milliards d'euros par an ; « DATAR 2.0 » ; plan baignade national.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+          },
+          {
+            "titre": "« Canadairs français »",
+            "detail": "Construire en France des « Canadairs français » ; journée nationale d'alerte.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Diviser par deux l'immigration",
+            "detail": "« Diviser par deux l'immigration dans notre pays » ; politique de quotas migratoires.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "Accord de 1968 avec l'Algérie",
+            "detail": "Dénoncer l'accord de 1968 avec l'Algérie.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "Regroupement familial suspendu",
+            "detail": "Suspendre le regroupement familial pour la durée du quinquennat.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "Asile",
+            "detail": "Liste de pays sûrs votée chaque année par le Parlement ; fin de « l'asile à vie ».",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "Droit du sol à Mayotte",
+            "detail": "Suspendre le droit du sol à Mayotte.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Peines planchers",
+            "detail": "Peines planchers pour les infractions les plus graves ; suppression du juge d'application des peines.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "Pouvoir de sanction des maires",
+            "detail": "Donner un pouvoir de sanction pénale aux maires.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "« État d'urgence narco »",
+            "detail": "« État d'urgence narco » limité dans le temps et l'espace ; « fiche S financière » ; lever l'excuse de minorité pour les faits liés au narcotrafic.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "Imprescriptibilité des crimes sur mineur",
+            "detail": "Imprescriptibilité des crimes sur mineur ; « droit de savoir » des parents (loi de Sarah).",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Protection de l'enfance",
+            "detail": "Inspection des lieux accueillant des enfants au moins tous les trois ans ; certificats d'honorabilité dans le périscolaire.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+          },
+          {
+            "titre": "Premiers secours",
+            "detail": "Former tous les Français aux premiers secours.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          }
+        ],
+        "education": [
+          {
+            "titre": "+20 % pour les enseignants",
+            "detail": "Augmenter de 20 % la rémunération moyenne des enseignants sur le quinquennat.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+          },
+          {
+            "titre": "Moins d'élèves par classe",
+            "detail": "Réduire les effectifs en maternelle et en primaire ; avancer la rentrée d'une à deux semaines.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+          },
+          {
+            "titre": "Téléphones interdits",
+            "detail": "Interdire strictement les téléphones portables à l'école primaire et au collège.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+          },
+          {
+            "titre": "Amende de responsabilisation scolaire",
+            "detail": "Créer une « amende de responsabilisation scolaire ».",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+          },
+          {
+            "titre": "Ingénieurs",
+            "detail": "Former de 40 000 à 100 000 ingénieurs par an en cinq ans.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
           }
         ],
         "europe": [
+          {
+            "titre": "Armées",
+            "detail": "Nouvelle loi de programmation militaire « de la massification » ; réservistes de 45 000 à 250 000 ; service militaire volontaire de 3 000 à 50 000 places par an.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          },
+          {
+            "titre": "Buy European Tech Act",
+            "detail": "Mutualiser les achats technologiques européens (« Buy European Tech Act ») ; union européenne des marchés de capitaux.",
+            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+          },
           {
             "titre": "L'UE, cadre indispensable",
             "detail": "L'Union européenne vue comme un « cadre de coopération indispensable », sans aller vers le fédéralisme.",
@@ -1526,7 +2125,11 @@
       },
       "sources": [
         "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
-        "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/"
+        "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/",
+        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
+        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
+        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg",
       "biographie": {
@@ -1618,8 +2221,8 @@
       ],
       "positions": {
         "retraite": {
-          "valeur": "Nouvelle réforme",
-          "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+          "valeur": "63 ans min., taux plein 65",
+          "source": "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html"
         },
         "immigration": {
           "valeur": "Forte baisse (référendum)",
@@ -1651,13 +2254,14 @@
         "travail": [
           {
             "titre": "Réforme des retraites",
-            "detail": "Nouvelle réforme des retraites annoncée dans son entretien au Figaro.",
-            "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+            "detail": "Âge minimal de départ à 63 ans ; taux plein automatique à 65 ans (au lieu de 67), indexé sur l'espérance de vie ; décote de 7 % par an avant 65 ans ; part de capitalisation pour les jeunes ; « 40 milliards d'économies en cumulé sur cinq ans ».",
+            "source": "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html"
           }
         ]
       },
       "sources": [
-        "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+        "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492",
+        "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg",
       "biographie": {
@@ -2237,12 +2841,20 @@
             "detail": "Abandon du Frexit, mais primauté du droit national sur le droit européen dans une « alliance européenne des nations ».",
             "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
           }
+        ],
+        "economie": [
+          {
+            "titre": "Plan de 125 Md€ d'économies",
+            "detail": "Plan de 125 milliards d'euros d'économies présenté au débat du Medef.",
+            "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
+          }
         ]
       },
       "sources": [
         "https://monvote2027.fr/candidat/le-pen",
         "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027",
-        "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-malgre-son-pourvoi-en-cassation-est-elle-toujours-ineligible-comme-laffirment-plusieurs-juristes"
+        "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-malgre-son-pourvoi-en-cassation-est-elle-toujours-ineligible-comme-laffirment-plusieurs-juristes",
+        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg",
       "biographie": {
