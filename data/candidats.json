@@ -902,48 +902,160 @@
       "statut": "déclaré",
       "declaration": "2025-04-01",
       "programme": "partiel",
-      "site": null,
+      "site": "https://nouspresident.fr",
       "bio": "Député de la Somme, journaliste et réalisateur. A quitté LFI et fondé le mouvement Debout ! Se maintient en l'absence de primaire commune.",
       "phares": [
-        "« Président au SMIC »",
-        "Hausse du SMIC",
-        "Fiscalité plus progressive"
+        "Statut des travailleurs essentiels",
+        "200 000 logements abordables par an",
+        "Relocaliser 100 produits stratégiques"
       ],
       "positions": {
         "smic": {
-          "valeur": "Hausse",
-          "source": "https://www.elyseescope.com/questions/francois-ruffin-social"
+          "valeur": "1 600 €",
+          "source": "https://nouspresident.fr/statut-travailleurs-essentiels/"
         },
         "fortune": {
-          "valeur": "Taxer davantage",
-          "source": "https://www.elyseescope.com/questions/francois-ruffin-justice-sociale"
+          "valeur": "Taxe Zucman",
+          "source": "https://nouspresident.fr/notre-programme/"
+        },
+        "retraite": {
+          "valeur": "60 ans",
+          "source": "https://nouspresident.fr/statut-travailleurs-essentiels/"
         }
       },
       "propositions": {
-        "pouvoir-achat": [
-          {
-            "titre": "Hausse du SMIC",
-            "detail": "Revalorisation du salaire minimum et des métiers mal payés.",
-            "source": "https://www.elyseescope.com/questions/francois-ruffin-social"
-          }
-        ],
         "economie": [
           {
-            "titre": "Fiscalité progressive",
-            "detail": "Faire contribuer davantage les plus aisés.",
-            "source": "https://www.elyseescope.com/questions/francois-ruffin-justice-sociale"
+            "titre": "Taxe Zucman et grandes successions",
+            "detail": "Taxe Zucman et imposition des grandes successions.",
+            "source": "https://nouspresident.fr/notre-programme/"
+          },
+          {
+            "titre": "Relocaliser 100 produits stratégiques",
+            "detail": "100 produits stratégiques à relocaliser ; barrières douanières ; « Buy French Act » pour aller vers 80 % de commande publique localisée en France.",
+            "source": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/"
+          },
+          {
+            "titre": "Électricité au coût de production",
+            "detail": "Vendre l'électricité au coût de production.",
+            "source": "https://nouspresident.fr/notre-programme/"
+          },
+          {
+            "titre": "Plus-values immobilières",
+            "detail": "Supprimer l'abattement progressif sur les plus-values immobilières (« au moins 3 milliards d'euros par an » de recettes).",
+            "source": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Statut des travailleurs essentiels",
+            "detail": "« Statut des travailleurs essentiels » : salaires indexés sur l'inflation, heures avant 8 h et après 18 h payées double, un trimestre de retraite supplémentaire pour quatre trimestres travaillés dans un métier pénible.",
+            "source": "https://nouspresident.fr/statut-travailleurs-essentiels/"
+          },
+          {
+            "titre": "Retraite à 60 ans",
+            "detail": "Retraite à 60 ans.",
+            "source": "https://nouspresident.fr/statut-travailleurs-essentiels/"
+          },
+          {
+            "titre": "Sous-traitance et intérim",
+            "detail": "Mêmes droits pour les salariés sous-traitants que pour ceux de l'entreprise donneuse d'ordre ; sanctions contre les renouvellements d'intérim en cycles.",
+            "source": "https://nouspresident.fr/statut-travailleurs-essentiels/"
+          }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "SMIC à 1 600 €",
+            "detail": "SMIC à 1 600 €.",
+            "source": "https://nouspresident.fr/statut-travailleurs-essentiels/"
+          },
+          {
+            "titre": "200 000 logements abordables par an",
+            "detail": "200 000 nouveaux logements par an à loyer abordable, dont 40 000 pour les étudiants et jeunes actifs ; encadrement des loyers sur tout le territoire ; abrogation de la loi Kasbarian-Bergé.",
+            "source": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/"
+          },
+          {
+            "titre": "Prêt à taux zéro doublé",
+            "detail": "Doubler les montants du prêt à taux zéro, d'environ 60 000 à 120 000 € en moyenne.",
+            "source": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Rénovation des logements",
+            "detail": "Un million de rénovations par an, dont 600 000 rénovations globales ; fin des passoires thermiques en 2032.",
+            "source": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/"
+          },
+          {
+            "titre": "Plan urgence climat",
+            "detail": "Renfort des pompiers et de la sécurité civile, achat de 16 Canadair ; leasing social pour 3 millions de « gros rouleurs » ; dividende climatique.",
+            "source": "https://nouspresident.fr/notre-programme/"
+          },
+          {
+            "titre": "Centres de données",
+            "detail": "Moratoire de cinq ans sur les projets qui ne servent pas la souveraineté nationale ; droit de veto des communes.",
+            "source": "https://nouspresident.fr/notre-programme/"
+          },
+          {
+            "titre": "Exception agricole",
+            "detail": "« En 2032, la terre nourrit ceux qui la cultivent » : un « juste prix » pour les agriculteurs.",
+            "source": "https://nouspresident.fr/notre-programme/"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Pôle public du médicament",
+            "detail": "Créer un pôle public du médicament.",
+            "source": "https://nouspresident.fr/notre-programme/"
+          },
+          {
+            "titre": "Santé scolaire",
+            "detail": "Au moins un infirmier et un psychologue scolaire par établissement du secondaire.",
+            "source": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/"
           }
         ],
         "education": [
           {
-            "titre": "Plus de moyens pour l'école",
-            "detail": "Augmentation des moyens alloués à l'éducation.",
-            "source": "https://www.elyseescope.com/le-radar/francois-ruffin-education"
+            "titre": "Fin de Parcoursup",
+            "detail": "Supprimer Parcoursup.",
+            "source": "https://nouspresident.fr/notre-programme/"
+          },
+          {
+            "titre": "Savoirs techniques et pratiques",
+            "detail": "Une matière « Savoirs techniques et pratiques » au collège ; CAP en 3 ans et bac pro en 4 ans.",
+            "source": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/"
+          },
+          {
+            "titre": "Statut des AESH",
+            "detail": "Statut de fonctionnaire pour les AESH, avec un temps plein de 24 heures d'accompagnement.",
+            "source": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/"
+          },
+          {
+            "titre": "Budget de l'école",
+            "detail": "Aucune baisse du budget, remonté « au moins jusqu'à son niveau des années 2000 » ; États généraux de l'éducation dès 2027.",
+            "source": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Fin de l'immunité présidentielle",
+            "detail": "Fin de l'immunité pénale et civile du président ; suppression de la Cour de justice de la République ; démission immédiate d'un ministre mis en examen.",
+            "source": "https://nouspresident.fr/separation-argent-etat/"
+          },
+          {
+            "titre": "Haute Autorité à la probité",
+            "detail": "Fusion des organismes de contrôle dans une Haute Autorité à la probité ; délai de dix ans avant qu'un ancien ministre rejoigne le privé ; plafonnement des dépenses de lobbying.",
+            "source": "https://nouspresident.fr/separation-argent-etat/"
           }
         ]
       },
       "sources": [
-        "https://www.lyoncapitale.fr/?p=495954"
+        "https://nouspresident.fr/notre-programme/",
+        "https://nouspresident.fr/statut-travailleurs-essentiels/",
+        "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/",
+        "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/",
+        "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/",
+        "https://nouspresident.fr/separation-argent-etat/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:François_Ruffin_(cropped).jpg",
       "biographie": {
@@ -1321,6 +1433,16 @@
             "titre": "ISF climatique",
             "detail": "Rétablir un impôt sur la fortune à visée climatique.",
             "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann"
+          },
+          {
+            "titre": "État d'urgence industriel",
+            "detail": "« L'état d'urgence industriel pour tous les secteurs menacés par la Chine ».",
+            "source": "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir"
+          },
+          {
+            "titre": "Taxer les très gros héritages",
+            "detail": "Hausse de l'imposition des très gros héritages pour financer la baisse des prélèvements sur les salaires (15 milliards d'euros selon l'estimation citée).",
+            "source": "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/"
           }
         ],
         "ecologie": [
@@ -1328,6 +1450,11 @@
             "titre": "Sortir du charbon, garder le nucléaire en transition",
             "detail": "Sortie immédiate du charbon ; nucléaire maintenu le temps de la transition.",
             "source": "https://elections.chiffrex.fr/candidat/raphael-glucksmann"
+          },
+          {
+            "titre": "Voiture électrique à 100 € par mois",
+            "detail": "Accès des ménages modestes à une voiture électrique « contre un loyer de 100 euros par mois ».",
+            "source": "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir"
           }
         ],
         "europe": [
@@ -1350,12 +1477,21 @@
             "detail": "Opposé à de fortes réductions de l'immigration légale par quotas ; l'installation en France « n'est pas un droit universel ».",
             "source": "https://www.france-vote.fr/candidats/raphael-glucksmann"
           }
+        ],
+        "education": [
+          {
+            "titre": "Plan de sauvetage de l'école publique",
+            "detail": "Un « plan de sauvetage » de l'école publique.",
+            "source": "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/"
+          }
         ]
       },
       "sources": [
         "https://en.wikipedia.org/wiki/2026_United_Left_primary",
         "https://www.elyseescope.com/le-radar/raphael-glucksmann-positions-programme-20261005",
-        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
+        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats",
+        "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir",
+        "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
       "biographie": {
@@ -2235,6 +2371,11 @@
             "titre": "Référendum sur l'immigration",
             "detail": "Soumettre une forte baisse de l'immigration à référendum.",
             "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+          },
+          {
+            "titre": "AME et prestations sociales",
+            "detail": "Supprimer l'aide médicale d'État, sauf soins urgents ; délai de cinq ans avant qu'un étranger perçoive des prestations sociales ; quotas et baisse des visas, y compris étudiants ; centres de retour à l'étranger dans des pays volontaires.",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-bruno-retailleau-promet-d-organiser-un-referendum-sur-l-immigration-en-cas-de-victoire-l-express-via-6medias-CNT000002txUGH.html"
           }
         ],
         "securite": [
@@ -2242,6 +2383,11 @@
             "titre": "Narcotrafic",
             "detail": "État d'urgence dans les quartiers touchés et réforme de la justice pénale, elle aussi par référendum.",
             "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+          },
+          {
+            "titre": "Juge d'application des peines",
+            "detail": "« La suppression ou l'encadrement drastique » du juge d'application des peines ; rétablir les courtes peines de prison.",
+            "source": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html"
           }
         ],
         "economie": [
@@ -2256,12 +2402,19 @@
             "titre": "Réforme des retraites",
             "detail": "Âge minimal de départ à 63 ans ; taux plein automatique à 65 ans (au lieu de 67), indexé sur l'espérance de vie ; décote de 7 % par an avant 65 ans ; part de capitalisation pour les jeunes ; « 40 milliards d'économies en cumulé sur cinq ans ».",
             "source": "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html"
+          },
+          {
+            "titre": "RSA",
+            "detail": "Allocations sociales plafonnées à 70 % du SMIC ; « 15 heures d'activité pour le RSA » ; « seuil zéro charge » au-delà de 1 623 heures travaillées par an.",
+            "source": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html"
           }
         ]
       },
       "sources": [
         "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492",
-        "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html"
+        "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html",
+        "https://actu.orange.fr/politique/presidentielle-2027-bruno-retailleau-promet-d-organiser-un-referendum-sur-l-immigration-en-cas-de-victoire-l-express-via-6medias-CNT000002txUGH.html",
+        "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg",
       "biographie": {
@@ -2346,6 +2499,14 @@
         "nucleaire": {
           "valeur": "Pour (6 EPR + SMR)",
           "source": "https://www.elyseescope.com/candidat/david-lisnard/energie-q16-"
+        },
+        "retraite": {
+          "valeur": "65 ans + capitalisation",
+          "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
+        },
+        "immigration": {
+          "valeur": "Quotas, fin des régularisations",
+          "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
         }
       },
       "propositions": {
@@ -2354,6 +2515,21 @@
             "titre": "Libérer l'économie",
             "detail": "Baisse des impôts de production, simplification administrative, équilibre budgétaire inscrit dans la Constitution, dépense publique sous 50 % du PIB en dix ans.",
             "source": "https://votons-2027.fr/candidats/lisnard/programme"
+          },
+          {
+            "titre": "Diviser par deux les impôts de production",
+            "detail": "Supprimer la C3S et, si nécessaire, la CVAE, pour ramener les impôts de production de 2 % à 1 % du PIB.",
+            "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
+          },
+          {
+            "titre": "Contrat de travail unique",
+            "detail": "Contrat unique pour les nouvelles embauches, fusionnant CDI et CDD, avec indemnités de licenciement progressives.",
+            "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
+          },
+          {
+            "titre": "Abroger l'article 55 de la loi SRU",
+            "detail": "Abroger l'obligation de 20 à 25 % de logements sociaux.",
+            "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
           }
         ],
         "ecologie": [
@@ -2369,10 +2545,39 @@
             "detail": "Hausse de 20 % de la rémunération des enseignants en cinq ans, conditionnée à une réorganisation du système.",
             "source": "https://www.elyseescope.com/candidat/david-lisnard/education-q27-"
           }
+        ],
+        "travail": [
+          {
+            "titre": "Retraite à 65 ans et capitalisation",
+            "detail": "Âge légal à 65 ans ; pension de base par répartition dès 65 ans et minimum vieillesse de 1 000 € par mois ; le reste en capitalisation obligatoire.",
+            "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Police et justice",
+            "detail": "Plan de dix ans pour la police nationale ; budget de la justice porté à la moyenne européenne ; doublement du nombre de procureurs.",
+            "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Fin des régularisations",
+            "detail": "Aucune régularisation après une entrée illégale ; quotas selon les besoins économiques ; « un référendum sera nécessaire » pour réviser la Constitution ou renégocier les traités.",
+            "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Politique familiale",
+            "detail": "Déplafonnement du quotient familial, investissement dans l'accueil des jeunes enfants.",
+            "source": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
+          }
         ]
       },
       "sources": [
-        "https://votons-2027.fr/candidats/lisnard/programme"
+        "https://votons-2027.fr/candidats/lisnard/programme",
+        "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg",
       "biographie": {
@@ -2628,25 +2833,26 @@
       "site": null,
       "bio": "Président des Patriotes. Prône la sortie de l'Union européenne (Frexit). Se retirerait au profit d'un candidat souverainiste plus rassembleur.",
       "phares": [
-        "Sortie de l'Union européenne (Frexit)"
+        "Sortie de l'Union européenne et de l'OTAN"
       ],
       "positions": {
         "europe": {
-          "valeur": "Frexit (référendum)",
-          "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+          "valeur": "Sortie de l'UE et de l'OTAN",
+          "source": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
         }
       },
       "propositions": {
         "europe": [
           {
-            "titre": "Frexit",
-            "detail": "Sortie de l'Union européenne (Frexit) par référendum.",
-            "source": "https://www.elyseescope.com/questions/europe-2027-les-candidats-favorables-ou-hostiles-a-l-ue"
+            "titre": "Sortie de l'UE et de l'OTAN",
+            "detail": "Favorable à « une sortie de la France de l'Union européenne et de l'Otan ».",
+            "source": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
           }
         ]
       },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Florian_Philippot.jpg",
       "biographie": {
@@ -2812,6 +3018,11 @@
             "titre": "Retraite à 62 ans",
             "detail": "Retour à 62 ans, voire 60 ans pour ceux ayant commencé tôt ; confirmé au débat du Medef du 27 août 2026.",
             "source": "https://monvote2027.fr/candidat/le-pen"
+          },
+          {
+            "titre": "Pilier de capitalisation",
+            "detail": "Réforme de la capitalisation individuelle et collective, avec un « pilier de capitalisation ».",
+            "source": "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400"
           }
         ],
         "pouvoir-achat": [
@@ -2833,6 +3044,11 @@
             "titre": "Tout nucléaire",
             "detail": "Relance massive du nucléaire et moratoire sur l'éolien et le solaire.",
             "source": "https://presi2027.fr/candidat/lepen"
+          },
+          {
+            "titre": "Fin des aides aux renouvelables",
+            "detail": "Supprimer les aides publiques aux énergies renouvelables ; MaPrimeRénov intégrée à un plan « 100 % rénov' » (isolation et climatisation) ; neutralité carbone « avant 2050 ».",
+            "source": "https://vert.eco/chaleurs-actuelles/marine-le-pen-presente-le-contre-budget-du-rn-pour-2027-une-attaque-contre-les-renouvelables-et-les-agences-environnementales/"
           }
         ],
         "europe": [
@@ -2844,9 +3060,19 @@
         ],
         "economie": [
           {
-            "titre": "Plan de 125 Md€ d'économies",
-            "detail": "Plan de 125 milliards d'euros d'économies présenté au débat du Medef.",
-            "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
+            "titre": "140 Md€ d'économies d'ici 2032",
+            "detail": "Contre-budget : « 140 milliards d'euros nets d'économie » d'ici 2032 ; déficit sous 3 % en 2030 ; dette ramenée à 112 % du PIB ; baisse nette d'impôts de 30 milliards d'euros sur le quinquennat ; baisse de la contribution française à l'UE.",
+            "source": "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400"
+          },
+          {
+            "titre": "Règle d'or budgétaire",
+            "detail": "« Règle d'or budgétaire » adoptée par référendum, imposant une baisse de la dette chaque année.",
+            "source": "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400"
+          },
+          {
+            "titre": "Suppression d'agences",
+            "detail": "Supprimer « la quasi-totalité des agences et autres organismes parasites » ; 3,4 milliards d'euros d'économies sur les opérateurs de l'État.",
+            "source": "https://vert.eco/chaleurs-actuelles/marine-le-pen-presente-le-contre-budget-du-rn-pour-2027-une-attaque-contre-les-renouvelables-et-les-agences-environnementales/"
           }
         ]
       },
@@ -2854,7 +3080,9 @@
         "https://monvote2027.fr/candidat/le-pen",
         "https://www.elyseescope.com/le-radar/programme-marine-le-pen-2027",
         "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-malgre-son-pourvoi-en-cassation-est-elle-toujours-ineligible-comme-laffirment-plusieurs-juristes",
-        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
+        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats",
+        "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400",
+        "https://vert.eco/chaleurs-actuelles/marine-le-pen-presente-le-contre-budget-du-rn-pour-2027-une-attaque-contre-les-renouvelables-et-les-agences-environnementales/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg",
       "biographie": {
@@ -2960,10 +3188,18 @@
             "detail": "Rejet du fédéralisme ; primauté du droit français sur le droit européen et la CEDH.",
             "source": "https://candidats-presidentielle-2027.fr/candidat/eric-zemmour"
           }
+        ],
+        "securite": [
+          {
+            "titre": "Renvoi des délinquants étrangers",
+            "detail": "« Il faut renvoyer tous les étrangers qui sont dans les prisons françaises » et « tous les délinquants étrangers, même ceux qui ne sont pas en prison ».",
+            "source": "https://www.planet.fr/2027-officiellement-candidat-eric-zemmour-propose-dexpulser-tous-les-detenus-et-chomeurs-etrangers.2999311.817022.html"
+          }
         ]
       },
       "sources": [
-        "https://monvote2027.fr/candidat/zemmour"
+        "https://monvote2027.fr/candidat/zemmour",
+        "https://www.planet.fr/2027-officiellement-candidat-eric-zemmour-propose-dexpulser-tous-les-detenus-et-chomeurs-etrangers.2999311.817022.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Portrait_d'Éric_Zemmour,_avril_2022.jpg",
       "biographie": {
@@ -3006,14 +3242,38 @@
       "slogan": "Nous sommes la France",
       "statut": "déclarée",
       "declaration": "2026-10-14",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": null,
       "bio": "Journaliste et essayiste, ancienne directrice de la rédaction de Marianne.",
-      "phares": [],
+      "phares": [
+        "Augmenter les salaires de 20 à 30 %",
+        "État d'urgence de la production"
+      ],
       "positions": {},
-      "propositions": {},
+      "propositions": {
+        "pouvoir-achat": [
+          {
+            "titre": "Hausse des salaires",
+            "detail": "« Augmenter les salaires de 20 à 30 % ».",
+            "source": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "État d'urgence de la production",
+            "detail": "« Un état d'urgence de la production » ; priorité à la production nationale dans la commande publique.",
+            "source": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808"
+          },
+          {
+            "titre": "Aides aux entreprises",
+            "detail": "Fin des aides aux entreprises qui ne sont pas liées à une production sur le sol national.",
+            "source": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808"
+          }
+        ]
+      },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Natacha_Polony_Cannes_2015.jpg",
       "biographie": {
