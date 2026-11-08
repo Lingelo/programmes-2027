@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-07",
+ "recupereLe": "2026-11-08",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -613,7 +613,7 @@
     "eco1": 2,
     "eco2": -2,
     "eco3": -2,
-    "eco4": 1,
+    "eco4": 2,
     "soc1": 2,
     "soc2": 2,
     "soc3": -2,
@@ -653,10 +653,10 @@
    },
    "sources": {
     "eco1": {
-     "url": "https://web.archive.org/web/20260829203005/https://melenchon2027.fr/programme2025/livre/chapitre6/s5/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 6 : Partage des richesses, « Faire la révolution fiscale » (archive Wayback du 29/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 2, chapitre 2 : Partager les richesses, « Faire la révolution fiscale »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "eco2": {
      "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
@@ -671,40 +671,40 @@
      "date": "2026-10-14"
     },
     "eco4": {
-     "url": "https://web.archive.org/web/20260517180814/https://melenchon2027.fr/programme2025/livre/chapitre16/s5/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 16 : Une diplomatie altermondialiste pour la paix, « Refuser le libre-échange, instaurer un protectionnisme écologique et la coopération économique » (archive Wayback du 17/05/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 1, chapitre 2 : Produire nous-mêmes pour répondre aux besoins, « Refuser la concurrence généralisée »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "soc1": {
-     "url": "https://web.archive.org/web/20260907170933/https://melenchon2027.fr/programme2025/livre/chapitre8/s8/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Garantir une retraite digne » (archive Wayback du 07/09/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 3, chapitre 1 : À chacun selon ses besoins, « Garantir une retraite digne »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "soc2": {
-     "url": "https://web.archive.org/web/20260829202700/https://melenchon2027.fr/programme2025/livre/chapitre8/s4/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Augmenter les salaires et réduire les inégalités salariales dans l’entreprise » (archive Wayback du 29/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 2, chapitre 2 : Partager les richesses, « Augmenter les salaires »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "soc3": {
-     "url": "https://web.archive.org/web/20260829202700/https://melenchon2027.fr/programme2025/livre/chapitre8/s5/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Rétablir une assurance-chômage protectrice » (archive Wayback du 29/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 3, chapitre 1 : À chacun selon ses besoins, « Rétablir une assurance chômage protectrice »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "soc4": {
-     "url": "https://web.archive.org/web/20260829202700/https://melenchon2027.fr/programme2025/livre/chapitre8/s2/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 8 : Travailler tous, travailler moins, travailler mieux, « Réduire le temps de travail et faire naître une société du temps choisi » (archive Wayback du 29/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 3, chapitre 1 : À chacun selon ses besoins, « Réduire le temps de travail et faire naître une société du temps choisi »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "imm1": {
-     "url": "https://web.archive.org/web/20260821172156/https://melenchon2027.fr/programme2025/livre/chapitre16/s7/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 16 : Une diplomatie altermondialiste pour la paix, « Pour une politique migratoire humaniste et réaliste » (archive Wayback du 21/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 3 : Les nouvelles coopérations de la diplomatie altermondialiste, « Pour une politique migratoire humaniste et réaliste »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "imm2": {
      "url": "https://www.bfmtv.com/politique/la-france-insoumise/il-faut-faciliter-l-acces-a-la-nationalite-francaise-melenchon-veut-inscrire-le-droit-du-sol-dans-la-constitution_AN-202502120629.html",
@@ -713,10 +713,10 @@
      "date": "2025-02-12"
     },
     "imm3": {
-     "url": "https://web.archive.org/web/20260821172156/https://melenchon2027.fr/programme2025/livre/chapitre16/s7/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 16 : Une diplomatie altermondialiste pour la paix, « Pour une politique migratoire humaniste et réaliste » (archive Wayback du 21/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 3 : Les nouvelles coopérations de la diplomatie altermondialiste, « Pour une politique migratoire humaniste et réaliste »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "imm4": null,
     "sec1": {
@@ -734,27 +734,27 @@
     "sec3": null,
     "sec4": null,
     "env1": {
-     "url": "https://web.archive.org/web/20260821172237/https://melenchon2027.fr/programme2025/livre/chapitre13/s3/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 13 : Les grands chantiers de la bifurcation écologique, « Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique » (archive Wayback du 21/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 1, chapitre 3 : Les grands chantiers de la bifurcation écologique, « Organiser le 100 % d’énergies renouvelables »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "env2": null,
     "env3": null,
     "env4": null,
     "eur1": {
-     "url": "https://web.archive.org/web/20260826110548/https://melenchon2027.fr/programme2025/livre/chapitre17/s1/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 17 : Europe, « Utiliser tous les leviers d’action face aux institutions européennes » (archive Wayback du 26/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 1 : Se libérer du libéralisme en Europe",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "eur2": null,
     "eur3": null,
     "eur4": {
-     "url": "https://web.archive.org/web/20260826110548/https://melenchon2027.fr/programme2025/livre/chapitre17/s1/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 17 : Europe, « Utiliser tous les leviers d’action face aux institutions européennes » (archive Wayback du 26/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 1 : Se libérer du libéralisme en Europe",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "int1": {
      "url": "https://www.france24.com/fr/europe/20220301-jean-luc-m%C3%A9lenchon-regrette-la-fourniture-d-armes-%C3%A0-l-ukraine-par-l-ue",
@@ -766,22 +766,27 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 5, chapitre 1 : Le pouvoir au peuple",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
     "san2": null,
     "san3": {
-     "url": "https://web.archive.org/web/20260830154224/https://melenchon2027.fr/programme2025/livre/chapitre4/s1/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 4 : Étendre le domaine de la liberté, « Une nouvelle étape des libertés et de l’émancipation individuelle » (archive Wayback du 30/08/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 3, chapitre 2 : Une République de l’égalité réelle et des droits nouveaux, « Une nouvelle étape des libertés et de l’émancipation individuelle »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "san4": {
-     "url": "https://web.archive.org/web/20260506110604/https://melenchon2027.fr/programme2025/livre/chapitre15/s2/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 15 : Une approche de santé globale, « Faire passer la santé d’abord et reconstruire les établissements de santé publics, notamment les hôpitaux » (archive Wayback du 06/05/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 3, chapitre 1 : À chacun selon ses besoins, « Construire la Sécurité sociale intégrale »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "edu1": {
      "url": "https://melenchon.fr/2023/08/29/abaya-la-prise-de-tete-de-trop/",
@@ -791,10 +796,10 @@
     },
     "edu2": null,
     "edu3": {
-     "url": "https://web.archive.org/web/20260504205622/https://melenchon2027.fr/programme2025/livre/chapitre5/s3/",
-     "titre": "L’Avenir en commun (édition 2025) — Chapitre 5 : Élever le niveau d’instruction, « Reconstruire une école globale pour l’égalité et l’émancipation » (archive Wayback du 04/05/2026)",
+     "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 2 : Élever le niveau d’éducation et de savoirs, « Reconstruire une école globale pour l’égalité et l’émancipation »",
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
-     "date": "2025"
+     "date": "2026-11-06"
     },
     "edu4": {
      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
@@ -1074,7 +1079,7 @@
     "sec3": 2,
     "sec4": -2,
     "ins1": 2,
-    "ins2": 2,
+    "ins2": 1,
     "ins3": 2,
     "ins4": 1,
     "env1": 1,
@@ -1130,7 +1135,12 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -1443,7 +1453,7 @@
     "sec3": 1,
     "sec4": -1,
     "ins1": -1,
-    "ins2": 1,
+    "ins2": 2,
     "ins3": 0,
     "ins4": -1,
     "env1": 1,
@@ -1539,7 +1549,12 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://www.franceinfo.fr/politique/proportionnelle-aux-elections-legislatives-qu-en-pensent-les-differents-partis-politiques_7271859.html",
+     "titre": "Proportionnelle aux élections législatives : qu’en pensent les différents partis politiques ?",
+     "editeur": "franceinfo",
+     "date": "2025-05-26"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -1591,7 +1606,7 @@
     "sec3": -1,
     "sec4": -1,
     "ins1": -2,
-    "ins2": -1,
+    "ins2": 0,
     "ins3": -2,
     "ins4": -2,
     "env1": 2,
@@ -1672,7 +1687,12 @@
     },
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
+     "titre": "Tenir la promesse de la France — Les propositions de la lettre de Bernard Cazeneuve",
+     "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
+     "date": "2026"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -2194,7 +2214,12 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://www.franceinfo.fr/politique/proportionnelle-aux-elections-legislatives-qu-en-pensent-les-differents-partis-politiques_7271859.html",
+     "titre": "Proportionnelle aux élections législatives : qu’en pensent les différents partis politiques ?",
+     "editeur": "franceinfo",
+     "date": "2025-05-26"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -2322,7 +2347,12 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/elections-legislatives-xavier-bertrand-se-veut-rassembleur_5180029.html",
+     "titre": "Élections législatives : Xavier Bertrand se veut rassembleur",
+     "editeur": "franceinfo (France 3)",
+     "date": "2022-06-05"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -2638,7 +2668,12 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/hostile-a-la-proportionnelle-bruno-retailleau-necarte-pas-une-demission-du-gouvernement",
+     "titre": "Hostile à la proportionnelle, Bruno Retailleau n’écarte pas une démission du gouvernement",
+     "editeur": "Public Sénat",
+     "date": "2025-06-02"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -2776,7 +2811,12 @@
      "editeur": "Debout la France (site officiel du parti)",
      "date": "2026"
     },
-    "ins2": null,
+    "ins2": {
+     "url": "https://archives.anticor.org/wp-content/uploads/2022/02/REPONSE-N-DUPONT-AIGNAN-ANTICOR.pdf",
+     "titre": "Réponse de Nicolas Dupont-Aignan à la lettre ouverte d’Anticor aux candidats à l’élection présidentielle",
+     "editeur": "Anticor (lettre signée de Nicolas Dupont-Aignan)",
+     "date": "2022-02-24"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -2884,7 +2924,12 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2022"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
@@ -3180,7 +3225,12 @@
     "int3": null,
     "int4": null,
     "ins1": null,
-    "ins2": null,
+    "ins2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/legislatives-marine-le-pen-prete-a-defendre-le-retour-la-proportionnelle-integrale-de-1986-0",
+     "titre": "Législatives : Marine Le Pen prête à « défendre » le retour de la proportionnelle intégrale de 1986",
+     "editeur": "Public Sénat",
+     "date": "2025-04-30"
+    },
     "ins3": null,
     "ins4": null,
     "san1": null,
