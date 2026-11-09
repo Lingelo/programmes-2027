@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-08",
+ "recupereLe": "2026-11-09",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -481,7 +481,12 @@
     "int4": null,
     "ins1": null,
     "ins2": null,
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.lutte-ouvriere.org/journal/article/2017-02-01-la-vie-republique-un-leurre_76178.html",
+     "titre": "La VIe République : un leurre",
+     "editeur": "Lutte ouvrière",
+     "date": "2017-02-01"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -528,7 +533,7 @@
     "sec4": -2,
     "ins1": 0,
     "ins2": 1,
-    "ins3": 1,
+    "ins3": 2,
     "ins4": -1,
     "env1": -1,
     "env2": 1,
@@ -589,7 +594,12 @@
     "int4": null,
     "ins1": null,
     "ins2": null,
-    "ins3": null,
+    "ins3": {
+     "url": "https://anasse2027.fr/programme",
+     "titre": "Programme — Anasse Kazib 2027",
+     "editeur": "Anasse Kazib 2027 (site officiel de campagne)",
+     "date": "2026"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -602,7 +612,7 @@
    },
    "boussole": {
     "eco": -96,
-    "soc": -55
+    "soc": -57
    }
   },
   "melenchon": {
@@ -772,7 +782,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "ins3": null,
+    "ins3": {
+     "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1/",
+     "titre": "L’Avenir en commun, 5e édition — Partie 5 « Fonder la 6e République », chapitre 1 « Le pouvoir au peuple »",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -1028,7 +1043,12 @@
     "int4": null,
     "ins1": null,
     "ins2": null,
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/rejet-du-rip-constitution-de-la-ve-republique-violences-dans-les-manifestations-ce-qu-il-faut-retenir-de-l-interview-de-fabien-roussel_5780621.html",
+     "titre": "Rejet du RIP, Constitution de la Ve République, violences dans les manifestations... Ce qu’il faut retenir de l’interview de Fabien Roussel",
+     "editeur": "franceinfo",
+     "date": "2023-05-04"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -1299,7 +1319,12 @@
     "int4": null,
     "ins1": null,
     "ins2": null,
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.france24.com/fr/info-en-continu/20260713-2027-les-ecologistes-veulent-instaurer-la-premi%C3%A8re-r%C3%A9publique-%C3%A9cologique-et-citoyenne",
+     "titre": "2027: les Ecologistes veulent instaurer la \"Première République écologique et citoyenne\"",
+     "editeur": "France 24 (AFP)",
+     "date": "2026-07-13"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -1607,7 +1632,7 @@
     "sec4": -1,
     "ins1": -2,
     "ins2": 0,
-    "ins3": -2,
+    "ins3": -1,
     "ins4": -2,
     "env1": 2,
     "env2": 0,
@@ -1693,7 +1718,12 @@
      "editeur": "La Convention (synthèse de campagne de Bernard Cazeneuve)",
      "date": "2026"
     },
-    "ins3": null,
+    "ins3": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf?1784151599",
+     "titre": "Lettre aux Françaises et aux Français",
+     "editeur": "La Convention (lettre de Bernard Cazeneuve)",
+     "date": "2026-07-15"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -1711,7 +1741,7 @@
    },
    "boussole": {
     "eco": -17,
-    "soc": -32
+    "soc": -34
    }
   },
   "bouamrane": {
@@ -2042,7 +2072,12 @@
     "int4": null,
     "ins1": null,
     "ins2": null,
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.cnews.fr/france/2026-08-02/decentralisation-justice-immigration-gabriel-attal-promet-la-plus-grande-reforme",
+     "titre": "Décentralisation, justice, immigration... Gabriel Attal promet «la plus grande réforme institutionnelle depuis 1958» s’il est élu",
+     "editeur": "CNews",
+     "date": "2026-08-02"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -2220,7 +2255,12 @@
      "editeur": "franceinfo",
      "date": "2025-05-26"
     },
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/reforme-constitutionnelle-les-annonces-d-edouard-philippe-84367",
+     "titre": "Réforme constitutionnelle : les annonces d’Édouard Philippe",
+     "editeur": "Public Sénat",
+     "date": "2018-04-04"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -2353,7 +2393,12 @@
      "editeur": "franceinfo (France 3)",
      "date": "2022-06-05"
     },
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.cnews.fr/france/2026-09-02/presidentielle-2027-ces-responsables-politiques-qui-plaident-pour-un-retour-du",
+     "titre": "Présidentielle 2027 : ces responsables politiques qui plaident pour un retour du septennat",
+     "editeur": "CNews",
+     "date": "2026-09-02"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -2476,7 +2521,12 @@
     "int4": null,
     "ins1": null,
     "ins2": null,
-    "ins3": null,
+    "ins3": {
+     "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+     "titre": "Discours de David Lisnard à Bayeux",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-06-17"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -2674,7 +2724,12 @@
      "editeur": "Public Sénat",
      "date": "2025-06-02"
     },
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-propose-une-revolution-copernicienne-dans-laquelle-la-constitution-ne-serait-plus-le-bouclier-qui-prote",
+     "titre": "Présidentielle 2027 : « Bruno Retailleau propose une révolution copernicienne » dans laquelle « la Constitution ne serait plus le bouclier » qui protège les institutions, relèvent les juristes",
+     "editeur": "Public Sénat",
+     "date": "2026-09-03"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -2817,7 +2872,12 @@
      "editeur": "Anticor (lettre signée de Nicolas Dupont-Aignan)",
      "date": "2022-02-24"
     },
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.debout-la-france.fr/wp-content/uploads/2026/06/Refonder-et-moraliser-notre-democratie-2026_06-09_Livret.pdf",
+     "titre": "Refonder et moraliser notre démocratie — livret",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026-06-09"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
@@ -3231,7 +3291,12 @@
      "editeur": "Public Sénat",
      "date": "2025-04-30"
     },
-    "ins3": null,
+    "ins3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-detaille-sa-revolution-referendaire-202358",
+     "titre": "Marine Le Pen détaille sa « révolution référendaire »",
+     "editeur": "Public Sénat",
+     "date": "2022-04-12"
+    },
     "ins4": null,
     "san1": null,
     "san2": null,
