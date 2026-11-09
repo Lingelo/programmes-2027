@@ -1249,129 +1249,235 @@
       "slogan": "Tenez bon, nous arrivons !",
       "statut": "désignée",
       "declaration": "2026-09-21",
-      "programme": "partiel",
+      "programme": "complet",
       "site": "https://lesecologistes.fr",
       "bio": "Secrétaire nationale des Écologistes, conseillère municipale d'Hénin-Beaumont. Programme : « Pour une prospérité écologique » (juillet 2026).",
       "phares": [
         "SMIC à 2 000 € brut dès 2027",
-        "Taxe Zucman de 2 % au-delà de 100 M€",
-        "Neutralité carbone en 2040"
+        "Taxe Zucman et ISF climatique",
+        "Retraite à 62 ans, puis 60"
       ],
       "positions": {
         "retraite": {
-          "valeur": "62 ans (60 pour les métiers pénibles)",
-          "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+          "valeur": "62 ans, puis 60",
+          "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
         },
         "smic": {
           "valeur": "2 000 € brut",
-          "source": "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
+          "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
         },
         "fortune": {
-          "valeur": "Taxe Zucman",
-          "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+          "valeur": "Taxe Zucman + ISF climatique",
+          "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
         },
         "nucleaire": {
           "valeur": "Sortie en 20 ans",
-          "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+          "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+        },
+        "immigration": {
+          "valeur": "Régularisations",
+          "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+        },
+        "europe": {
+          "valeur": "Saut fédéral",
+          "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
         }
       },
       "propositions": {
-        "ecologie": [
+        "economie": [
           {
-            "titre": "Pacte agricole",
-            "detail": "Sortie progressive des produits phytosanitaires et des engrais azotés à l'horizon 2050 ; fonds de transition agricole ; régies publiques de l'eau généralisées.",
-            "source": "https://www.terre-net.fr/politique/article/899196/tondelier-devoile-ses-mesures-pour-la-sante-environnementale"
+            "titre": "Taxe Zucman et ISF climatique",
+            "detail": "Taxe Zucman de 2 % au-delà de 100 millions d'euros de patrimoine ; rétablir l'ISF avec une composante climatique ; exit tax étendue.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           },
           {
-            "titre": "Neutralité carbone en 2040",
-            "detail": "Sortie du nucléaire en « une vingtaine d'années » ; « trajectoire de neutralité carbone à 2040 ».",
-            "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+            "titre": "Héritages",
+            "detail": "Barème progressif unique, avec deux tranches supplémentaires au-delà de 4 et de 13 millions d'euros ; abattement Dutreil plafonné.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Grandes entreprises",
+            "detail": "Impôt minimal sur les bénéfices des sociétés de plus d'un milliard d'euros de chiffre d'affaires ; taxe sur les services numériques de 3 à 5 % ; taxe sur les superprofits pétrogaziers.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "TVA verte",
+            "detail": "TVA différenciée selon l'impact environnemental et sanitaire : taux réduits sur les biens de première nécessité, hausse sur les produits de luxe ou nocifs.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Écart de salaires de 1 à 20",
+            "detail": "Écart de 1 à 20 entre le salaire des dirigeants et le salaire médian, toute aide publique étant conditionnée à cet objectif.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Retraite à 62 ans, puis 60",
+            "detail": "Abroger le départ à 64 ans, revenir « immédiatement » à 62 ans et viser 60 ans, en priorité pour les carrières longues et pénibles ; refus de toute retraite par capitalisation.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "32 heures",
+            "detail": "32 heures sans perte de salaire dans les métiers pénibles ou de nuit ; compte épargne temps universel.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Semaine de 4 jours",
+            "detail": "Expérimentation de la semaine de 4 jours en 32 heures pendant 3 ans dans 200 entreprises volontaires.",
+            "source": "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
+          },
+          {
+            "titre": "Congé climatique",
+            "detail": "Congé climatique de 5 jours par an face aux températures extrêmes ou aux catastrophes climatiques.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Santé au travail",
+            "detail": "« Zéro mort au travail en 2032 » ; 200 inspecteurs du travail supplémentaires ; burn-out reconnu comme maladie professionnelle.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Assurance chômage",
+            "detail": "Abroger les réformes des deux derniers quinquennats ; allocations indexées sur l'inflation ; garantie d'emploi pour les chômeurs de 55 ans.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           }
         ],
         "pouvoir-achat": [
           {
             "titre": "SMIC à 2 000 € brut",
-            "detail": "« 2.000 euros brut dès 2027 ».",
-            "source": "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
+            "detail": "« Passer le salaire minimum à 2000€ brut par mois dès 2027 ».",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           },
           {
             "titre": "Fonctionnaires",
-            "detail": "Indexer la valeur du point d'indice sur l'inflation ; revaloriser les catégories B et C.",
-            "source": "https://www.lecourrierdesstrateges.fr/tondelier-augmenter-le-smic-a-2-000-euros-brut-des-2027-et-conditionner-les-aides-aux-entreprises-a-la-grille-des-salaires/"
+            "detail": "Point d'indice indexé sur l'inflation ; +10 % pour les catégories B et C.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           },
           {
-            "titre": "Gel des prix",
-            "detail": "Gel des prix en cas d'« inflation anormale ».",
-            "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+            "titre": "Garantie d'autonomie",
+            "detail": "Remplacer le RSA par une garantie d'autonomie à 50 % du SMIC net, dès 18 ans, sans les 15 heures d'activité.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Logement",
+            "detail": "Encadrement des loyers généralisé ; garantie universelle des loyers ; abrogation de la loi Kasbarian ; 30 % de logements sociaux en 2035 dans les communes les plus tendues.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           }
         ],
-        "sante": [
+        "ecologie": [
           {
-            "titre": "Santé environnementale",
-            "detail": "Approche « One Health » ; interdiction des perturbateurs endocriniens, des substances CMR et des PFAS dans les produits du quotidien ; pas d'aliments ultratransformés dans les cantines ; pas de publicité télévisée pour les produits trop sucrés ou salés avant 21 h.",
-            "source": "https://www.terre-net.fr/politique/article/899196/tondelier-devoile-ses-mesures-pour-la-sante-environnementale"
+            "titre": "Sortie du nucléaire",
+            "detail": "Fin des programmes EPR-2 et SMR ; arrêt progressif du parc « étalé sur une vingtaine d'années ».",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Neutralité carbone en 2050",
+            "detail": "Neutralité carbone en 2050 ; 44 % d'énergies renouvelables dans la consommation d'électricité en 2030 ; 10 000 communautés énergétiques.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "500 000 rénovations par an",
+            "detail": "500 000 rénovations performantes par an pour sortir un million de personnes par an de la précarité énergétique.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Leasing social",
+            "detail": "Location sociale d'un million de voitures électriques sur le quinquennat, en favorisant les véhicules européens.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Agriculture et alimentation",
+            "detail": "100 % de bio dans la restauration collective d'ici 2040 ; 50 % de produits bio, locaux et végétaux dans la restauration commerciale en 2032.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           }
         ],
-        "economie": [
+        "immigration": [
           {
-            "titre": "Taxe Zucman",
-            "detail": "Prélèvement de 2 % sur les « patrimoines de plus de 100 millions d'euros ».",
-            "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+            "titre": "Régularisations",
+            "detail": "Régulariser les travailleurs, les étudiants et les parents d'enfants scolarisés sur critères objectifs ; abroger les lois asile et immigration du mandat Macron.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           },
           {
-            "titre": "Écart de salaires de 1 à 20",
-            "detail": "Le salaire le plus élevé ne pourrait dépasser vingt fois le salaire médian ; les entreprises qui ne respectent pas cette règle perdent les aides publiques.",
-            "source": "https://www.lecourrierdesstrateges.fr/tondelier-augmenter-le-smic-a-2-000-euros-brut-des-2027-et-conditionner-les-aides-aux-entreprises-a-la-grille-des-salaires/"
-          }
-        ],
-        "travail": [
-          {
-            "titre": "Retraites : 62 ans",
-            "detail": "« Retour immédiat à un âge minimum de 62 ans » ; objectif de « 60 ans pour les carrières longues et les métiers pénibles ».",
-            "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+            "titre": "Droit du sol",
+            "detail": "Garantir le droit du sol pour les enfants nés en France, supprimer le régime dérogatoire à Mayotte, faciliter l'accès à la nationalité.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           },
           {
-            "titre": "32 heures",
-            "detail": "32 heures hebdomadaires sans baisse de salaire dans les métiers pénibles et de nuit ; expérimentation de la semaine de 4 jours en 32 heures pendant 3 ans dans 200 entreprises volontaires.",
-            "source": "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
-          },
-          {
-            "titre": "Congé climatique",
-            "detail": "« Cinq jours minimum par an » de congé en cas de températures extrêmes ou de catastrophe climatique.",
-            "source": "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
-          },
-          {
-            "titre": "Santé au travail",
-            "detail": "« Zéro mort au travail » en 2032 ; reconnaissance du burn-out comme maladie professionnelle ; sécurité professionnelle pour les salariés touchés par la transition écologique.",
-            "source": "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
-          },
-          {
-            "titre": "Veto écologique des CSE",
-            "detail": "Droit de veto écologique pour les comités sociaux et économiques ; clause de conscience environnementale étendue à tous les salariés.",
-            "source": "https://www.lecourrierdesstrateges.fr/tondelier-augmenter-le-smic-a-2-000-euros-brut-des-2027-et-conditionner-les-aides-aux-entreprises-a-la-grille-des-salaires/"
+            "titre": "Fin de la rétention",
+            "detail": "« En finir avec la rétention administrative » ; voies légales d'immigration par une révision du pacte européen sur la migration et l'asile.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           }
         ],
         "securite": [
           {
             "titre": "Maintien de l'ordre",
-            "detail": "Suppression des LBD et démantèlement de la BRAV-M.",
-            "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+            "detail": "Interdire les LBD40 et les grenades mutilantes, démanteler les unités de type BRAV-M, abroger la loi Cazeneuve sur l'ouverture du feu.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Cannabis",
+            "detail": "Légaliser et encadrer la production, la vente et la consommation de cannabis.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "2 000 centres de santé",
+            "detail": "Créer 2 000 nouveaux centres de santé d'ici 2030, notamment dans les zones rurales et les quartiers prioritaires.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "PFAS et perturbateurs endocriniens",
+            "detail": "Interdire tous les PFAS et perturbateurs endocriniens : immédiatement pour la nourriture, le textile et les cosmétiques, sous 18 mois pour le reste.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Pôle public du médicament",
+            "detail": "Développer le pôle public du médicament ; CSG rendue progressive.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           }
         ],
         "education": [
           {
-            "titre": "Cantine",
-            "detail": "Accès moins cher à la cantine pour les familles monoparentales.",
-            "source": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/"
+            "titre": "19 élèves par classe",
+            "detail": "Classes de 19 élèves en primaire en 2032, 12 en éducation prioritaire.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Enseignants +15 %",
+            "detail": "Augmenter les salaires des enseignants de 15 % en 5 ans.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Première République écologique",
+            "detail": "Septennat unique ; principe d'habitabilité dans la Constitution ; suppression de la Cour de justice de la République ; Conseil constitutionnel transformé en Cour constitutionnelle.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Proportionnelle et RIC",
+            "detail": "Proportionnelle intégrale aux législatives ; référendum d'initiative citoyenne propositionnel ou abrogatif ; vote obligatoire à l'Assemblée sur une pétition de 500 000 signatures.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Saut fédéral européen",
+            "detail": "Majorité qualifiée au lieu du veto national sur les droits fondamentaux, la protection sociale, la fiscalité et la politique étrangère ; listes transnationales.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Soutien à l'Ukraine",
+            "detail": "Soutien politique et militaire, y compris des capacités de frappe à longue portée ; ouverture des négociations d'adhésion.",
+            "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
           }
         ]
       },
       "sources": [
-        "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats",
-        "https://www.terre-net.fr/politique/article/899196/tondelier-devoile-ses-mesures-pour-la-sante-environnementale",
-        "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-        "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/",
-        "https://www.lecourrierdesstrateges.fr/tondelier-augmenter-le-smic-a-2-000-euros-brut-des-2027-et-conditionner-les-aides-aux-entreprises-a-la-grille-des-salaires/"
+        "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+        "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg",
       "biographie": {
