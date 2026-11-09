@@ -6,7 +6,7 @@
       "tour2": "2027-05-02",
       "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
     },
-    "contenuMisAJour": "2026-11-07",
+    "contenuMisAJour": "2026-11-09",
     "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub.",
     "regle": "Seules les mesures et positions attribuées au candidat pour la campagne 2027 (sources datées de 2025-2026) figurent sur le site."
   },
@@ -901,6 +901,14 @@
         "retraite": {
           "valeur": "60 ans",
           "source": "https://nouspresident.fr/statut-travailleurs-essentiels/"
+        },
+        "nucleaire": {
+          "valeur": "6 EPR2 (+8 sous condition)",
+          "source": "https://nouspresident.fr/travaillisme-ecologique/"
+        },
+        "europe": {
+          "valeur": "Sortir du libre-échange",
+          "source": "https://nouspresident.fr/pour-une-exception-agriculturelle-francaise/"
         }
       },
       "propositions": {
@@ -924,6 +932,16 @@
             "titre": "Plus-values immobilières",
             "detail": "Supprimer l'abattement progressif sur les plus-values immobilières (« au moins 3 milliards d'euros par an » de recettes).",
             "source": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/"
+          },
+          {
+            "titre": "Successions",
+            "detail": "Abattement porté de 100 000 à 200 000 € ; taux marginal de 50 % au-delà de 6 millions d'euros ; « sans impact fiscal pour 99 % des ménages ».",
+            "source": "https://nouspresident.fr/plan-de-redressement/"
+          },
+          {
+            "titre": "Dividende climatique",
+            "detail": "Prélèvement de 2 % sur les dividendes de toutes les entreprises ; recentrage du crédit d'impôt recherche sur les TPE-PME.",
+            "source": "https://nouspresident.fr/plan-de-redressement/"
           }
         ],
         "travail": [
@@ -958,6 +976,16 @@
             "titre": "Prêt à taux zéro doublé",
             "detail": "Doubler les montants du prêt à taux zéro, d'environ 60 000 à 120 000 € en moyenne.",
             "source": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/"
+          },
+          {
+            "titre": "Vacances pour tous",
+            "detail": "Billet TER illimité à 29 € l'été ; BAFA gratuit ; au moins un séjour collectif pour chaque enfant ; un milliard d'euros par an pour les salles des fêtes et maisons du peuple.",
+            "source": "https://nouspresident.fr/temps-loisirs/"
+          },
+          {
+            "titre": "Crédit d'impôt domicile-travail",
+            "detail": "Crédit d'impôt couvrant environ 30 % des frais de carburant domicile-travail.",
+            "source": "https://nouspresident.fr/plan-de-redressement/"
           }
         ],
         "ecologie": [
@@ -977,9 +1005,19 @@
             "source": "https://nouspresident.fr/notre-programme/"
           },
           {
-            "titre": "Exception agricole",
-            "detail": "« En 2032, la terre nourrit ceux qui la cultivent » : un « juste prix » pour les agriculteurs.",
-            "source": "https://nouspresident.fr/notre-programme/"
+            "titre": "Nucléaire : six EPR2",
+            "detail": "« Six réacteurs EPR2 » et, sous condition de devis, « huit réacteurs EPR2 supplémentaires » ; besoins en énergie réduits d'environ 33 %.",
+            "source": "https://nouspresident.fr/travaillisme-ecologique/"
+          },
+          {
+            "titre": "Transports",
+            "detail": "Tripler la part du fret ferroviaire ; « réduire de moitié le trafic aérien » ; leasing social pour 3 millions d'automobilistes.",
+            "source": "https://nouspresident.fr/travaillisme-ecologique/"
+          },
+          {
+            "titre": "Prix agricoles minimums",
+            "detail": "Prix minimums garantis selon les coûts de production ; interdiction des importations sous les prix planchers nationaux ; 30 % de bio dans la restauration collective en 2030, 50 % en 2035.",
+            "source": "https://nouspresident.fr/pour-une-exception-agriculturelle-francaise/"
           }
         ],
         "sante": [
@@ -1027,6 +1065,13 @@
             "detail": "Fusion des organismes de contrôle dans une Haute Autorité à la probité ; délai de dix ans avant qu'un ancien ministre rejoigne le privé ; plafonnement des dépenses de lobbying.",
             "source": "https://nouspresident.fr/separation-argent-etat/"
           }
+        ],
+        "europe": [
+          {
+            "titre": "Sortir du libre-échange",
+            "detail": "« Sortir des traités de libre-échange » ; quotas d'importation et barrières douanières ; étiquetage systématique de l'origine des aliments.",
+            "source": "https://nouspresident.fr/pour-une-exception-agriculturelle-francaise/"
+          }
         ]
       },
       "sources": [
@@ -1035,7 +1080,11 @@
         "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/",
         "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/",
         "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/",
-        "https://nouspresident.fr/separation-argent-etat/"
+        "https://nouspresident.fr/separation-argent-etat/",
+        "https://nouspresident.fr/pour-une-exception-agriculturelle-francaise/",
+        "https://nouspresident.fr/travaillisme-ecologique/",
+        "https://nouspresident.fr/temps-loisirs/",
+        "https://nouspresident.fr/plan-de-redressement/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:François_Ruffin_(cropped).jpg",
       "biographie": {
@@ -1776,14 +1825,161 @@
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-07-16",
-      "programme": "non publié",
-      "site": null,
+      "programme": "complet",
+      "site": "https://www.la-convention.fr",
       "bio": "Ancien Premier ministre (2016-2017). Candidat hors primaire, sur la base d'un « contrat » avec les électeurs.",
-      "phares": [],
-      "positions": {},
-      "propositions": {},
+      "phares": [
+        "Retraites : durée de cotisation plutôt que recul de l'âge",
+        "Rétablissement du septennat",
+        "Police de proximité"
+      ],
+      "positions": {
+        "retraite": {
+          "valeur": "Durée de cotisation",
+          "source": "https://www.la-convention.fr/lettre"
+        },
+        "fortune": {
+          "valeur": "Taxer les très grandes fortunes",
+          "source": "https://www.la-convention.fr/lettre"
+        },
+        "nucleaire": {
+          "valeur": "Renouvellement du parc",
+          "source": "https://www.la-convention.fr/lettre"
+        },
+        "immigration": {
+          "valeur": "Asile, intégration, fermeté",
+          "source": "https://www.la-convention.fr/lettre"
+        },
+        "europe": {
+          "valeur": "Fin de l'unanimité",
+          "source": "https://www.la-convention.fr/lettre"
+        }
+      },
+      "propositions": {
+        "travail": [
+          {
+            "titre": "Retraites : durée de cotisation",
+            "detail": "« Durée de cotisation plutôt que recul de l'âge légal », en reprenant la trajectoire d'allongement de 2014 ; pénibilité rétablie (postures, charges, vibrations, risques chimiques) ouvrant droit au départ anticipé ; carrières longues.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Emploi des seniors",
+            "detail": "Aménagement des postes, retraites progressives, sanctions contre les discriminations à l'embauche ; « gisement de huit cent mille emplois ».",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Transitions professionnelles",
+            "detail": "Protection des transitions professionnelles « à la manière scandinave » ; apprentissage dès le premier cycle universitaire ; CDI redevenu la norme pour les jeunes.",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Fiscalité",
+            "detail": "Fiscalité « atteignant réellement les très grandes fortunes, les plus hauts revenus du capital et les rentes » ; moins de niches ; baisse des impôts de production financée par une réduction des aides fiscales.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Règle d'or sociale",
+            "detail": "Rétablissement de la loi Veil : toute exonération de cotisations compensée à l'euro près ; équilibre des comptes sociaux apprécié sur cinq ans.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Réindustrialisation",
+            "detail": "Plan de réindustrialisation sur dix ans ; « deux normes supprimées pour une norme créée ».",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "Logement",
+            "detail": "Grand plan de constructions et de rénovations, social et écologique, avec des mécanismes d'accession à la propriété.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Aides simplifiées",
+            "detail": "Simplifier, unifier et automatiser les aides fondamentales.",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Filière nucléaire",
+            "detail": "Filière électronucléaire « assumée », renouvellement du parc planifié, rationalisation des renouvelables, électrification des usages.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Plan École-Climat-Solidarité",
+            "detail": "Engagement sur dix ans pour rénover les établissements scolaires ; DATAR du climat rattachée au Premier ministre.",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Humanité, intégration, fermeté",
+            "detail": "Droit d'asile ; apprentissage du français et respect des lois communes ; « lutte sans faiblesse contre l'immigration irrégulière ».",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Police de proximité",
+            "detail": "Police de proximité dotée d'effectifs dédiés et formés ; unités spécialisées contre le trafic de drogues, gel des avoirs, Parquet européen aux compétences élargies.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Protection de l'enfance",
+            "detail": "Aucune plainte pour violences faites à un enfant sans réponse ; rappel des magistrats retraités volontaires.",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Santé mentale",
+            "detail": "Santé mentale « grande cause nationale » ; reconnaissance des soignants dans tous les territoires.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Grand âge",
+            "detail": "Prise en charge du grand âge, de la dépendance et du soutien aux aidants familiaux.",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "education": [
+          {
+            "titre": "Enseignants",
+            "detail": "Enseignants « mieux formés, mieux payés, mieux considérés » ; philosophie dès la Seconde ; service public de l'intelligence artificielle éducative.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Aides aux jeunes",
+            "detail": "Au moins 2 000 € d'aide supplémentaire pour chaque étudiant boursier les deux premières années ; « avance jeunesse » de 3 000 € pour les 18-24 ans sans diplôme ni emploi.",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Septennat",
+            "detail": "Rétablissement du septennat ; discipline sur le 49.3 et les ordonnances ; dose de proportionnelle aux législatives.",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Défense",
+            "detail": "Réarmement « à proportion de la menace » ; rester dans l'OTAN ; réflexion sur l'apport de la dissuasion, y compris avec le Royaume-Uni ; réserve citoyenne élargie.",
+            "source": "https://www.la-convention.fr/lettre"
+          },
+          {
+            "titre": "Europe",
+            "detail": "Politique industrielle commune ; « fin de la règle de l'unanimité au profit des décisions à la majorité ».",
+            "source": "https://www.la-convention.fr/lettre"
+          }
+        ]
+      },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://www.la-convention.fr/lettre"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Bernard_Cazeneuve,_(42399145362)_(cropped).jpg",
       "biographie": {
@@ -1847,7 +2043,7 @@
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-05-22",
-      "programme": "partiel",
+      "programme": "complet",
       "site": "https://parti-renaissance.fr",
       "bio": "Secrétaire général de Renaissance, ancien Premier ministre (2024). Candidat depuis mai 2026 ; propose une « grande primaire des démocrates ».",
       "phares": [
@@ -1889,6 +2085,21 @@
             "titre": "Redoublement et groupes de niveau",
             "detail": "Rétablir le redoublement, groupes de niveau, certificat d'études en fin de CM2, méthode de Singapour en mathématiques, tuteur numérique pour chaque élève.",
             "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Plan Voltaire",
+            "detail": "« Trente minutes d'esprit critique par jour » ; maîtrise de l'IA intégrée aux savoirs fondamentaux ; 100 % des enseignants formés à l'IA.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Discipline scolaire",
+            "detail": "Un barème national des sanctions scolaires ; un conseil de discipline dès l'école primaire.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Remplacement des enseignants",
+            "detail": "Garantir le remplacement des enseignants absents ; une année passerelle pour les élèves en difficulté ; un seul ministre de l'Éducation pendant cinq ans.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "travail": [
@@ -1916,6 +2127,11 @@
             "titre": "Retraites",
             "detail": "Reprise de la réforme de 2023 après sa suspension et nouveau système de retraite ; « l'âge légal remplacé par la durée de cotisation ».",
             "source": "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+          },
+          {
+            "titre": "Intéressement",
+            "detail": "Étendre l'intéressement aux petites structures ; flécher la moitié de l'intéressement vers l'épargne retraite.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "economie": [
@@ -1932,6 +2148,16 @@
           {
             "titre": "200 Md€ pour l'IA",
             "detail": "200 milliards d'euros pour l'intelligence artificielle.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Simplification pour les entreprises",
+            "detail": "Test PME obligatoire avant chaque loi ; procédures bloquant un projet plafonnées à 18 mois ; réponse aux porteurs de projet en deux mois maximum ; statut « Auto-TPE » pour un premier salarié.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Moins de fonctionnaires",
+            "detail": "100 000 postes en moins dans l'État et les collectivités ; aides directes ciblées plutôt que baisses de taxes.",
             "source": "https://attalpresident.fr/programme"
           }
         ],
@@ -1962,12 +2188,32 @@
         "ecologie": [
           {
             "titre": "Ministère de l'Eau",
-            "detail": "Créer un ministère de l'Eau ; multiplier par 5 la géothermie d'ici 2035.",
+            "detail": "Créer un ministère de l'Eau.",
             "source": "https://attalpresident.fr/programme"
           },
           {
             "titre": "Prix planchers agricoles",
             "detail": "Prix planchers indexés sur les coûts de production.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Géoénergie",
+            "detail": "Multiplier par cinq la production de géoénergie d'ici 2035 ; subventions doublées ; réponse aux demandes en moins de 90 jours.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Eau",
+            "detail": "Plan Eau sans impôts nouveaux ; réparer les 500 réseaux les plus vétustes ; dépistage automatique des PFAS dans les captages d'eau potable.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Agriculture",
+            "detail": "Renforcer la PAC ; contractualisation pluriannuelle obligatoire ; extension des bâtiments d'élevage simplifiée.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Bien-être animal",
+            "detail": "Amende dès le premier acte de maltraitance ; fichier national des personnes interdites de détenir un animal ; ventes en ligne encadrées.",
             "source": "https://attalpresident.fr/programme"
           }
         ],
@@ -1981,12 +2227,37 @@
             "titre": "Justice",
             "detail": "3 000 magistrats et greffiers ; parquet national contre la pédocriminalité ; imprescriptibilité des crimes sexuels sur mineurs.",
             "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Mineurs et crimes sur mineurs",
+            "detail": "Punir systématiquement les dégradations, même par des mineurs ; premiers actes d'enquête sous 48 heures et jugement en moins de trois mois pour les crimes sur mineurs ; service de renseignement contre les réseaux pédocriminels.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Gens du voyage",
+            "detail": "Délit de maintien illicite ; amendes majorées et saisie des véhicules en cas d'occupation illégale ; facturation au tarif minimum d'un camping.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Fichiers et honorabilité",
+            "detail": "Interconnecter les fichiers police, justice et Éducation ; attestation d'honorabilité pour tout métier en contact avec des mineurs ; IA pour accélérer les jugements.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "sante": [
           {
             "titre": "Assistant médical IA",
             "detail": "Un assistant médical d'intelligence artificielle pour chaque Français ; droit à la climatisation.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Familles monoparentales",
+            "detail": "Carte famille monoparentale ; droit au répit pour les parents seuls ; défiscalisation des pensions alimentaires ; séparation simplifiée via la CAF.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Climatisation",
+            "detail": "Droit à la climatisation ; plan d'urgence de climatisation des établissements.",
             "source": "https://attalpresident.fr/programme"
           }
         ],
@@ -1995,12 +2266,27 @@
             "titre": "Dôme de fer européen",
             "detail": "Dôme de fer européen et préférence européenne dans les achats de défense ; refus du Mercosur.",
             "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Défense",
+            "detail": "Adapter la défense aux guerres d'aujourd'hui ; audit des programmes d'armement ; fonds d'investissement pour les PME de la défense.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Commerce et IA",
+            "detail": "Clauses miroir dans tous les accords commerciaux ; politique européenne commune de l'IA ; puissance de calcul européenne multipliée par sept.",
+            "source": "https://attalpresident.fr/programme"
           }
         ],
         "institutions": [
           {
             "titre": "Un jour de référendum par an",
             "detail": "Une journée de référendum chaque année ; supprimer un échelon de collectivité ; faire du maire l'élu le plus puissant.",
+            "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Référendums locaux et nominations",
+            "detail": "Faciliter les référendums locaux ; réformer les nominations aux hautes fonctions de l'État.",
             "source": "https://attalpresident.fr/programme"
           }
         ]
@@ -2459,6 +2745,10 @@
         "immigration": {
           "valeur": "Forte baisse (référendum)",
           "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
+        },
+        "europe": {
+          "valeur": "Primauté du droit français",
+          "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
         }
       },
       "propositions": {
@@ -2472,6 +2762,11 @@
             "titre": "AME et prestations sociales",
             "detail": "Supprimer l'aide médicale d'État, sauf soins urgents ; délai de cinq ans avant qu'un étranger perçoive des prestations sociales ; quotas et baisse des visas, y compris étudiants ; centres de retour à l'étranger dans des pays volontaires.",
             "source": "https://actu.orange.fr/politique/presidentielle-2027-bruno-retailleau-promet-d-organiser-un-referendum-sur-l-immigration-en-cas-de-victoire-l-express-via-6medias-CNT000002txUGH.html"
+          },
+          {
+            "titre": "Plafonds migratoires",
+            "detail": "« Instaurer des plafonds migratoires » ; « renforcer la condition d'assimilation pour l'accès à la nationalité ».",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
           }
         ],
         "securite": [
@@ -2484,6 +2779,11 @@
             "titre": "Juge d'application des peines",
             "detail": "« La suppression ou l'encadrement drastique » du juge d'application des peines ; rétablir les courtes peines de prison.",
             "source": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html"
+          },
+          {
+            "titre": "Peines minimales",
+            "detail": "« Peines minimales pour certains crimes et délits graves » ; « rétention de sûreté » pour certaines personnes dangereuses après leur peine.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
           }
         ],
         "travail": [
@@ -2497,13 +2797,39 @@
             "detail": "Allocations sociales plafonnées à 70 % du SMIC ; « 15 heures d'activité pour le RSA » ; « seuil zéro charge » au-delà de 1 623 heures travaillées par an.",
             "source": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html"
           }
+        ],
+        "institutions": [
+          {
+            "titre": "Référendum élargi",
+            "detail": "Réviser l'article 11 pour que « le référendum législatif puisse porter sur l'ensemble du domaine de la loi » ; signatures du RIP ramenées à environ 2,5 millions.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
+          },
+          {
+            "titre": "Charte de l'ordre républicain",
+            "detail": "Une « Charte de l'ordre républicain » dans la Constitution ; « bouclier constitutionnel » permettant au droit français de primer sur le droit européen dans certaines situations.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle"
+          }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "1 million de logements en 5 ans",
+            "detail": "« Produire 1 million de logements supplémentaires en 5 ans » ; suppression du ZAN ; loi d'urgence pour « diviser par deux les délais de construction » ; prêt à taux zéro ouvert sur tout le territoire.",
+            "source": "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement"
+          },
+          {
+            "titre": "Statut du bailleur privé",
+            "detail": "Suppression de l'encadrement des loyers ; fin des interdictions de louer liées au DPE ; amortissement fiscal pour les logements loués ; expulsions accélérées.",
+            "source": "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement"
+          }
         ]
       },
       "sources": [
         "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492",
         "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html",
         "https://actu.orange.fr/politique/presidentielle-2027-bruno-retailleau-promet-d-organiser-un-referendum-sur-l-immigration-en-cas-de-victoire-l-express-via-6medias-CNT000002txUGH.html",
-        "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html"
+        "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle",
+        "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg",
       "biographie": {
@@ -2708,14 +3034,30 @@
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2024-02-03",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": null,
       "bio": "Président de la région Hauts-de-France, ancien ministre.",
       "phares": [],
       "positions": {},
-      "propositions": {},
+      "propositions": {
+        "institutions": [
+          {
+            "titre": "Référendum en Corse",
+            "detail": "Soumettre le projet d'autonomie de la Corse à référendum : « Il faut demander l'avis à la population ».",
+            "source": "https://france3-regions.franceinfo.fr/corse/corse-du-sud/ajaccio/l-etat-regarde-la-corse-avec-suffisance-les-propositions-de-xavier-bertrand-a-l-aube-de-l-election-presidentielle-3399214.html"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Incendies",
+            "detail": "Appliquer les sanctions du Code pénal contre les incendiaires ; débroussaillage ; « renforcement des moyens, des effectifs, et des formations des sapeurs-pompiers ».",
+            "source": "https://france3-regions.franceinfo.fr/corse/corse-du-sud/ajaccio/l-etat-regarde-la-corse-avec-suffisance-les-propositions-de-xavier-bertrand-a-l-aube-de-l-election-presidentielle-3399214.html"
+          }
+        ]
+      },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://france3-regions.franceinfo.fr/corse/corse-du-sud/ajaccio/l-etat-regarde-la-corse-avec-suffisance-les-propositions-de-xavier-bertrand-a-l-aube-de-l-election-presidentielle-3399214.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg",
       "biographie": {
@@ -3039,8 +3381,8 @@
           "source": "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/marine-le-pen-fait-sa-rentree-politique-a-henin-beaumont-et-met-la-priorite-nationale-au-c-ur-de-son-programme-pour-la-presidentielle-de-2027-3416348.html"
         },
         "europe": {
-          "valeur": "Baisse de la contribution",
-          "source": "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400"
+          "valeur": "Contribution plafonnée à 5 Md€",
+          "source": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-"
         }
       },
       "propositions": {
@@ -3098,6 +3440,18 @@
             "detail": "Priorité nationale dans le logement social ; aides personnelles au logement réservées aux Français ; expulsion des « familles délinquantes » du logement social.",
             "source": "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/marine-le-pen-fait-sa-rentree-politique-a-henin-beaumont-et-met-la-priorite-nationale-au-c-ur-de-son-programme-pour-la-presidentielle-de-2027-3416348.html"
           }
+        ],
+        "europe": [
+          {
+            "titre": "Fin du financement de l'Ukraine",
+            "detail": "Financement de l'Ukraine maintenu six mois après l'élection, puis « ce financement cessera » ; fin des sanctions de l'UE contre la Russie.",
+            "source": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-"
+          },
+          {
+            "titre": "Contribution à l'UE plafonnée",
+            "detail": "Contribution nette de la France au budget de l'UE plafonnée à 5 milliards d'euros par an ; « stopper » le Pacte vert ; suppression du Comité européen des régions.",
+            "source": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-"
+          }
         ]
       },
       "sources": [
@@ -3106,7 +3460,8 @@
         "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400",
         "https://vert.eco/chaleurs-actuelles/marine-le-pen-presente-le-contre-budget-du-rn-pour-2027-une-attaque-contre-les-renouvelables-et-les-agences-environnementales/",
         "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/marine-le-pen-fait-sa-rentree-politique-a-henin-beaumont-et-met-la-priorite-nationale-au-c-ur-de-son-programme-pour-la-presidentielle-de-2027-3416348.html",
-        "https://www.institut-entreprise.fr/wp-content/uploads/2026/10/Analyse-primaire-contre-budget-RN-Note-de-contexte-IDEP.pdf"
+        "https://www.institut-entreprise.fr/wp-content/uploads/2026/10/Analyse-primaire-contre-budget-RN-Note-de-contexte-IDEP.pdf",
+        "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg",
       "biographie": {
