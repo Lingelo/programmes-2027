@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-08",
+  "checkedAt": "2026-11-09",
   "sources": {
     "wikipedia": {
       "url": "https://fr.wikipedia.org/wiki/Candidatures_à_l'élection_présidentielle_française_de_2027",
@@ -11,6 +11,15 @@
     }
   },
   "sourceOk": true,
-  "nouveaux": [],
-  "details": []
+  "nouveaux": [
+    "Teddy Riner"
+  ],
+  "details": [
+    {
+      "nom": "Teddy Riner",
+      "sources": [
+        "Wikipédia"
+      ]
+    }
+  ]
 }
