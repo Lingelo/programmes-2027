@@ -154,13 +154,13 @@
       "slogan": "Le camp des travailleurs",
       "statut": "déclarée",
       "declaration": "2025-12-08",
-      "programme": "partiel",
+      "programme": "complet",
       "site": "https://www.lutte-ouvriere.org",
       "bio": "Porte-parole de Lutte ouvrière, professeure d'économie-gestion. Quatrième candidature à la présidentielle après 2012, 2017 et 2022.",
       "phares": [
-        "SMIC à 2 200 € net",
-        "Aucun licenciement, partage du travail",
-        "Confisquer les profits"
+        "SMIC à 2 200 € net et salaires indexés sur les prix",
+        "Répartir le travail entre tous, sans perte de salaire",
+        "Expropriation des industries pétrolières et de guerre"
       ],
       "positions": {
         "smic": {
@@ -169,39 +169,76 @@
         },
         "fortune": {
           "valeur": "Expropriation",
-          "source": "https://lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html"
+          "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+        },
+        "immigration": {
+          "valeur": "Régulariser tous les sans-papiers",
+          "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+        },
+        "europe": {
+          "valeur": "Contre l'« Europe-forteresse »",
+          "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
         }
       },
       "propositions": {
         "pouvoir-achat": [
           {
             "titre": "SMIC à 2 200 € net",
-            "detail": "« Nous défendrons le SMIC à 2 200 € nets » ; « obliger Total à vendre son carburant à prix coûtant ».",
+            "detail": "« Il faut gagner au moins 2 200 euros net par mois pour s'en sortir. Eh bien voilà ce que nous devons exiger ! » ; « Nous défendrons le SMIC à 2 200 € nets ».",
+            "source": "https://lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html"
+          },
+          {
+            "titre": "Indexation sur les prix",
+            "detail": "« Augmentation massive des salaires, des allocations et des pensions et leur indexation sur la hausse des prix », la hausse réelle et non l'inflation officielle.",
+            "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+          },
+          {
+            "titre": "Carburants à prix coûtant",
+            "detail": "« Obliger Total à vendre son carburant à prix coûtant ».",
             "source": "https://lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html"
           }
         ],
         "travail": [
           {
-            "titre": "Pas de licenciements",
-            "detail": "« Il faut répartir le travail entre tous, sans diminution de salaire » : « on ne licencie personne et on maintient les salaires ».",
-            "source": "https://lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html"
+            "titre": "Répartir le travail entre tous",
+            "detail": "« Imposer que le travail soit réparti entre tous » ; « baisser le temps et la charge de travail sans perte de salaire » ; « on ne licencie personne et on maintient les salaires ».",
+            "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
           }
         ],
         "economie": [
           {
-            "titre": "Confisquer les profits",
-            "detail": "Réquisitionner les profits des groupes pétroliers et des marchands d'armes, « les leur confisquer et les consacrer aux besoins de la population » ; « exproprier la bourgeoisie ».",
-            "source": "https://lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html"
+            "titre": "Fin du secret des affaires",
+            "detail": "« Levée du secret commercial et du secret des affaires pour rendre publics les comptes de ces grandes entreprises ».",
+            "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
           },
           {
-            "titre": "Fin du secret des affaires",
-            "detail": "« Lever le secret sur leurs comptabilités et rendre leurs comptes en banque publics ».",
-            "source": "https://lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html"
+            "titre": "Confisquer les profits de guerre",
+            "detail": "« Confiscation des bénéfices de ces profiteurs de guerre : les milliards pour les hôpitaux, les écoles, pas pour la guerre ! »",
+            "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+          },
+          {
+            "titre": "Expropriation",
+            "detail": "« Expropriation sans indemnité ni rachat de leurs actionnaires en commençant par ceux de l'industrie pétrolière et des industries de guerre ».",
+            "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Régularisation de tous les sans-papiers",
+            "detail": "« Régularisation de tous les sans-papiers, liberté de circulation et d'installation pour chaque être humain de cette planète ! »",
+            "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Contre l'« Europe-forteresse » et la guerre",
+            "detail": "« À bas l'Europe-forteresse ! » ; refus du protectionnisme et de « l'unité nationale » derrière les dépenses militaires.",
+            "source": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
           }
         ]
       },
       "sources": [
-        "https://www.lespritfr.com/2026/10/06/nathalie-arthaud-portrait-bilan-2027/",
+        "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
         "https://lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg",
