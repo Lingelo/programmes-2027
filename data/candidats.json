@@ -3306,6 +3306,52 @@
       }
     },
     {
+      "id": "riner",
+      "prenom": "Teddy",
+      "nom": "Riner",
+      "parti": "Sans étiquette",
+      "partiCourt": "SE",
+      "bord": "autre",
+      "couleur": "#1F5F99",
+      "wiki": "Teddy_Riner",
+      "photo": "img/candidats/riner.jpg",
+      "slogan": "La France qu'on veut",
+      "statut": "déclaré",
+      "declaration": "2026-11-09",
+      "programme": "non publié",
+      "site": null,
+      "bio": "Judoka, champion olympique. Il annonce le 9 novembre 2026 sa candidature, sans parti, en se disant « ni de droite, ni de gauche ».",
+      "phares": [],
+      "positions": {},
+      "propositions": {},
+      "sources": [
+        "https://www.france24.com/fr/france/20261109-le-champion-olympique-de-judo-teddy-riner-annonce-sa-candidature-%C3%A0-l-%C3%A9lection-pr%C3%A9sidentielle",
+        "https://www.epochtimes.fr/presidentielle-2027-teddy-riner-annonce-sa-candidature-et-veut-rassembler-les-francais-3389335.html"
+      ],
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:Teddy_Riner_Cannes_2016.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Teddy Riner, né le 7 avril 1989 à Pointe-à-Pitre (Guadeloupe), est un judoka français évoluant dans la catégorie des plus de 100 kg (poids lourds), et a remporté 11 titres mondiaux, soit le plus grand nombre dans l'histoire du judo, et cinq médailles d'or olympique. Il est le plus titré des judokas français. Il est candidat à l’élection présidentielle de 2027.",
+          "Il détient un palmarès d'onze titres de champion du monde, trois médailles d'or olympiques en individuel (à Londres en 2012, à Rio de Janeiro en 2016 et à Paris en 2024) et deux par équipes mixtes (à Tokyo en 2021 et à Paris en 2024), deux médailles de bronze olympiques (à Pékin en 2008 et à Tokyo en 2021), et cinq titres de champion d'Europe.",
+          "En 2018, il est nommé Ambassadeur de bonne volonté de l'UNICEF. L’année suivante, en 2019, il devient Ambassadeur du Forum de Crans Montana, dans le cadre de deux axes majeurs de la gouvernance étatique : la cohésion sociale et le rôle structurant des valeurs portées par le sport. Il est le porte-drapeau de l'équipe de France aux Jeux olympiques de Rio de Janeiro en 2016, où il remporte sa deuxième médaille d'or olympique face au Japonais Hisayoshi Harasawa, il devient le judoka le plus titré de l'histoire et assoit ainsi sa suprématie dans le domaine du judo."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Teddy_Riner",
+        "wikidata": "Q353514",
+        "genre": "m",
+        "naissance": "1989-04-07",
+        "lieuNaissance": "Les Abymes",
+        "professions": [
+          "judoka"
+        ],
+        "formation": [
+          "Institut d'études politiques de Paris",
+          "Institut national du sport, de l'expertise et de la performance"
+        ],
+        "fonctions": [],
+        "majLe": "2026-11-09"
+      }
+    },
+    {
       "id": "egger",
       "prenom": "Clara",
       "nom": "Egger",
