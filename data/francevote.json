@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-09",
+ "recupereLe": "2026-11-10",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -1581,7 +1581,12 @@
      "date": "2025-05-26"
     },
     "ins3": null,
-    "ins4": null,
+    "ins4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+     "titre": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+     "editeur": "Public Sénat",
+     "date": "2026-08-24"
+    },
     "san1": null,
     "san2": null,
     "san3": null,
@@ -2261,7 +2266,12 @@
      "editeur": "Public Sénat",
      "date": "2018-04-04"
     },
-    "ins4": null,
+    "ins4": {
+     "url": "https://www.lefigaro.fr/elections/presidentielles/candidats/presidentielle-2027-referendum-etat-de-droit-edouard-philippe-marque-sa-difference-avec-bruno-retailleau-20260908",
+     "titre": "Présidentielle 2027 : référendum, État de droit... Édouard Philippe marque sa différence avec Bruno Retailleau",
+     "editeur": "Le Figaro (avec AFP)",
+     "date": "2026-09-08"
+    },
     "san1": null,
     "san2": null,
     "san3": null,
@@ -2399,7 +2409,12 @@
      "editeur": "CNews",
      "date": "2026-09-02"
     },
-    "ins4": null,
+    "ins4": {
+     "url": "https://www.europe1.fr/politique/xavier-bertrand-devoile-ses-propositions-pour-reprendre-le-controle-de-limmigration-4075260",
+     "titre": "Xavier Bertrand dévoile ses propositions pour « reprendre le contrôle » de l’immigration",
+     "editeur": "Europe 1",
+     "date": "2021-11-04"
+    },
     "san1": null,
     "san2": null,
     "san3": null,
@@ -2527,7 +2542,12 @@
      "editeur": "Nouvelle Énergie",
      "date": "2026-06-17"
     },
-    "ins4": null,
+    "ins4": {
+     "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+     "titre": "Discours de David Lisnard à Bayeux",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-06-17"
+    },
     "san1": null,
     "san2": null,
     "san3": null,
@@ -2730,7 +2750,12 @@
      "editeur": "Public Sénat",
      "date": "2026-09-03"
     },
-    "ins4": null,
+    "ins4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/referendum-sur-limmigration-primaute-du-droit-national-le-projet-de-bruno-retailleau-est-il-faisable",
+     "titre": "Référendum sur l’immigration, primauté du droit national : le projet de Bruno Retailleau est-il faisable ?",
+     "editeur": "Public Sénat",
+     "date": "2026-02-13"
+    },
     "san1": null,
     "san2": null,
     "san3": {
@@ -2990,8 +3015,18 @@
      "editeur": "Union populaire républicaine (site officiel du parti)",
      "date": "2022"
     },
-    "ins3": null,
-    "ins4": null,
+    "ins3": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2022"
+    },
+    "ins4": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2022"
+    },
     "san1": null,
     "san2": null,
     "san3": null,
@@ -3297,7 +3332,12 @@
      "editeur": "Public Sénat",
      "date": "2022-04-12"
     },
-    "ins4": null,
+    "ins4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/textes/l16b2120_proposition-loi.pdf",
+     "titre": "Proposition de loi constitutionnelle Citoyenneté-Identité-Immigration (nº 2120)",
+     "editeur": "Assemblée nationale",
+     "date": "2024-01-25"
+    },
     "san1": null,
     "san2": null,
     "san3": {
@@ -3440,7 +3480,12 @@
     "ins1": null,
     "ins2": null,
     "ins3": null,
-    "ins4": null,
+    "ins4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+     "titre": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration »",
+     "editeur": "Public Sénat",
+     "date": "2022-03-23"
+    },
     "san1": null,
     "san2": null,
     "san3": null,
