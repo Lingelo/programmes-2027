@@ -11,6 +11,15 @@
     }
   },
   "sourceOk": true,
-  "nouveaux": [],
-  "details": []
+  "nouveaux": [
+    "Jean Lassalle"
+  ],
+  "details": [
+    {
+      "nom": "Jean Lassalle",
+      "sources": [
+        "Wikipédia"
+      ]
+    }
+  ]
 }
