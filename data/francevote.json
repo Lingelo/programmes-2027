@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-10",
+ "recupereLe": "2026-11-11",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -750,7 +750,12 @@
      "date": "2026-11-06"
     },
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 1, chapitre 1 : Planification écologique",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "env4": null,
     "eur1": {
      "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
@@ -1031,7 +1036,12 @@
     "sec4": null,
     "env1": null,
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://www.linfodurable.fr/roussel-pcf-veut-revenir-en-arriere-sur-les-zones-faible-emission-37112",
+     "titre": "Roussel (PCF) veut « revenir en arrière » sur les zones à faible émission",
+     "editeur": "L’Info Durable (dépêche AFP)",
+     "date": "2023-02-27"
+    },
     "env4": null,
     "eur1": null,
     "eur2": null,
@@ -1292,7 +1302,12 @@
      "date": "2025-04-19"
     },
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://www.france24.com/fr/info-en-continu/20260713-2027-les-ecologistes-veulent-instaurer-la-premi%C3%A8re-r%C3%A9publique-%C3%A9cologique-et-citoyenne",
+     "titre": "2027: les Ecologistes veulent instaurer la « Première République écologique et citoyenne »",
+     "editeur": "France 24 (AFP)",
+     "date": "2026-07-13"
+    },
     "env4": null,
     "eur1": {
      "url": "https://lesecologistes.fr/pages/358vv7W974UgosGhCBbIPT/notre-projet",
@@ -1548,7 +1563,12 @@
     "sec4": null,
     "env1": null,
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-gagne-raphael-glucksmann-engagera-les-100-jours-de-la",
+     "titre": "Présidentielle 2027: s'il gagne, Raphaël Glucksmann engagera « les 100 jours de la révolution écologique »",
+     "editeur": "LCP",
+     "date": "2026-08-25"
+    },
     "env4": null,
     "eur1": {
      "url": "https://www.publicsenat.fr/actualites/politique/europeennes-2024-raphael-glucksmann-prone-dans-son-programme-une-revolution-ecologique",
@@ -1641,7 +1661,7 @@
     "ins4": -2,
     "env1": 2,
     "env2": 0,
-    "env3": 0,
+    "env3": 1,
     "env4": 0,
     "eur1": 1,
     "eur2": -1,
@@ -1691,7 +1711,12 @@
      "date": "2026"
     },
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf?1784151599",
+     "titre": "Lettre aux Françaises et aux Français",
+     "editeur": "La Convention (lettre de Bernard Cazeneuve)",
+     "date": "2026-07-15"
+    },
     "env4": null,
     "eur1": {
      "url": "https://assets.nationbuilder.com/laconvention/pages/2513/attachments/original/1784135398/Synthese_mesuresVfinale.pdf",
@@ -1746,7 +1771,7 @@
    },
    "boussole": {
     "eco": -17,
-    "soc": -34
+    "soc": -36
    }
   },
   "bouamrane": {
@@ -2065,7 +2090,12 @@
     },
     "env1": null,
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/gabriel-attal-denonce-la-grande-regression-climatique-y-compris-au-sein-meme-du-gouvernement-tout-en-assumant-son-vote-sur-la-loi-duplomb",
+     "titre": "Gabriel Attal dénonce « la grande régression climatique, y compris au sein même du gouvernement », tout en assumant son vote sur la loi Duplomb",
+     "editeur": "Public Sénat",
+     "date": "2025-07-21"
+    },
     "env4": null,
     "eur1": null,
     "eur2": null,
@@ -2243,7 +2273,12 @@
      "date": "2026-07-21"
     },
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://www.linfodurable.fr/entre-le-deni-du-rn-et-le-dogme-de-lfi-le-plan-dedouard-philippe-pour-une-politique-de-securite",
+     "titre": "Entre le « déni » du RN et le « dogme » de LFI, le plan d'Édouard Philippe pour une « politique de sécurité climatique »",
+     "editeur": "L’Info Durable (dépêche AFP)",
+     "date": "2026-09-17"
+    },
     "env4": null,
     "eur1": null,
     "eur2": null,
@@ -2712,7 +2747,12 @@
      "date": "2026"
     },
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://www.linfodurable.fr/agriculture-retailleau-denonce-lecologie-dogmatique-59011",
+     "titre": "Agriculture: Retailleau dénonce « l'écologie dogmatique »",
+     "editeur": "L’Info Durable (dépêche AFP)",
+     "date": "2026-09-17"
+    },
     "env4": null,
     "eur1": {
      "url": "https://www.publicsenat.fr/actualites/politique/referendum-sur-limmigration-primaute-du-droit-national-le-projet-de-bruno-retailleau-est-il-faisable",
@@ -2988,7 +3028,12 @@
     "sec4": null,
     "env1": null,
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2022"
+    },
     "env4": null,
     "eur1": null,
     "eur2": null,
@@ -3126,7 +3171,12 @@
     "sec4": null,
     "env1": null,
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
     "env4": null,
     "eur1": null,
     "eur2": null,
@@ -3294,7 +3344,12 @@
      "editeur": "Rassemblement national",
      "date": "2026-07-21"
     },
-    "env3": null,
+    "env3": {
+     "url": "https://www.linfodurable.fr/ecologie-pour-le-pen-le-plan-de-macron-nest-pas-une-transition-mais-une-destruction-41246",
+     "titre": "Ecologie: pour Le Pen, le plan de Macron « n'est pas une transition, mais une destruction »",
+     "editeur": "L’Info Durable (dépêche AFP)",
+     "date": "2023-09-26"
+    },
     "env4": null,
     "eur1": null,
     "eur2": {
@@ -3467,7 +3522,12 @@
     "sec4": null,
     "env1": null,
     "env2": null,
-    "env3": null,
+    "env3": {
+     "url": "https://www.linfodurable.fr/politique/le-programme-ecolo-deric-zemmour-31380",
+     "titre": "Le programme écolo d'Éric Zemmour",
+     "editeur": "L’Info Durable",
+     "date": "2022-03-29"
+    },
     "env4": null,
     "eur1": null,
     "eur2": null,

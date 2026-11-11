@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-10",
+  "checkedAt": "2026-11-11",
   "sources": {
     "wikipedia": {
       "url": "https://fr.wikipedia.org/wiki/Candidatures_à_l'élection_présidentielle_française_de_2027",
@@ -11,15 +11,6 @@
     }
   },
   "sourceOk": true,
-  "nouveaux": [
-    "Jean Lassalle"
-  ],
-  "details": [
-    {
-      "nom": "Jean Lassalle",
-      "sources": [
-        "Wikipédia"
-      ]
-    }
-  ]
+  "nouveaux": [],
+  "details": []
 }
