@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-11",
+ "recupereLe": "2026-11-12",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -779,7 +779,12 @@
     },
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 3 : Les nouvelles coopérations de la diplomatie altermondialiste",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "ins1": null,
     "ins2": {
      "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1/",
@@ -877,7 +882,7 @@
     "int1": 0,
     "int2": 1,
     "int3": 0,
-    "int4": -1
+    "int4": -2
    },
    "sources": {
     "eco1": null,
@@ -922,7 +927,12 @@
     "int1": null,
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1943/AN/1362.pdf",
+     "titre": "Amendement nº 1362 à l’article 14 A du projet de loi « Contrôler l’immigration, améliorer l’intégration »",
+     "editeur": "Assemblée nationale",
+     "date": "2023-12-07"
+    },
     "ins1": null,
     "ins2": null,
     "ins3": null,
@@ -943,7 +953,7 @@
    },
    "boussole": {
     "eco": -92,
-    "soc": -36
+    "soc": -39
    }
   },
   "roussel": {
@@ -990,7 +1000,7 @@
     "int1": -1,
     "int2": 2,
     "int3": -1,
-    "int4": -1
+    "int4": -2
    },
    "sources": {
     "eco1": null,
@@ -1050,7 +1060,12 @@
     "int1": null,
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1943/AN/2386.pdf",
+     "titre": "Amendement nº 2386 à l’article 14 A du projet de loi « Contrôler l’immigration, améliorer l’intégration »",
+     "editeur": "Assemblée nationale",
+     "date": "2023-12-07"
+    },
     "ins1": null,
     "ins2": null,
     "ins3": {
@@ -1076,7 +1091,7 @@
    },
    "boussole": {
     "eco": -96,
-    "soc": -32
+    "soc": -34
    }
   },
   "branco": {
@@ -1123,7 +1138,7 @@
     "int1": -2,
     "int2": 2,
     "int3": -1,
-    "int4": -1
+    "int4": 1
    },
    "sources": {
     "eco1": null,
@@ -1163,7 +1178,12 @@
     "int1": null,
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "ins1": null,
     "ins2": {
      "url": "https://ruches.org/le-projet",
@@ -1189,7 +1209,7 @@
    },
    "boussole": {
     "eco": -58,
-    "soc": -20
+    "soc": -16
    }
   },
   "tondelier": {
@@ -2287,7 +2307,12 @@
     "int1": null,
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.info.gouv.fr/upload/media/default/0001/01/2019_10_declaration_du_gouvernement_sur_la_politique_migratoire_de_la_france_et_de_leurope_en_application_de_larticle_50-1_de_la_constitution_suivie_dun_debat_-_09.10.2019.pdf",
+     "titre": "Déclaration du Gouvernement sur la politique migratoire de la France et de l’Europe (article 50-1 de la Constitution), Sénat",
+     "editeur": "Gouvernement (info.gouv.fr)",
+     "date": "2019-10-09"
+    },
     "ins1": null,
     "ins2": {
      "url": "https://www.franceinfo.fr/politique/proportionnelle-aux-elections-legislatives-qu-en-pensent-les-differents-partis-politiques_7271859.html",
@@ -2508,7 +2533,7 @@
     "int1": 1,
     "int2": 0,
     "int3": 1,
-    "int4": 1
+    "int4": 2
    },
    "sources": {
     "eco1": null,
@@ -2568,7 +2593,12 @@
     "int1": null,
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+     "titre": "Immigration : le projet de David Lisnard",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026"
+    },
     "ins1": null,
     "ins2": null,
     "ins3": {
@@ -2614,7 +2644,7 @@
    },
    "boussole": {
     "eco": 92,
-    "soc": 50
+    "soc": 52
    }
   },
   "retailleau": {
@@ -2776,7 +2806,12 @@
     },
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.cnews.fr/france/2024-10-15/oqtf-visa-subventions-droits-de-douane-voici-les-leviers-que-le-gouvernement",
+     "titre": "OQTF : visa, subventions, droits de douane… Voici les leviers que le gouvernement souhaite actionner pour les faire respecter",
+     "editeur": "CNews",
+     "date": "2024-10-15"
+    },
     "ins1": null,
     "ins2": {
      "url": "https://www.publicsenat.fr/actualites/politique/hostile-a-la-proportionnelle-bruno-retailleau-necarte-pas-une-demission-du-gouvernement",
@@ -2924,7 +2959,12 @@
      "date": "2026"
     },
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+     "titre": "Notre projet — Immigration et assimilation",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026-03-03"
+    },
     "ins1": {
      "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
      "titre": "Notre projet — Refonder et moraliser notre démocratie",
@@ -3373,7 +3413,12 @@
     },
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/0273C/AN/2274.pdf",
+     "titre": "Amendement nº II-2274 au projet de loi de finances pour 2023, mission « Aide publique au développement »",
+     "editeur": "Assemblée nationale",
+     "date": "2022-10-27"
+    },
     "ins1": null,
     "ins2": {
      "url": "https://www.publicsenat.fr/actualites/politique/legislatives-marine-le-pen-prete-a-defendre-le-retour-la-proportionnelle-integrale-de-1986-0",
@@ -3536,7 +3581,12 @@
     "int1": null,
     "int2": null,
     "int3": null,
-    "int4": null,
+    "int4": {
+     "url": "https://www.lejdd.fr/International/le-directeur-de-focus-2030-laide-au-developpement-rassemble-tous-les-candidats-a-la-presidentielle-4096279",
+     "titre": "Le directeur de Focus 2030 : « L’aide au développement rassemble tous les candidats à la présidentielle »",
+     "editeur": "Le JDD",
+     "date": "2022-02-27"
+    },
     "ins1": null,
     "ins2": null,
     "ins3": null,
