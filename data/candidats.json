@@ -6,7 +6,7 @@
       "tour2": "2027-05-02",
       "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
     },
-    "contenuMisAJour": "2026-11-09",
+    "contenuMisAJour": "2026-11-13",
     "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub.",
     "regle": "Seules les mesures et positions attribuées au candidat pour la campagne 2027 (sources datées de 2025-2026) figurent sur le site."
   },
@@ -283,13 +283,105 @@
       "slogan": "Faire entendre la voix de notre classe",
       "statut": "déclaré",
       "declaration": "2026-06-01",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": "https://www.revolutionpermanente.fr",
       "bio": "Cheminot et syndicaliste, porte-parole de Révolution permanente.",
-      "phares": [],
-      "positions": {},
-      "propositions": {},
+      "phares": [
+        "SMIC à 2 000 € net",
+        "Interdiction des licenciements",
+        "Semaine de 28 heures"
+      ],
+      "positions": {
+        "smic": {
+          "valeur": "2 000 € net",
+          "source": "https://anasse2027.fr/programme"
+        },
+        "retraite": {
+          "valeur": "60 ans (55 pénibles)",
+          "source": "https://anasse2027.fr/programme"
+        },
+        "immigration": {
+          "valeur": "Régulariser tous les sans-papiers",
+          "source": "https://anasse2027.fr/programme"
+        }
+      },
+      "propositions": {
+        "pouvoir-achat": [
+          {
+            "titre": "SMIC à 2 000 € net",
+            "detail": "SMIC à 2 000 € net, hausse des salaires de 500 €, salaires et allocations indexés sur l'inflation.",
+            "source": "https://anasse2027.fr/programme"
+          },
+          {
+            "titre": "Logement",
+            "detail": "Expropriation des logements vides ; plafonnement et gel des loyers.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Interdiction des licenciements",
+            "detail": "Interdiction des licenciements ; semaine de 28 heures sans perte de salaire ; fin de la sous-traitance, CDI pour tous.",
+            "source": "https://anasse2027.fr/programme"
+          },
+          {
+            "titre": "Retraite à 60 ans",
+            "detail": "Retraite à 60 ans, 55 ans pour les métiers pénibles, sans condition de durée de cotisation.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Expropriation des banques",
+            "detail": "Expropriation des groupes bancaires ; prêts à taux zéro et fin des agios ; fin des aides publiques aux grandes entreprises.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Planification écologique",
+            "detail": "Production planifiée et démocratique respectueuse de l'environnement ; comités de travailleurs, scientifiques et habitants pour dépolluer sols et eaux.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "immigration": [
+          {
+            "titre": "Régularisation de tous les sans-papiers",
+            "detail": "Régularisation de tous les sans-papiers, liberté de circulation et d'installation ; abrogation de la loi de 2004.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Unités spéciales de police",
+            "detail": "Dissolution des unités spéciales de police ; amnistie des manifestants, jeunes des quartiers et syndicalistes réprimés.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "education": [
+          {
+            "titre": "Revenu étudiant",
+            "detail": "Revenu étudiant au niveau du SMIC, financé par le patronat ; opposition au SNU.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Fin de la Ve République",
+            "detail": "Fin de la Ve République, du Sénat et de la présidence.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Contre la guerre",
+            "detail": "« Pas un sou pour la guerre » ; retrait des troupes françaises à l'étranger ; soutien à la libération de la Palestine et de la Kanaky.",
+            "source": "https://anasse2027.fr/programme"
+          }
+        ]
+      },
       "sources": [
+        "https://anasse2027.fr/programme",
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_décembre_2021.jpg",
@@ -647,6 +739,11 @@
             "titre": "Éradiquer l'illettrisme",
             "detail": "Éradiquer l'illettrisme d'ici 2032.",
             "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
+          },
+          {
+            "titre": "Services publics et étudiants",
+            "detail": "22 milliards d'euros pour les services publics dans les premiers mois ; bac professionnel en quatre ans ; revenu étudiant au-dessus du seuil de pauvreté (environ 1 300 €).",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "europe": [
@@ -717,7 +814,8 @@
         "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
         "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
-        "https://fr.news.yahoo.com/programme-2027-jean-luc-m%C3%A9lenchon-110620899.html"
+        "https://fr.news.yahoo.com/programme-2027-jean-luc-m%C3%A9lenchon-110620899.html",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg",
       "biographie": {
@@ -811,6 +909,11 @@
             "titre": "Fraude fiscale",
             "detail": "Durcir les sanctions contre les fraudeurs ; manque à gagner estimé de 80 à 100 milliards d'euros.",
             "source": "https://www.journaldunet.com/business/action-publique/1554447-fabien-roussel-officialise-sa-candidature-a-l-election-presidentielle-de-2027-investi-par-72-des-militants-du-pcf/"
+          },
+          {
+            "titre": "500 000 fonctionnaires",
+            "detail": "Recruter près de 500 000 fonctionnaires en cinq ans ; point d'indice relevé de 10 % immédiatement, puis de 20 à 30 % sur le quinquennat.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "ecologie": [
@@ -819,12 +922,27 @@
             "detail": "« Le doublement de la production d'électricité nucléaire, renouvelable, hydraulique ».",
             "source": "https://www.france24.com/fr/france/20260906-pr%C3%A9sidentielle-2027-fabien-roussel-officialise-sa-candidature-avec-le-pcf"
           }
+        ],
+        "securite": [
+          {
+            "titre": "60 000 recrutements",
+            "detail": "60 000 recrutements dans la police, la gendarmerie et les douanes.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          }
+        ],
+        "education": [
+          {
+            "titre": "Réforme Blanquer",
+            "detail": "« Abroger la réforme Blanquer ».",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          }
         ]
       },
       "sources": [
         "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
         "https://www.france24.com/fr/france/20260906-pr%C3%A9sidentielle-2027-fabien-roussel-officialise-sa-candidature-avec-le-pcf",
-        "https://www.journaldunet.com/business/action-publique/1554447-fabien-roussel-officialise-sa-candidature-a-l-election-presidentielle-de-2027-investi-par-72-des-militants-du-pcf/"
+        "https://www.journaldunet.com/business/action-publique/1554447-fabien-roussel-officialise-sa-candidature-a-l-election-presidentielle-de-2027-investi-par-72-des-militants-du-pcf/",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg",
       "biographie": {
@@ -1468,6 +1586,11 @@
             "titre": "Cannabis",
             "detail": "Légaliser et encadrer la production, la vente et la consommation de cannabis.",
             "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Justice",
+            "detail": "9 000 magistrats, 10 000 greffiers et 7 000 attachés de justice supplémentaires ; 250 000 à 350 000 postes publics créés.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "sante": [
@@ -1485,6 +1608,11 @@
             "titre": "Pôle public du médicament",
             "detail": "Développer le pôle public du médicament ; CSG rendue progressive.",
             "source": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          },
+          {
+            "titre": "Installation des médecins",
+            "detail": "Dans les zones bien dotées, une installation de médecin conditionnée au départ d'un autre ; un service public physique à moins de quinze minutes de chaque Français.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "education": [
@@ -1526,7 +1654,8 @@
       },
       "sources": [
         "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-        "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/"
+        "https://marine-oceans.com/actualites/presidentielle-tondelier-presente-ses-mesures-pour-travailler-mieux/",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:20210819_tondelier.m-cr3.jpg",
       "biographie": {
@@ -1577,9 +1706,9 @@
       "site": "https://place-publique.eu",
       "bio": "Eurodéputé, co-fondateur de Place publique. Vainqueur de la primaire de la gauche sociale-démocrate le 11 octobre 2026 (≈ 66 %).",
       "phares": [
-        "Baisse de la CSG sur les salaires",
-        "État d'urgence industriel",
-        "Abroger la réforme des retraites"
+        "200 Md€ pour la révolution écologique",
+        "Chèque énergie de 500 €",
+        "Contribution exceptionnelle de 50 Md€ sur les plus hauts patrimoines"
       ],
       "positions": {
         "retraite": {
@@ -1591,8 +1720,8 @@
           "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
         },
         "fortune": {
-          "valeur": "Taxer les gros héritages",
-          "source": "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/"
+          "valeur": "Contribution exceptionnelle 50 Md€",
+          "source": "https://glucks2027.fr/revolution-ecologique/"
         },
         "immigration": {
           "valeur": "Immigration de travail",
@@ -1601,6 +1730,10 @@
         "europe": {
           "valeur": "Coopération européenne",
           "source": "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+        },
+        "nucleaire": {
+          "valeur": "Prolonger le parc existant",
+          "source": "https://glucks2027.fr/revolution-ecologique/"
         }
       },
       "propositions": {
@@ -1609,6 +1742,16 @@
             "titre": "Baisse de la CSG sur les salaires",
             "detail": "Baisser la CSG sur les salaires, financée par une taxation des grandes fortunes et des « méga-héritiers ».",
             "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
+          },
+          {
+            "titre": "Chèque énergie",
+            "detail": "Chèque énergie de 500 € pour six millions de familles et de 200 € pour dix millions de familles des classes moyennes ; prix de l'électricité qui n'augmente pas plus vite que l'inflation.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
+          },
+          {
+            "titre": "Pass mobilité jeunes",
+            "detail": "Pass Mobilité Durable à 1 € par jour pour les moins de 25 ans ; 5 000 lignes de covoiturage d'ici 2035.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
           }
         ],
         "economie": [
@@ -1621,6 +1764,16 @@
             "titre": "Taxer les très gros héritages",
             "detail": "Hausse de l'imposition des très gros héritages pour financer la baisse des prélèvements sur les salaires (15 milliards d'euros selon l'estimation citée).",
             "source": "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/"
+          },
+          {
+            "titre": "Contribution exceptionnelle de 50 Md€",
+            "detail": "Contribution exceptionnelle, une seule année, sur les plus hauts patrimoines pour l'investissement climatique : 50 milliards d'euros ; taxe européenne sur les superprofits pétroliers et gaziers.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
+          },
+          {
+            "titre": "Livret de souveraineté écologique",
+            "detail": "Plafond du livret A doublé et fusionné avec le LDDS en un « Livret de souveraineté écologique et sociale » rémunéré à 2,5 % ; fin de l'exonération de taxe sur le kérosène des vols intérieurs.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
           }
         ],
         "ecologie": [
@@ -1628,6 +1781,21 @@
             "titre": "Voiture électrique à 100 € par mois",
             "detail": "Accès des ménages modestes à une voiture électrique « contre un loyer de 100 euros par mois ».",
             "source": "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir"
+          },
+          {
+            "titre": "200 Md€ pour la révolution écologique",
+            "detail": "200 milliards d'euros d'argent public sur le quinquennat ; état d'urgence écologique inscrit à l'article 1 de la Constitution ; loi de programmation écologique ; neutralité carbone en 2050.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
+          },
+          {
+            "titre": "Renouvelables et nucléaire",
+            "detail": "Au moins doubler d'ici 2035 les capacités de production renouvelable ; prolonger et sécuriser les réacteurs nucléaires existants ; retrait d'EDF, Framatome et Orano des partenariats avec Rosatom.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
+          },
+          {
+            "titre": "Leasing social et pompes à chaleur",
+            "detail": "1 million de voitures électriques en leasing à 100 € par mois sans apport ; 1 million de pompes à chaleur à 1 € par jour.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
           }
         ],
         "education": [
@@ -1635,6 +1803,16 @@
             "titre": "Plan de sauvetage de l'école publique",
             "detail": "Un « plan de sauvetage » de l'école publique.",
             "source": "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/"
+          },
+          {
+            "titre": "Rénovation des écoles",
+            "detail": "Rénover 4 000 écoles primaires par an et plus de 2 800 collèges et lycées.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
+          },
+          {
+            "titre": "Enseignants et Parcoursup",
+            "detail": "Salaire des enseignants +10 %, jusqu'à +25 % en milieu de carrière ; remplacer Parcoursup ; subventions à l'enseignement privé conditionnées à la mixité sociale.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "travail": [
@@ -1656,15 +1834,29 @@
             "titre": "Coopération européenne",
             "detail": "La coopération européenne comme protection des entreprises françaises face à la concurrence chinoise et américaine.",
             "source": "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+          },
+          {
+            "titre": "Grand emprunt écologique européen",
+            "detail": "Grand emprunt écologique européen ; mesures miroirs et renforcement du mécanisme d'ajustement carbone aux frontières ; « sortir des logiques de libre-échange ».",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Sécurité civile",
+            "detail": "1 milliard d'euros d'investissement dans la sécurité civile dès juin 2027 ; fonds d'indemnisation avançant le paiement des dommages aux sinistrés.",
+            "source": "https://glucks2027.fr/revolution-ecologique/"
           }
         ]
       },
       "sources": [
-        "https://en.wikipedia.org/wiki/2026_United_Left_primary",
         "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats",
+        "https://glucks2027.fr/revolution-ecologique/",
         "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir",
         "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/",
-        "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+        "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109",
+        "https://en.wikipedia.org/wiki/2026_United_Left_primary",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
       "biographie": {
@@ -2159,6 +2351,11 @@
             "titre": "Moins de fonctionnaires",
             "detail": "100 000 postes en moins dans l'État et les collectivités ; aides directes ciblées plutôt que baisses de taxes.",
             "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Départs volontaires",
+            "detail": "100 000 départs volontaires dans les ministères et administrations, pour « faire mieux avec un peu moins ».",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "pouvoir-achat": [
@@ -2294,7 +2491,8 @@
       "sources": [
         "https://attalpresident.fr/programme",
         "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html",
-        "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+        "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_in_2026.jpg",
       "biographie": {
@@ -2353,14 +2551,64 @@
       "slogan": "Le projet France",
       "statut": "déclaré",
       "declaration": "2026-09-24",
-      "programme": "non publié",
-      "site": null,
+      "programme": "partiel",
+      "site": "https://becht2027.fr",
       "bio": "Ancien ministre délégué au Commerce extérieur.",
-      "phares": [],
+      "phares": [
+        "Médecin à moins de 30 minutes",
+        "10 000 policiers supplémentaires",
+        "Plan ferroviaire de 10 Md€"
+      ],
       "positions": {},
-      "propositions": {},
+      "propositions": {
+        "sante": [
+          {
+            "titre": "Médecin à moins de 30 minutes",
+            "detail": "Un médecin traitant et une pharmacie « à moins de trente minutes de chez soi, consultable sous 48 heures » ; un spécialiste à moins d'une heure sous trois mois ; examens en moins d'un mois ; fusion des cinq grandes agences sanitaires.",
+            "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-sante/"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "10 000 policiers",
+            "detail": "« Nous recruterons 10 000 policiers supplémentaires » ; chaque affaire jugée « en dix-huit mois maximum ».",
+            "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-securite/"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Provinces",
+            "detail": "Départements regroupés en « Provinces » dotées de plus de 4 milliards d'euros ; 10 milliards d'euros de l'État sur cinq ans ; reconnaissance du vote blanc et référendum d'initiative citoyenne.",
+            "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Sortir des énergies fossiles",
+            "detail": "Sortir des énergies fossiles ; neutralité carbone « en avance de phase » sur les objectifs européens ; carburants de synthèse.",
+            "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-energie/"
+          },
+          {
+            "titre": "Plan ferroviaire",
+            "detail": "« Grand plan ferroviaire de 10 milliards d'euros » pour rénover et entretenir les lignes.",
+            "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Contrat unique",
+            "detail": "Contrat unique transférable garantissant « un revenu permanent jamais en deçà du salaire minimum », avec une année sabbatique ; allocations familiales dès le premier enfant.",
+            "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-sociale/"
+          }
+        ]
+      },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://becht2027.fr/projet-france/les-5-refondations/refondation-sante/",
+        "https://becht2027.fr/projet-france/les-5-refondations/refondation-securite/",
+        "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/",
+        "https://becht2027.fr/projet-france/les-5-refondations/refondation-energie/",
+        "https://becht2027.fr/projet-france/les-5-refondations/refondation-sociale/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Olivier_Becht.jpg",
       "biographie": {
@@ -2425,7 +2673,7 @@
       "slogan": "Croire en nous",
       "statut": "déclaré",
       "declaration": "2024-09-03",
-      "programme": "partiel",
+      "programme": "complet",
       "site": "https://horizonsleparti.fr",
       "bio": "Maire du Havre, président d'Horizons, ancien Premier ministre (2017-2020). Mise sur le travail et la baisse des dépenses publiques.",
       "phares": [
@@ -2436,218 +2684,249 @@
       "positions": {
         "retraite": {
           "valeur": "65 ans, 45 annuités",
-          "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          "source": "https://www.edouardphilippe.fr/programme/retraites"
+        },
+        "fortune": {
+          "valeur": "Aucun nouvel impôt",
+          "source": "https://www.edouardphilippe.fr/programme/comptes-publics"
         },
         "nucleaire": {
-          "valeur": "8 EPR supplémentaires",
-          "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+          "valeur": "14 nouveaux EPR",
+          "source": "https://www.edouardphilippe.fr/programme/energie"
         },
         "immigration": {
           "valeur": "Diviser par deux",
-          "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+          "source": "https://www.edouardphilippe.fr/programme/immigration"
         },
         "europe": {
-          "valeur": "Union des marchés de capitaux",
-          "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+          "valeur": "Préférence européenne",
+          "source": "https://www.edouardphilippe.fr/programme/entreprises"
         }
       },
       "propositions": {
         "economie": [
           {
             "titre": "Baisse des impôts de production",
-            "detail": "« 50 Md€ de baisses d'impôts de production contre 50 Md€ d'aides publiques improductives en moins ».",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "detail": "« 50 Md€ » d'impôts de production en moins, compensés par 50 Md€ d'aides publiques en moins.",
+            "source": "https://www.edouardphilippe.fr/programme/entreprises"
           },
           {
             "titre": "Règle d'or par référendum",
-            "detail": "Inscrire dans la Constitution une règle d'or de maîtrise des déficits via un référendum ; ramener le déficit de plus de 5 % à 2 % du PIB à la fin du quinquennat.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "detail": "Règle d'or budgétaire inscrite dans la Constitution par référendum dès le début du quinquennat ; déficit ramené de plus de 5 % à 2 % de la richesse nationale.",
+            "source": "https://www.edouardphilippe.fr/programme/comptes-publics"
           },
           {
-            "titre": "Baisse de la dépense publique",
-            "detail": "Supprimer un tiers des fonctionnaires partant à la retraite, soit plus de 250 000 postes sur le quinquennat ; fusionner et supprimer des dizaines d'opérateurs et d'agences.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "titre": "250 000 postes en moins",
+            "detail": "Ne pas remplacer un fonctionnaire sur trois, soit 250 000 postes en moins sur le quinquennat ; regrouper ou privatiser les agences qui font doublon.",
+            "source": "https://www.edouardphilippe.fr/programme/comptes-publics"
           },
           {
-            "titre": "Ni nouvelle norme ni nouvel impôt",
-            "detail": "« Pas de nouvelle norme et de nouvel impôt sur le quinquennat » ; supprimer le code français de la commande publique ; maintien du pacte Dutreil.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "titre": "Ni nouvel impôt ni nouvelle norme",
+            "detail": "Aucun nouvel impôt ni nouvelle norme pendant cinq ans ; zéro surtransposition ; suppression du code de la commande publique ; maintien du pacte Dutreil.",
+            "source": "https://www.edouardphilippe.fr/programme/entreprises"
           },
           {
             "titre": "Livret capital France",
-            "detail": "Créer un « livret capital France » pour mobiliser l'épargne au service des champions technologiques.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+            "detail": "Un « livret capital France » et des fonds de capitalisation pour orienter l'épargne vers les entreprises.",
+            "source": "https://www.edouardphilippe.fr/programme/entreprises"
+          },
+          {
+            "titre": "Préférence européenne",
+            "detail": "Préférence européenne dans l'industrie (automobile, acier, nucléaire) ; transferts de technologie et coentreprises imposés aux entreprises chinoises dans les secteurs stratégiques ; prix du carbone aux frontières.",
+            "source": "https://www.edouardphilippe.fr/programme/entreprises"
           }
         ],
         "travail": [
           {
-            "titre": "Retraites : 65 ans et 45 annuités",
-            "detail": "Porter progressivement l'âge de départ à 65 ans et la durée de cotisation à 45 ans en moins de dix ans ; départs anticipés (55 ans en situation de handicap, 60 ans en incapacité permanente, 62 ans en invalidité).",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "titre": "Retraite à 65 ans, 45 annuités",
+            "detail": "Âge de départ porté progressivement à 65 ans et durée de cotisation à 45 ans en moins de dix ans ; « un Français sur trois pourra partir avant 65 ans » ; carrières longues maintenues.",
+            "source": "https://www.edouardphilippe.fr/programme/retraites"
           },
           {
             "titre": "Capitalisation collective",
-            "detail": "Généraliser à tous les salariés la retraite par capitalisation collective, avec un premier versement de l'État de 500 € dès le premier emploi.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "detail": "Capitalisation collective généralisée à tous les salariés ; plan d'épargne retraite pour chaque Français ; « un premier versement de 500 € par l'État dès le premier emploi ».",
+            "source": "https://www.edouardphilippe.fr/programme/retraites"
           },
           {
             "titre": "Sortir des 35 heures",
-            "detail": "Permettre aux entreprises de fixer librement le temps de travail ; zéro cotisation patronale au-delà de la 37e heure.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "detail": "Les entreprises organisent leur temps de travail par accord ; zéro cotisation patronale au-delà de la 37e heure.",
+            "source": "https://www.edouardphilippe.fr/programme/travail"
           },
           {
-            "titre": "Assurance chômage",
-            "detail": "Réduire à 12 mois maximum la durée d'indemnisation pour les moins de 50 ans, contre 18 mois aujourd'hui.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "titre": "Chômage et RSA",
+            "detail": "Indemnisation chômage limitée à 12 mois pour les moins de 50 ans ; durée du RSA limitée.",
+            "source": "https://www.edouardphilippe.fr/programme/comptes-publics"
           },
           {
             "titre": "Arrêts maladie",
-            "detail": "3 jours de carence pour tous, dans le privé comme dans le public ; période incompressible de 3 à 6 mois entre un arrêt maladie et une rupture conventionnelle.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "detail": "Trois jours de carence pour tous, privé comme public ; délai de 3 à 6 mois entre un arrêt maladie et une rupture conventionnelle.",
+            "source": "https://www.edouardphilippe.fr/programme/travail"
+          },
+          {
+            "titre": "Reconversion et seniors",
+            "detail": "Droit à la reconversion pour les métiers menacés par l'IA ; cumul emploi-retraite et retraite progressive développés.",
+            "source": "https://www.edouardphilippe.fr/programme/travail"
           }
         ],
         "pouvoir-achat": [
           {
             "titre": "Heures supplémentaires exonérées",
-            "detail": "Exonérer les heures supplémentaires de cotisations sociales et d'impôt sur le revenu : « environ 1 000 € de plus par an au SMIC pour deux heures de plus par semaine ».",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+            "detail": "Heures au-delà de 35 heures exonérées de cotisations et d'impôt : environ 1 000 € par an pour un salarié au SMIC qui travaille deux heures de plus par semaine.",
+            "source": "https://www.edouardphilippe.fr/programme/travail"
           },
           {
-            "titre": "Allocation familiale dès le 1er enfant",
-            "detail": "Allocation familiale unique dès le premier enfant, à hauteur de 350 € ; suppression de l'impôt sur le revenu pendant les trois premières années de l'enfant pour les classes moyennes.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+            "titre": "Allocation familiale de 350 €",
+            "detail": "350 € par mois dès le premier enfant ; pas d'impôt sur le revenu pour les classes moyennes les trois premières années de l'enfant ; prêt à taux zéro à chaque naissance ; plan Marshall pour la garde d'enfants.",
+            "source": "https://www.edouardphilippe.fr/programme/famille"
+          },
+          {
+            "titre": "Outre-mer",
+            "detail": "Modernisation de l'octroi de mer, concurrence dans les transports ; convergence du SMIC de Mayotte vers le niveau national.",
+            "source": "https://www.edouardphilippe.fr/programme/outre-mer"
           }
         ],
         "ecologie": [
           {
-            "titre": "8 EPR supplémentaires",
-            "detail": "Lancement de 8 EPR supplémentaires en plus des 6 déjà prévus.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+            "titre": "14 nouveaux EPR",
+            "detail": "Lancer 8 EPR supplémentaires en plus des 6 prévus ; renouvelables « là où elles sont efficaces » ; électrification massive ; capture du carbone.",
+            "source": "https://www.edouardphilippe.fr/programme/energie"
           },
           {
-            "titre": "Prix du carbone aux frontières",
-            "detail": "Instaurer un prix du carbone aux frontières européennes ; investir dans la capture de carbone.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+            "titre": "Adaptation au climat",
+            "detail": "Fonds d'adaptation de 2 Md€ par an (Fonds Barnier et Fonds vert fusionnés) ; plan baignade national ; 10 % de réutilisation des eaux usées traitées ; « Canadairs » fabriqués en France.",
+            "source": "https://www.edouardphilippe.fr/programme/adaptation-climatique"
           },
           {
-            "titre": "Adaptation au réchauffement",
-            "detail": "Fonds unique d'adaptation (Fonds Barnier et Fonds vert) doté de 2 milliards d'euros par an ; « DATAR 2.0 » ; plan baignade national.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
-          },
-          {
-            "titre": "« Canadairs français »",
-            "detail": "Construire en France des « Canadairs français » ; journée nationale d'alerte.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "titre": "Agriculture",
+            "detail": "Zéro surtransposition agricole ; « super Dutreil agricole » pour les transmissions ; 100 territoires de souveraineté alimentaire ; stockage de l'eau accéléré.",
+            "source": "https://www.edouardphilippe.fr/programme/adaptation-climatique"
           }
         ],
         "immigration": [
           {
             "titre": "Diviser par deux l'immigration",
-            "detail": "« Diviser par deux l'immigration dans notre pays » ; politique de quotas migratoires.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "detail": "Immigration divisée par deux ; quotas pour l'immigration de travail ; pas de régularisation massive.",
+            "source": "https://www.edouardphilippe.fr/programme/immigration"
           },
           {
-            "titre": "Accord de 1968 avec l'Algérie",
-            "detail": "Dénoncer l'accord de 1968 avec l'Algérie.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
-          },
-          {
-            "titre": "Regroupement familial suspendu",
-            "detail": "Suspendre le regroupement familial pour la durée du quinquennat.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "titre": "Regroupement familial et accord de 1968",
+            "detail": "Moratoire sur le regroupement familial pendant le quinquennat ; dénonciation de l'accord franco-algérien de 1968 ; rétablissement de la double peine.",
+            "source": "https://www.edouardphilippe.fr/programme/immigration"
           },
           {
             "titre": "Asile",
-            "detail": "Liste de pays sûrs votée chaque année par le Parlement ; fin de « l'asile à vie ».",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "detail": "Liste de pays sûrs votée chaque année ; fin de l'asile à vie ; centres de retour à l'étranger ; aides sociales aux étrangers alignées sur la moyenne européenne.",
+            "source": "https://www.edouardphilippe.fr/programme/immigration"
           },
           {
-            "titre": "Droit du sol à Mayotte",
-            "detail": "Suspendre le droit du sol à Mayotte.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "titre": "Mayotte et Guyane",
+            "detail": "Moratoire total sur l'immigration à Mayotte, droit du sol suspendu à Mayotte, demandes d'asile suspendues à Mayotte et en Guyane pendant le quinquennat.",
+            "source": "https://www.edouardphilippe.fr/programme/outre-mer"
           }
         ],
         "securite": [
           {
-            "titre": "Peines planchers",
-            "detail": "Peines planchers pour les infractions les plus graves ; suppression du juge d'application des peines.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
-          },
-          {
-            "titre": "Pouvoir de sanction des maires",
-            "detail": "Donner un pouvoir de sanction pénale aux maires.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
-          },
-          {
             "titre": "« État d'urgence narco »",
-            "detail": "« État d'urgence narco » limité dans le temps et l'espace ; « fiche S financière » ; lever l'excuse de minorité pour les faits liés au narcotrafic.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "detail": "État d'urgence narco dans les zones les plus touchées ; saisie de l'argent des trafiquants ; amendes plus fortes pour les consommateurs ; vidéosurveillance assistée par IA.",
+            "source": "https://www.edouardphilippe.fr/programme/securite"
           },
           {
-            "titre": "Imprescriptibilité des crimes sur mineur",
-            "detail": "Imprescriptibilité des crimes sur mineur ; « droit de savoir » des parents (loi de Sarah).",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+            "titre": "Peines planchers",
+            "detail": "Peines planchers ; peines courtes dès la première infraction ; suppression du juge d'application des peines ; loi d'accélération de la construction de prisons ; retour des juges de paix.",
+            "source": "https://www.edouardphilippe.fr/programme/justice"
+          },
+          {
+            "titre": "Maires et amendes",
+            "detail": "Pouvoir de sanction des maires contre les incivilités ; amendes impayées prélevées sur les prestations sociales ; expulsion immédiate des délinquants étrangers.",
+            "source": "https://www.edouardphilippe.fr/programme/securite"
+          },
+          {
+            "titre": "Protection de l'enfance",
+            "detail": "Imprescriptibilité des crimes sur mineurs ; « droit de savoir » des parents ; inspection des lieux accueillant des mineurs au moins tous les 3 ans.",
+            "source": "https://www.edouardphilippe.fr/programme/protection-de-l-enfance"
+          },
+          {
+            "titre": "Magistrats",
+            "detail": "Interdire le syndicalisme des magistrats : « La possibilité de se syndiquer doit être interdite. »",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "sante": [
           {
-            "titre": "Protection de l'enfance",
-            "detail": "Inspection des lieux accueillant des enfants au moins tous les trois ans ; certificats d'honorabilité dans le périscolaire.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+            "titre": "Dépenses de santé",
+            "detail": "Mieux dépenser par la prévention et la technologie, sans baisse des dépenses de santé.",
+            "source": "https://www.edouardphilippe.fr/programme/comptes-publics"
           },
           {
-            "titre": "Premiers secours",
-            "detail": "Former tous les Français aux premiers secours.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "titre": "Mayotte",
+            "detail": "Deuxième hôpital de plein exercice à Mayotte ; financement de l'eau garanti jusqu'en 2032.",
+            "source": "https://www.edouardphilippe.fr/programme/outre-mer"
           }
         ],
         "education": [
           {
             "titre": "+20 % pour les enseignants",
-            "detail": "Augmenter de 20 % la rémunération moyenne des enseignants sur le quinquennat.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+            "detail": "Rémunération moyenne des enseignants augmentée de 20 % sur le quinquennat ; retour des écoles normales.",
+            "source": "https://www.edouardphilippe.fr/programme/ecole"
           },
           {
-            "titre": "Moins d'élèves par classe",
-            "detail": "Réduire les effectifs en maternelle et en primaire ; avancer la rentrée d'une à deux semaines.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+            "titre": "Lire, écrire, compter",
+            "detail": "Apprendre à lire dès la maternelle ; 2 500 mots maîtrisés à l'entrée en CP ; classes réduites en maternelle et primaire ; tutorat public universel.",
+            "source": "https://www.edouardphilippe.fr/programme/ecole"
           },
           {
-            "titre": "Téléphones interdits",
-            "detail": "Interdire strictement les téléphones portables à l'école primaire et au collège.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+            "titre": "Autonomie des établissements",
+            "detail": "Les chefs d'établissement fixent méthodes, horaires et discipline ; rentrée avancée d'une à deux semaines pour les élèves qui en ont besoin.",
+            "source": "https://www.edouardphilippe.fr/programme/ecole"
           },
           {
-            "titre": "Amende de responsabilisation scolaire",
-            "detail": "Créer une « amende de responsabilisation scolaire ».",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+            "titre": "Téléphones et IA",
+            "detail": "Téléphones interdits de l'école au lycée ; pas d'IA avant le collège ; « amende de responsabilisation scolaire » pour les parents.",
+            "source": "https://www.edouardphilippe.fr/programme/ecole"
           },
           {
-            "titre": "Ingénieurs",
-            "detail": "Former de 40 000 à 100 000 ingénieurs par an en cinq ans.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+            "titre": "100 000 ingénieurs par an",
+            "detail": "Passer de 40 000 à 100 000 ingénieurs formés par an en cinq ans.",
+            "source": "https://www.edouardphilippe.fr/programme/intelligence-artificielle"
           }
         ],
         "europe": [
           {
-            "titre": "Armées",
-            "detail": "Nouvelle loi de programmation militaire « de la massification » ; réservistes de 45 000 à 250 000 ; service militaire volontaire de 3 000 à 50 000 places par an.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure"
+            "titre": "Massification des armées",
+            "detail": "Loi de massification ; service militaire volontaire de 50 000 jeunes par an ; 250 000 réservistes ; au moins 1 % de la richesse nationale des pays européens de l'OTAN en équipements européens ; soutien total à l'Ukraine.",
+            "source": "https://www.edouardphilippe.fr/programme/defense"
           },
           {
-            "titre": "Buy European Tech Act",
-            "detail": "Mutualiser les achats technologiques européens (« Buy European Tech Act ») ; union européenne des marchés de capitaux.",
-            "source": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+            "titre": "Puissance numérique européenne",
+            "detail": "« Buy European Tech Act » ; pacte européen de puissance numérique ; soutien aux champions comme Mistral.",
+            "source": "https://www.edouardphilippe.fr/programme/intelligence-artificielle"
+          },
+          {
+            "titre": "Marché unique",
+            "detail": "Achever le marché unique et l'union des marchés de capitaux ; protéger le marché européen de la concurrence chinoise déloyale.",
+            "source": "https://www.edouardphilippe.fr/programme/entreprises"
           }
         ]
       },
       "sources": [
+        "https://www.edouardphilippe.fr/programme/entreprises",
+        "https://www.edouardphilippe.fr/programme/comptes-publics",
+        "https://www.edouardphilippe.fr/programme/retraites",
+        "https://www.edouardphilippe.fr/programme/travail",
+        "https://www.edouardphilippe.fr/programme/famille",
+        "https://www.edouardphilippe.fr/programme/outre-mer",
+        "https://www.edouardphilippe.fr/programme/energie",
+        "https://www.edouardphilippe.fr/programme/adaptation-climatique",
+        "https://www.edouardphilippe.fr/programme/immigration",
+        "https://www.edouardphilippe.fr/programme/securite",
+        "https://www.edouardphilippe.fr/programme/justice",
+        "https://www.edouardphilippe.fr/programme/protection-de-l-enfance",
+        "https://www.edouardphilippe.fr/programme/ecole",
+        "https://www.edouardphilippe.fr/programme/intelligence-artificielle",
+        "https://www.edouardphilippe.fr/programme/defense",
         "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
         "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/",
-        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
-        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
-        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
-        "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg",
       "biographie": {
@@ -2821,6 +3100,27 @@
             "detail": "Suppression de l'encadrement des loyers ; fin des interdictions de louer liées au DPE ; amortissement fiscal pour les logements loués ; expulsions accélérées.",
             "source": "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement"
           }
+        ],
+        "sante": [
+          {
+            "titre": "Médecins",
+            "detail": "Temps administratif réduit pour libérer l'équivalent de 6 000 postes de médecins ; frais de déplacement pris en charge pour les médecins retraités qui exercent dans les zones sous-dotées.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          }
+        ],
+        "education": [
+          {
+            "titre": "Examen d'entrée en sixième",
+            "detail": "Examen d'entrée en sixième, groupes de niveau, une centaine d'écoles publiques autonomes.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Fonction publique",
+            "detail": "Ne remplacer qu'une partie des quelque 400 000 départs de fonctionnaires ; suppression d'agences, à commencer par l'Ademe.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          }
         ]
       },
       "sources": [
@@ -2829,7 +3129,8 @@
         "https://actu.orange.fr/politique/presidentielle-2027-bruno-retailleau-promet-d-organiser-un-referendum-sur-l-immigration-en-cas-de-victoire-l-express-via-6medias-CNT000002txUGH.html",
         "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle",
-        "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement"
+        "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg",
       "biographie": {
@@ -3159,14 +3460,65 @@
       "slogan": "Libérons la France !",
       "statut": "déclaré",
       "declaration": "2026-09-19",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": "https://www.debout-la-france.fr",
       "bio": "Président de Debout la France, maire honoraire de Yerres. Candidat en 2012, 2017 et 2022.",
-      "phares": [],
-      "positions": {},
-      "propositions": {},
+      "phares": [
+        "Électricité divisée par deux",
+        "SMIC à 1 600 € net",
+        "Capital de 10 000 € à la naissance"
+      ],
+      "positions": {
+        "smic": {
+          "valeur": "1 600 € net",
+          "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+        },
+        "europe": {
+          "valeur": "Sortie de l'UE",
+          "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+        }
+      },
+      "propositions": {
+        "pouvoir-achat": [
+          {
+            "titre": "Énergie moins chère",
+            "detail": "« Diviser par 2 le prix de l'électricité dès la première année » (tarif garanti de 11 centimes le kWh) ; « baisser de 40 centimes le prix des carburants » ; « réduire de 20 % le prix du gaz ».",
+            "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+          },
+          {
+            "titre": "SMIC à 1 600 € net",
+            "detail": "« Augmenter le SMIC à 1600 euros net », compensé par une baisse des cotisations salariales ; TVA à zéro sur 50 produits essentiels ; pensions et traitements des fonctionnaires indexés sur l'inflation.",
+            "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Réindustrialisation",
+            "detail": "Industrie à 15 % du PIB en 10 ans ; fonds d'investissement « doté de 4 milliards d'euros par an » piloté par la Caisse des dépôts ; baisse des charges pour les « entreprises patriotes » ; normes administratives divisées par deux.",
+            "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+          },
+          {
+            "titre": "Commande publique",
+            "detail": "Préférence aux produits « Origine France garantie » tant que leur prix n'est pas supérieur de 50 % au produit étranger ; abrogation de la directive sur les travailleurs détachés.",
+            "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+          },
+          {
+            "titre": "Économies",
+            "detail": "Sortie de l'UE (15 milliards d'euros de contribution nette) ; fin de l'aide à l'Ukraine (7 milliards par an) ; suppression de l'ADEME et des ARS ; lutte contre la fraude sociale et la fraude à la TVA.",
+            "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Capital de naissance",
+            "detail": "« Doter chaque nouveau-né français d'un capital de 10 000 euros », bloqué jusqu'à la retraite (environ 6 milliards d'euros par an) ; heures supplémentaires défiscalisées au-delà de 1 607 heures par an.",
+            "source": "https://www.debout-la-france.fr/projet/economie-travail/"
+          }
+        ]
+      },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://www.debout-la-france.fr/projet/economie-travail/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_français_(cropped).jpg",
       "biographie": {
@@ -3231,6 +3583,14 @@
         "europe": {
           "valeur": "Sortie de l'UE et de l'OTAN",
           "source": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
+        },
+        "nucleaire": {
+          "valeur": "Investir massivement",
+          "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
+        },
+        "retraite": {
+          "valeur": "Baisser l'âge de départ",
+          "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
         }
       },
       "propositions": {
@@ -3239,12 +3599,53 @@
             "titre": "Sortie de l'UE et de l'OTAN",
             "detail": "Favorable à « une sortie de la France de l'Union européenne et de l'Otan ».",
             "source": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
+          },
+          {
+            "titre": "Quitter les instances supranationales",
+            "detail": "Quitter « toutes les instances supranationales : UE, Euro, Schengen, CEDH, OTAN, OMS » ; nouvelle monnaie nationale.",
+            "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "RIC en toutes matières",
+            "detail": "Référendum d'initiative citoyenne sur tout sujet inscrit dans la Constitution ; révision de la Constitution uniquement par référendum ; inéligibilité à vie pour les élus condamnés pour corruption.",
+            "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Énergie",
+            "detail": "Quitter le marché européen de l'électricité ; rétablir le monopole public d'EDF ; investir massivement dans le nucléaire ; moratoire total et démantèlement des éoliennes ; voiture thermique préservée au-delà de 2035.",
+            "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Retraite",
+            "detail": "« Baisser l'âge de départ à la retraite. »",
+            "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
+          }
+        ],
+        "securite": [
+          {
+            "titre": "Police de proximité et prisons",
+            "detail": "Police de proximité visible et permanente ; construire les places de prison manquantes et expulser les prisonniers étrangers.",
+            "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Santé",
+            "detail": "Supprimer les ARS ; centres de santé locaux ; investir dans les soins de proximité.",
+            "source": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
           }
         ]
       },
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
-        "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
+        "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027",
+        "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Florian_Philippot.jpg",
       "biographie": {
@@ -3549,6 +3950,11 @@
             "titre": "Renvoi des délinquants étrangers",
             "detail": "« Il faut renvoyer tous les étrangers qui sont dans les prisons françaises » et « tous les délinquants étrangers, même ceux qui ne sont pas en prison ».",
             "source": "https://www.planet.fr/2027-officiellement-candidat-eric-zemmour-propose-dexpulser-tous-les-detenus-et-chomeurs-etrangers.2999311.817022.html"
+          },
+          {
+            "titre": "Prisons et peines",
+            "detail": "Recruter 40 000 surveillants pénitentiaires ; rétablir les peines planchers ; fin des aménagements de peine.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ],
         "immigration": [
@@ -3556,12 +3962,45 @@
             "titre": "Remigration",
             "detail": "« Remigration » : « l'expulsion des étrangers et pas seulement l'arrêt de l'immigration » ; un étranger, même en situation régulière, au chômage depuis un an « devrait être contraint de quitter la France ».",
             "source": "https://www.blick.ch/fr/monde/france/france-eric-zemmour-candidat-pour-la-presidentielle-2027/5mndjbp"
+          },
+          {
+            "titre": "Chômeurs étrangers",
+            "detail": "Expulser les étrangers au chômage depuis plus de six mois, même en situation régulière ; « moins d'immigrés à la fin de mon quinquennat ».",
+            "source": "https://www.franceinfo.fr/elections/presidentielle/eric-zemmour-leader-du-parti-d-extreme-droite-reconquete-officialise-sa-candidature-a-la-presidentielle_8276858.html"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Plan de redressement",
+            "detail": "Un « plan de redressement » des finances publiques.",
+            "source": "https://www.franceinfo.fr/elections/presidentielle/eric-zemmour-leader-du-parti-d-extreme-droite-reconquete-officialise-sa-candidature-a-la-presidentielle_8276858.html"
+          },
+          {
+            "titre": "800 000 postes publics en moins",
+            "detail": "Supprimer 800 000 postes publics en cinq ans, en préservant enseignants, policiers, militaires et soignants.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          }
+        ],
+        "education": [
+          {
+            "titre": "Fin du collège unique",
+            "detail": "Fin du collège unique ; orientation vers la voie professionnelle dès la quatrième ; retour aux méthodes traditionnelles.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          }
+        ],
+        "sante": [
+          {
+            "titre": "Médecins",
+            "detail": "Suppression du numerus clausus ; revenus des médecins retraités en activité défiscalisés ; rôle élargi des infirmiers et pharmaciens.",
+            "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ]
       },
       "sources": [
         "https://www.planet.fr/2027-officiellement-candidat-eric-zemmour-propose-dexpulser-tous-les-detenus-et-chomeurs-etrangers.2999311.817022.html",
-        "https://www.blick.ch/fr/monde/france/france-eric-zemmour-candidat-pour-la-presidentielle-2027/5mndjbp"
+        "https://www.blick.ch/fr/monde/france/france-eric-zemmour-candidat-pour-la-presidentielle-2027/5mndjbp",
+        "https://www.franceinfo.fr/elections/presidentielle/eric-zemmour-leader-du-parti-d-extreme-droite-reconquete-officialise-sa-candidature-a-la-presidentielle_8276858.html",
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Portrait_d'Éric_Zemmour,_avril_2022.jpg",
       "biographie": {
@@ -3605,7 +4044,7 @@
       "statut": "déclarée",
       "declaration": "2026-10-14",
       "programme": "partiel",
-      "site": null,
+      "site": "https://natachapolony2027.fr",
       "bio": "Journaliste et essayiste, ancienne directrice de la rédaction de Marianne.",
       "phares": [
         "Augmenter les salaires de 20 à 30 %",
@@ -3630,12 +4069,25 @@
             "titre": "Aides aux entreprises",
             "detail": "Fin des aides aux entreprises qui ne sont pas liées à une production sur le sol national.",
             "source": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808"
+          },
+          {
+            "titre": "Puissance industrielle en dix ans",
+            "detail": "« Dans dix ans, la France doit avoir retrouvé sa puissance industrielle » : produire son énergie et ses médicaments essentiels.",
+            "source": "https://natachapolony2027.fr/natacha-polony/ma-vision"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Contre la corruption",
+            "detail": "« Ouvrir un chantier majeur contre la corruption et les conflits d'intérêts » ; protection des lanceurs d'alerte ; respect du résultat des référendums.",
+            "source": "https://natachapolony2027.fr/natacha-polony/ma-vision"
           }
         ]
       },
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
-        "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808"
+        "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808",
+        "https://natachapolony2027.fr/natacha-polony/ma-vision"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Natacha_Polony_Cannes_2015.jpg",
       "biographie": {
@@ -3680,13 +4132,34 @@
       "slogan": "La France qu'on veut",
       "statut": "déclaré",
       "declaration": "2026-11-09",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": null,
       "bio": "Judoka, champion olympique. Il annonce le 9 novembre 2026 sa candidature, sans parti, en se disant « ni de droite, ni de gauche ».",
       "phares": [],
-      "positions": {},
-      "propositions": {},
+      "positions": {
+        "retraite": {
+          "valeur": "Répartition + part de capitalisation",
+          "source": "https://www.parlons-politique.fr/elections/travailler-plus-pour-gagner-davantage-les-choix-de-teddy-riner-sur-les-retraites-et-le-salaire-net-restent-a-preciser_30971/"
+        }
+      },
+      "propositions": {
+        "travail": [
+          {
+            "titre": "Retraites",
+            "detail": "« Maintenir la répartition » en tenant compte « de la démographie et de la pénibilité », sans exclure « une part de capitalisation » ; ne pas remettre en cause les 35 heures, permettre aux volontaires de travailler plus.",
+            "source": "https://www.parlons-politique.fr/elections/travailler-plus-pour-gagner-davantage-les-choix-de-teddy-riner-sur-les-retraites-et-le-salaire-net-restent-a-preciser_30971/"
+          }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "Salaire net",
+            "detail": "Augmenter le salaire net par des « allègements de cotisations ».",
+            "source": "https://www.parlons-politique.fr/elections/travailler-plus-pour-gagner-davantage-les-choix-de-teddy-riner-sur-les-retraites-et-le-salaire-net-restent-a-preciser_30971/"
+          }
+        ]
+      },
       "sources": [
+        "https://www.parlons-politique.fr/elections/travailler-plus-pour-gagner-davantage-les-choix-de-teddy-riner-sur-les-retraites-et-le-salaire-net-restent-a-preciser_30971/",
         "https://www.france24.com/fr/france/20261109-le-champion-olympique-de-judo-teddy-riner-annonce-sa-candidature-%C3%A0-l-%C3%A9lection-pr%C3%A9sidentielle",
         "https://www.epochtimes.fr/presidentielle-2027-teddy-riner-annonce-sa-candidature-et-veut-rassembler-les-francais-3389335.html"
       ],
@@ -3729,14 +4202,50 @@
       "slogan": "Pour que voter serve enfin",
       "statut": "déclarée",
       "declaration": "2026-04-19",
-      "programme": "non publié",
+      "programme": "complet",
       "site": "https://solutiondemocratique.fr",
       "bio": "Candidate de Solution démocratique, centrée sur la démocratie directe.",
-      "phares": [],
-      "positions": {},
-      "propositions": {},
+      "phares": [
+        "RIC constituant",
+        "Budget soumis à référendum chaque année"
+      ],
+      "positions": {
+        "europe": {
+          "valeur": "Traités soumis aux électeurs",
+          "source": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+        }
+      },
+      "propositions": {
+        "institutions": [
+          {
+            "titre": "RIC constituant",
+            "detail": "Soumettre à référendum, dans la semaine suivant la nomination du Premier ministre, une révision de l'article 89 : RIC constituant à 700 000 signatures en 18 mois et référendum obligatoire sur toute révision constitutionnelle.",
+            "source": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+          },
+          {
+            "titre": "Président arbitre",
+            "detail": "Refus de signer les ordonnances qui privent le Parlement d'un débat ; opposition au 49.3 sauf urgence ; dissolution seulement si le Parlement ne peut soutenir un gouvernement ou si les citoyens le demandent.",
+            "source": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Budget soumis à référendum",
+            "detail": "Chaque année, la loi de finances adoptée par le Parlement est soumise à référendum ; aucun déficit sans le consentement explicite des électeurs.",
+            "source": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+          }
+        ],
+        "europe": [
+          {
+            "titre": "Traités",
+            "detail": "Aucun traité qui engage durablement les Français ratifié sans eux.",
+            "source": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+          }
+        ]
+      },
       "sources": [
-        "https://solutiondemocratique.fr"
+        "https://solutiondemocratique.fr",
+        "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Clara_Egger.jpg",
       "biographie": {
@@ -4008,7 +4517,6 @@
     "Jean Lassalle",
     "Bruno Le Maire",
     "Matthieu Pigasse",
-    "Teddy Riner",
     "Sandrine Rousseau",
     "Manuel Valls",
     "Dominique de Villepin",
