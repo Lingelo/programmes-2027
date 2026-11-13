@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-12",
+ "recupereLe": "2026-11-13",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -488,7 +488,12 @@
      "date": "2017-02-01"
     },
     "ins4": null,
-    "san1": null,
+    "san1": {
+     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure_caravane_2026-01_-_couleur.pdf",
+     "titre": "Nathalie Arthaud – Présidentielle 2027 (supplément à Lutte ouvrière nº 3021)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-06-26"
+    },
     "san2": null,
     "san3": null,
     "san4": null,
@@ -799,7 +804,12 @@
      "date": "2026-11-06"
     },
     "ins4": null,
-    "san1": null,
+    "san1": {
+     "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 4 : Faire de la santé un enjeu global",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "san2": null,
     "san3": {
      "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2/",
@@ -937,7 +947,12 @@
     "ins2": null,
     "ins3": null,
     "ins4": null,
-    "san1": null,
+    "san1": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/0273C/AN/1981.pdf",
+     "titre": "Amendement nº II-1981 au projet de loi de finances pour 2023 (mission « Investir pour la France de 2030 »)",
+     "editeur": "Assemblée nationale",
+     "date": "2022-10-26"
+    },
     "san2": null,
     "san3": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
@@ -1075,7 +1090,12 @@
      "date": "2023-05-04"
     },
     "ins4": null,
-    "san1": null,
+    "san1": {
+     "url": "https://www.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/fabien-roussel-je-veux-creer-un-service-public-du-grand-age",
+     "titre": "Fabien Roussel : « Je veux créer un service public du grand âge »",
+     "editeur": "Le Quotidien du Médecin",
+     "date": "2022-04-08"
+    },
     "san2": null,
     "san3": null,
     "san4": {
@@ -1361,7 +1381,12 @@
      "date": "2026-07-13"
     },
     "ins4": null,
-    "san1": null,
+    "san1": {
+     "url": "https://ensemble-mouvement.com/wp-content/uploads/2025/01/Tribune-Hopital-4-janvier1.pdf",
+     "titre": "L’accès à l’hôpital public et aux soins se réduit. Il n’y a pourtant pas de fatalité si nous nous mobilisons sans attendre (tribune)",
+     "editeur": "Mouvement Ensemble ! (texte de la tribune du Nouveau Front populaire)",
+     "date": "2025-01-04"
+    },
     "san2": null,
     "san3": null,
     "san4": null,
@@ -2613,7 +2638,12 @@
      "editeur": "Nouvelle Énergie",
      "date": "2026-06-17"
     },
-    "san1": null,
+    "san1": {
+     "url": "https://www.unenouvelleenergie.fr/notre-programme/sante/",
+     "titre": "Santé : le projet de David Lisnard",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026"
+    },
     "san2": null,
     "san3": null,
     "san4": {
@@ -2831,7 +2861,12 @@
      "editeur": "Public Sénat",
      "date": "2026-02-13"
     },
-    "san1": null,
+    "san1": {
+     "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+     "titre": "Présidentielle 2027 : Bruno Retailleau s’engage sur un plan d’économies de près de 200 milliards d’euros, s’il est élu",
+     "editeur": "Public Sénat",
+     "date": "2026-10-12"
+    },
     "san2": null,
     "san3": {
      "url": "https://www.publicsenat.fr/actualites/parlementaire/le-senat-supprime-laide-a-mourir-cle-de-voute-de-la-proposition-de-loi-sur-la-fin-de-vie",
@@ -2984,7 +3019,12 @@
      "date": "2026-06-09"
     },
     "ins4": null,
-    "san1": null,
+    "san1": {
+     "url": "https://cardiologie.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/nicolas-dupont-aignan-debout-la-france-la-t2a-cest-le-poison-de-lhopital-public",
+     "titre": "Nicolas Dupont-Aignan (Debout la France) : « La T2A, c’est le poison de l’hôpital public ! »",
+     "editeur": "Le Quotidien du Médecin",
+     "date": "2022-02-25"
+    },
     "san2": null,
     "san3": null,
     "san4": null,
@@ -3112,7 +3152,12 @@
      "editeur": "Union populaire républicaine (site officiel du parti)",
      "date": "2022"
     },
-    "san1": null,
+    "san1": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2022"
+    },
     "san2": null,
     "san3": null,
     "san4": null,
@@ -3438,7 +3483,12 @@
      "editeur": "Assemblée nationale",
      "date": "2024-01-25"
     },
-    "san1": null,
+    "san1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/duel-macron-le-pen-quelles-sont-les-propositions-des-candidats-en-matiere-de-sante",
+     "titre": "Duel Macron-Le Pen : quelles sont les propositions des candidats en matière de santé ?",
+     "editeur": "Public Sénat",
+     "date": "2022-04-13"
+    },
     "san2": null,
     "san3": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
@@ -3596,7 +3646,12 @@
      "editeur": "Public Sénat",
      "date": "2022-03-23"
     },
-    "san1": null,
+    "san1": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "san2": null,
     "san3": null,
     "san4": null,
