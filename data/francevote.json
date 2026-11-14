@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-13",
+ "recupereLe": "2026-11-14",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -829,7 +829,12 @@
      "editeur": "Jean-Luc Mélenchon, le blog",
      "date": "2023-08-29"
     },
-    "edu2": null,
+    "edu2": {
+     "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 2 : Élever le niveau d’éducation et de savoirs, « Reconstruire une école globale pour l’égalité et l’émancipation »",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "edu3": {
      "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 2 : Élever le niveau d’éducation et de savoirs, « Reconstruire une école globale pour l’égalité et l’émancipation »",
@@ -2174,7 +2179,12 @@
      "editeur": "LCP",
      "date": "2024-01-30"
     },
-    "edu2": null,
+    "edu2": {
+     "url": "https://lcp.fr/actualites/presidentielle-retour-du-certificat-d-etudes-revalorisation-des-salaires-ce-que-propose",
+     "titre": "Présidentielle: retour du certificat d’études, revalorisation des salaires… Ce que propose Gabriel Attal pour l’école",
+     "editeur": "LCP",
+     "date": "2026-08-25"
+    },
     "edu3": {
      "url": "https://www.senat.fr/compte-rendu-commissions/20231009/cult.html",
      "titre": "Audition de M. Gabriel Attal, ministre de l’éducation nationale et de la jeunesse (commission de la culture, de l’éducation et de la communication)",
@@ -2881,7 +2891,12 @@
      "editeur": "Sénat",
      "date": "2022-12-13"
     },
-    "edu2": null,
+    "edu2": {
+     "url": "https://lcp.fr/actualites/presidentielle-bruno-retailleau-veut-un-examen-pour-entrer-en-sixieme-et-des-groupes-de",
+     "titre": "Présidentielle: Bruno Retailleau veut un \"examen pour entrer en sixième\" et \"des groupes de niveau\"",
+     "editeur": "LCP",
+     "date": "2026-11-04"
+    },
     "edu3": null,
     "edu4": {
      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux",
@@ -3029,7 +3044,12 @@
     "san3": null,
     "san4": null,
     "edu1": null,
-    "edu2": null,
+    "edu2": {
+     "url": "https://www.letudiant.fr/etudes/nicolas-dupont-aignan-je-suis-oppose-a-la-selection-a-l-entree-a-l-universite.html",
+     "titre": "Nicolas Dupont-Aignan : « Je suis opposé à la sélection à l’entrée à l’université »",
+     "editeur": "L’Étudiant (entretien, par Cécile Peltier)",
+     "date": "2017-04-12"
+    },
     "edu3": null,
     "edu4": null
    },
@@ -3189,7 +3209,7 @@
     "san3": -1,
     "san4": 1,
     "edu1": 2,
-    "edu2": 1,
+    "edu2": 2,
     "edu3": 0,
     "edu4": -1,
     "imm1": 2,
@@ -3280,7 +3300,12 @@
     "san3": null,
     "san4": null,
     "edu1": null,
-    "edu2": null,
+    "edu2": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
     "edu3": null,
     "edu4": {
      "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
@@ -3291,7 +3316,7 @@
    },
    "boussole": {
     "eco": -46,
-    "soc": 80
+    "soc": 82
    }
   },
   "le-pen": {
@@ -3508,7 +3533,12 @@
      "editeur": "Assemblée nationale",
      "date": "2023-01-12"
     },
-    "edu2": null,
+    "edu2": {
+     "url": "https://www.letudiant.fr/lifestyle/presidentielle-2022-marine-le-pen-j-abrogerais-la-reforme-du-bac-qui-serait-remplacee-par-un-examen-terminal-national.html",
+     "titre": "Présidentielle 2022 : Marine Le Pen : « J’abrogerais la réforme du bac, qui serait remplacée par un examen terminal national »",
+     "editeur": "L’Étudiant (entretien, propos recueillis par Romain Burrel)",
+     "date": "2022-03-16"
+    },
     "edu3": null,
     "edu4": {
      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-duel-macron-le-pen-quelles-sont-les-propositions-des-candidats-en",
@@ -3661,7 +3691,12 @@
      "editeur": "Public Sénat",
      "date": "2022-01-10"
     },
-    "edu2": null,
+    "edu2": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "edu3": null,
     "edu4": null
    },
