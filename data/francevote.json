@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-14",
+ "recupereLe": "2026-11-15",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -746,7 +746,12 @@
      "editeur": "La France insoumise (groupe parlementaire, niche 2022)",
      "date": "2022-01-03"
     },
-    "sec3": null,
+    "sec3": {
+     "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 5, chapitre 2 : Libertés publiques et sûreté",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "sec4": null,
     "env1": {
      "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3/",
@@ -929,7 +934,12 @@
     "imm4": null,
     "sec1": null,
     "sec2": null,
-    "sec3": null,
+    "sec3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0324C/CION_FIN/CF1608.pdf",
+     "titre": "Amendement nº II-CF1608 au projet de loi de finances pour 2025 (mission « Sécurités »)",
+     "editeur": "Assemblée nationale",
+     "date": "2024-10-24"
+    },
     "sec4": null,
     "env1": null,
     "env2": null,
@@ -1003,7 +1013,7 @@
     "imm4": -2,
     "sec1": -1,
     "sec2": 1,
-    "sec3": 1,
+    "sec3": 2,
     "sec4": -1,
     "ins1": 1,
     "ins2": 2,
@@ -1062,7 +1072,12 @@
     "imm4": null,
     "sec1": null,
     "sec2": null,
-    "sec3": null,
+    "sec3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/0436/AN/755.pdf",
+     "titre": "Amendement nº 755 au projet de loi d’orientation et de programmation du ministère de l’Intérieur (nº 436)",
+     "editeur": "Assemblée nationale",
+     "date": "2022-11-09"
+    },
     "sec4": null,
     "env1": null,
     "env2": null,
@@ -1116,7 +1131,7 @@
    },
    "boussole": {
     "eco": -96,
-    "soc": -34
+    "soc": -36
    }
   },
   "branco": {
