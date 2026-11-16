@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-15",
+ "recupereLe": "2026-11-16",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -477,7 +477,12 @@
     "eur4": null,
     "int1": null,
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://www.lutte-ouvriere.org/portail/brochures/fete-lutte-ouvriere-2026-discours-nathalie-arthaud-dimanche-194655.html",
+     "titre": "Fête de Lutte ouvrière 2026 : discours de Nathalie Arthaud (dimanche)",
+     "editeur": "Lutte ouvrière",
+     "date": "2026-05-24"
+    },
     "int4": null,
     "ins1": null,
     "ins2": null,
@@ -595,7 +600,12 @@
     "eur4": null,
     "int1": null,
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://anasse2027.fr/programme",
+     "titre": "Programme — Anasse Kazib 2027",
+     "editeur": "Anasse Kazib 2027 (site officiel de campagne)",
+     "date": "2026"
+    },
     "int4": null,
     "ins1": null,
     "ins2": null,
@@ -788,7 +798,12 @@
      "date": "2022-03-01"
     },
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 2 : Une France indépendante au service de la paix",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "int4": {
      "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 3 : Les nouvelles coopérations de la diplomatie altermondialiste",
@@ -2030,7 +2045,12 @@
     "eur4": null,
     "int1": null,
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+     "titre": "Intervention de Selma Labib à la fête de l’Humanité 2026",
+     "editeur": "NPA-Révolutionnaires",
+     "date": "2026-09-15"
+    },
     "int4": null,
     "ins1": null,
     "ins2": null,
@@ -2234,7 +2254,7 @@
     "edu2": 1,
     "edu3": -1,
     "edu4": 2,
-    "imm1": 1,
+    "imm1": 2,
     "imm2": 1,
     "imm3": 1,
     "imm4": -1,
@@ -2261,10 +2281,10 @@
    },
    "sources": {
     "eco1": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
-     "titre": "Pour une France plus prospère",
+     "url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+     "titre": "Le programme — Finances publiques",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026-07-21"
+     "date": "2026-11-12"
     },
     "eco2": {
      "url": "https://www.publicsenat.fr/actualites/economie/entreprises-un-deal-a-250-milliards-deuros-sur-un-quinquennat-que-represente-la-proposition-dedouard-philippe",
@@ -2279,16 +2299,16 @@
      "date": "2026-08-27"
     },
     "eco4": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
-     "titre": "Pour une France plus prospère",
+     "url": "https://www.edouardphilippe.fr/programme/entreprises",
+     "titre": "Le programme — Entreprises et industrie",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026-07-21"
+     "date": "2026-11-12"
     },
     "soc1": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
-     "titre": "Pour une France plus prospère",
+     "url": "https://www.edouardphilippe.fr/programme/retraites",
+     "titre": "Le programme — Retraites",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026-07-21"
+     "date": "2026-11-12"
     },
     "soc2": {
      "url": "https://www.publicsenat.fr/actualites/politique/smic-revalorisation-legale-au-1er-janvier-mais-pas-de-coup-de-pouce-135932",
@@ -2309,10 +2329,10 @@
      "date": "2026-10-08"
     },
     "imm1": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
-     "titre": "Pour une France plus sûre",
+     "url": "https://www.edouardphilippe.fr/programme/immigration",
+     "titre": "Le programme — Immigration",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026-07-21"
+     "date": "2026-11-12"
     },
     "imm2": null,
     "imm3": {
@@ -2323,24 +2343,24 @@
     },
     "imm4": null,
     "sec1": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
-     "titre": "Pour une France plus sûre",
+     "url": "https://www.edouardphilippe.fr/programme/securite",
+     "titre": "Le programme — Sécurité",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026-07-21"
+     "date": "2026-11-12"
     },
     "sec2": null,
     "sec3": null,
     "sec4": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
-     "titre": "Pour une France plus sûre",
+     "url": "https://www.edouardphilippe.fr/programme/justice",
+     "titre": "Le programme — Justice",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026-07-21"
+     "date": "2026-11-12"
     },
     "env1": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante",
-     "titre": "Pour une France plus conquérante",
+     "url": "https://www.edouardphilippe.fr/programme/energie",
+     "titre": "Le programme — Énergie",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026-07-21"
+     "date": "2026-11-12"
     },
     "env2": null,
     "env3": {
@@ -2356,7 +2376,12 @@
     "eur4": null,
     "int1": null,
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://www.edouardphilippe.fr/programme/defense",
+     "titre": "Le programme — Défense",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-11-12"
+    },
     "int4": {
      "url": "https://www.info.gouv.fr/upload/media/default/0001/01/2019_10_declaration_du_gouvernement_sur_la_politique_migratoire_de_la_france_et_de_leurope_en_application_de_larticle_50-1_de_la_constitution_suivie_dun_debat_-_09.10.2019.pdf",
      "titre": "Déclaration du Gouvernement sur la politique migratoire de la France et de l’Europe (article 50-1 de la Constitution), Sénat",
@@ -2387,10 +2412,10 @@
     "san3": null,
     "san4": null,
     "edu1": {
-     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
-     "titre": "Pour une France plus attentive à ses enfants",
+     "url": "https://www.edouardphilippe.fr/programme/ecole",
+     "titre": "Le programme — École",
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
-     "date": "2026"
+     "date": "2026-11-12"
     },
     "edu2": null,
     "edu3": null,
@@ -2403,7 +2428,7 @@
    },
    "boussole": {
     "eco": 88,
-    "soc": -2
+    "soc": 0
    }
   },
   "bertrand": {
@@ -2642,7 +2667,12 @@
     "eur4": null,
     "int1": null,
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-renforcer-l-armee/",
+     "titre": "Quel candidat à la présidentielle 2027 veut renforcer l’armée ?",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026-10-16"
+    },
     "int4": {
      "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
      "titre": "Immigration : le projet de David Lisnard",
@@ -3023,7 +3053,12 @@
      "editeur": "Debout la France (site officiel du parti)",
      "date": "2026"
     },
-    "int3": null,
+    "int3": {
+     "url": "https://www.debout-la-france.fr/projet/defense/",
+     "titre": "Notre projet — Défense nationale",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026"
+    },
     "int4": {
      "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
      "titre": "Notre projet — Immigration et assimilation",
@@ -3116,7 +3151,7 @@
     "eur4": 2,
     "int1": -2,
     "int2": 2,
-    "int3": 0,
+    "int3": 1,
     "int4": 0
    },
    "sources": {
@@ -3166,7 +3201,12 @@
      "editeur": "Union populaire républicaine (site officiel du parti)",
      "date": "2026"
     },
-    "int3": null,
+    "int3": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine (site officiel du parti)",
+     "date": "2022"
+    },
     "int4": null,
     "ins1": null,
     "ins2": {
@@ -3497,7 +3537,12 @@
      "date": "2024-03-12"
     },
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7905",
+     "titre": "Scrutin public nº 7905 sur l’ensemble du projet de loi actualisant la programmation militaire pour les années 2024 à 2030 (texte de la commission mixte paritaire)",
+     "editeur": "Assemblée nationale",
+     "date": "2026-07-01"
+    },
     "int4": {
      "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/0273C/AN/2274.pdf",
      "titre": "Amendement nº II-2274 au projet de loi de finances pour 2023, mission « Aide publique au développement »",
@@ -3675,7 +3720,12 @@
     "eur4": null,
     "int1": null,
     "int2": null,
-    "int3": null,
+    "int3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+     "titre": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration »",
+     "editeur": "Public Sénat",
+     "date": "2022-03-23"
+    },
     "int4": {
      "url": "https://www.lejdd.fr/International/le-directeur-de-focus-2030-laide-au-developpement-rassemble-tous-les-candidats-a-la-presidentielle-4096279",
      "titre": "Le directeur de Focus 2030 : « L’aide au développement rassemble tous les candidats à la présidentielle »",
