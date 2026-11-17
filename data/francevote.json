@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-16",
+ "recupereLe": "2026-11-17",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -484,7 +484,12 @@
      "date": "2026-05-24"
     },
     "int4": null,
-    "ins1": null,
+    "ins1": {
+     "url": "https://portail.lutte-ouvriere.org/medias/mensuelnumero/fichiers/2019/01/LDC197.pdf",
+     "titre": "Le référendum d’initiative citoyenne, nouvelle illusion réformiste (Lutte de classe nº 197)",
+     "editeur": "Lutte ouvrière",
+     "date": "2019"
+    },
     "ins2": null,
     "ins3": {
      "url": "https://www.lutte-ouvriere.org/journal/article/2017-02-01-la-vie-republique-un-leurre_76178.html",
@@ -810,7 +815,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "ins1": null,
+    "ins1": {
+     "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1/",
+     "titre": "L’Avenir en commun, 5e édition — Partie 5 « Fonder la 6e République », chapitre 1 « Le pouvoir au peuple »",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "ins2": {
      "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 5, chapitre 1 : Le pouvoir au peuple",
@@ -973,7 +983,12 @@
      "editeur": "Assemblée nationale",
      "date": "2023-12-07"
     },
-    "ins1": null,
+    "ins1": {
+     "url": "https://www.assemblee-nationale.fr/15/pdf/propositions/pion1558.pdf",
+     "titre": "Proposition de loi constitutionnelle nº 1558 visant à instaurer la possibilité de référendums d’initiative citoyenne",
+     "editeur": "Assemblée nationale",
+     "date": "2019-01-08"
+    },
     "ins2": null,
     "ins3": null,
     "ins4": null,
@@ -1116,7 +1131,12 @@
      "editeur": "Assemblée nationale",
      "date": "2023-12-07"
     },
-    "ins1": null,
+    "ins1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-ric-rip-50-nuances-de-referendums-dans-les-programmes-des-candidats",
+     "titre": "Présidentielle : RIC, RIP… 50 nuances de référendums dans les programmes des candidats",
+     "editeur": "Public Sénat",
+     "date": "2022-02-15"
+    },
     "ins2": null,
     "ins3": {
      "url": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/rejet-du-rip-constitution-de-la-ve-republique-violences-dans-les-manifestations-ce-qu-il-faut-retenir-de-l-interview-de-fabien-roussel_5780621.html",
@@ -1239,7 +1259,12 @@
      "editeur": "Ruches Françaises",
      "date": "2026"
     },
-    "ins1": null,
+    "ins1": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "ins2": {
      "url": "https://ruches.org/le-projet",
      "titre": "Le Projet 2027 — Programme en 6 piliers",
@@ -2388,7 +2413,12 @@
      "editeur": "Gouvernement (info.gouv.fr)",
      "date": "2019-10-09"
     },
-    "ins1": null,
+    "ins1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/grand-debat-pour-philippe-un-referendum-ne-peut-pas-etre-le-seul-point-de-sortie",
+     "titre": "Grand débat : pour Philippe, un référendum « ne peut pas être le seul point de sortie »",
+     "editeur": "Public Sénat",
+     "date": "2019-01-30"
+    },
     "ins2": {
      "url": "https://www.franceinfo.fr/politique/proportionnelle-aux-elections-legislatives-qu-en-pensent-les-differents-partis-politiques_7271859.html",
      "titre": "Proportionnelle aux élections législatives : qu’en pensent les différents partis politiques ?",
@@ -2593,7 +2623,7 @@
     "sec2": -2,
     "sec3": -1,
     "sec4": 2,
-    "ins1": 0,
+    "ins1": 1,
     "ins2": -1,
     "ins3": -1,
     "ins4": 2,
@@ -2679,7 +2709,12 @@
      "editeur": "Nouvelle Énergie",
      "date": "2026"
     },
-    "ins1": null,
+    "ins1": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-des-referendums/",
+     "titre": "Quel candidat à la présidentielle 2027 propose des référendums ?",
+     "editeur": "Nouvelle Énergie (parti de David Lisnard)",
+     "date": "2026-10-16"
+    },
     "ins2": null,
     "ins3": {
      "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
@@ -3346,7 +3381,12 @@
     "int2": null,
     "int3": null,
     "int4": null,
-    "ins1": null,
+    "ins1": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
     "ins2": null,
     "ins3": null,
     "ins4": null,
@@ -3549,7 +3589,12 @@
      "editeur": "Assemblée nationale",
      "date": "2022-10-27"
     },
-    "ins1": null,
+    "ins1": {
+     "url": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-detaille-sa-revolution-referendaire-202358",
+     "titre": "Marine Le Pen détaille sa « révolution référendaire »",
+     "editeur": "Public Sénat",
+     "date": "2022-04-12"
+    },
     "ins2": {
      "url": "https://www.publicsenat.fr/actualites/politique/legislatives-marine-le-pen-prete-a-defendre-le-retour-la-proportionnelle-integrale-de-1986-0",
      "titre": "Législatives : Marine Le Pen prête à « défendre » le retour de la proportionnelle intégrale de 1986",
