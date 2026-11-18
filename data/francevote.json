@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-17",
+ "recupereLe": "2026-11-18",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -781,7 +781,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "env4": null,
+    "env4": {
+     "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 1 : Les nouveaux droits de l’espèce : protéger les biens communs",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "eur1": {
      "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 1 : Se libérer du libéralisme en Europe",
@@ -969,7 +974,12 @@
     "env1": null,
     "env2": null,
     "env3": null,
-    "env4": null,
+    "env4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
+     "titre": "Scrutin public nº 2957 sur l’ensemble de la proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur (texte de la commission mixte paritaire)",
+     "editeur": "Assemblée nationale",
+     "date": "2025-07-08"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": null,
@@ -1117,7 +1127,12 @@
      "editeur": "L’Info Durable (dépêche AFP)",
      "date": "2023-02-27"
     },
-    "env4": null,
+    "env4": {
+     "url": "https://www.reussir.fr/articles/arret-du-glyphosate-le-sujet-qui-divise-les-candidats-lelection-presidentielle-2022",
+     "titre": "Arrêt du glyphosate : le sujet qui divise les candidats à l’élection présidentielle 2022",
+     "editeur": "Réussir",
+     "date": "2022-02-16"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": null,
@@ -1205,7 +1220,7 @@
     "env1": 1,
     "env2": 0,
     "env3": 0,
-    "env4": 0,
+    "env4": 1,
     "eur1": -2,
     "eur2": 2,
     "eur3": 1,
@@ -1245,7 +1260,12 @@
     "env1": null,
     "env2": null,
     "env3": null,
-    "env4": null,
+    "env4": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": null,
@@ -1289,7 +1309,7 @@
    },
    "boussole": {
     "eco": -58,
-    "soc": -16
+    "soc": -18
    }
   },
   "tondelier": {
@@ -1536,7 +1556,12 @@
     "env1": null,
     "env2": null,
     "env3": null,
-    "env4": null,
+    "env4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1842_proposition-loi.pdf",
+     "titre": "Proposition de loi nº 1842 visant à abroger la loi nº 2025-794 du 11 août 2025, dite loi Duplomb, à rendre définitive l’interdiction des néonicotinoïdes en France, à tenir compte du dernier état des connaissances scientifiques et à lutter contre la concurrence déloyale en matière de pesticides",
+     "editeur": "Assemblée nationale",
+     "date": "2025-09-16"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": null,
@@ -2206,7 +2231,12 @@
      "editeur": "Public Sénat",
      "date": "2025-07-21"
     },
-    "env4": null,
+    "env4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
+     "titre": "Scrutin public nº 2957 sur l’ensemble de la proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur (texte de la commission mixte paritaire)",
+     "editeur": "Assemblée nationale",
+     "date": "2025-07-08"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": null,
@@ -2394,7 +2424,12 @@
      "editeur": "L’Info Durable (dépêche AFP)",
      "date": "2026-09-17"
     },
-    "env4": null,
+    "env4": {
+     "url": "https://www.edouardphilippe.fr/programme/adaptation-climatique",
+     "titre": "Le programme — Adaptation climatique",
+     "editeur": "Avec Édouard 2027 (site officiel de campagne)",
+     "date": "2026-11-12"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": null,
@@ -2690,7 +2725,12 @@
     "env1": null,
     "env2": null,
     "env3": null,
-    "env4": null,
+    "env4": {
+     "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-les-agriculteurs/",
+     "titre": "Quel candidat à la présidentielle 2027 défend les agriculteurs ?",
+     "editeur": "Nouvelle Énergie (parti de David Lisnard)",
+     "date": "2026-10-16"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": null,
@@ -2903,7 +2943,12 @@
      "editeur": "L’Info Durable (dépêche AFP)",
      "date": "2026-09-17"
     },
-    "env4": null,
+    "env4": {
+     "url": "https://www.terre-net.fr/election-presidentielle/article/903597/retailleau-denonce-l-ecologie-dogmatique",
+     "titre": "Au Space, Bruno Retailleau dénonce « l’écologie dogmatique »",
+     "editeur": "Terre-net (dépêche AFP)",
+     "date": "2026-09-17"
+    },
     "eur1": {
      "url": "https://www.publicsenat.fr/actualites/politique/referendum-sur-limmigration-primaute-du-droit-national-le-projet-de-bruno-retailleau-est-il-faisable",
      "titre": "Référendum sur l’immigration, primauté du droit national : le projet de Bruno Retailleau est-il faisable ?",
@@ -3179,7 +3224,7 @@
     "env1": 1,
     "env2": -1,
     "env3": -1,
-    "env4": 0,
+    "env4": 1,
     "eur1": -2,
     "eur2": 2,
     "eur3": 2,
@@ -3219,7 +3264,12 @@
      "editeur": "Union populaire républicaine (site officiel du parti)",
      "date": "2022"
     },
-    "env4": null,
+    "env4": {
+     "url": "https://upr.fr/notre-programme/programme-2022",
+     "titre": "Programme 2022",
+     "editeur": "Union populaire républicaine",
+     "date": "2022"
+    },
     "eur1": null,
     "eur2": null,
     "eur3": {
@@ -3278,7 +3328,7 @@
    },
    "boussole": {
     "eco": -29,
-    "soc": 52
+    "soc": 50
    }
   },
   "philippot": {
@@ -3555,7 +3605,12 @@
      "editeur": "L’Info Durable (dépêche AFP)",
      "date": "2023-09-26"
     },
-    "env4": null,
+    "env4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2117/AN/5.pdf",
+     "titre": "Amendement nº 5 à la proposition de loi visant à interdire l’importation en France de produits agricoles et denrées alimentaires contenant de l’acétamipride et à abroger la loi visant à lever les contraintes à l’exercice du métier d’agriculteur (nº 2117)",
+     "editeur": "Assemblée nationale",
+     "date": "2025-11-20"
+    },
     "eur1": null,
     "eur2": {
      "url": "https://www.publicsenat.fr/actualites/non-classe/sur-l-europe-marine-le-pen-a-t-elle-vraiment-change-202482",
