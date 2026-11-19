@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-18",
+ "recupereLe": "2026-11-19",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -504,7 +504,12 @@
      "editeur": "Lutte ouvrière",
      "date": "2026-06-26"
     },
-    "san2": null,
+    "san2": {
+     "url": "https://audio.lutte-ouvriere.org/medias/presentation/fichiers/2022/03/Deserts-medicaux.pdf",
+     "titre": "Réponse de Nathalie Arthaud à l’Association de citoyens contre les déserts médicaux",
+     "editeur": "Lutte ouvrière",
+     "date": "2022-02-15"
+    },
     "san3": null,
     "san4": null,
     "edu1": null,
@@ -845,7 +850,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "san2": null,
+    "san2": {
+     "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 4 : Faire de la santé un enjeu global",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "san3": {
      "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 3, chapitre 2 : Une République de l’égalité réelle et des droits nouveaux, « Une nouvelle étape des libertés et de l’émancipation individuelle »",
@@ -1008,7 +1018,12 @@
      "editeur": "Assemblée nationale",
      "date": "2022-10-26"
     },
-    "san2": null,
+    "san2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0966_proposition-loi.pdf",
+     "titre": "Proposition de loi nº 966 visant à lutter contre les déserts médicaux, d’initiative transpartisane",
+     "editeur": "Assemblée nationale",
+     "date": "2025-02-13"
+    },
     "san3": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
      "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
@@ -1166,7 +1181,12 @@
      "editeur": "Le Quotidien du Médecin",
      "date": "2022-04-08"
     },
-    "san2": null,
+    "san2": {
+     "url": "https://lcp.fr/actualites/presidentielle-quelle-reforme-de-la-sante-pour-les-candidats-107247",
+     "titre": "Présidentielle : quelle réforme de la santé pour les candidats ?",
+     "editeur": "LCP",
+     "date": "2022-03-25"
+    },
     "san3": null,
     "san4": {
      "url": "https://www.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/fabien-roussel-je-veux-creer-un-service-public-du-grand-age",
@@ -1575,7 +1595,12 @@
     "ins3": null,
     "ins4": null,
     "san1": null,
-    "san2": null,
+    "san2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0966_proposition-loi.pdf",
+     "titre": "Proposition de loi nº 966 visant à lutter contre les déserts médicaux, d’initiative transpartisane",
+     "editeur": "Assemblée nationale",
+     "date": "2025-02-13"
+    },
     "san3": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
      "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
@@ -2255,7 +2280,12 @@
     },
     "ins4": null,
     "san1": null,
-    "san2": null,
+    "san2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/questions/QANR5L16QG1791",
+     "titre": "Question au Gouvernement nº 1791 : lutte contre les déserts médicaux (réponse du Premier ministre)",
+     "editeur": "Assemblée nationale",
+     "date": "2024-04-11"
+    },
     "san3": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
      "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
@@ -2473,7 +2503,12 @@
      "date": "2026-09-08"
     },
     "san1": null,
-    "san2": null,
+    "san2": {
+     "url": "https://www.egora.fr/actus-pro/acces-aux-soins/regulation-linstallation-edouard-philippe-lance-un-ultimatum-aux-medecins",
+     "titre": "Régulation à l’installation : Edouard Philippe lance un ultimatum aux médecins",
+     "editeur": "Egora",
+     "date": "2024-02-16"
+    },
     "san3": null,
     "san4": null,
     "edu1": {
@@ -2510,7 +2545,7 @@
     "soc3": 2,
     "soc4": -2,
     "san1": 1,
-    "san2": 1,
+    "san2": -1,
     "san3": 0,
     "san4": -2,
     "edu1": 1,
@@ -2616,7 +2651,12 @@
      "date": "2021-11-04"
     },
     "san1": null,
-    "san2": null,
+    "san2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/13/questions/QANR5L13QG2743",
+     "titre": "Question au Gouvernement nº 2743 : déserts médicaux (réponse du ministre du Travail, de l’Emploi et de la Santé)",
+     "editeur": "Assemblée nationale",
+     "date": "2010-12-02"
+    },
     "san3": null,
     "san4": null,
     "edu1": null,
@@ -2625,7 +2665,7 @@
     "edu4": null
    },
    "boussole": {
-    "eco": 63,
+    "eco": 71,
     "soc": 41
    }
   },
@@ -2774,7 +2814,12 @@
      "editeur": "Nouvelle Énergie",
      "date": "2026"
     },
-    "san2": null,
+    "san2": {
+     "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux/",
+     "titre": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?",
+     "editeur": "Nouvelle Énergie (parti de David Lisnard)",
+     "date": "2026-10-16"
+    },
     "san3": null,
     "san4": {
      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-supprimer-la-securite-sociale/",
@@ -3002,7 +3047,12 @@
      "editeur": "Public Sénat",
      "date": "2026-10-12"
     },
-    "san2": null,
+    "san2": {
+     "url": "https://www.senat.fr/cra/s20221018/s20221018_2.html",
+     "titre": "Formation des internes en médecine générale — compte rendu analytique de la séance du 18 octobre 2022",
+     "editeur": "Sénat",
+     "date": "2022-10-18"
+    },
     "san3": {
      "url": "https://www.publicsenat.fr/actualites/parlementaire/le-senat-supprime-laide-a-mourir-cle-de-voute-de-la-proposition-de-loi-sur-la-fin-de-vie",
      "titre": "Le Sénat supprime l’aide à mourir, clé de voûte de la proposition de loi sur la fin de vie",
@@ -3674,7 +3724,12 @@
      "editeur": "Public Sénat",
      "date": "2022-04-13"
     },
-    "san2": null,
+    "san2": {
+     "url": "https://lcp.fr/actualites/presidentielle-quelle-reforme-de-la-sante-pour-les-candidats-107247",
+     "titre": "Présidentielle : quelle réforme de la santé pour les candidats ?",
+     "editeur": "LCP",
+     "date": "2022-03-25"
+    },
     "san3": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107",
      "titre": "Analyse du scrutin public n° 2107 sur l’ensemble de la proposition de loi relative au droit à l’aide à mourir",
