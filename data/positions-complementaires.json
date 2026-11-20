@@ -1,25 +1,127 @@
 {
   "auteur": "Programmes 2027",
   "note": "Positions relevées par Programmes 2027, sur les mêmes 40 propositions que France-Vote, pour les candidats que France-Vote n'évalue pas encore. Seules les prises de position publiques et sourcées pour 2027 sont notées ; les autres propositions restent « non évaluées ».",
-  "majLe": "2026-11-03",
+  "majLe": "2026-11-20",
   "candidats": {
     "platret": {
-      "positions": { "soc4": -2 },
+      "positions": {
+        "soc4": -2
+      },
       "sources": {
-        "soc4": { "url": "https://www.lyoncapitale.fr/politique/gilles-platret-nouveau-candidat-a-lelection-presidentielle-de-2027", "titre": "Gilles Platret, nouveau candidat à l'élection présidentielle de 2027 (« l'abrogation des 35 heures »)", "editeur": "Lyon Capitale", "date": "2026-10-09" }
+        "soc4": {
+          "url": "https://www.lyoncapitale.fr/politique/gilles-platret-nouveau-candidat-a-lelection-presidentielle-de-2027",
+          "titre": "Gilles Platret, nouveau candidat à l'élection présidentielle de 2027 (« l'abrogation des 35 heures »)",
+          "editeur": "Lyon Capitale",
+          "date": "2026-10-09"
+        }
       }
     },
     "polony": {
-      "positions": { "eco4": 2, "eco2": 1 },
+      "positions": {
+        "eco4": 2,
+        "eco2": 1,
+        "env1": 2
+      },
       "sources": {
-        "eco4": { "url": "https://repere2027.fr/programmes/natacha-polony/", "titre": "« Orienter la commande publique vers la production française puis européenne » ; suppression des aides non conditionnées à une production en France (déclaration de candidature du 14 octobre 2026)", "editeur": "Repère 2027", "date": "2026-10-14" },
-        "eco2": { "url": "https://repere2027.fr/programmes/natacha-polony/", "titre": "Baisse des cotisations salariales et patronales (entretien au Parisien du 28 août 2026)", "editeur": "Repère 2027", "date": "2026-08-28" }
+        "eco4": {
+          "url": "https://repere2027.fr/programmes/natacha-polony/",
+          "titre": "« Orienter la commande publique vers la production française puis européenne » ; suppression des aides non conditionnées à une production en France (déclaration de candidature du 14 octobre 2026)",
+          "editeur": "Repère 2027",
+          "date": "2026-10-14"
+        },
+        "eco2": {
+          "url": "https://repere2027.fr/programmes/natacha-polony/",
+          "titre": "Baisse des cotisations salariales et patronales (entretien au Parisien du 28 août 2026)",
+          "editeur": "Repère 2027",
+          "date": "2026-08-28"
+        },
+        "env1": {
+          "url": "https://api.napo2027.fr/api/v1/presse/public/communiques/7fa1dc1e-1f0b-4439-a5aa-f1b441a0d348.pdf",
+          "titre": "« Électricité : libérons EDF du dogme européen de la concurrence ! » : les EPR2, « une infrastructure indispensable à notre économie, à notre indépendance et à notre décarbonation »",
+          "editeur": "Natacha Polony 2027",
+          "date": "2026-10-27"
+        }
       }
     },
     "egger": {
-      "positions": { "ins1": 2 },
+      "positions": {
+        "ins1": 2
+      },
       "sources": {
-        "ins1": { "url": "https://solutiondemocratique.fr/presidentielle-2027-clara-egger-candidate-de-solution-democratique-a-gradignan-le-24-octobre/", "titre": "Clara Egger présente les mécanismes du référendum d'initiative citoyenne (RIC), inspirés du système suisse", "editeur": "Solution démocratique", "date": "2026-10-20" }
+        "ins1": {
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-clara-egger-candidate-de-solution-democratique-a-gradignan-le-24-octobre/",
+          "titre": "Clara Egger présente les mécanismes du référendum d'initiative citoyenne (RIC), inspirés du système suisse",
+          "editeur": "Solution démocratique",
+          "date": "2026-10-20"
+        }
+      }
+    },
+    "villepin": {
+      "positions": {
+        "eco1": 2,
+        "eco2": 1,
+        "env1": 1,
+        "env4": 1,
+        "int1": 2
+      },
+      "sources": {
+        "eco1": {
+          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-1.html",
+          "titre": "« En rétablissant l'Impôt sur la Fortune, suivant un barème proche de celui de 2016 » (programme « Réussir à nouveau »)",
+          "editeur": "La France humaniste",
+          "date": "2026-11-20"
+        },
+        "eco2": {
+          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-23.html",
+          "titre": "« Supprimer les impôts de production dans le cadre de la simplification fiscale » et « les intégrer dans l'impôt sur les sociétés » (programme « Réussir à nouveau »)",
+          "editeur": "La France humaniste",
+          "date": "2026-11-20"
+        },
+        "env1": {
+          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-1.html",
+          "titre": "« Poursuivre le programme des six EPR2 » en prenant en compte les coûts « avant de lancer les tranches suivantes » (programme « Réussir à nouveau »)",
+          "editeur": "La France humaniste",
+          "date": "2026-11-20"
+        },
+        "env4": {
+          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-22.html",
+          "titre": "« Réduire de moitié l'usage des phytosanitaires d'ici 2030 » (programme « Réussir à nouveau »)",
+          "editeur": "La France humaniste",
+          "date": "2026-11-20"
+        },
+        "int1": {
+          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-11.html",
+          "titre": "« Pérennisation de l'effort de soutien financier et de défense à l'Ukraine » (programme « Réussir à nouveau »)",
+          "editeur": "La France humaniste",
+          "date": "2026-11-20"
+        }
+      }
+    },
+    "mikolajczak": {
+      "positions": {
+        "eco1": 2,
+        "san2": 2,
+        "ins2": 1
+      },
+      "sources": {
+        "eco1": {
+          "url": "https://parti-equinoxe.fr/contre-budget-2027/",
+          "titre": "« Nous rétablissons un ISF sur le patrimoine non professionnel, selon le barème d'avant 2018 » (contre-budget 2027)",
+          "editeur": "Équinoxe",
+          "date": "2026-11-18"
+        },
+        "san2": {
+          "url": "https://parti-equinoxe.fr/programme-2027/un-soignant-pres-de-chez-vous/",
+          "titre": "« Les installations de médecins libéraux sont conditionnées aux besoins prioritaires » (programme 2027)",
+          "editeur": "Équinoxe",
+          "date": "2026-11-05"
+        },
+        "ins2": {
+          "url": "https://parti-equinoxe.fr/programme-2027/operation-montesquieu-partage-du-pouvoir/",
+          "titre": "« Chaque électeur dispose de deux voix aux élections législatives » : circonscription et proportionnelle nationale (programme 2027)",
+          "editeur": "Équinoxe",
+          "date": "2026-11-05"
+        }
       }
     }
   }
