@@ -2551,6 +2551,139 @@
     "soc": 0
    }
   },
+  "villepin": {
+   "slug": "dominique-de-villepin",
+   "url": "https://www.france-vote.fr/candidats/dominique-de-villepin",
+   "famille": "Bloc central",
+   "positions": {
+    "eco1": 2,
+    "eco2": 0,
+    "eco3": 1,
+    "eco4": 1,
+    "soc1": 1,
+    "soc2": 1,
+    "soc3": 0,
+    "soc4": 0,
+    "san1": 1,
+    "san2": 1,
+    "san3": 1,
+    "san4": 0,
+    "edu1": 0,
+    "edu2": -2,
+    "edu3": 0,
+    "edu4": 0,
+    "imm1": 0,
+    "imm2": -1,
+    "imm3": 1,
+    "imm4": -2,
+    "sec1": 0,
+    "sec2": 0,
+    "sec3": 1,
+    "sec4": 0,
+    "ins1": 0,
+    "ins2": 1,
+    "ins3": -1,
+    "ins4": -1,
+    "env1": 1,
+    "env2": 0,
+    "env3": 1,
+    "env4": 0,
+    "eur1": 1,
+    "eur2": 0,
+    "eur3": -2,
+    "eur4": 1,
+    "int1": 0,
+    "int2": 1,
+    "int3": 1,
+    "int4": -1
+   },
+   "sources": {
+    "eco1": {
+     "url": "https://lafrancehumaniste.fr/articles/big-bang-la-regle-republicaine.html",
+     "titre": "Big Bang : la règle républicaine",
+     "editeur": "La France humaniste",
+     "date": "2026-08-28"
+    },
+    "eco2": null,
+    "eco3": {
+     "url": "https://lafrancehumaniste.fr/articles/big-bang-la-regle-republicaine.html",
+     "titre": "Big Bang : la règle républicaine",
+     "editeur": "La France humaniste",
+     "date": "2026-08-28"
+    },
+    "eco4": null,
+    "soc1": null,
+    "soc2": null,
+    "soc3": null,
+    "soc4": null,
+    "imm1": null,
+    "imm2": null,
+    "imm3": null,
+    "imm4": null,
+    "sec1": null,
+    "sec2": null,
+    "sec3": null,
+    "sec4": null,
+    "env1": null,
+    "env2": null,
+    "env3": {
+     "url": "https://lafrancehumaniste.fr/articles/pourquoi-je-suis-ecogaulliste.html",
+     "titre": "Pourquoi je suis écogaulliste ?",
+     "editeur": "La France humaniste",
+     "date": "2026-06-28"
+    },
+    "env4": null,
+    "eur1": null,
+    "eur2": null,
+    "eur3": null,
+    "eur4": null,
+    "int1": null,
+    "int2": null,
+    "int3": null,
+    "int4": null,
+    "ins1": null,
+    "ins2": null,
+    "ins3": null,
+    "ins4": null,
+    "san1": {
+     "url": "https://lafrancehumaniste.fr/articles/protection-sociale.html",
+     "titre": "Vers une protection sociale rénovée",
+     "editeur": "La France humaniste",
+     "date": "2025-12-04"
+    },
+    "san2": null,
+    "san3": null,
+    "san4": {
+     "url": "https://lafrancehumaniste.fr/articles/protection-sociale.html",
+     "titre": "Vers une protection sociale rénovée",
+     "editeur": "La France humaniste",
+     "date": "2025-12-04"
+    },
+    "edu1": null,
+    "edu2": {
+     "url": "https://lafrancehumaniste.fr/articles/refonder-lecole-pour-refaire-societe.html",
+     "titre": "Refonder l’école pour refaire société",
+     "editeur": "La France humaniste",
+     "date": "2026-09-01"
+    },
+    "edu3": {
+     "url": "https://lafrancehumaniste.fr/articles/refonder-lecole-pour-refaire-societe.html",
+     "titre": "Refonder l’école pour refaire société",
+     "editeur": "La France humaniste",
+     "date": "2026-09-01"
+    },
+    "edu4": {
+     "url": "https://lafrancehumaniste.fr/articles/refonder-lecole-pour-refaire-societe.html",
+     "titre": "Refonder l’école pour refaire société",
+     "editeur": "La France humaniste",
+     "date": "2026-09-01"
+    }
+   },
+   "boussole": {
+    "eco": -21,
+    "soc": -27
+   }
+  },
   "bertrand": {
    "slug": "xavier-bertrand",
    "url": "https://www.france-vote.fr/candidats/xavier-bertrand",
@@ -3980,7 +4113,6 @@
   "François Hollande",
   "Emmanuel Maurel",
   "Bruno Le Maire",
-  "Dominique de Villepin",
   "Jean Lassalle"
  ]
 }
