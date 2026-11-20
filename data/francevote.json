@@ -812,7 +812,12 @@
      "editeur": "France 24",
      "date": "2022-03-01"
     },
-    "int2": null,
+    "int2": {
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 2 : Une France indépendante au service de la paix",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "int3": {
      "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre2/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 2 : Une France indépendante au service de la paix",
@@ -995,7 +1000,12 @@
     "eur3": null,
     "eur4": null,
     "int1": null,
-    "int2": null,
+    "int2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1234/AN/689.pdf",
+     "titre": "Amendement nº 689 à l’article 2 (rapport annexé) du projet de loi relatif à la programmation militaire pour les années 2024 à 2030",
+     "editeur": "Assemblée nationale",
+     "date": "2023-05-17"
+    },
     "int3": null,
     "int4": {
      "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1943/AN/1362.pdf",
@@ -1153,7 +1163,12 @@
     "eur3": null,
     "eur4": null,
     "int1": null,
-    "int2": null,
+    "int2": {
+     "url": "https://www.pcf.fr/l_otan_c_est_la_guerre_et_la_corruption",
+     "titre": "L’OTAN, c’est la guerre… et la corruption",
+     "editeur": "Parti communiste français (site officiel)",
+     "date": "2025-10-22"
+    },
     "int3": null,
     "int4": {
      "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1943/AN/2386.pdf",
@@ -1291,7 +1306,12 @@
     "eur3": null,
     "eur4": null,
     "int1": null,
-    "int2": null,
+    "int2": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "int3": null,
     "int4": {
      "url": "https://ruches.org/le-projet",
@@ -3478,7 +3498,12 @@
     "eur3": null,
     "eur4": null,
     "int1": null,
-    "int2": null,
+    "int2": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
     "int3": null,
     "int4": null,
     "ins1": {
@@ -3681,7 +3706,12 @@
      "editeur": "Assemblée nationale",
      "date": "2024-03-12"
     },
-    "int2": null,
+    "int2": {
+     "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1234/AN/1731.pdf",
+     "titre": "Amendement nº 1731 à l’article 2 (rapport annexé) du projet de loi relatif à la programmation militaire pour les années 2024 à 2030",
+     "editeur": "Assemblée nationale",
+     "date": "2023-05-17"
+    },
     "int3": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7905",
      "titre": "Scrutin public nº 7905 sur l’ensemble du projet de loi actualisant la programmation militaire pour les années 2024 à 2030 (texte de la commission mixte paritaire)",

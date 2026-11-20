@@ -11,6 +11,15 @@
     }
   },
   "sourceOk": true,
-  "nouveaux": [],
-  "details": []
+  "nouveaux": [
+    "Dominique de Villepin"
+  ],
+  "details": [
+    {
+      "nom": "Dominique de Villepin",
+      "sources": [
+        "Wikipédia"
+      ]
+    }
+  ]
 }
