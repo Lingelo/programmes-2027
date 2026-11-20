@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-19",
+ "recupereLe": "2026-11-20",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -3871,10 +3871,25 @@
     "env4": null,
     "eur1": null,
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "eur4": null,
-    "int1": null,
-    "int2": null,
+    "int1": {
+     "url": "https://www.franceinfo.fr/politique/eric-zemmour/cela-fait-a-30-ans-que-je-dis-qu-il-faut-un-grand-rassemblement-des-droites-assure-eric-zemmour-president-du-parti-reconquete_7621697.html",
+     "titre": "« Cela fait à 30 ans que je dis qu'il faut un grand rassemblement des droites », assure Éric Zemmour, président du parti Reconquête",
+     "editeur": "franceinfo (Les 4 Vérités, France 2)",
+     "date": "2025-11-17"
+    },
+    "int2": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "int3": {
      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
      "titre": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration »",
