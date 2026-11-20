@@ -56,47 +56,6 @@
         }
       }
     },
-    "villepin": {
-      "positions": {
-        "eco1": 2,
-        "eco2": 1,
-        "env1": 1,
-        "env4": 1,
-        "int1": 2
-      },
-      "sources": {
-        "eco1": {
-          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-1.html",
-          "titre": "« En rétablissant l'Impôt sur la Fortune, suivant un barème proche de celui de 2016 » (programme « Réussir à nouveau »)",
-          "editeur": "La France humaniste",
-          "date": "2026-11-20"
-        },
-        "eco2": {
-          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-23.html",
-          "titre": "« Supprimer les impôts de production dans le cadre de la simplification fiscale » et « les intégrer dans l'impôt sur les sociétés » (programme « Réussir à nouveau »)",
-          "editeur": "La France humaniste",
-          "date": "2026-11-20"
-        },
-        "env1": {
-          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-1.html",
-          "titre": "« Poursuivre le programme des six EPR2 » en prenant en compte les coûts « avant de lancer les tranches suivantes » (programme « Réussir à nouveau »)",
-          "editeur": "La France humaniste",
-          "date": "2026-11-20"
-        },
-        "env4": {
-          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-22.html",
-          "titre": "« Réduire de moitié l'usage des phytosanitaires d'ici 2030 » (programme « Réussir à nouveau »)",
-          "editeur": "La France humaniste",
-          "date": "2026-11-20"
-        },
-        "int1": {
-          "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-11.html",
-          "titre": "« Pérennisation de l'effort de soutien financier et de défense à l'Ukraine » (programme « Réussir à nouveau »)",
-          "editeur": "La France humaniste",
-          "date": "2026-11-20"
-        }
-      }
-    },
     "mikolajczak": {
       "positions": {
         "eco1": 2,
