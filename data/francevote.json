@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-20",
+ "recupereLe": "2026-11-21",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -462,7 +462,12 @@
      "editeur": "Lutte ouvrière",
      "date": "2026-06-26"
     },
-    "imm4": null,
+    "imm4": {
+     "url": "https://www.lecourrierdelatlas.com/nathalie-arthaud-tente-de-seduire-lelectorat-immigre-avec-sa-preference-de-classe/",
+     "titre": "Nathalie Arthaud tente de séduire l’électorat immigré avec sa « préférence de classe »",
+     "editeur": "Le Courrier de l’Atlas",
+     "date": "2022-02-14"
+    },
     "sec1": null,
     "sec2": null,
     "sec3": null,
@@ -753,7 +758,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "imm4": null,
+    "imm4": {
+     "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 2 : Élever le niveau d’éducation et de savoirs",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "sec1": {
      "url": "https://melenchon.fr/2024/11/16/est-ce-que-ca-va-mieux-en-lexpliquant/",
      "titre": "Est-ce que ça va mieux en l’expliquant ?",
@@ -2125,7 +2135,12 @@
      "editeur": "NPA-Révolutionnaires",
      "date": "2024"
     },
-    "imm4": null,
+    "imm4": {
+     "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+     "titre": "Intervention de Selma Labib à la fête de l’Humanité 2026",
+     "editeur": "NPA-Révolutionnaires",
+     "date": "2026-09-15"
+    },
     "sec1": null,
     "sec2": null,
     "sec3": null,
@@ -2446,7 +2461,12 @@
      "editeur": "Le Monde (avec AFP)",
      "date": "2023-12-10"
     },
-    "imm4": null,
+    "imm4": {
+     "url": "https://www.edouardphilippe.fr/programme/immigration",
+     "titre": "Le programme — Immigration",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-11-18"
+    },
     "sec1": {
      "url": "https://www.edouardphilippe.fr/programme/securite",
      "titre": "Le programme — Sécurité",
@@ -2762,7 +2782,12 @@
     "imm1": null,
     "imm2": null,
     "imm3": null,
-    "imm4": null,
+    "imm4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/14/questions/QANR5L14QE33655.pdf",
+     "titre": "Question écrite nº 33655 : prestations familiales, conditions d’attribution",
+     "editeur": "Assemblée nationale (JO, 14e législature)",
+     "date": "2013-07-23"
+    },
     "sec1": {
      "url": "https://www.europe1.fr/politique/peine-automatique-pour-les-agresseurs-de-policiers-critique-bertrand-persiste-et-signe-4039922",
      "titre": "« Peine automatique » pour les agresseurs de policiers : critiqué, Bertrand persiste et signe",
@@ -3113,7 +3138,12 @@
      "date": "2023-06-01"
     },
     "imm3": null,
-    "imm4": null,
+    "imm4": {
+     "url": "https://www.senat.fr/leg/ppl22-677.html",
+     "titre": "Proposition de loi pour reprendre le contrôle de la politique d’immigration, d’intégration et d’asile (nº 677 rect., 2022-2023)",
+     "editeur": "Sénat",
+     "date": "2023-06-01"
+    },
     "sec1": {
      "url": "https://republicains.fr/actualites/2026/05/31/ma-candidature-ira-jusquau-bout/",
      "titre": "« Ma candidature ira jusqu’au bout »",
@@ -3301,7 +3331,12 @@
      "date": "2026"
     },
     "imm3": null,
-    "imm4": null,
+    "imm4": {
+     "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+     "titre": "Notre projet — Immigration et assimilation",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026-03-03"
+    },
     "sec1": {
      "url": "https://www.debout-la-france.fr/wp-content/uploads/2026/06/Justice-2026_06-10_Livret.pdf",
      "titre": "Justice : rendre la justice au nom du peuple français ! (livret)",
@@ -4013,7 +4048,12 @@
      "editeur": "Reconquête (site officiel d’Éric Zemmour)",
      "date": "2023"
     },
-    "imm4": null,
+    "imm4": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "sec1": {
      "url": "https://www.europe1.fr/politique/en-direct-immigration-pouvoir-dachat-narcotrafic-ce-quil-faut-retenir-de-linterview-deric-zemmour-dans-la-france-en-face-936419",
      "titre": "Immigration, pouvoir d’achat, narcotrafic… Ce qu’il faut retenir de l’interview d’Éric Zemmour dans La France en face",
