@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-21",
+ "recupereLe": "2026-11-22",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -808,7 +808,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "eur2": null,
+    "eur2": {
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 1 : Se libérer du libéralisme en Europe",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "eur3": null,
     "eur4": {
      "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
@@ -2501,7 +2506,12 @@
      "date": "2026-11-12"
     },
     "eur1": null,
-    "eur2": null,
+    "eur2": {
+     "url": "https://lcp.fr/actualites/edouard-philippe-veut-diviser-par-deux-l-immigration-legale-et-propose-un-moratoire-sur",
+     "titre": "Édouard Philippe veut « diviser par deux » l’immigration légale et propose un moratoire sur le regroupement familial",
+     "editeur": "LCP",
+     "date": "2026-10-09"
+    },
     "eur3": null,
     "eur4": null,
     "int1": null,
@@ -2871,7 +2881,7 @@
     "imm1": 2,
     "imm2": 1,
     "imm3": -2,
-    "imm4": 0,
+    "imm4": 1,
     "sec1": 2,
     "sec2": -2,
     "sec3": -1,
@@ -2935,7 +2945,12 @@
      "editeur": "Nouvelle Énergie",
      "date": "2026"
     },
-    "imm4": null,
+    "imm4": {
+     "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+     "titre": "Immigration : le projet de David Lisnard",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026"
+    },
     "sec1": null,
     "sec2": null,
     "sec3": null,
@@ -2950,7 +2965,12 @@
      "date": "2026-10-16"
     },
     "eur1": null,
-    "eur2": null,
+    "eur2": {
+     "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+     "titre": "Immigration : le projet de David Lisnard",
+     "editeur": "Nouvelle Énergie",
+     "date": "2026"
+    },
     "eur3": null,
     "eur4": null,
     "int1": null,
@@ -3027,7 +3047,7 @@
    },
    "boussole": {
     "eco": 92,
-    "soc": 52
+    "soc": 55
    }
   },
   "retailleau": {
@@ -3183,7 +3203,12 @@
      "editeur": "Public Sénat",
      "date": "2026-02-13"
     },
-    "eur2": null,
+    "eur2": {
+     "url": "https://www.senat.fr/leg/ppl22-646.html",
+     "titre": "Proposition de loi constitutionnelle relative à la souveraineté de la France, à la nationalité, à l’immigration et à l’asile (nº 646 rect.)",
+     "editeur": "Sénat",
+     "date": "2023-05-25"
+    },
     "eur3": null,
     "eur4": {
      "url": "https://www.leparisien.fr/politique/mercosur-retailleau-menace-macron-dune-censure-du-gouvernement-lecornu-sil-vote-laccord-commercial-07-01-2026-JPSGF6AVLFFKTAE2FPTD64APKU.php",
@@ -3356,7 +3381,12 @@
      "editeur": "Debout la France (site officiel du parti)",
      "date": "2026"
     },
-    "eur2": null,
+    "eur2": {
+     "url": "https://www.debout-la-france.fr/projet/affaires-europeennes/",
+     "titre": "Notre projet — Affaires européennes",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026-11-18"
+    },
     "eur3": null,
     "eur4": null,
     "int1": {
@@ -3856,10 +3886,10 @@
     },
     "eur1": null,
     "eur2": {
-     "url": "https://www.publicsenat.fr/actualites/non-classe/sur-l-europe-marine-le-pen-a-t-elle-vraiment-change-202482",
-     "titre": "Sur l’Europe, Marine Le Pen a-t-elle vraiment changé ?",
-     "editeur": "Public Sénat",
-     "date": "2022-04-14"
+     "url": "https://www.assemblee-nationale.fr/dyn/16/textes/l16b2120_proposition-loi.pdf",
+     "titre": "Proposition de loi constitutionnelle Citoyenneté-Identité-Immigration (nº 2120)",
+     "editeur": "Assemblée nationale (16e législature)",
+     "date": "2024-01-25"
     },
     "eur3": {
      "url": "https://www.publicsenat.fr/actualites/non-classe/sur-l-europe-marine-le-pen-a-t-elle-vraiment-change-202482",
@@ -4073,7 +4103,12 @@
     },
     "env4": null,
     "eur1": null,
-    "eur2": null,
+    "eur2": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "eur3": {
      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
      "titre": "Pour que la France reste la France — Mon programme",
