@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-23",
+ "recupereLe": "2026-11-24",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -1315,7 +1315,12 @@
     "imm4": null,
     "sec1": null,
     "sec2": null,
-    "sec3": null,
+    "sec3": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "sec4": null,
     "env1": null,
     "env2": {
@@ -3419,7 +3424,12 @@
      "date": "2026-06-10"
     },
     "sec2": null,
-    "sec3": null,
+    "sec3": {
+     "url": "https://www.debout-la-france.fr/projet/securite/",
+     "titre": "Notre projet — Sécurité",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026-02-16"
+    },
     "sec4": null,
     "env1": null,
     "env2": {
@@ -3918,7 +3928,12 @@
      "date": "2024-09-17"
     },
     "sec2": null,
-    "sec3": null,
+    "sec3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-l-essentiel-du-programme-de-marine-le-pen-59168",
+     "titre": "Présidentielle : l’essentiel du programme de Marine Le Pen",
+     "editeur": "Public Sénat",
+     "date": "2017-04-23"
+    },
     "sec4": null,
     "env1": {
      "url": "https://rassemblementnational.fr/22-mesures",
@@ -4151,7 +4166,12 @@
      "date": "2026-05-19"
     },
     "sec2": null,
-    "sec3": null,
+    "sec3": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "sec4": null,
     "env1": null,
     "env2": {
