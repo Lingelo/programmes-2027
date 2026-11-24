@@ -21,8 +21,15 @@ Les Échos, Public Sénat, LCP…), puis sites de synthèse en dernier recours.
 ## 3. Écrire dans `data/candidats.json`
 - `propositions.<theme>` : `{ "titre": "…", "detail": "…", "source": "URL précise" }` — `theme` parmi `themes[].id`.
 - `positions.<enjeu>` (tableau « en un coup d'œil ») : `{ "valeur": "1 à 5 mots", "source": "URL" }` — enjeux : `enjeux[].id`.
-- `phares` : 3 mesures maximum, déjà présentes dans `propositions`.
-- `programme` : `non publié` / `partiel` / `complet` ; `sources` : ajouter les URL utilisées.
+- `phares` : 1 à 3 dès qu'il y a au moins une mesure (jamais plus de 3), chacune reprenant le titre d'une mesure
+  existante dans `propositions` (pas de phare sans mesure sourcée ; si une mesure est retirée, retirer son phare).
+  Choisir les mesures que le candidat met lui-même le plus en avant dans ses sources.
+- `programme` : `non publié` (aucune mesure) / `partiel` (mesures annoncées par étapes) / `complet` (« Programme publié » :
+  document présenté comme le programme du candidat) ; `sources` : ajouter les URL utilisées.
+- `positions` : 1 à 5 mots, uniquement à partir d'une mesure sourcée qui tranche l'enjeu (source = URL de cette mesure).
+- `detail` : au moins une phrase complète (40 caractères et plus), avec les mots du candidat.
+- Typographie : « » (jamais "), espace avant : ? !, élisions.
+- `node scripts/check-data.mjs` bloque ces règles (phares, statut) et avertit pour le reste : corrige les avertissements.
 - Conserve l'existant sauf contradiction par une source plus récente ou abandon par le candidat ;
   remplace une source faible par une source officielle ou de presse quand tu en trouves une.
 - Candidat retiré : `statut: "retiré"` et ajout dans `retires`. Nouveau candidat : le signaler (skill `ajouter-candidat`).
