@@ -6,7 +6,7 @@
       "tour2": "2027-05-02",
       "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
     },
-    "contenuMisAJour": "2026-11-23",
+    "contenuMisAJour": "2026-11-24",
     "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub.",
     "regle": "Seules les mesures et positions attribuées au candidat pour la campagne 2027 (sources datées de 2025-2026) figurent sur le site."
   },
@@ -154,7 +154,7 @@
       "slogan": "Le camp des travailleurs",
       "statut": "déclarée",
       "declaration": "2025-12-08",
-      "programme": "complet",
+      "programme": "partiel",
       "site": "https://www.lutte-ouvriere.org",
       "bio": "Porte-parole de Lutte ouvrière, professeure d'économie-gestion. Quatrième candidature à la présidentielle après 2012, 2017 et 2022.",
       "phares": [
@@ -321,7 +321,12 @@
         "travail": [
           {
             "titre": "Interdiction des licenciements",
-            "detail": "Interdiction des licenciements ; semaine de 28 heures sans perte de salaire ; fin de la sous-traitance, CDI pour tous.",
+            "detail": "Interdiction des licenciements ; fin de la sous-traitance, CDI pour tous.",
+            "source": "https://anasse2027.fr/programme"
+          },
+          {
+            "titre": "Semaine de 28 heures",
+            "detail": "« Répartition du travail pour une semaine de 28h sans baisse de salaire. »",
             "source": "https://anasse2027.fr/programme"
           },
           {
@@ -430,9 +435,13 @@
       "statut": "désignée",
       "declaration": "2026-06-17",
       "programme": "partiel",
-      "site": null,
+      "site": "https://npa-revolutionnaires.org",
       "bio": "Conductrice de bus et syndicaliste, porte-parole du NPA – Révolutionnaires. Désignée candidate par le comité national du parti en juin 2026.",
-      "phares": [],
+      "phares": [
+        "400 € de plus pour tous",
+        "Partage du travail",
+        "Régularisation des sans-papiers"
+      ],
       "positions": {
         "immigration": {
           "valeur": "Régulariser tous les sans-papiers",
@@ -577,7 +586,7 @@
           },
           {
             "titre": "Garantie d'emploi",
-            "detail": "Garantie d'emploi rémunérée au SMIC.",
+            "detail": "« Tout chômeur de longue durée pourra se voir proposer d'être embauché au moins au SMIC revalorisé dans un secteur d'urgence » (bifurcation écologique, action sociale), sur la base du volontariat.",
             "source": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1"
           },
           {
@@ -725,7 +734,7 @@
           },
           {
             "titre": "Prisons",
-            "detail": "Régulation carcérale contraignante.",
+            "detail": "« En finir avec la surpopulation carcérale par la mise en place d'un mécanisme contraignant de régulation carcérale » et donner aux personnes détenues les moyens de se réinsérer.",
             "source": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2"
           }
         ],
@@ -784,7 +793,7 @@
           },
           {
             "titre": "Fin de Parcoursup",
-            "detail": "Démanteler Parcoursup.",
+            "detail": "« Garantir à tous les bacheliers l'accès sans sélection à la formation de leur choix en démantelant le système Parcoursup » ; restaurer le droit à la poursuite d'études en master.",
             "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
           },
           {
@@ -794,7 +803,7 @@
           },
           {
             "titre": "Éradiquer l'illettrisme",
-            "detail": "Éradiquer l'illettrisme d'ici 2032.",
+            "detail": "« Éradiquer l'illettrisme pour les jeunes sortis du système scolaire et les adultes à l'horizon 2032 » ; un service public de lutte contre l'illettrisme et l'illectronisme ; une formation gratuite.",
             "source": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2"
           },
           {
@@ -992,7 +1001,7 @@
         "education": [
           {
             "titre": "Réforme Blanquer",
-            "detail": "« Abroger la réforme Blanquer ».",
+            "detail": "Il veut « abroger la réforme Blanquer » et lancer un plan de recrutement.",
             "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
         ]
@@ -1351,9 +1360,9 @@
       "site": "https://ruches.org/",
       "bio": "Avocat et essayiste. Candidat déclaré depuis le 19 décembre 2025, soutenu par le mouvement citoyen Les Ruches, organisé en groupes locaux sans structure partisane.",
       "phares": [
-        "Référendum d'initiative citoyenne en toutes matières",
-        "Se préparer à la sortie de l'Union européenne",
-        "Rétablissement de l'ISF"
+        "Référendum d'initiative citoyenne",
+        "Se préparer à la sortie de l'UE",
+        "Rétablir l'ISF"
       ],
       "positions": {
         "europe": {
@@ -1396,7 +1405,7 @@
         ],
         "europe": [
           {
-            "titre": "Préparer la sortie de l'UE",
+            "titre": "Se préparer à la sortie de l'UE",
             "detail": "« Il faut se préparer à la sortie de l'Union européenne » ; renégociation des traités pour reprendre la main sur la monnaie, le budget et les frontières.",
             "source": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle"
           },
@@ -2029,8 +2038,16 @@
       "programme": "partiel",
       "site": "https://karimbouamrane2027.org",
       "bio": "Maire de Saint-Ouen-sur-Seine. Candidat sans passer par la primaire socialiste.",
-      "phares": [],
-      "positions": {},
+      "phares": [
+        "Protection des enfants",
+        "Effort de défense"
+      ],
+      "positions": {
+        "immigration": {
+          "valeur": "Accueillir, agir à la source, reconduire",
+          "source": "https://karimbouamrane2027.org/manifeste.html"
+        }
+      },
       "propositions": {
         "securite": [
           {
@@ -2040,7 +2057,7 @@
           },
           {
             "titre": "Effort de défense",
-            "detail": "« J'augmenterai l'effort de défense. »",
+            "detail": "« Une France forte, c'est une France qui investit dans sa défense, pour éviter la guerre. » ; « nos soldats méritent les moyens de leur mission. J'augmenterai l'effort de défense. »",
             "source": "https://karimbouamrane2027.org/manifeste.html"
           }
         ],
@@ -2124,7 +2141,11 @@
       "programme": "partiel",
       "site": "https://delphinebatho.fr",
       "bio": "Députée, présidente de Génération écologie, ancienne ministre de l'Écologie. Opposée à une primaire unitaire de la gauche.",
-      "phares": [],
+      "phares": [
+        "Interdire le Black Friday",
+        "Sortir des pesticides en cinq ans",
+        "Sécurité civile"
+      ],
       "positions": {},
       "propositions": {
         "ecologie": [
@@ -2483,6 +2504,10 @@
         "europe": {
           "valeur": "Préférence européenne",
           "source": "https://attalpresident.fr/programme"
+        },
+        "nucleaire": {
+          "valeur": "14 EPR, un par an",
+          "source": "https://attalpresident.fr/programme/mesures/plan-messmer-2"
         }
       },
       "propositions": {
@@ -2562,6 +2587,11 @@
             "source": "https://attalpresident.fr/programme"
           },
           {
+            "titre": "Règle d'or budgétaire dans la Constitution",
+            "detail": "Inscrire « une règle d'or d'équilibre budgétaire dans la Constitution », soumise aux Français par référendum ; déficit public sous les 3 % avant 2032, équilibre de la Sécurité sociale en 2032, « zéro déficit public en 2037 ».",
+            "source": "https://attalpresident.fr/programme/mesures/regle-d-or-constitution"
+          },
+          {
             "titre": "200 Md€ pour l'IA",
             "detail": "200 milliards d'euros pour l'intelligence artificielle.",
             "source": "https://attalpresident.fr/programme"
@@ -2629,8 +2659,8 @@
         "ecologie": [
           {
             "titre": "Ministère de l'Eau",
-            "detail": "Créer un ministère de l'Eau.",
-            "source": "https://attalpresident.fr/programme"
+            "detail": "« Un ministère de plein exercice consacré à l'eau », « chargé de coordonner tous les acteurs » ; il pilotera le plan eau, de la réparation des 500 réseaux les plus vétustes au dépistage des PFAS dans les captages.",
+            "source": "https://attalpresident.fr/programme/mesures/ministere-de-l-eau"
           },
           {
             "titre": "Prix planchers agricoles",
@@ -2641,6 +2671,11 @@
             "titre": "Géoénergie",
             "detail": "Multiplier par cinq la production de géoénergie d'ici 2035 ; subventions doublées ; réponse aux demandes en moins de 90 jours.",
             "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Plan Messmer II",
+            "detail": "« Un plan Messmer II pour ramener la part des énergies fossiles de près de 60 % à 30 % en 2035 » ; « sécuriser le programme de 14 EPR », avec « l'objectif d'atteindre un réacteur construit par an ».",
+            "source": "https://attalpresident.fr/programme/mesures/plan-messmer-2"
           },
           {
             "titre": "Eau",
@@ -2744,7 +2779,10 @@
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
         "https://www.journaldelagence.com/1414778-presidentielle-2027-quelles-sont-les-propositions-de-gabriel-attal-pour-le-logement",
         "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html",
-        "https://attalpresident.fr/programme/mesures/vingt-millions-salaries-ia"
+        "https://attalpresident.fr/programme/mesures/vingt-millions-salaries-ia",
+        "https://attalpresident.fr/programme/mesures/regle-d-or-constitution",
+        "https://attalpresident.fr/programme/mesures/ministere-de-l-eau",
+        "https://attalpresident.fr/programme/mesures/plan-messmer-2"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_in_2026.jpg",
       "biographie": {
@@ -2803,7 +2841,7 @@
       "slogan": "Le projet France",
       "statut": "déclaré",
       "declaration": "2026-09-24",
-      "programme": "partiel",
+      "programme": "complet",
       "site": "https://becht2027.fr",
       "bio": "Ancien ministre délégué au Commerce extérieur.",
       "phares": [
@@ -2811,7 +2849,20 @@
         "10 000 policiers supplémentaires",
         "Plan ferroviaire de 10 Md€"
       ],
-      "positions": {},
+      "positions": {
+        "nucleaire": {
+          "valeur": "Mix nucléaire et renouvelables",
+          "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-energie/"
+        },
+        "immigration": {
+          "valeur": "Mérite et projets",
+          "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-securite/"
+        },
+        "europe": {
+          "valeur": "Europe des trois cercles",
+          "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-securite/"
+        }
+      },
       "propositions": {
         "sante": [
           {
@@ -2852,7 +2903,7 @@
         "ecologie": [
           {
             "titre": "Sortir des énergies fossiles",
-            "detail": "Sortir des énergies fossiles ; neutralité carbone « en avance de phase » sur les objectifs européens ; carburants de synthèse.",
+            "detail": "Sortir des énergies fossiles « grâce à un mix associant nucléaire, énergies renouvelables et nouvelles technologies de stockage » ; neutralité carbone « en avance de phase » sur les objectifs européens ; carburants de synthèse.",
             "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-energie/"
           },
           {
@@ -2929,7 +2980,8 @@
         "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout",
         "https://becht2027.fr/tour-de-france/journal/etape-du-20-novembre-nord/",
         "https://becht2027.fr/chapitre/partie-4/",
-        "https://becht2027.fr/tour-de-france/journal/etape-du-21-novembre-pas-de-calais/"
+        "https://becht2027.fr/tour-de-france/journal/etape-du-21-novembre-pas-de-calais/",
+        "https://becht2027.fr/projet-france/le-livre/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Olivier_Becht.jpg",
       "biographie": {
@@ -3127,7 +3179,7 @@
           },
           {
             "titre": "4 millions de logements en dix ans",
-            "detail": "Construire 4 millions de logements en dix ans ; « suppression des \"frais de notaire\" pour le premier achat des moins de 35 ans » ; « moratoire de cinq ans sur l'ensemble des normes relatives à la construction et à l'habitation » ; « affectation aux maires de la TVA sur les logements neufs ».",
+            "detail": "Construire 4 millions de logements en dix ans ; « suppression des “frais de notaire” pour le premier achat des moins de 35 ans » ; « moratoire de cinq ans sur l'ensemble des normes relatives à la construction et à l'habitation » ; « affectation aux maires de la TVA sur les logements neufs ».",
             "source": "https://www.edouardphilippe.fr/programme/logement"
           }
         ],
@@ -3382,7 +3434,7 @@
       "bio": "Président des Républicains, ancien ministre de l'Intérieur. Désigné par les adhérents LR en avril 2026.",
       "phares": [
         "Référendum sur l'immigration",
-        "État d'urgence dans les quartiers gangrénés par le narcotrafic",
+        "État d'urgence contre le narcotrafic",
         "Âge minimal de départ à 63 ans"
       ],
       "positions": {
@@ -3419,7 +3471,7 @@
         ],
         "securite": [
           {
-            "titre": "Narcotrafic",
+            "titre": "État d'urgence contre le narcotrafic",
             "detail": "État d'urgence dans les quartiers touchés et réforme de la justice pénale, elle aussi par référendum.",
             "source": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492"
           },
@@ -3441,7 +3493,7 @@
         ],
         "travail": [
           {
-            "titre": "Réforme des retraites",
+            "titre": "Âge minimal de départ à 63 ans",
             "detail": "Âge minimal de départ à 63 ans ; taux plein automatique à 65 ans (au lieu de 67), indexé sur l'espérance de vie ; décote de 7 % par an avant 65 ans ; part de capitalisation pour les jeunes ; « 40 milliards d'économies en cumulé sur cinq ans ».",
             "source": "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html"
           },
@@ -3606,7 +3658,7 @@
       "statut": "déclaré",
       "declaration": "2026-03-31",
       "programme": "partiel",
-      "site": null,
+      "site": "https://www.unenouvelleenergie.fr",
       "bio": "Maire de Cannes, président de l'Association des maires de France jusqu'en 2025. A quitté LR pour fonder Nouvelle Énergie ; souhaite toujours une primaire de la droite.",
       "phares": [
         "Diviser par deux les impôts de production",
@@ -3771,9 +3823,11 @@
       "statut": "déclaré",
       "declaration": "2024-02-03",
       "programme": "partiel",
-      "site": null,
+      "site": "https://nousfrance.fr",
       "bio": "Président de la région Hauts-de-France, ancien ministre.",
-      "phares": [],
+      "phares": [
+        "Référendum en Corse"
+      ],
       "positions": {},
       "propositions": {
         "institutions": [
@@ -3874,8 +3928,17 @@
       "programme": "partiel",
       "site": null,
       "bio": "Maire de Chalon-sur-Saône.",
-      "phares": [],
-      "positions": {},
+      "phares": [
+        "Frères musulmans et voile",
+        "Réduire les titres de séjour",
+        "Retour aux 39 heures"
+      ],
+      "positions": {
+        "immigration": {
+          "valeur": "Réduction « drastique » des titres de séjour",
+          "source": "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
+        }
+      },
       "propositions": {
         "travail": [
           {
@@ -3907,9 +3970,9 @@
         ],
         "immigration": [
           {
-            "titre": "Titres de séjour",
-            "detail": "Réduction du nombre de titres de séjour délivrés chaque année ; loi d'assimilation.",
-            "source": "https://dijon-actualites.fr/2026/10/10/presidentielle-2027-le-maire-de-chalon-sur-saone-gilles-platret-sest-lance-dans-la-course-a-lelysee/"
+            "titre": "Réduire les titres de séjour",
+            "detail": "« Politique de réduction drastique de la délivrance des titres de séjour » ; « rétablissement des frontières pour juguler l'immigration irrégulière » ; une « grande loi d'assimilation ».",
+            "source": "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
           }
         ],
         "institutions": [
@@ -3964,7 +4027,7 @@
       "site": "https://www.debout-la-france.fr",
       "bio": "Président de Debout la France, maire honoraire de Yerres. Candidat en 2012, 2017 et 2022.",
       "phares": [
-        "Électricité divisée par deux",
+        "Prix de l'électricité divisé par deux",
         "SMIC à 1 600 € net",
         "Capital de 10 000 € à la naissance"
       ],
@@ -3989,7 +4052,7 @@
       "propositions": {
         "pouvoir-achat": [
           {
-            "titre": "Énergie moins chère",
+            "titre": "Prix de l'électricité divisé par deux",
             "detail": "« Diviser par 2 le prix de l'électricité dès la première année » (tarif garanti de 11 centimes le kWh) ; « baisser de 40 centimes le prix des carburants » ; « réduire de 20 % le prix du gaz ».",
             "source": "https://www.debout-la-france.fr/projet/economie-travail/"
           },
@@ -4023,7 +4086,7 @@
         ],
         "travail": [
           {
-            "titre": "Capital de naissance",
+            "titre": "Capital de 10 000 € à la naissance",
             "detail": "« Doter chaque nouveau-né français d'un capital de 10 000 euros », bloqué jusqu'à la retraite (environ 6 milliards d'euros par an) ; heures supplémentaires défiscalisées au-delà de 1 607 heures par an.",
             "source": "https://www.debout-la-france.fr/projet/economie-travail/"
           },
@@ -4099,10 +4162,10 @@
       "statut": "déclaré",
       "declaration": "2026-05-09",
       "programme": "partiel",
-      "site": null,
+      "site": "https://www.les-patriotes.fr",
       "bio": "Président des Patriotes. Prône la sortie de l'Union européenne (Frexit). Se retirerait au profit d'un candidat souverainiste plus rassembleur.",
       "phares": [
-        "Sortie de l'Union européenne et de l'OTAN"
+        "Sortie de l'UE et de l'OTAN"
       ],
       "positions": {
         "europe": {
@@ -4122,7 +4185,7 @@
         "europe": [
           {
             "titre": "Sortie de l'UE et de l'OTAN",
-            "detail": "Favorable à « une sortie de la France de l'Union européenne et de l'Otan ».",
+            "detail": "Favorable à une sortie de la France de l'Union européenne et de l'OTAN, selon l'annonce de sa candidature.",
             "source": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
           },
           {
@@ -4234,7 +4297,11 @@
       "programme": "partiel",
       "site": "https://www.upr.fr",
       "bio": "Président de l'UPR, candidat en 2017. Défend la sortie de l'UE, de l'euro et de l'OTAN.",
-      "phares": [],
+      "phares": [
+        "Article 50 dès la première semaine",
+        "Sortie de l'OTAN",
+        "Suppression des régions et RIC"
+      ],
       "positions": {
         "europe": {
           "valeur": "Sortie de l'UE (article 50)",
@@ -4320,7 +4387,7 @@
       "bio": "Présidente du groupe RN à l'Assemblée nationale. Candidature confirmée en juillet 2026, après sa condamnation en appel (7 juillet 2026) à une peine d'inéligibilité sans exécution provisoire. Son pourvoi est pendant devant la Cour de cassation, qui doit se prononcer avant le premier tour (au plus tard début avril 2027) ; les questions prioritaires de constitutionnalité sont examinées le 16 décembre 2026. Quatrième candidature.",
       "phares": [
         "Retraite à 62 ans (60 ans pour les carrières longues)",
-        "Baisse de la TVA sur l'énergie",
+        "Baisse de la TVA sur le gaz et l'électricité",
         "Priorité nationale au logement"
       ],
       "positions": {
@@ -4345,7 +4412,7 @@
             "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen"
           },
           {
-            "titre": "Retraite de 60 à 62 ans",
+            "titre": "Retraite à 62 ans (60 ans pour les carrières longues)",
             "detail": "Âge d'ouverture des droits de 60 à 62 ans selon l'âge d'entrée dans la vie active : 40 annuités pour ceux qui ont commencé avant 20 ans, 42 pour ceux entrés après 23 ans ; réforme Borne « abrogée au 1er janvier 2028 » ; référendum à défaut de majorité à l'Assemblée.",
             "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen"
           }
@@ -4381,9 +4448,9 @@
         ],
         "pouvoir-achat": [
           {
-            "titre": "Baisse de la TVA sur l'énergie",
-            "detail": "Contre-budget : baisse de la TVA sur les énergies (12,2 Md€), TVA nulle sur cent produits essentiels, part fiscale pleine dès le deuxième enfant.",
-            "source": "https://www.institut-entreprise.fr/wp-content/uploads/2026/10/Analyse-primaire-contre-budget-RN-Note-de-contexte-IDEP.pdf"
+            "titre": "Baisse de la TVA sur le gaz et l'électricité",
+            "detail": "Plan budgétaire présenté le 6 octobre 2026 : baisse de la TVA sur le gaz et l'électricité ; suppression de la TVA sur 100 produits de première nécessité.",
+            "source": "https://www.franceinfo.fr/politique/front-national/ce-n-est-pas-du-tout-credible-le-budget-de-marine-le-pen-et-ses-140-milliards-d-economies-sous-le-feu-des-critiques_8227204.html"
           }
         ],
         "immigration": [
@@ -4419,10 +4486,10 @@
         "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400",
         "https://vert.eco/chaleurs-actuelles/marine-le-pen-presente-le-contre-budget-du-rn-pour-2027-une-attaque-contre-les-renouvelables-et-les-agences-environnementales/",
         "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/marine-le-pen-fait-sa-rentree-politique-a-henin-beaumont-et-met-la-priorite-nationale-au-c-ur-de-son-programme-pour-la-presidentielle-de-2027-3416348.html",
-        "https://www.institut-entreprise.fr/wp-content/uploads/2026/10/Analyse-primaire-contre-budget-RN-Note-de-contexte-IDEP.pdf",
         "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
-        "https://www.franceinfo.fr/elections/la-candidate-a-l-election-presidentielle-marine-le-pen-estime-que-couper-les-subventions-aux-associations-politisees-n-est-pas-du-chantage_8294897.html"
+        "https://www.franceinfo.fr/elections/la-candidate-a-l-election-presidentielle-marine-le-pen-estime-que-couper-les-subventions-aux-associations-politisees-n-est-pas-du-chantage_8294897.html",
+        "https://www.franceinfo.fr/politique/front-national/ce-n-est-pas-du-tout-credible-le-budget-de-marine-le-pen-et-ses-140-milliards-d-economies-sous-le-feu-des-critiques_8227204.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg",
       "biographie": {
@@ -4756,7 +4823,10 @@
       "programme": "partiel",
       "site": null,
       "bio": "Judoka, champion olympique. Il annonce le 9 novembre 2026 sa candidature, sans parti, en se disant « ni de droite, ni de gauche ».",
-      "phares": [],
+      "phares": [
+        "Salaire net",
+        "Retraites"
+      ],
       "positions": {
         "retraite": {
           "valeur": "Répartition + part de capitalisation",
@@ -5221,7 +5291,7 @@
       "statut": "désigné",
       "declaration": null,
       "programme": "non publié",
-      "site": null,
+      "site": "https://les-ecologistes-mei.org",
       "bio": "Ingénieur de formation, responsable de la maintenance du tramway de Luxembourg et membre du bureau national du Mouvement écologiste indépendant, qui l'a désigné candidat fin août 2026.",
       "phares": [],
       "positions": {},
@@ -5273,7 +5343,10 @@
       "programme": "partiel",
       "site": "https://parti-equinoxe.fr",
       "bio": "Désigné par le parti Équinoxe ; programme présenté à Mulhouse.",
-      "phares": [],
+      "phares": [
+        "Opération Montesquieu",
+        "350 Pays de France"
+      ],
       "positions": {
         "fortune": {
           "valeur": "Rétablir l'ISF",
@@ -5357,7 +5430,11 @@
       "programme": "partiel",
       "site": "https://dieudolalanne2027.com",
       "bio": "Chanteur.",
-      "phares": [],
+      "phares": [
+        "Sortie de l'UE et de l'OTAN",
+        "Retour au franc",
+        "RIC en toutes matières"
+      ],
       "positions": {
         "europe": {
           "valeur": "Sortie de l'UE et de l'OTAN",
@@ -5479,7 +5556,9 @@
       "programme": "partiel",
       "site": "https://benoitmathieu2027.fr",
       "bio": "Professeur de 27 ans, candidat sans parti. Il parcourt la France à vélo (12 000 km) pour réunir ses 500 parrainages.",
-      "phares": [],
+      "phares": [
+        "Constitution rédigée par 500 tirés au sort"
+      ],
       "positions": {},
       "propositions": {
         "institutions": [
@@ -5510,7 +5589,7 @@
       "statut": "déclaré",
       "declaration": null,
       "programme": "non publié",
-      "site": null,
+      "site": "https://trajectoire2027.fr",
       "bio": "Candidat du mouvement Trajectoire, en recherche de parrainages.",
       "phares": [],
       "positions": {},
