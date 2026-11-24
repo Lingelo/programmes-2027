@@ -388,7 +388,7 @@
       "biographie": {
         "paragraphes": [
           "Anasse Kazib, né le 2 janvier 1987 à Sarcelles, est un syndicaliste cheminot et militant trotskiste d'extrême gauche français.",
-          "Délégué syndical de SUD Rail à la gare du Bourget, il devient une figure du mouvement cheminot en 2018, année où il intègre Les Grandes Gueules de RMC. Depuis 2017, il est membre de Révolution permanente, courant du Nouveau Parti anticapitaliste qui prend son indépendance en 2021. Il tente de se présenter à l'élection présidentielle de 2022, mais échoue à recueillir les parrainages nécessaires."
+          "Délégué syndical de SUD Rail à la gare du Bourget, il devient une figure du mouvement cheminot en 2018, année où il intègre Les Grandes Gueules de RMC. Depuis 2017, il est membre de Révolution permanente, courant du Nouveau Parti anticapitaliste qui prend son indépendance en 2021. Tentant de se présenter à l'élection présidentielle de 2022, il échoue à recueillir les parrainages nécessaires."
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Anasse_Kazib",
         "wikidata": "Q106405647",
@@ -401,7 +401,7 @@
         ],
         "formation": [],
         "fonctions": [],
-        "majLe": "2026-11-03"
+        "majLe": "2026-11-24"
       }
     },
     {
@@ -5197,16 +5197,18 @@
         ],
         "wikipedia": "https://fr.wikipedia.org/wiki/Sylvain_Durif",
         "wikidata": "Q111050069",
-        "genre": null,
+        "genre": "m",
         "naissance": "1969-08-23",
-        "lieuNaissance": "Nantua",
+        "lieuNaissance": null,
         "professions": [
           "vidéaste",
-          "théoricien du complot"
+          "théoricien du complot",
+          "musicien",
+          "prophète"
         ],
         "formation": [],
         "fonctions": [],
-        "majLe": "2026-11-22"
+        "majLe": "2026-11-24"
       }
     },
     {
