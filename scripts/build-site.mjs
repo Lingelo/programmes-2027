@@ -17,6 +17,8 @@ const lire = (p) => readFile(fichier(p), 'utf8');
 const existe = (p) => access(fichier(p)).then(() => true, () => false);
 
 const data = JSON.parse(await lire('data/candidats.json'));
+// Mêmes règles que js/app.js : un candidat « retiré » n'a plus de page ni de duel.
+data.candidats = data.candidats.filter((c) => c.statut !== 'retiré');
 const parrainages = JSON.parse(await lire('data/parrainages.json').catch(() => 'null'));
 const francevote = JSON.parse(await lire('data/francevote.json').catch(() => 'null'));
 const SITE = (data.meta.site || 'https://lingelo.github.io/programmes-2027/').replace(/\/?$/, '/');

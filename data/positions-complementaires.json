@@ -1,7 +1,7 @@
 {
   "auteur": "Programmes 2027",
   "note": "Positions relevées par Programmes 2027, sur les mêmes 40 propositions que France-Vote, pour les candidats que France-Vote n'évalue pas encore. Seules les prises de position publiques et sourcées pour 2027 sont notées ; les autres propositions restent « non évaluées ».",
-  "majLe": "2026-11-20",
+  "majLe": "2026-11-23",
   "candidats": {
     "platret": {
       "positions": {
@@ -80,6 +80,33 @@
           "titre": "« Chaque électeur dispose de deux voix aux élections législatives » : circonscription et proportionnelle nationale (programme 2027)",
           "editeur": "Équinoxe",
           "date": "2026-11-05"
+        }
+      }
+    },
+    "lalanne": {
+      "positions": {
+        "eur3": 2,
+        "int2": 2,
+        "ins1": 2
+      },
+      "sources": {
+        "eur3": {
+          "url": "https://dieudolalanne2027.com/programme",
+          "titre": "Programme — Francis Lalanne 2027",
+          "editeur": "Site de campagne de Francis Lalanne",
+          "date": null
+        },
+        "int2": {
+          "url": "https://dieudolalanne2027.com/programme",
+          "titre": "Programme — Francis Lalanne 2027",
+          "editeur": "Site de campagne de Francis Lalanne",
+          "date": null
+        },
+        "ins1": {
+          "url": "https://dieudolalanne2027.com/programme",
+          "titre": "Programme — Francis Lalanne 2027",
+          "editeur": "Site de campagne de Francis Lalanne",
+          "date": null
         }
       }
     }

@@ -12,6 +12,7 @@ const { chromium } = require('playwright');
 
 const RACINE = new URL('../', import.meta.url);
 const data = JSON.parse(await readFile(new URL('data/candidats.json', RACINE), 'utf8'));
+data.candidats = data.candidats.filter((c) => c.statut !== 'retiré'); // comme js/app.js : plus de page
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const texteSur = (hex) => {
   const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255).map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));

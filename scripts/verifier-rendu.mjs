@@ -21,6 +21,7 @@ import { fileURLToPath } from 'node:url';
 const RACINE = fileURLToPath(new URL('../', import.meta.url));
 const rapide = process.argv.includes('--rapide');
 const data = JSON.parse(await readFile(join(RACINE, 'data/candidats.json'), 'utf8'));
+data.candidats = data.candidats.filter((c) => c.statut !== 'retiré'); // comme js/app.js : pas de page
 const BASE = new URL(data.meta.site).pathname; // ex. /programmes-2027/
 
 // Playwright : dépendance du projet si installée, sinon installation globale de la machine

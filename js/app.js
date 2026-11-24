@@ -1108,7 +1108,8 @@ async function init() {
     state.fv = fv;
     state.complements = complements;
     state.listeOfficielle = listeOfficielle?.statut === 'publiee' ? listeOfficielle : null;
-    state.data = data;
+    // Un candidat « retiré » reste dans les données (historique) mais n'apparaît plus que dans « Ils se sont retirés ».
+    state.data = { ...data, candidats: data.candidats.filter((c) => c.statut !== 'retiré') };
     state.veille = veille;
     state.parrainages = parrainages;
     state.compare = state.compare.filter(parId);

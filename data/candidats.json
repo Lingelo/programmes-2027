@@ -6,7 +6,7 @@
       "tour2": "2027-05-02",
       "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
     },
-    "contenuMisAJour": "2026-11-20",
+    "contenuMisAJour": "2026-11-23",
     "avertissement": "Les programmes 2027 sont encore en construction : la plupart des candidats publient leurs propositions par étapes. Chaque mesure renvoie vers sa source. Signalez une erreur via GitHub.",
     "regle": "Seules les mesures et positions attribuées au candidat pour la campagne 2027 (sources datées de 2025-2026) figurent sur le site."
   },
@@ -335,6 +335,11 @@
             "titre": "Expropriation des banques",
             "detail": "Expropriation des groupes bancaires ; prêts à taux zéro et fin des agios ; fin des aides publiques aux grandes entreprises.",
             "source": "https://anasse2027.fr/programme"
+          },
+          {
+            "titre": "Expropriation de Total",
+            "detail": "« Avec la candidature d'Anasse Kazib, nous revendiquons l'expropriation de Total sous contrôle des travailleurs. »",
+            "source": "https://www.revolutionpermanente.fr/Anasse-2027-exproprions-Total-sous-controle-des-travailleurs"
           }
         ],
         "ecologie": [
@@ -370,6 +375,11 @@
             "titre": "Fin de la Ve République",
             "detail": "Fin de la Ve République, du Sénat et de la présidence.",
             "source": "https://anasse2027.fr/programme"
+          },
+          {
+            "titre": "Élus révocables au salaire médian",
+            "detail": "Abolition de la présidence de la République et du Sénat ; une Assemblée unique dont les membres « doivent être révocables et payés au salaire médian ».",
+            "source": "https://www.revolutionpermanente.fr/Anasse-2027-en-finir-avec-les-politiciens-professionnels-des-elus-revocables-payes-comme-des"
           }
         ],
         "europe": [
@@ -382,7 +392,9 @@
       },
       "sources": [
         "https://anasse2027.fr/programme",
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://www.revolutionpermanente.fr/Anasse-2027-en-finir-avec-les-politiciens-professionnels-des-elus-revocables-payes-comme-des",
+        "https://www.revolutionpermanente.fr/Anasse-2027-exproprions-Total-sous-controle-des-travailleurs"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_décembre_2021.jpg",
       "biographie": {
@@ -747,6 +759,11 @@
             "titre": "Psychothérapie des moins de 26 ans",
             "detail": "Remboursement de la psychothérapie pour les moins de 26 ans ; statut de famille monoparentale.",
             "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+          },
+          {
+            "titre": "Plan enfance",
+            "detail": "« Reconstruction de l'Aide sociale à l'enfance (ASE) et de la justice des enfants » ; « un vrai service public de la petite enfance ».",
+            "source": "https://melenchon2027.fr/communique/plan-enfance/"
           }
         ],
         "education": [
@@ -856,7 +873,8 @@
         "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
         "https://fr.news.yahoo.com/programme-2027-jean-luc-m%C3%A9lenchon-110620899.html",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
-        "https://melenchon2027.fr/communique/plan-pauvrete/"
+        "https://melenchon2027.fr/communique/plan-pauvrete/",
+        "https://melenchon2027.fr/communique/plan-enfance/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg",
       "biographie": {
@@ -927,7 +945,7 @@
       "statut": "désigné",
       "declaration": "2026-09-06",
       "programme": "partiel",
-      "site": "https://www.pcf.fr",
+      "site": "https://www.fabienroussel2027.fr",
       "bio": "Secrétaire national du PCF, candidat en 2022 (2,28 %). Investi par 72 % des adhérents en septembre 2026, il défend une candidature autonome.",
       "phares": [
         "Doubler la part de l'industrie dans le PIB",
@@ -1038,7 +1056,7 @@
       "wiki": "François_Ruffin",
       "photo": "img/candidats/ruffin.jpg",
       "slogan": "Nous président !",
-      "statut": "déclaré",
+      "statut": "retiré",
       "declaration": "2025-04-01",
       "programme": "partiel",
       "site": "https://nouspresident.fr",
@@ -1281,7 +1299,8 @@
         "https://nouspresident.fr/plan-de-redressement/",
         "https://nouspresident.fr/pour-une-democratie-en-continu-vive-les-etats-generaux/",
         "https://nouspresident.fr/redonner-aux-jeunes-les-clefs-de-leur-avenir/",
-        "https://nouspresident.fr/de-la-colonie-numerique-aux-souverainetes-numeriques/"
+        "https://nouspresident.fr/de-la-colonie-numerique-aux-souverainetes-numeriques/",
+        "https://www.france24.com/fr/france/20261121-pr%C3%A9sidentielle-prenant-acte-de-l-impasse-de-sa-campagne-fran%C3%A7ois-ruffin-retire-sa-candidature"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:François_Ruffin_(cropped).jpg",
       "biographie": {
@@ -1782,7 +1801,7 @@
       "statut": "déclaré",
       "declaration": "2026-08-23",
       "programme": "partiel",
-      "site": "https://place-publique.eu",
+      "site": "https://glucks2027.fr",
       "bio": "Eurodéputé, co-fondateur de Place publique. Vainqueur de la primaire de la gauche sociale-démocrate le 11 octobre 2026 (≈ 66 %).",
       "phares": [
         "200 Md€ pour la révolution écologique",
@@ -1791,8 +1810,8 @@
       ],
       "positions": {
         "retraite": {
-          "valeur": "Abroger, réforme pénibilité",
-          "source": "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+          "valeur": "Âge de référence à 62 ans",
+          "source": "https://actu.orange.fr/politique/presidentielle-2027-jean-luc-melenchon-perdra-au-second-tour-affirme-raphael-glucksmann-l-express-via-6medias-CNT000002tNlSa.html"
         },
         "smic": {
           "valeur": "Baisse de la CSG salariale",
@@ -1803,8 +1822,8 @@
           "source": "https://glucks2027.fr/revolution-ecologique/"
         },
         "immigration": {
-          "valeur": "Immigration de travail",
-          "source": "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+          "valeur": "Régulariser 250 000 à 300 000 travailleurs",
+          "source": "https://actu.orange.fr/politique/presidentielle-2027-jean-luc-melenchon-perdra-au-second-tour-affirme-raphael-glucksmann-l-express-via-6medias-CNT000002tNlSa.html"
         },
         "europe": {
           "valeur": "Coopération européenne",
@@ -1819,8 +1838,8 @@
         "pouvoir-achat": [
           {
             "titre": "Baisse de la CSG sur les salaires",
-            "detail": "Baisser la CSG sur les salaires, financée par une taxation des grandes fortunes et des « méga-héritiers ».",
-            "source": "https://www.france24.com/fr/france/20260827-premier-d%C3%A9bat-de-la-pr%C3%A9sidentielle-2027-les-principales-propositions-des-candidats"
+            "detail": "« Si je suis élu, dès septembre 2027, je baisserai la CSG de manière progressive sur les salaires », « du Smic jusqu'à 4 000 euros net par mois ».",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-jean-luc-melenchon-perdra-au-second-tour-affirme-raphael-glucksmann-l-express-via-6medias-CNT000002tNlSa.html"
           },
           {
             "titre": "Chèque énergie",
@@ -1853,6 +1872,11 @@
             "titre": "Livret de souveraineté écologique",
             "detail": "Plafond du livret A doublé et fusionné avec le LDDS en un « Livret de souveraineté écologique et sociale » rémunéré à 2,5 % ; fin de l'exonération de taxe sur le kérosène des vols intérieurs.",
             "source": "https://glucks2027.fr/revolution-ecologique/"
+          },
+          {
+            "titre": "Réviser le pacte Dutreil",
+            "detail": "« La révision du Pacte Dutreil qui est aujourd'hui dévoyé ».",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-jean-luc-melenchon-perdra-au-second-tour-affirme-raphael-glucksmann-l-express-via-6medias-CNT000002tNlSa.html"
           }
         ],
         "ecologie": [
@@ -1899,6 +1923,11 @@
             "titre": "Abroger la réforme des retraites",
             "detail": "Abroger la réforme actuelle et en faire une nouvelle qui tienne compte de la pénibilité et des conditions de travail.",
             "source": "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109"
+          },
+          {
+            "titre": "Âge de référence à 62 ans",
+            "detail": "Un « âge de référence de départ à la retraite fixé à 62 ans ».",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-jean-luc-melenchon-perdra-au-second-tour-affirme-raphael-glucksmann-l-express-via-6medias-CNT000002tNlSa.html"
           }
         ],
         "immigration": [
@@ -1911,6 +1940,11 @@
             "titre": "Convention citoyenne sur l'immigration",
             "detail": "Une convention citoyenne sur l'immigration, dont les propositions seraient soumises au Parlement.",
             "source": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+          },
+          {
+            "titre": "Régulariser des travailleurs sans papiers",
+            "detail": "« Je suis favorable à la régularisation de 250 000 à 300 000 travailleurs sans-papiers. »",
+            "source": "https://actu.orange.fr/politique/presidentielle-2027-jean-luc-melenchon-perdra-au-second-tour-affirme-raphael-glucksmann-l-express-via-6medias-CNT000002tNlSa.html"
           }
         ],
         "europe": [
@@ -1941,7 +1975,8 @@
         "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109",
         "https://en.wikipedia.org/wiki/2026_United_Left_primary",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
-        "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+        "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+        "https://actu.orange.fr/politique/presidentielle-2027-jean-luc-melenchon-perdra-au-second-tour-affirme-raphael-glucksmann-l-express-via-6medias-CNT000002tNlSa.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
       "biographie": {
@@ -2146,6 +2181,13 @@
             "detail": "Garantir à chaque enfant « une éducation à la sensibilité, à la nature, à la culture » et l'accès « à des classes vertes dans les paysages de France ».",
             "source": "https://delphinebatho.fr/priorites/la-beaute-pour-vivre-mieux/"
           }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "Interdire le Black Friday",
+            "detail": "« Je m'engage à interdire le Black Friday », reconnu comme « une pratique commerciale agressive et trompeuse » ; « un retour à la tradition française des soldes légaux ».",
+            "source": "https://delphinebatho.fr/interdire-le-black-friday-et-ses-arnaques/"
+          }
         ]
       },
       "sources": [
@@ -2154,7 +2196,8 @@
         "https://delphinebatho.fr/priorites/la-beaute-pour-vivre-mieux/",
         "https://delphinebatho.fr/priorites/la-republique-terrestre/",
         "https://delphinebatho.fr/priorites/la-securite-climatique-et-la-paix/",
-        "https://delphinebatho.fr/il-y-aura-une-candidature-de-lecologie-en-2027/"
+        "https://delphinebatho.fr/il-y-aura-une-candidature-de-lecologie-en-2027/",
+        "https://delphinebatho.fr/interdire-le-black-friday-et-ses-arnaques/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped).png",
       "biographie": {
@@ -2421,7 +2464,7 @@
       "bio": "Secrétaire général de Renaissance, ancien Premier ministre (2024). Candidat depuis mai 2026 ; propose une « grande primaire des démocrates ».",
       "phares": [
         "Brevet obligatoire pour entrer au lycée",
-        "Former 20 millions de salariés à l'IA en 5 ans",
+        "Former 20 millions de salariés à l'IA d'ici 2030",
         "Règle d'or budgétaire dans la Constitution"
       ],
       "positions": {
@@ -2478,8 +2521,8 @@
         "travail": [
           {
             "titre": "Former à l'IA",
-            "detail": "Former 20 millions de salariés à l'intelligence artificielle en cinq ans.",
-            "source": "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html"
+            "detail": "« Vingt millions de salariés formés à l'intelligence artificielle d'ici 2030 ».",
+            "source": "https://attalpresident.fr/programme/mesures/vingt-millions-salaries-ia"
           },
           {
             "titre": "Assurance chômage",
@@ -2537,6 +2580,11 @@
             "titre": "Départs volontaires",
             "detail": "100 000 départs volontaires dans les ministères et administrations, pour « faire mieux avec un peu moins ».",
             "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          },
+          {
+            "titre": "Année blanche",
+            "detail": "Une « année blanche » pour les dépenses de l'État la première année, pour économiser 15 milliards d'euros selon ses calculs.",
+            "source": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
           }
         ],
         "pouvoir-achat": [
@@ -2564,6 +2612,11 @@
             "titre": "Statut du bailleur privé",
             "detail": "Un « véritable statut du bailleur privé » ; « une loi de programmation pluriannuelle du logement » ; exonérer « pendant 2 ans les plus-values immobilières réalisées lors de la vente d'une résidence secondaire ».",
             "source": "https://www.journaldelagence.com/1414778-presidentielle-2027-quelles-sont-les-propositions-de-gabriel-attal-pour-le-logement"
+          },
+          {
+            "titre": "Baisse de 50 Md€ des cotisations",
+            "detail": "Un « choc » de cotisations sociales à hauteur de 50 milliards d'euros.",
+            "source": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
           }
         ],
         "immigration": [
@@ -2664,6 +2717,11 @@
             "titre": "Commerce et IA",
             "detail": "Clauses miroir dans tous les accords commerciaux ; politique européenne commune de l'IA ; puissance de calcul européenne multipliée par sept.",
             "source": "https://attalpresident.fr/programme"
+          },
+          {
+            "titre": "Noyau fédéral de huit à dix pays",
+            "detail": "Des États-Unis d'Europe autour « d'un premier noyau de huit à dix pays volontaires » ; « Sur les sujets économiques, on doit assumer un fédéralisme. »",
+            "source": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
           }
         ],
         "institutions": [
@@ -2684,7 +2742,9 @@
         "https://actu.orange.fr/politique/presidentielle-2027-gabriel-attal-revele-les-premieres-lignes-de-son-programme-magic-CNT000002pzsbo.html",
         "https://www.connexionfrance.com/news/france-2027-election-key-points-from-the-first-presidential-debate/811109",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
-        "https://www.journaldelagence.com/1414778-presidentielle-2027-quelles-sont-les-propositions-de-gabriel-attal-pour-le-logement"
+        "https://www.journaldelagence.com/1414778-presidentielle-2027-quelles-sont-les-propositions-de-gabriel-attal-pour-le-logement",
+        "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html",
+        "https://attalpresident.fr/programme/mesures/vingt-millions-salaries-ia"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_in_2026.jpg",
       "biographie": {
@@ -2763,6 +2823,11 @@
             "titre": "Carte Vitale et carte d'identité",
             "detail": "« Nous intégrerons par ailleurs la carte Vitale à la carte d'identité » ; « des pharmaciens traitants ».",
             "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-sante/"
+          },
+          {
+            "titre": "Hébergement d'urgence",
+            "detail": "« Le Projet France vise que plus personne ne meure de froid dans nos rues, grâce à des places d'hébergement d'urgence à la hauteur des besoins ».",
+            "source": "https://becht2027.fr/tour-de-france/journal/etape-du-21-novembre-pas-de-calais/"
           }
         ],
         "securite": [
@@ -2801,6 +2866,11 @@
             "titre": "Contrat unique",
             "detail": "Contrat unique transférable garantissant « un revenu permanent jamais en deçà du salaire minimum », avec une année sabbatique ; allocations familiales dès le premier enfant.",
             "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-sociale/"
+          },
+          {
+            "titre": "Plan Techniciens",
+            "detail": "Former par l'apprentissage en entreprise « plus de 1,5 million de personnes dans les métiers dont elles ont besoin ».",
+            "source": "https://becht2027.fr/chapitre/partie-4/"
           }
         ],
         "immigration": [
@@ -2828,6 +2898,25 @@
             "detail": "« Nous soutiendrons également les étudiants par la mise en place d'un prêt garanti par l'État. »",
             "source": "https://becht2027.fr/projet-france/les-5-refondations/refondation-sociale/"
           }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "Bouclier travail : 60 % en net",
+            "detail": "« Toute augmentation de revenu devra bénéficier en net à 60 % au salarié, et non 40 % comme aujourd'hui ».",
+            "source": "https://becht2027.fr/tour-de-france/journal/etape-du-20-novembre-nord/"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Moitié des normes supprimées en 2 ans",
+            "detail": "Sur plus de 400 000 normes : « La moitié de ces normes et des procédures sera supprimée en 2 ans. »",
+            "source": "https://becht2027.fr/chapitre/partie-4/"
+          },
+          {
+            "titre": "Fonds Marianne et mines vertes",
+            "detail": "« Le Fonds Marianne accueillera à terme un cinquième de l'épargne nationale, plus de 1 200 milliards » ; « rouvrir notre propre sous-sol » avec une « mine verte, respectueuse de l'environnement et des riverains ».",
+            "source": "https://becht2027.fr/chapitre/partie-4/"
+          }
         ]
       },
       "sources": [
@@ -2837,7 +2926,10 @@
         "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/",
         "https://becht2027.fr/projet-france/les-5-refondations/refondation-energie/",
         "https://becht2027.fr/projet-france/les-5-refondations/refondation-sociale/",
-        "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout"
+        "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout",
+        "https://becht2027.fr/tour-de-france/journal/etape-du-20-novembre-nord/",
+        "https://becht2027.fr/chapitre/partie-4/",
+        "https://becht2027.fr/tour-de-france/journal/etape-du-21-novembre-pas-de-calais/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Olivier_Becht.jpg",
       "biographie": {
@@ -2973,6 +3065,11 @@
             "titre": "Statut de la fonction publique",
             "detail": "« Dans l'État, recruter au statut de droit privé les nouveaux embauchés en dehors des fonctions essentielles » ; choix laissé aux collectivités d'opter pour le statut de droit privé.",
             "source": "https://acteurspublics.fr/articles/fonction-publique-edouard-philippe-veut-faire-du-statut-une-exception-plutot-que-la-regle/"
+          },
+          {
+            "titre": "Fiscalité locative et donations",
+            "detail": "« Mise en place du prélèvement forfaitaire unique sur les revenus de la location longue durée » ; « défiscalisation des donations aux enfants et petits-enfants pour un premier achat » ; suppression de l'IFI sur les logements mis en location de longue durée.",
+            "source": "https://www.edouardphilippe.fr/programme/logement"
           }
         ],
         "travail": [
@@ -3027,6 +3124,11 @@
             "titre": "Outre-mer",
             "detail": "Modernisation de l'octroi de mer, concurrence dans les transports ; convergence du SMIC de Mayotte vers le niveau national.",
             "source": "https://www.edouardphilippe.fr/programme/outre-mer"
+          },
+          {
+            "titre": "4 millions de logements en dix ans",
+            "detail": "Construire 4 millions de logements en dix ans ; « suppression des \"frais de notaire\" pour le premier achat des moins de 35 ans » ; « moratoire de cinq ans sur l'ensemble des normes relatives à la construction et à l'habitation » ; « affectation aux maires de la TVA sur les logements neufs ».",
+            "source": "https://www.edouardphilippe.fr/programme/logement"
           }
         ],
         "ecologie": [
@@ -3044,6 +3146,11 @@
             "titre": "Agriculture",
             "detail": "Zéro surtransposition agricole ; « super Dutreil agricole » pour les transmissions ; 100 territoires de souveraineté alimentaire ; stockage de l'eau accéléré.",
             "source": "https://www.edouardphilippe.fr/programme/adaptation-climatique"
+          },
+          {
+            "titre": "Outre-mer : sargasses et renouvelables",
+            "detail": "« Relancer une conférence régionale sur les sargasses dans les Antilles », « lancer un plan de protection des mangroves et des coraux » et « développer les énergies renouvelables et l'économie bleue ».",
+            "source": "https://www.edouardphilippe.fr/programme/outre-mer"
           }
         ],
         "immigration": [
@@ -3115,6 +3222,11 @@
             "titre": "Mayotte",
             "detail": "Deuxième hôpital de plein exercice à Mayotte ; financement de l'eau garanti jusqu'en 2032.",
             "source": "https://www.edouardphilippe.fr/programme/outre-mer"
+          },
+          {
+            "titre": "Handicap : AAH, MDPH, aidants",
+            "detail": "« Le cumul intégral de l'AAH et des revenus du travail pendant un an après la reprise d'un emploi » ; « une première réponse de la MDPH sous deux mois, et une décision définitive sous trois mois » ; « 15 jours de répit par an pour les proches aidants les plus mobilisés » ; « 100 000 places créées en habitat partagé et inclusif ».",
+            "source": "https://www.edouardphilippe.fr/programme/handicap"
           }
         ],
         "education": [
@@ -3147,7 +3259,7 @@
         "europe": [
           {
             "titre": "Massification des armées",
-            "detail": "Loi de massification ; service militaire volontaire de 50 000 jeunes par an ; 250 000 réservistes ; au moins 1 % de la richesse nationale des pays européens de l'OTAN en équipements européens ; soutien total à l'Ukraine.",
+            "detail": "Loi de massification ; « le rétablissement d'un service national obligatoire, avec le choix entre une option militaire et plusieurs options civiles, et 250 000 réservistes » ; « au moins 1 % de la richesse nationale des pays de l'Union européenne consacré à des équipements fabriqués en Europe » ; « soutenir pleinement l'Ukraine ».",
             "source": "https://www.edouardphilippe.fr/programme/defense"
           },
           {
@@ -3181,7 +3293,9 @@
         "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
         "https://www.parlons-politique.fr/elections/presidentielle-2027-retraites-immigration-deficit-ce-que-le-projet-dedouard-philippe-changerait-pour-les-francais_25969/",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
-        "https://acteurspublics.fr/articles/fonction-publique-edouard-philippe-veut-faire-du-statut-une-exception-plutot-que-la-regle/"
+        "https://acteurspublics.fr/articles/fonction-publique-edouard-philippe-veut-faire-du-statut-une-exception-plutot-que-la-regle/",
+        "https://www.edouardphilippe.fr/programme/logement",
+        "https://www.edouardphilippe.fr/programme/handicap"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg",
       "biographie": {
@@ -3400,6 +3514,11 @@
             "titre": "197 milliards d'euros d'économies",
             "detail": "197 milliards d'euros d'économies sur le quinquennat ; excédent primaire en 2030, déficit sous le maximum prévu par les traités européens en 2031 ; transfert de la formation professionnelle aux régions.",
             "source": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu"
+          },
+          {
+            "titre": "Baisse des droits de succession",
+            "detail": "« Je ne serai pas le président qui augmentera les droits de succession mais celui qui les baissera » ; « pendant trois ans, les parents pourront donner chacun à leurs enfants de moins de 30 ans jusqu'à 150 000 euros, sans un seul euro d'impôt à payer ».",
+            "source": "https://republicains.fr/actualites/2026/08/26/je-serai-le-president-qui-baissera-les-impots-de-succession/"
           }
         ]
       },
@@ -3412,7 +3531,8 @@
         "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
         "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
-        "https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html"
+        "https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html",
+        "https://republicains.fr/actualites/2026/08/26/je-serai-le-president-qui-baissera-les-impots-de-succession/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(3x4_cropped).jpg",
       "biographie": {
@@ -3804,13 +3924,26 @@
             "titre": "Iran et Algérie",
             "detail": "Rupture des relations diplomatiques avec la République islamique d'Iran ; confrontation diplomatique avec les autorités algériennes.",
             "source": "https://dijon-actualites.fr/2026/10/10/presidentielle-2027-le-maire-de-chalon-sur-saone-gilles-platret-sest-lance-dans-la-course-a-lelysee/"
+          },
+          {
+            "titre": "Réarmement accéléré",
+            "detail": "« Accélération du réarmement militaire français face aux menaces extérieures ».",
+            "source": "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Souveraineté alimentaire",
+            "detail": "« Accroissement du soutien à l'agriculture française pour sauver notre souveraineté alimentaire ».",
+            "source": "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
           }
         ]
       },
       "sources": [
         "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
         "https://fr.news.yahoo.com/pr%C3%A9sidentielle-2027-maire-divers-droite-143342334.html",
-        "https://dijon-actualites.fr/2026/10/10/presidentielle-2027-le-maire-de-chalon-sur-saone-gilles-platret-sest-lance-dans-la-course-a-lelysee/"
+        "https://dijon-actualites.fr/2026/10/10/presidentielle-2027-le-maire-de-chalon-sur-saone-gilles-platret-sest-lance-dans-la-course-a-lelysee/",
+        "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:GPlatret.jpg"
     },
@@ -4098,14 +4231,40 @@
       "slogan": "La France retrouvée",
       "statut": "déclaré",
       "declaration": "2023-08-31",
-      "programme": "non publié",
+      "programme": "partiel",
       "site": "https://www.upr.fr",
       "bio": "Président de l'UPR, candidat en 2017. Défend la sortie de l'UE, de l'euro et de l'OTAN.",
       "phares": [],
-      "positions": {},
-      "propositions": {},
+      "positions": {
+        "europe": {
+          "valeur": "Sortie de l'UE (article 50)",
+          "source": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale"
+        }
+      },
+      "propositions": {
+        "europe": [
+          {
+            "titre": "Article 50 dès la première semaine",
+            "detail": "« Dès la première semaine de son mandat, il s'engage à notifier l'activation de l'article 50 ».",
+            "source": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale"
+          },
+          {
+            "titre": "Sortie de l'OTAN",
+            "detail": "Sortie de l'OTAN par « notification immédiate au Département d'État américain via l'article 13 ».",
+            "source": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Suppression des régions et RIC",
+            "detail": "« Suppression pure et simple des régions (estimée à 6 milliards d'euros d'économies) » ; « instauration du Référendum d'Initiative Citoyenne (RIC) ».",
+            "source": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale"
+          }
+        ]
+      },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:François_ASSELINEAU.jpg",
       "biographie": {
@@ -4245,6 +4404,13 @@
             "detail": "Contribution nette de la France au budget de l'UE plafonnée à 5 milliards d'euros par an ; « stopper » le Pacte vert ; suppression du Comité européen des régions.",
             "source": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-"
           }
+        ],
+        "institutions": [
+          {
+            "titre": "Arrêt des subventions aux associations « politisées »",
+            "detail": "« Il est absolument anormal que des associations se servent de l'argent de l'État » ; « la subvention, ce n'est pas un droit ».",
+            "source": "https://www.franceinfo.fr/elections/la-candidate-a-l-election-presidentielle-marine-le-pen-estime-que-couper-les-subventions-aux-associations-politisees-n-est-pas-du-chantage_8294897.html"
+          }
         ]
       },
       "sources": [
@@ -4255,7 +4421,8 @@
         "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/marine-le-pen-fait-sa-rentree-politique-a-henin-beaumont-et-met-la-priorite-nationale-au-c-ur-de-son-programme-pour-la-presidentielle-de-2027-3416348.html",
         "https://www.institut-entreprise.fr/wp-content/uploads/2026/10/Analyse-primaire-contre-budget-RN-Note-de-contexte-IDEP.pdf",
         "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-",
-        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen"
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
+        "https://www.franceinfo.fr/elections/la-candidate-a-l-election-presidentielle-marine-le-pen-estime-que-couper-les-subventions-aux-associations-politisees-n-est-pas-du-chantage_8294897.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(3x4_cropped).jpg",
       "biographie": {
@@ -4377,6 +4544,16 @@
             "titre": "800 000 postes publics en moins",
             "detail": "Supprimer 800 000 postes publics en cinq ans, en préservant enseignants, policiers, militaires et soignants.",
             "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+          },
+          {
+            "titre": "Suppression des droits de succession",
+            "detail": "« Nous supprimerons les droits de succession ».",
+            "source": "https://www.franceinfo.fr/elections/presidentielle/direct-eric-zemmour-lance-sa-campagne-pour-l-election-presidentielle-avec-un-meeting-a-toulon_8293517.html"
+          },
+          {
+            "titre": "Plan de 280 Md€ d'économies",
+            "detail": "« Mettre en œuvre un grand plan d'économies de 280 milliards d'euros » : « 140 milliards pour financer les baisses d'impôts, 140 milliards pour combler le déficit public ».",
+            "source": "https://fr.finance.yahoo.com/actualites/salaire-augment%C3%A9-10-rien-co%C3%BBter-083001943.html"
           }
         ],
         "education": [
@@ -4392,6 +4569,20 @@
             "detail": "Suppression du numerus clausus ; revenus des médecins retraités en activité défiscalisés ; rôle élargi des infirmiers et pharmaciens.",
             "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
           }
+        ],
+        "pouvoir-achat": [
+          {
+            "titre": "Suppression de la CSG des actifs",
+            "detail": "« Nous supprimerons » […] « la CSG pour tous les actifs de France ».",
+            "source": "https://www.franceinfo.fr/elections/presidentielle/direct-eric-zemmour-lance-sa-campagne-pour-l-election-presidentielle-avec-un-meeting-a-toulon_8293517.html"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "Suppression de l'Arcom",
+            "detail": "Supprimer l'Arcom en cas d'élection ; une autorité créée « pour faire respecter la liberté d'expression et qui tend, de plus en plus, à l'empêcher ».",
+            "source": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/var/toulon/candidat-de-la-liberte-attaques-contre-l-arcom-eric-zemmour-en-difficulte-dans-les-sondages-lance-sa-campagne-a-toulon-3453951.html"
+          }
         ]
       },
       "sources": [
@@ -4399,7 +4590,10 @@
         "https://www.blick.ch/fr/monde/france/france-eric-zemmour-candidat-pour-la-presidentielle-2027/5mndjbp",
         "https://www.franceinfo.fr/elections/presidentielle/eric-zemmour-leader-du-parti-d-extreme-droite-reconquete-officialise-sa-candidature-a-la-presidentielle_8276858.html",
         "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
-        "https://www.sudradio.fr/societe/eric-zemmour-annonce-sa-candidature-a-la-presidentielle-pour-conserver-une-france-francaise"
+        "https://www.sudradio.fr/societe/eric-zemmour-annonce-sa-candidature-a-la-presidentielle-pour-conserver-une-france-francaise",
+        "https://www.franceinfo.fr/elections/presidentielle/direct-eric-zemmour-lance-sa-campagne-pour-l-election-presidentielle-avec-un-meeting-a-toulon_8293517.html",
+        "https://fr.finance.yahoo.com/actualites/salaire-augment%C3%A9-10-rien-co%C3%BBter-083001943.html",
+        "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/var/toulon/candidat-de-la-liberte-attaques-contre-l-arcom-eric-zemmour-en-difficulte-dans-les-sondages-lance-sa-campagne-a-toulon-3453951.html"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Portrait_d'Éric_Zemmour,_avril_2022.jpg",
       "biographie": {
@@ -4668,12 +4862,32 @@
             "titre": "Traités",
             "detail": "Aucun traité qui engage durablement les Français ratifié sans eux.",
             "source": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+          },
+          {
+            "titre": "Clauses de retrait européennes",
+            "detail": "« Il fera tout son possible pour négocier avec nos partenaires des clauses de retrait » « applicables aux engagements que les Français rejetteraient par la voie directe » ; « si les Français décident que la France doit quitter l'Union européenne, ce qui est leur droit, le président respectera leur volonté et négociera la sortie dans leur intérêt ».",
+            "source": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/"
+          }
+        ],
+        "travail": [
+          {
+            "titre": "Enquête sur les régimes spéciaux",
+            "detail": "« Le président fera réaliser une enquête sur les catégories qui bénéficient de régimes spéciaux de retraite ».",
+            "source": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/"
+          }
+        ],
+        "ecologie": [
+          {
+            "titre": "Politiques environnementales soumises à référendum",
+            "detail": "« Les principales politiques environnementales du gouvernement et du parlement, comme les traités dans ce domaine », « seront systématiquement soumises à référendum ».",
+            "source": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/"
           }
         ]
       },
       "sources": [
         "https://solutiondemocratique.fr",
-        "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+        "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf",
+        "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Clara_Egger.jpg",
       "biographie": {
@@ -4795,6 +5009,11 @@
             "titre": "Logement",
             "detail": "« Une Garantie Locative Universelle, qui oblige tout assureur habitation à couvrir tout bailleur contre les impayés ».",
             "source": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-12.html"
+          },
+          {
+            "titre": "Carburant plafonné à 2,50 €",
+            "detail": "« Le prix du carburant sera plafonné à 2,50 euros par litre, par une réduction des accises en cas de dépassement » ; il est « maintenu à 1,75 euros par litre » par une hausse des accises en cas de baisse.",
+            "source": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-1.html"
           }
         ],
         "ecologie": [
@@ -4812,6 +5031,11 @@
             "titre": "Phytosanitaires",
             "detail": "« Réduire de moitié l'usage des phytosanitaires d'ici 2030 et restaurer haies, bandes enherbées et mares ».",
             "source": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-22.html"
+          },
+          {
+            "titre": "Neutralité carbone dans la Constitution",
+            "detail": "« En inscrivant l'objectif de la neutralité carbone en 2050 » « dans la Constitution dans le cadre d'une mise à jour de la Charte de l'Environnement ».",
+            "source": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-1.html"
           }
         ],
         "immigration": [
@@ -5130,14 +5354,42 @@
       "slogan": "Pour une France libre, souveraine et solaire",
       "statut": "déclaré",
       "declaration": "2026-06-17",
-      "programme": "non publié",
-      "site": null,
+      "programme": "partiel",
+      "site": "https://dieudolalanne2027.com",
       "bio": "Chanteur.",
       "phares": [],
-      "positions": {},
-      "propositions": {},
+      "positions": {
+        "europe": {
+          "valeur": "Sortie de l'UE et de l'OTAN",
+          "source": "https://dieudolalanne2027.com/programme"
+        }
+      },
+      "propositions": {
+        "europe": [
+          {
+            "titre": "Sortie de l'UE et de l'OTAN",
+            "detail": "« Sortie de l'Union Européenne pour retrouver la maîtrise de nos lois et de nos frontières » ; « Sortie de l'OTAN ».",
+            "source": "https://dieudolalanne2027.com/programme"
+          }
+        ],
+        "economie": [
+          {
+            "titre": "Retour au franc",
+            "detail": "« Retour au Franc et reprise en main de la Banque de France. »",
+            "source": "https://dieudolalanne2027.com/programme"
+          }
+        ],
+        "institutions": [
+          {
+            "titre": "RIC en toutes matières",
+            "detail": "« Inscription du RIC en toutes matières dans la Constitution. »",
+            "source": "https://dieudolalanne2027.com/programme"
+          }
+        ]
+      },
       "sources": [
-        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+        "https://dieudolalanne2027.com/programme"
       ],
       "photoCredit": "https://commons.wikimedia.org/wiki/File:Lalanne_2021_(cropped).jpg",
       "biographie": {
@@ -5224,14 +5476,23 @@
       "slogan": null,
       "statut": "déclaré",
       "declaration": "2026-03-30",
-      "programme": "non publié",
-      "site": null,
+      "programme": "partiel",
+      "site": "https://benoitmathieu2027.fr",
       "bio": "Professeur de 27 ans, candidat sans parti. Il parcourt la France à vélo (12 000 km) pour réunir ses 500 parrainages.",
       "phares": [],
       "positions": {},
-      "propositions": {},
+      "propositions": {
+        "institutions": [
+          {
+            "titre": "Constitution rédigée par 500 tirés au sort",
+            "detail": "« Confier à 500 citoyens tirés au sort la rédaction de la nouvelle Constitution » ; « leur donner neuf mois de délibération, dans douze sessions de trois jours » ; « engager la procédure constitutionnelle de référendum prévue par l'article 11 ».",
+            "source": "https://benoitmathieu2027.fr/programme"
+          }
+        ]
+      },
       "sources": [
-        "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages"
+        "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages",
+        "https://benoitmathieu2027.fr/programme"
       ],
       "photoCredit": null
     },
@@ -5261,6 +5522,11 @@
     }
   ],
   "retires": [
+    {
+      "nom": "François Ruffin",
+      "parti": "Debout !",
+      "retrait": "2026-11-21"
+    },
     {
       "nom": "Clémentine Autain",
       "parti": "L'Après",
