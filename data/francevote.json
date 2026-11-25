@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-24",
+ "recupereLe": "2026-11-25",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -782,7 +782,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "sec4": null,
+    "sec4": {
+     "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 3, chapitre 2 : Une République de l’égalité réelle et des droits nouveaux, « Protéger les enfants »",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "env1": {
      "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 1, chapitre 3 : Les grands chantiers de la bifurcation écologique, « Organiser le 100 % d’énergies renouvelables »",
@@ -1005,7 +1010,12 @@
      "editeur": "Assemblée nationale",
      "date": "2024-10-24"
     },
-    "sec4": null,
+    "sec4": {
+     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1624",
+     "titre": "Scrutin public nº 1624 sur l’ensemble de la proposition de loi visant à renforcer l’autorité de la justice à l’égard des mineurs délinquants et de leurs parents (texte de la commission mixte paritaire)",
+     "editeur": "Assemblée nationale",
+     "date": "2025-05-13"
+    },
     "env1": null,
     "env2": null,
     "env3": null,
@@ -2308,10 +2318,10 @@
     "sec2": null,
     "sec3": null,
     "sec4": {
-     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/805",
-     "titre": "Analyse du scrutin public n° 805 sur l’ensemble de la proposition de loi visant à restaurer l’autorité de la justice à l’égard des mineurs délinquants et de leurs parents",
+     "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0448_proposition-loi.pdf",
+     "titre": "Proposition de loi nº 448 visant à restaurer l’autorité de la justice à l’égard des mineurs délinquants et de leurs parents",
      "editeur": "Assemblée nationale",
-     "date": "2025-02-13"
+     "date": "2024-10-15"
     },
     "env1": null,
     "env2": {
@@ -2846,7 +2856,12 @@
     },
     "sec2": null,
     "sec3": null,
-    "sec4": null,
+    "sec4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/apres-le-beauvau-de-la-securite-xavier-bertrand-repond-a-emmanuel-macron-en",
+     "titre": "Après le Beauvau de la sécurité, Xavier Bertrand répond à Emmanuel Macron en présentant sa « révolution pénale »",
+     "editeur": "Public Sénat",
+     "date": "2021-09-15"
+    },
     "env1": null,
     "env2": {
      "url": "https://www.franceinfo.fr/politique/xavier-bertrand/impots-retraites-nucleaire-international-ce-qu-il-faut-retenir-de-l-interview-de-xavier-bertrand-sur-franceinfo_4794399.html",
@@ -2999,7 +3014,12 @@
     "sec1": null,
     "sec2": null,
     "sec3": null,
-    "sec4": null,
+    "sec4": {
+     "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+     "titre": "Notre programme — Sécurité",
+     "editeur": "Nouvelle Énergie (mouvement de David Lisnard)",
+     "date": "2026"
+    },
     "env1": null,
     "env2": {
      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
@@ -3227,7 +3247,12 @@
      "date": "2025-02-18"
     },
     "sec3": null,
-    "sec4": null,
+    "sec4": {
+     "url": "https://www.publicsenat.fr/actualites/politique/crepol-le-gouvernement-est-dans-le-deni-estime-bruno-retailleau",
+     "titre": "Crépol : « Le gouvernement est dans le déni », estime Bruno Retailleau",
+     "editeur": "Public Sénat",
+     "date": "2023-11-29"
+    },
     "env1": {
      "url": "https://republicains.fr/nos-propositions/",
      "titre": "Nos propositions — Une électricité décarbonée bon marché pour tous les Français",
@@ -3430,7 +3455,12 @@
      "editeur": "Debout la France (site officiel du parti)",
      "date": "2026-02-16"
     },
-    "sec4": null,
+    "sec4": {
+     "url": "https://www.debout-la-france.fr/projet/justice/",
+     "titre": "Le projet — Justice",
+     "editeur": "Debout la France",
+     "date": "2026-10-12"
+    },
     "env1": null,
     "env2": {
      "url": "https://www.debout-la-france.fr/projet/environnement-energie/",
@@ -3692,7 +3722,7 @@
     "sec1": 2,
     "sec2": -2,
     "sec3": 0,
-    "sec4": 1,
+    "sec4": 2,
     "ins1": 2,
     "ins2": 2,
     "ins3": 0,
@@ -3746,7 +3776,12 @@
     },
     "sec2": null,
     "sec3": null,
-    "sec4": null,
+    "sec4": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
     "env1": null,
     "env2": {
      "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
@@ -3804,7 +3839,7 @@
    },
    "boussole": {
     "eco": -46,
-    "soc": 82
+    "soc": 84
    }
   },
   "le-pen": {
@@ -3934,7 +3969,12 @@
      "editeur": "Public Sénat",
      "date": "2017-04-23"
     },
-    "sec4": null,
+    "sec4": {
+     "url": "https://www.politis.fr/articles/2024/05/le-pen-en-revait-macron-la-fait/",
+     "titre": "Le Pen en rêvait, Macron l’a fait",
+     "editeur": "Politis",
+     "date": "2024-05-29"
+    },
     "env1": {
      "url": "https://rassemblementnational.fr/22-mesures",
      "titre": "22 mesures pour 2022",
@@ -4172,7 +4212,12 @@
      "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
      "date": "2022-03-16"
     },
-    "sec4": null,
+    "sec4": {
+     "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+     "titre": "Pour que la France reste la France — Mon programme",
+     "editeur": "Reconquête (document de campagne, hébergé par la Fédération hospitalière de France)",
+     "date": "2022-03-16"
+    },
     "env1": null,
     "env2": {
      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
