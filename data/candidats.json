@@ -4008,7 +4008,43 @@
         "https://dijon-actualites.fr/2026/10/10/presidentielle-2027-le-maire-de-chalon-sur-saone-gilles-platret-sest-lance-dans-la-course-a-lelysee/",
         "https://linformateurdebourgogne.com/presidentielles-2027-gilles-platret-une-candidature-de-combat-de-verite/"
       ],
-      "photoCredit": "https://commons.wikimedia.org/wiki/File:GPlatret.jpg"
+      "photoCredit": "https://commons.wikimedia.org/wiki/File:GPlatret.jpg",
+      "biographie": {
+        "paragraphes": [
+          "Vous êtes invité à donner votre avis sur cette page de discussion, de manière argumentée en vous aidant notamment des critères d’admissibilité ou en présentant des sources extérieures et sérieuses.",
+          "Gilles Platret, né le 19 avril 1973 à Saint-Rémy (Saône-et-Loire), est un historien et homme politique français. Il est maire de Chalon-sur-Saône depuis 2014."
+        ],
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gilles_Platret",
+        "wikidata": "Q33103460",
+        "genre": "m",
+        "naissance": "1973-04-19",
+        "lieuNaissance": "Saint-Rémy",
+        "professions": [],
+        "formation": [],
+        "fonctions": [
+          {
+            "label": "conseiller régional de Bourgogne-Franche-Comté",
+            "debut": "2016-01-01",
+            "fin": null
+          },
+          {
+            "label": "maire de Chalon-sur-Saône",
+            "debut": "2014-03-29",
+            "fin": null
+          },
+          {
+            "label": "conseiller communautaire du Grand Chalon",
+            "debut": "2014-03-23",
+            "fin": null
+          },
+          {
+            "label": "conseiller municipal de Chalon-sur-Saône",
+            "debut": "2014-03-23",
+            "fin": null
+          }
+        ],
+        "majLe": "2026-11-27"
+      }
     },
     {
       "id": "dupont-aignan",

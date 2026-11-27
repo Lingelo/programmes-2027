@@ -1714,7 +1714,7 @@
     "san1": 2,
     "san2": 1,
     "san3": 2,
-    "san4": 1,
+    "san4": 0,
     "edu1": -1,
     "edu2": -1,
     "edu3": 0,
@@ -1865,7 +1865,12 @@
     "san1": null,
     "san2": null,
     "san3": null,
-    "san4": null,
+    "san4": {
+     "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+     "titre": "Acte un. Notre vision pour la France : les chantiers de Place publique pour redonner vie à la promesse républicaine",
+     "editeur": "Place publique (projet du parti, codirigé par Raphaël Glucksmann)",
+     "date": "2025"
+    },
     "edu1": null,
     "edu2": null,
     "edu3": {
@@ -1877,7 +1882,7 @@
     "edu4": null
    },
    "boussole": {
-    "eco": -62,
+    "eco": -58,
     "soc": -70
    }
   },
@@ -3600,7 +3605,12 @@
     },
     "san2": null,
     "san3": null,
-    "san4": null,
+    "san4": {
+     "url": "https://www.debout-la-france.fr/projet/sante/",
+     "titre": "Santé — projet de Debout la France",
+     "editeur": "Debout la France",
+     "date": "2024-02-05"
+    },
     "edu1": null,
     "edu2": {
      "url": "https://www.letudiant.fr/etudes/nicolas-dupont-aignan-je-suis-oppose-a-la-selection-a-l-entree-a-l-universite.html",
@@ -4150,9 +4160,9 @@
      "date": "2025-05-27"
     },
     "san4": {
-     "url": "https://rassemblementnational.fr/discours/sante-protegeons-les-francais-discours-de-marine-le-pen",
-     "titre": "« Santé : protégeons les Français ! » : discours de Marine Le Pen",
-     "editeur": "Rassemblement national",
+     "url": "https://www.publicsenat.fr/actualites/politique/le-programme-fillon-sur-la-sante-donne-la-nausee-a-marine-le-pen-51200",
+     "titre": "Le programme Fillon sur la santé donne la « nausée » à Marine Le Pen",
+     "editeur": "Public Sénat (AFP)",
      "date": "2016-12-09"
     },
     "edu1": {
