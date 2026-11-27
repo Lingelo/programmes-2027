@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-25",
+ "recupereLe": "2026-11-27",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -824,7 +824,12 @@
      "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
      "date": "2026-11-06"
     },
-    "eur3": null,
+    "eur3": {
+     "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 1 : Se libérer du libéralisme en Europe",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
+    },
     "eur4": {
      "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1/",
      "titre": "L’Avenir en commun (5e édition, 2026) — Partie 6, chapitre 1 : Se libérer du libéralisme en Europe",
@@ -1348,7 +1353,12 @@
     },
     "eur1": null,
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://ruches.org/le-projet",
+     "titre": "Le Projet 2027 — Programme en 6 piliers",
+     "editeur": "Ruches Françaises",
+     "date": "2026"
+    },
     "eur4": null,
     "int1": null,
     "int2": {
@@ -1521,7 +1531,12 @@
      "date": "2025-04-19"
     },
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://legrandcontinent.eu/fr/2026/11/09/tondelier-europe-quil-nous-faut/",
+     "titre": "L’Europe qu’il nous faut",
+     "editeur": "Le Grand Continent (texte signé par Marine Tondelier, série « Doctrines françaises »)",
+     "date": "2026-11-09"
+    },
     "eur4": {
      "url": "https://lesecologistes.fr/posts/ysSrenJRQEqSoqx9CFVuT/traite-ue-mercosur-une-opposition-francaise-arrachee-par-la-mobilisation-un-accord-toujours-aussi-inacceptable",
      "titre": "Traité UE-Mercosur : une opposition française arrachée par la mobilisation, un accord toujours aussi inacceptable",
@@ -1692,8 +1707,8 @@
     "eco2": -1,
     "eco3": -1,
     "eco4": 0,
-    "soc1": 1,
-    "soc2": 1,
+    "soc1": 2,
+    "soc2": 2,
     "soc3": -2,
     "soc4": 0,
     "san1": 2,
@@ -1712,7 +1727,7 @@
     "sec2": 1,
     "sec3": 1,
     "sec4": -1,
-    "ins1": -1,
+    "ins1": 0,
     "ins2": 2,
     "ins3": 0,
     "ins4": -1,
@@ -1745,16 +1760,16 @@
      "date": "2024-05-15"
     },
     "soc1": {
-     "url": "https://www.brut.media/fr/articles/la-suspension-de-la-reforme-des-retraites-devient-possible-dit-glucksmann-apres-avoir-rencontre-sebastien-lecornu",
-     "titre": "La suspension de la réforme des retraites « devient possible », dit Glucksmann après avoir rencontré Sébastien Lecornu",
-     "editeur": "Brut",
-     "date": "2025-11-17"
+     "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+     "titre": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu’il faut retenir du dernier débat de la primaire socialiste",
+     "editeur": "LCP",
+     "date": "2026-10-05"
     },
     "soc2": {
-     "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-     "titre": "Présidentielle : « Pas candidat » pour le moment, Raphaël Glucksmann « trace » son chemin et défend sa « vision pour le pays »",
+     "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+     "titre": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
      "editeur": "Public Sénat",
-     "date": "2025-06-23"
+     "date": "2026-10-30"
     },
     "soc3": null,
     "soc4": null,
@@ -1781,7 +1796,12 @@
     },
     "sec3": null,
     "sec4": null,
-    "env1": null,
+    "env1": {
+     "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+     "titre": "Acte un. Notre vision pour la France : les chantiers de Place publique pour redonner vie à la promesse républicaine",
+     "editeur": "Place publique (projet du parti, codirigé par Raphaël Glucksmann)",
+     "date": "2025"
+    },
     "env2": {
      "url": "https://www.linfodurable.fr/politique/glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-59699",
      "titre": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique »",
@@ -1802,7 +1822,12 @@
      "date": "2024-05-15"
     },
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://lcp.fr/actualites/presidentielle-raphael-glucksmann-devoile-les-premieres-lignes-de-son-possible-programme",
+     "titre": "Présidentielle : Raphaël Glucksmann dévoile les premières lignes de son possible programme",
+     "editeur": "LCP",
+     "date": "2026-05-26"
+    },
     "eur4": {
      "url": "https://www.liberation.fr/idees-et-debats/tribunes/union-europeenne-laccord-mercosur-doit-tomber-20241122_E5K32QJ5O5CXFBL7SMRL2PZ6GM/",
      "titre": "Union européenne : l’accord Mercosur doit tomber",
@@ -1818,7 +1843,12 @@
     "int2": null,
     "int3": null,
     "int4": null,
-    "ins1": null,
+    "ins1": {
+     "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+     "titre": "Acte un. Notre vision pour la France : les chantiers de Place publique pour redonner vie à la promesse républicaine",
+     "editeur": "Place publique (projet du parti, codirigé par Raphaël Glucksmann)",
+     "date": "2025"
+    },
     "ins2": {
      "url": "https://www.franceinfo.fr/politique/proportionnelle-aux-elections-legislatives-qu-en-pensent-les-differents-partis-politiques_7271859.html",
      "titre": "Proportionnelle aux élections législatives : qu’en pensent les différents partis politiques ?",
@@ -1847,7 +1877,7 @@
     "edu4": null
    },
    "boussole": {
-    "eco": -54,
+    "eco": -62,
     "soc": -70
    }
   },
@@ -1950,7 +1980,12 @@
      "date": "2026"
     },
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf?1784151599",
+     "titre": "Lettre aux Françaises et aux Français",
+     "editeur": "La Convention (lettre de Bernard Cazeneuve)",
+     "date": "2026-07-15"
+    },
     "eur4": null,
     "int1": null,
     "int2": {
@@ -2344,7 +2379,12 @@
     },
     "eur1": null,
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/gabriel-attal-veut-construire-les-etats-unis-deurope-proposition-choc-pour-relancer-lideal-europeen",
+     "titre": "Gabriel Attal veut construire les « Etats-Unis d’Europe », proposition choc pour relancer l’idéal européen",
+     "editeur": "Public Sénat",
+     "date": "2026-09-17"
+    },
     "eur4": null,
     "int1": null,
     "int2": null,
@@ -2557,7 +2597,12 @@
      "editeur": "LCP",
      "date": "2026-10-09"
     },
-    "eur3": null,
+    "eur3": {
+     "url": "https://www.edouardphilippe.fr/programme/entreprises",
+     "titre": "Le programme — Entreprises et industrie",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-11-18"
+    },
     "eur4": null,
     "int1": null,
     "int2": null,
@@ -2715,7 +2760,12 @@
     "env4": null,
     "eur1": null,
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/chapitre-10.html",
+     "titre": "Réussir à nouveau — Chapitre 10 : Retrouvons notre levier d’Archimède européen !",
+     "editeur": "La France humaniste",
+     "date": "2026-11-20"
+    },
     "eur4": null,
     "int1": null,
     "int2": null,
@@ -3041,7 +3091,12 @@
      "editeur": "Nouvelle Énergie",
      "date": "2026"
     },
-    "eur3": null,
+    "eur3": {
+     "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+     "titre": "Discours de David Lisnard à Bayeux",
+     "editeur": "Nouvelle Énergie (mouvement de David Lisnard)",
+     "date": "2026-06-17"
+    },
     "eur4": null,
     "int1": null,
     "int2": null,
@@ -3289,7 +3344,12 @@
      "editeur": "Sénat",
      "date": "2023-05-25"
     },
-    "eur3": null,
+    "eur3": {
+     "url": "https://www.publicsenat.fr/actualites/politique/immigration-cest-parce-que-cette-question-est-sensible-quil-faut-faire-un-referendum-demande-bruno-retailleau",
+     "titre": "Immigration : « C’est parce que cette question est sensible qu’il faut faire un référendum », demande Bruno Retailleau",
+     "editeur": "Public Sénat",
+     "date": "2023-05-24"
+    },
     "eur4": {
      "url": "https://www.leparisien.fr/politique/mercosur-retailleau-menace-macron-dune-censure-du-gouvernement-lecornu-sil-vote-laccord-commercial-07-01-2026-JPSGF6AVLFFKTAE2FPTD64APKU.php",
      "titre": "Mercosur : Retailleau menace Macron d’une censure du gouvernement Lecornu s’il vote l’accord commercial",
@@ -3482,7 +3542,12 @@
      "editeur": "Debout la France (site officiel du parti)",
      "date": "2026-11-18"
     },
-    "eur3": null,
+    "eur3": {
+     "url": "https://www.debout-la-france.fr/projet/affaires-europeennes/",
+     "titre": "Notre projet — Affaires européennes",
+     "editeur": "Debout la France (site officiel du parti)",
+     "date": "2026-11-25"
+    },
     "eur4": null,
     "int1": {
      "url": "https://www.debout-la-france.fr/projet/defense/",
@@ -3798,7 +3863,12 @@
     "env4": null,
     "eur1": null,
     "eur2": null,
-    "eur3": null,
+    "eur3": {
+     "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+     "titre": "Grandes orientations pour un projet patriote (édition 2026-2027)",
+     "editeur": "Les Patriotes",
+     "date": "2026"
+    },
     "eur4": null,
     "int1": null,
     "int2": {
