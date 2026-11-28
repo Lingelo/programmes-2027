@@ -3,7 +3,7 @@
  "licence": "CC BY 4.0",
  "page": "https://www.france-vote.fr/donnees",
  "avertissement": "Lecture éditoriale et indicative des positions connues de chaque mouvement. Les candidatures et les programmes de 2027 ne sont pas arrêtés.",
- "recupereLe": "2026-11-27",
+ "recupereLe": "2026-11-28",
  "echelle": {
   "0": "Position nuancée, non tranchée ou absente",
   "1": "Plutôt favorable",
@@ -400,7 +400,7 @@
     "imm3": 2,
     "imm4": -2,
     "sec1": -2,
-    "sec2": 1,
+    "sec2": 2,
     "sec3": 2,
     "sec4": -2,
     "ins1": 0,
@@ -469,7 +469,12 @@
      "date": "2022-02-14"
     },
     "sec1": null,
-    "sec2": null,
+    "sec2": {
+     "url": "https://audio.lutte-ouvriere.org/medias/presentation/fichiers/2022/03/Drogue-et-societe.pdf",
+     "titre": "Réponses de Nathalie Arthaud aux représentants des associations mobilisées pour la défense des personnes en situation de handicap ou de dépendance (campagne présidentielle 2022)",
+     "editeur": "Lutte ouvrière",
+     "date": "2022"
+    },
     "sec3": null,
     "sec4": null,
     "env1": null,
@@ -524,7 +529,7 @@
    },
    "boussole": {
     "eco": -96,
-    "soc": -50
+    "soc": -52
    }
   },
   "kazib": {
@@ -771,10 +776,10 @@
      "date": "2024-11-16"
     },
     "sec2": {
-     "url": "https://lafranceinsoumise.fr/niche-parlementaire-2022-de-la-france-insoumise/ppl-legaliser-cannabis/",
-     "titre": "Proposition de loi relative à la légalisation de la production, de la vente et de la consommation du cannabis sous le contrôle de l’État",
-     "editeur": "La France insoumise (groupe parlementaire, niche 2022)",
-     "date": "2022-01-03"
+     "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4/",
+     "titre": "L’Avenir en commun (5e édition, 2026) — Partie 4, chapitre 4 : Faire de la santé un enjeu global, « Addictions et drogues : pour une stratégie sanitaire »",
+     "editeur": "La France insoumise (site du programme, Mélenchon 2027)",
+     "date": "2026-11-06"
     },
     "sec3": {
      "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2/",
@@ -1171,7 +1176,12 @@
     },
     "imm4": null,
     "sec1": null,
-    "sec2": null,
+    "sec2": {
+     "url": "https://www.radiofrance.fr/franceinter/podcasts/un-candidat-face-au-7-9/un-candidat-face-au-7-9-du-mardi-15-fevrier-2022-2852092",
+     "titre": "« Je dis basta aux réformes punitives, je veux des réformes heureuses » : Fabien Roussel face au 7/9",
+     "editeur": "France Inter",
+     "date": "2022-02-15"
+    },
     "sec3": {
      "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/0436/AN/755.pdf",
      "titre": "Amendement nº 755 au projet de loi d’orientation et de programmation du ministère de l’Intérieur (nº 436)",
@@ -2355,7 +2365,12 @@
     },
     "imm4": null,
     "sec1": null,
-    "sec2": null,
+    "sec2": {
+     "url": "https://www.publicsenat.fr/actualites/politique/cannabis-attal-favorable-a-un-debat-autour-de-la-legalisation-149169",
+     "titre": "Cannabis : Attal « favorable » à un débat autour de la légalisation",
+     "editeur": "Public Sénat (avec AFP)",
+     "date": "2020-01-15"
+    },
     "sec3": null,
     "sec4": {
      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0448_proposition-loi.pdf",
@@ -2469,7 +2484,7 @@
     "imm3": 1,
     "imm4": -1,
     "sec1": 1,
-    "sec2": 0,
+    "sec2": -2,
     "sec3": -1,
     "sec4": 1,
     "ins1": -1,
@@ -2563,7 +2578,12 @@
      "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
      "date": "2026-11-12"
     },
-    "sec2": null,
+    "sec2": {
+     "url": "https://www.edouardphilippe.fr/programme/sante",
+     "titre": "Le programme — Santé",
+     "editeur": "Édouard Philippe 2027 (site officiel de campagne)",
+     "date": "2026-11-26"
+    },
     "sec3": null,
     "sec4": {
      "url": "https://www.edouardphilippe.fr/programme/justice",
@@ -2673,7 +2693,7 @@
    },
    "boussole": {
     "eco": 88,
-    "soc": 0
+    "soc": 5
    }
   },
   "villepin": {
@@ -2909,7 +2929,12 @@
      "editeur": "Europe 1",
      "date": "2021-04-20"
     },
-    "sec2": null,
+    "sec2": {
+     "url": "https://questions.assemblee-nationale.fr/dyn/14/questions/QANR5L14QG171.pdf",
+     "titre": "Question au Gouvernement nº 171 : dépénalisation du cannabis",
+     "editeur": "Assemblée nationale (JO, 14e législature)",
+     "date": "2012-10-17"
+    },
     "sec3": null,
     "sec4": {
      "url": "https://www.publicsenat.fr/actualites/politique/apres-le-beauvau-de-la-securite-xavier-bertrand-repond-a-emmanuel-macron-en",
@@ -3301,10 +3326,10 @@
      "date": "2026-05-31"
     },
     "sec2": {
-     "url": "https://www.ouest-france.fr/societe/drogue/legalisation-du-cannabis-proposee-par-deux-deputes-bruno-retailleau-se-dit-totalement-contre-3f784e08-edc2-11ef-ab5f-86b228b95af6",
-     "titre": "Légalisation du cannabis proposée par deux députés : Bruno Retailleau se dit « totalement contre »",
-     "editeur": "Ouest-France",
-     "date": "2025-02-18"
+     "url": "https://questions.assemblee-nationale.fr/dyn/17/questions/QANR5L17QG418.pdf",
+     "titre": "Question au Gouvernement nº 418 : légalisation du cannabis",
+     "editeur": "Assemblée nationale (JO, 17e législature)",
+     "date": "2025-02-19"
     },
     "sec3": null,
     "sec4": {
@@ -3513,7 +3538,12 @@
      "editeur": "Debout la France",
      "date": "2026-06-10"
     },
-    "sec2": null,
+    "sec2": {
+     "url": "https://questions.assemblee-nationale.fr/dyn/11/questions/QANR5L11QG953.pdf",
+     "titre": "Question au Gouvernement nº 953 : cannabis",
+     "editeur": "Assemblée nationale (JO, 11e législature)",
+     "date": "1998-11-26"
+    },
     "sec3": {
      "url": "https://www.debout-la-france.fr/projet/securite/",
      "titre": "Notre projet — Sécurité",
@@ -4042,7 +4072,12 @@
      "editeur": "Assemblée nationale",
      "date": "2024-09-17"
     },
-    "sec2": null,
+    "sec2": {
+     "url": "https://www.radiofrance.fr/franceinter/podcasts/un-candidat-face-au-7-9/un-candidat-face-au-7-9-du-mercredi-19-janvier-2022-5650250",
+     "titre": "Immigration, Zemmour, pouvoir d’achat : Marine Le Pen répond aux questions du 7/9",
+     "editeur": "France Inter",
+     "date": "2022-01-19"
+    },
     "sec3": {
      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-l-essentiel-du-programme-de-marine-le-pen-59168",
      "titre": "Présidentielle : l’essentiel du programme de Marine Le Pen",
