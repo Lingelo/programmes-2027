@@ -1,6 +1,6 @@
 {
   "statut": "pas-ouverte",
-  "verifieLe": "2026-11-27",
+  "verifieLe": "2026-11-28",
   "regles": {
     "seuil": 500,
     "minDepartements": 30,
